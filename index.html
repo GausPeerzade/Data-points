@@ -5,181 +5,238 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Onchain Spot Volume by Market Cap</title>
 <style>
-/* ============================================================
-   BRAND TOKENS — replace with the Nemesis brand guidelines.
-   Only this block should change when the brand file arrives.
-   ============================================================ */
+/* Provisional brand tokens. Replace these with approved Nemesis assets when available. */
 :root {
-  --brand-font: system-ui, -apple-system, "Segoe UI", sans-serif;
-  --brand-accent: #2a78d6;        /* active tab, focus ring, links */
-  --brand-accent-ink: #ffffff;    /* text on accent */
-  --brand-radius: 10px;
-  --brand-logo-text: "NEMESIS";   /* wordmark until the logo asset is provided */
-}
-/* ---- chart + chrome tokens (validated palette, light) ---- */
-:root {
+  --brand-font: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  --brand-accent: #2a78d6;
+  --brand-accent-ink: #ffffff;
+  --brand-radius: 16px;
   color-scheme: light;
-  --page: #f9f9f7; --surface: #fcfcfb;
-  --ink: #0b0b0b; --ink-2: #52514e; --muted: #898781;
-  --grid: #e1e0d9; --axis: #c3c2b7; --border: rgba(11,11,11,0.10);
-  --series-above: #2a78d6; --series-below: #eb6834; --series-extra: #1baf7a;
-  --good: #006300; --bad: #d03b3b; --warn: #b26b00;
-  --tip-bg: #ffffff;
+  --page: #f5f7fa; --surface: #ffffff; --surface-2: #edf2f8;
+  --ink: #17243b; --ink-2: #58677d; --muted: #5f6e82; --link: #2265b4;
+  --grid: #e6ebf2; --axis: #bcc8d6; --border: #dce4ee;
+  --series-above: #2a78d6; --series-below: #d85a24; --series-extra: #168365;
+  --good: #18704d; --bad: #bb3c48; --warn: #875510; --tip-bg: #ffffff;
 }
 @media (prefers-color-scheme: dark) {
   :root:where(:not([data-theme="light"])) {
     color-scheme: dark;
-    --page: #0d0d0d; --surface: #1a1a19;
-    --ink: #ffffff; --ink-2: #c3c2b7; --muted: #898781;
-    --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10);
-    --series-above: #3987e5; --series-below: #d95926; --series-extra: #199e70;
-    --good: #0ca30c; --bad: #e66767; --warn: #fab219;
-    --tip-bg: #242423;
+    --page: #101a2a; --surface: #172438; --surface-2: #203047;
+    --ink: #edf3fc; --ink-2: #b5c3d7; --muted: #9aabc2; --link: #8bb8ee;
+    --grid: #2b3b51; --axis: #4d6079; --border: #304158;
+    --series-above: #6aa9f3; --series-below: #f29a68; --series-extra: #63c7a2;
+    --good: #7ed8b0; --bad: #ff9a9f; --warn: #f0c285; --tip-bg: #203047;
   }
 }
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --page: #0d0d0d; --surface: #1a1a19;
-  --ink: #ffffff; --ink-2: #c3c2b7; --muted: #898781;
-  --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10);
-  --series-above: #3987e5; --series-below: #d95926; --series-extra: #199e70;
-  --good: #0ca30c; --bad: #e66767; --warn: #fab219;
-  --tip-bg: #242423;
+  --page: #101a2a; --surface: #172438; --surface-2: #203047;
+  --ink: #edf3fc; --ink-2: #b5c3d7; --muted: #9aabc2; --link: #8bb8ee;
+  --grid: #2b3b51; --axis: #4d6079; --border: #304158;
+  --series-above: #6aa9f3; --series-below: #f29a68; --series-extra: #63c7a2;
+  --good: #7ed8b0; --bad: #ff9a9f; --warn: #f0c285; --tip-bg: #203047;
 }
-
 * { box-sizing: border-box; }
-html, body { margin: 0; background: var(--page); color: var(--ink); font-family: var(--brand-font); font-size: 14px; line-height: 1.45; }
-a { color: var(--brand-accent); }
-.wrap { max-width: 1180px; margin: 0 auto; padding: 20px 20px 48px; }
-
-header.top { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 18px; }
-.wordmark { font-weight: 800; letter-spacing: .18em; font-size: 12px; color: var(--ink-2); }
-.wordmark::before { content: var(--brand-logo-text); }
-h1 { font-size: 22px; margin: 4px 0 2px; font-weight: 700; letter-spacing: -.01em; }
-.sub { color: var(--ink-2); margin: 0; }
-.meta { text-align: right; color: var(--muted); font-size: 12px; display: flex; flex-direction: column; gap: 6px; align-items: flex-end; }
-.metarow { display: flex; gap: 8px; align-items: center; }
-.badge { display: inline-flex; align-items: center; height: 26px; border: 1px solid var(--border); border-radius: 999px; padding: 0 10px; font-size: 11px; color: var(--ink-2); background: var(--surface); }
-button.ghost { background: var(--surface); color: var(--ink-2); border: 1px solid var(--border); border-radius: 999px; padding: 0 10px; height: 26px; font: inherit; font-size: 12px; cursor: pointer; }
-.filters > button.ghost { height: 30px; }
-button.ghost:hover { color: var(--ink); }
-button:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--brand-accent); outline-offset: 2px; }
-
-/* filter row */
-.filters { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; margin: 0 0 14px; }
-.tabs { display: flex; flex-wrap: wrap; gap: 4px; }
-.tab { background: transparent; border: 1px solid transparent; color: var(--ink-2); padding: 0 12px; height: 30px; border-radius: 999px; font: inherit; cursor: pointer; }
-.tab:hover { background: var(--surface); }
-.tab[aria-selected="true"] { background: var(--brand-accent); color: var(--brand-accent-ink); border-color: var(--brand-accent); font-weight: 600; }
-.seg { display: inline-flex; border: 1px solid var(--border); border-radius: 999px; overflow: hidden; background: var(--surface); }
-.seg button { background: transparent; border: 0; color: var(--ink-2); padding: 0 12px; height: 28px; font: inherit; cursor: pointer; }
-.seg button[aria-pressed="true"] { background: var(--ink); color: var(--surface); }
-label.chk { display: inline-flex; gap: 6px; align-items: center; color: var(--ink-2); cursor: pointer; }
-.spacer { flex: 1; }
-
-/* KPI row */
-.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; margin-bottom: 14px; }
-.tile { background: var(--surface); border: 1px solid var(--border); border-radius: var(--brand-radius); padding: 12px 14px; display: flex; flex-direction: column; gap: 2px; min-height: 104px; }
-.tile .label { color: var(--ink-2); font-size: 12px; }
-.tile .value { font-size: 28px; font-weight: 600; margin: 0; letter-spacing: -.01em; line-height: 1.15; }
-.tile .delta { font-size: 12px; margin-top: 2px; color: var(--ink-2); display: flex; gap: 6px; align-items: center; min-height: 18px; }
-.delta .up { color: var(--good); font-weight: 600; } .delta .down { color: var(--bad); font-weight: 600; } .delta .flat { color: var(--muted); font-weight: 600; }
-.tile .foot { font-size: 11px; color: var(--muted); margin-top: auto; padding-top: 4px; }
-
-/* chart card */
-.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--brand-radius); padding: 14px 16px 12px; margin-bottom: 14px; position: relative; }
-.card h2 { font-size: 15px; margin: 0; font-weight: 600; }
-.card .cap { color: var(--ink-2); font-size: 12px; margin: 2px 0 8px; }
-.chart-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; flex-wrap: wrap; }
-.legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12px; color: var(--ink-2); align-items: center; }
-.legend .sw { display: inline-block; width: 12px; height: 12px; border-radius: 2px; vertical-align: -2px; margin-right: 6px; }
-.legend .ln { display: inline-block; width: 16px; height: 2px; vertical-align: 3px; margin-right: 6px; background: var(--series-extra); }
-.legend .prov { display: inline-block; width: 12px; height: 12px; border-radius: 2px; vertical-align: -2px; margin-right: 6px; background: var(--series-above); opacity: .4; }
-.plot { position: relative; }
-.plot svg { display: block; width: 100%; height: auto; font-family: inherit; }
+html { background: var(--page); color: var(--ink); }
+body { margin: 0; font-family: var(--brand-font); font-size: 14px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+a { color: var(--link); text-underline-offset: 3px; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visible, [tabindex]:focus-visible { outline: 3px solid var(--series-above); outline-offset: 4px; }
+.wrap { width: min(100%, 1328px); margin: 0 auto; padding: 0 40px 40px; }
+.masthead { min-height: 80px; display: flex; align-items: center; justify-content: space-between; gap: 24px; border-bottom: 1px solid var(--border); }
+.wordmark { font-size: 17px; font-weight: 800; letter-spacing: .10em; }
+.meta { display: flex; align-items: center; gap: 20px; color: var(--muted); font-size: 12px; }
+#updated { font-variant-numeric: tabular-nums; }
+.ghost { display: inline-flex; align-items: center; justify-content: center; gap: 7px; background: var(--surface); color: var(--ink-2); border: 1px solid var(--border); border-radius: 8px; padding: 0 14px; height: 38px; white-space: nowrap; }
+.ghost:hover { color: var(--ink); background: var(--surface-2); }
+.theme-icon { width: 15px; height: 15px; border: 1.5px solid currentColor; border-radius: 50%; background: linear-gradient(90deg, currentColor 50%, transparent 50%); }
+.page-intro { padding: 32px 0 26px; display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; }
+h1 { font-size: clamp(25px, 3vw, 34px); line-height: 1.2; letter-spacing: -.035em; font-weight: 650; margin: 0 0 10px; }
+.sub { max-width: 65ch; color: var(--ink-2); margin: 0; font-size: 14px; }
+.badge { display: inline-flex; align-items: center; flex-shrink: 0; gap: 7px; border: 1px solid var(--border); border-radius: 6px; padding: 6px 10px; font-size: 12px; color: var(--ink-2); background: var(--surface); }
+.badge::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--warn); }
+.tabs { display: flex; gap: 24px; overflow-x: auto; scrollbar-width: thin; border-bottom: 1px solid var(--border); margin-bottom: 24px; }
+.tab { position: relative; flex-shrink: 0; background: transparent; border: 0; border-bottom: 3px solid transparent; color: var(--ink-2); padding: 12px 0 14px; min-height: 46px; font-size: 14px; white-space: nowrap; }
+.tab:hover { color: var(--ink); }
+.tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--series-above); font-weight: 700; }
+.tab:focus-visible { outline-offset: -3px; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--brand-radius); margin-bottom: 24px; min-width: 0; }
+.summary-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 24px 28px 0; }
+.summary-head h2 { margin: 0; font-size: 15px; font-weight: 600; }
+.summary-head p { margin: 0; color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+.kpis { display: grid; grid-template-columns: 1.15fr 1fr 1fr 1fr; padding: 22px 0 26px; border-bottom: 1px solid var(--border); }
+.tile { padding: 0 28px; min-width: 0; display: flex; flex-direction: column; }
+.tile + .tile { border-left: 1px solid var(--border); }
+.tile .label { color: var(--ink-2); font-size: 12px; min-height: 24px; display: flex; align-items: center; gap: 7px; }
+.tile.series-a .label::before, .tile.series-b .label::before { content: ''; width: 7px; height: 7px; border-radius: 2px; flex-shrink: 0; background: var(--series-above); }
+.tile.series-b .label::before { background: var(--series-below); }
+.tile .value { font-size: clamp(27px, 2.8vw, 36px); font-weight: 600; line-height: 1.3; letter-spacing: -.035em; font-variant-numeric: tabular-nums; margin: 4px 0 8px; }
+.tile .delta { font-size: 12px; color: var(--ink-2); display: flex; gap: 6px; align-items: baseline; flex-wrap: wrap; min-height: 20px; }
+.up { color: var(--good); } .down { color: var(--bad); } .flat { color: var(--muted); }
+.delta .up, .delta .down { font-weight: 600; }
+.tile .foot { color: var(--muted); font-size: 11px; padding-top: 8px; margin-top: auto; }
+.chart-body { padding: 24px 28px 14px; }
+.chart-head { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.card h2 { font-size: 17px; margin: 0; font-weight: 600; letter-spacing: -.015em; }
+.card .cap { color: var(--muted); font-size: 12px; margin: 4px 0 0; max-width: 75ch; }
+.chart-actions { display: flex; gap: 10px; align-items: center; flex-shrink: 0; }
+.seg { display: inline-flex; padding: 3px; border: 1px solid var(--border); border-radius: 9px; background: var(--page); }
+.seg button { background: transparent; border: 0; color: var(--ink-2); padding: 0 12px; height: 30px; border-radius: 6px; font-size: 12px; white-space: nowrap; }
+.seg button[aria-pressed="true"] { background: var(--surface-2); color: var(--ink); font-weight: 700; }
+.chart-context { display: flex; justify-content: space-between; gap: 14px; align-items: center; flex-wrap: wrap; padding: 18px 0 12px; }
+.legend { display: flex; gap: 18px; flex-wrap: wrap; font-size: 12px; color: var(--ink-2); align-items: center; }
+.legend > span { display: inline-flex; align-items: center; gap: 6px; }
+.legend .sw, .legend .prov { display: inline-block; width: 9px; height: 9px; border-radius: 2px; flex-shrink: 0; }
+.legend .ln { display: inline-block; width: 14px; height: 2px; background: var(--series-extra); }
+.legend .prov { background: var(--series-above); opacity: .4; }
+.chk { display: inline-flex; gap: 7px; align-items: center; color: var(--ink-2); cursor: pointer; font-size: 12px; }
+.chk input { accent-color: var(--series-extra); width: 15px; height: 15px; margin: 0; }
+.plot { position: relative; min-height: 280px; }
+.plot svg { display: block; width: 100%; height: auto; font-family: inherit; overflow: visible; }
 .plot text { fill: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
 .plot .lbl { fill: var(--ink); font-size: 11px; font-weight: 600; }
-.plot .grid { stroke: var(--grid); stroke-width: 1; }
+.plot .grid { stroke: var(--grid); stroke-width: 1; stroke-dasharray: 3 4; }
 .plot .base { stroke: var(--axis); stroke-width: 1; }
-.plot .hit { fill: transparent; cursor: default; }
-.plot .band.hover .bar-seg { filter: brightness(1.12); }
-.tip { position: absolute; pointer-events: none; background: var(--tip-bg); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font-size: 12px; box-shadow: 0 6px 20px rgba(0,0,0,.14); min-width: 190px; z-index: 5; display: none; }
-.tip .d { color: var(--ink-2); margin-bottom: 4px; }
-.tip .row { display: flex; justify-content: space-between; gap: 14px; }
-.tip .row .v { font-weight: 700; color: var(--ink); font-variant-numeric: tabular-nums; }
+.plot .hit { fill: transparent; cursor: crosshair; }
+.plot .hit:focus-visible { outline: none; stroke: var(--series-above); stroke-width: 1; }
+.plot .band.hover .bar-seg { filter: brightness(1.10); }
+.tip { position: absolute; pointer-events: none; background: var(--tip-bg); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; font-size: 12px; box-shadow: 0 8px 24px #00000018; width: 250px; max-width: calc(100% - 16px); z-index: 5; display: none; }
+.tip .d { color: var(--ink-2); margin-bottom: 8px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+.tip .row { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin: 4px 0; }
+.tip .row .v { font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; white-space: nowrap; }
 .tip .row .k { color: var(--ink-2); }
-.tip .key { display: inline-block; width: 10px; height: 2px; vertical-align: 3px; margin-right: 6px; }
-.tip .note { color: var(--warn); margin-top: 4px; }
-
+.tip .key { display: inline-block; width: 7px; height: 7px; border-radius: 2px; margin-right: 6px; }
+.tip .note { color: var(--warn); margin-top: 8px; }
+.section-head { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 24px 28px 18px; }
+.section-head a { font-size: 12px; white-space: nowrap; }
+.tablewrap { overflow-x: auto; scrollbar-width: thin; }
 table { width: 100%; border-collapse: collapse; font-size: 13px; }
-th, td { text-align: right; padding: 7px 8px; border-bottom: 1px solid var(--grid); font-variant-numeric: tabular-nums; white-space: nowrap; }
-th { color: var(--ink-2); font-weight: 600; font-size: 12px; }
-th:first-child, td:first-child { text-align: left; }
-.tablewrap { overflow-x: auto; }
-.share { display: inline-flex; width: 90px; height: 8px; border-radius: 2px; overflow: hidden; vertical-align: middle; margin-left: 8px; background: var(--series-below); }
+th, td { text-align: right; padding: 15px 20px; border-bottom: 1px solid var(--grid); font-variant-numeric: tabular-nums; white-space: nowrap; }
+th { color: var(--muted); font-weight: 500; font-size: 11px; background: var(--page); }
+th:first-child, td:first-child { text-align: left; padding-left: 28px; }
+th:last-child, td:last-child { padding-right: 28px; }
+tbody tr:last-child td { border-bottom: 0; }
+#overview tbody tr:hover td { background: var(--surface-2); }
+#overview tbody tr { cursor: pointer; }
+.chain-button { color: var(--ink); font-weight: 600; border: 0; padding: 4px 0; background: transparent; text-align: left; }
+.share { display: inline-flex; width: 64px; height: 5px; border-radius: 3px; overflow: hidden; vertical-align: middle; margin-left: 12px; background: var(--series-below); }
 .share i { display: block; height: 100%; background: var(--series-above); }
-tr.sel td { background: color-mix(in srgb, var(--brand-accent) 10%, transparent); }
-tbody tr { cursor: pointer; }
-
-details { color: var(--ink-2); font-size: 13px; }
+tr.sel td { background: color-mix(in srgb, var(--series-above) 8%, var(--surface)); }
+tr.sel td:first-child { box-shadow: inset 3px 0 var(--series-above); }
+.table-caption { padding: 14px 28px; border-top: 1px solid var(--border); margin: 0; color: var(--muted); font-size: 11px; }
+#dayTable { margin: 8px -28px 20px; max-height: 420px; }
+#dayTable th { position: sticky; top: 0; }
+details { border-top: 1px solid var(--border); padding: 22px 0; color: var(--ink-2); font-size: 13px; }
 summary { cursor: pointer; color: var(--ink); font-weight: 600; }
-details p, details li { margin: 6px 0; }
-.err { background: var(--surface); border: 1px solid var(--border); padding: 16px; border-radius: var(--brand-radius); color: var(--ink-2); }
+details p, details li { margin: 10px 0; max-width: 85ch; line-height: 1.65; }
+details ul { padding-left: 18px; }
+.footer { display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid var(--border); padding-top: 20px; font-size: 11px; color: var(--muted); }
+.err { background: var(--surface); border: 1px solid var(--border); padding: 24px; border-radius: var(--brand-radius); color: var(--ink-2); }
 .hidden { display: none !important; }
-@media (max-width: 640px) { .meta { text-align: left; align-items: flex-start; } .tile .value { font-size: 22px; } .tile.hero .value { font-size: 26px; } }
+@media (max-width: 1000px) {
+  .wrap { padding-right: 24px; padding-left: 24px; }
+  .tile { padding: 0 20px; }
+  .tile .delta { display: block; }
+  .tile .delta > span + span { display: block; margin-top: 2px; }
+  .tile .label { min-height: 36px; }
+}
+@media (max-width: 700px) {
+  .wrap { padding: 0 16px 24px; }
+  .masthead { min-height: 68px; gap: 12px; }
+  .meta { gap: 12px; }
+  #updated { display: none; }
+  .page-intro { padding: 24px 0 16px; align-items: flex-start; flex-direction: column; gap: 14px; }
+  .sub { font-size: 13px; }
+  .tabs { gap: 22px; margin-bottom: 18px; }
+  .summary-head { padding: 20px 20px 0; align-items: flex-start; flex-direction: column; gap: 4px; }
+  .kpis { grid-template-columns: 1fr 1fr; padding: 20px 0 0; row-gap: 20px; }
+  .tile { padding: 0 20px 18px; }
+  .tile .label { min-height: 36px; }
+  .tile:nth-child(3) { border-left: 0; }
+  .tile:nth-child(n+3) { border-top: 1px solid var(--border); padding-top: 20px; }
+  .tile .value { font-size: 29px; }
+  .tile .delta { font-size: 11px; }
+  .tile .foot { padding-top: 6px; }
+  .chart-body { padding: 20px 16px 12px; }
+  .chart-head { align-items: flex-start; flex-direction: column; gap: 16px; }
+  .chart-actions { width: 100%; justify-content: space-between; }
+  .chart-context { padding-top: 16px; }
+  .legend { gap: 10px 16px; font-size: 11px; }
+  .section-head { padding: 20px; align-items: flex-start; }
+  .section-head a { margin-top: 3px; }
+  .card h2 { font-size: 16px; }
+  .table-caption { padding: 14px 20px; }
+  #dayTable { margin-left: -16px; margin-right: -16px; }
+  .footer { flex-direction: column; gap: 6px; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; } }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header class="top">
-    <div>
-      <div class="wordmark"></div>
-      <h1>Onchain spot volume by token market cap</h1>
-      <p class="sub">Daily DEX spot volume per chain, split by whether the traded token's market cap is above or below $100M. Last 30 days and the 30-day change.</p>
+  <header>
+    <div class="masthead">
+      <div class="wordmark" aria-label="Nemesis">NEMESIS</div>
+      <div class="meta">
+        <time id="updated">Loading data…</time>
+        <button class="ghost" id="themeBtn" type="button" aria-label="Toggle dark mode"><span class="theme-icon" aria-hidden="true"></span> Theme</button>
+      </div>
     </div>
-    <div class="meta">
-      <div id="updated">Loading…</div>
-      <div class="metarow"><span class="badge" id="modeBadge">—</span><button class="ghost" id="themeBtn" type="button" aria-label="Toggle dark mode">Theme</button></div>
+    <div class="page-intro">
+      <div>
+        <h1>Onchain spot volume</h1>
+        <p class="sub">Explore DEX trading across seven chains, with daily volume split by token market cap.</p>
+      </div>
+      <span class="badge" id="modeBadge">Loading methodology</span>
     </div>
   </header>
 
-  <div id="app" class="hidden">
-    <div class="filters" role="tablist" aria-label="Chain">
-      <div class="tabs" id="tabs"></div>
-      <div class="spacer"></div>
-      <div class="seg" role="group" aria-label="Range">
-        <button type="button" data-range="30" aria-pressed="true">30 days</button>
-        <button type="button" data-range="60" aria-pressed="false">60 days</button>
+  <main id="app" class="hidden">
+    <nav class="tabs" id="tabs" role="tablist" aria-label="Select chain"></nav>
+    <section class="card" id="chainPanel" role="tabpanel" aria-labelledby="summaryTitle">
+      <div class="summary-head"><h2 id="summaryTitle">30-day overview</h2><p id="summaryWindow"></p></div>
+      <div class="kpis" id="kpis"></div>
+      <div class="chart-body">
+        <div class="chart-head">
+          <div><h2 id="chartTitle"></h2><p class="cap" id="chartCap"></p></div>
+          <div class="chart-actions">
+            <div class="seg" role="group" aria-label="Chart range">
+              <button type="button" data-range="30" aria-pressed="true">30 days</button>
+              <button type="button" data-range="60" aria-pressed="false">60 days</button>
+            </div>
+            <button class="ghost" id="tableBtn" type="button" aria-pressed="false">Table view</button>
+          </div>
+        </div>
+        <div class="chart-context">
+          <div class="legend" id="legend"></div>
+          <label class="chk hidden" id="overlayWrap"><input type="checkbox" id="overlay"> Show HyperCore orderbook</label>
+        </div>
+        <div class="plot" id="plot"><div class="tip" id="tip" role="status" aria-live="polite"></div></div>
+        <div class="tablewrap hidden" id="dayTable" tabindex="0" role="region" aria-label="Daily volume table"></div>
       </div>
-      <label class="chk hidden" id="overlayWrap"><input type="checkbox" id="overlay"> HyperCore spot orderbook (line)</label>
-      <button class="ghost" id="tableBtn" type="button" aria-pressed="false">Table view</button>
-    </div>
-
-    <div class="kpis" id="kpis"></div>
-
-    <section class="card">
-      <div class="chart-head">
-        <div><h2 id="chartTitle"></h2><p class="cap" id="chartCap"></p></div>
-        <div class="legend" id="legend"></div>
-      </div>
-      <div class="plot" id="plot"><div class="tip" id="tip" role="status" aria-live="polite"></div></div>
-      <div class="tablewrap hidden" id="dayTable"></div>
     </section>
 
-    <section class="card">
-      <h2>All chains, last 30 complete days</h2>
-      <p class="cap">Click a row to switch the chart.</p>
-      <div class="tablewrap" id="overview"></div>
+    <section class="card" aria-labelledby="comparisonTitle">
+      <div class="section-head">
+        <div><h2 id="comparisonTitle">Compare chains</h2><p class="cap">30-day totals and change versus the prior 30 days.</p></div>
+        <a href="data/volume_daily.csv" download="nemesis-volume-daily.csv">Download CSV</a>
+      </div>
+      <div class="tablewrap" id="overview" tabindex="0" role="region" aria-label="Chain comparison table"></div>
+      <p class="table-caption">Select a chain to explore its daily volume. Periods may differ when recent data is provisional.</p>
     </section>
 
-    <details>
+    <details id="methodology">
       <summary>Methodology and data quality</summary>
       <ul id="notes"></ul>
       <p id="dataNotes"></p>
-      <p><b>Total</b> per day is DefiLlama's chain DEX volume for the closed UTC day. <b>Above / below $100M</b> is assigned per trading pair by the market cap of the pair's non-quote token (stablecoin and native-asset pairs count as above); tokens with no verifiable market cap count as below and are reported as "unknown". The <b>30-day change</b> compares the trailing 30 complete days with the 30 before. Faded bars are provisional: DefiLlama had not published every venue for that day at refresh time; they are excluded from the KPIs and re-pulled on the next run. Full details in <code>ARCHITECTURE.md</code>.</p>
+      <p><b>Total volume</b> is DefiLlama’s reported DEX volume for a closed UTC day. The <b>market-cap split is estimated</b> from sampled pools. Unknown market caps and unsampled volume are currently assigned to the below-$100M bucket; where sampled volume exceeds the reference total, the split is scaled proportionally. Coverage is not an accuracy score.</p>
+      <p><b>Classification</b> uses the pair’s non-quote token. Stablecoin and native-asset pairs count as above $100M. Historical volume is grouped using the market-cap snapshot shown above, rather than each trading day’s market cap.</p>
+      <p><b>30-day change</b> compares the trailing 30 non-provisional observations with the 30 before. Faded bars mark recent provisional days, which are excluded from the summary. The chart range changes the plotted history; the summary always covers 30 days.</p>
     </details>
-  </div>
-  <div id="error" class="err hidden"></div>
+  </main>
+  <div id="error" class="err hidden" role="alert"></div>
+  <footer class="footer"><span>Nemesis research</span><span id="footerDate">USD volumes. UTC trading days.</span></footer>
 </div>
 
 <script>
@@ -223,7 +280,7 @@ details p, details li { margin: 6px 0; }
     render();
   }).catch((e) => {
     $('error').classList.remove('hidden');
-    $('error').textContent = 'Could not load data/latest.json (' + e.message + '). Serve this folder over HTTP, e.g. `python3 -m http.server`, or open the hosted dashboard.';
+    $('error').textContent = 'Volume data could not be loaded. Reload the page to try again, or use the downloadable snapshot. (' + e.message + ')';
     $('updated').textContent = '';
   });
 
@@ -232,8 +289,14 @@ details p, details li { margin: 6px 0; }
     const t = $('tabs'); t.textContent = '';
     for (const k of ORDER) {
       const c = state.data.chains[k]; if (!c) continue;
-      const b = el('button', 'tab', c.display); b.type = 'button'; b.setAttribute('role', 'tab'); b.dataset.chain = k;
+      const b = el('button', 'tab', c.display); b.type = 'button'; b.setAttribute('role', 'tab'); b.setAttribute('aria-controls', 'chainPanel'); b.id = 'tab-' + k; b.dataset.chain = k;
       b.addEventListener('click', () => { state.chain = k; render(); });
+      b.addEventListener('keydown', (e) => {
+        const buttons = [...t.querySelectorAll('button')], i = buttons.indexOf(b);
+        const next = e.key === 'ArrowRight' ? (i + 1) % buttons.length : e.key === 'ArrowLeft' ? (i - 1 + buttons.length) % buttons.length : e.key === 'Home' ? 0 : e.key === 'End' ? buttons.length - 1 : null;
+        if (next == null) return;
+        e.preventDefault(); state.chain = buttons[next].dataset.chain; render(); buttons[next].focus();
+      });
       t.appendChild(b);
     }
     document.querySelectorAll('.seg [data-range]').forEach((b) => b.addEventListener('click', () => { state.range = Number(b.dataset.range); render(); }));
@@ -245,12 +308,17 @@ details p, details li { margin: 6px 0; }
   function render() {
     const d = state.data; if (!d) return;
     const c = d.chains[state.chain];
-    document.querySelectorAll('.tab').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.chain === state.chain)));
+    document.querySelectorAll('.tab').forEach((b) => { const selected = b.dataset.chain === state.chain; b.setAttribute('aria-selected', String(selected)); b.tabIndex = selected ? 0 : -1; });
+    $('chainPanel').setAttribute('aria-labelledby', 'tab-' + state.chain);
     document.querySelectorAll('.seg [data-range]').forEach((b) => b.setAttribute('aria-pressed', String(Number(b.dataset.range) === state.range)));
     $('overlayWrap').classList.toggle('hidden', !(c.days.some((x) => x.extra && x.extra.hypercore_spot_orderbook != null)));
     $('tableBtn').setAttribute('aria-pressed', String(state.table)); $('tableBtn').textContent = state.table ? 'Chart view' : 'Table view';
-    $('updated').textContent = 'Updated ' + new Date(d.generated_at).toUTCString().replace(':00 GMT', ' UTC').replace(' GMT', ' UTC') + ' · refreshes daily at 14:00 UTC';
-    $('modeBadge').textContent = c.mode === 'estimate' ? 'DefiLlama totals · sampled split' : 'exact (Dune)';
+    const updated = new Date(d.generated_at);
+    const updatedLabel = updated.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }) + ', ' + updated.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: 'UTC' }) + ' UTC';
+    $('updated').textContent = 'Data updated ' + updatedLabel;
+    $('updated').dateTime = d.generated_at;
+    $('footerDate').textContent = 'Data updated ' + updatedLabel + '. Volumes in USD.';
+    $('modeBadge').textContent = c.mode === 'estimate' ? 'Market-cap split estimated' : c.mode === 'exact' ? 'Trade-level split' : 'Total volume only';
 
     renderKpis(c);
     renderChart(c);
@@ -261,6 +329,8 @@ details p, details li { margin: 6px 0; }
 
   function renderKpis(c) {
     const k = c.kpi;
+    $('summaryTitle').textContent = c.display + ' overview';
+    $('summaryWindow').textContent = k.window ? fmtDate(k.window.from) + ' – ' + fmtDate(k.window.to) + ' (UTC), 30-day summary' : '30-day summary';
     const box = $('kpis'); box.textContent = '';
     const tile = (label, value, delta, foot) => {
       const t = el('div', 'tile');
@@ -273,10 +343,10 @@ details p, details li { margin: 6px 0; }
       t.appendChild(el('div', 'foot', foot || ''));
       box.appendChild(t); return t;
     };
-    tile('30-day spot volume · ' + c.display, fmtUsd(k.total_30d), k.change_30d.total, k.window ? fmtDate(k.window.from) + ' – ' + fmtDate(k.window.to) + ' (UTC)' : '');
-    tile('Tokens ≥ $100M market cap', fmtUsd(k.above_30d), k.change_30d.above_100m, k.share_above_30d != null ? fmtPct(k.share_above_30d) + ' of volume' : '');
-    tile('Tokens < $100M market cap', fmtUsd(k.below_30d), k.change_30d.below_100m, k.share_above_30d != null ? fmtPct(1 - k.share_above_30d) + ' of volume' : '');
-    tile('Last day vs 30 days earlier', fmtPct(k.change_30d_point.total, true), undefined, 'point-to-point change of the daily total');
+    tile('Total spot volume', fmtUsd(k.total_30d), k.change_30d.total, 'Reported by DefiLlama');
+    tile('Market cap ≥ $100M', fmtUsd(k.above_30d), k.change_30d.above_100m, k.share_above_30d != null ? fmtPct(k.share_above_30d) + ' of volume (estimated)' : '').classList.add('series-a');
+    tile('Market cap < $100M', fmtUsd(k.below_30d), k.change_30d.below_100m, k.share_above_30d != null ? fmtPct(1 - k.share_above_30d) + ' of volume (estimated)' : '').classList.add('series-b');
+    tile('Daily volume change', fmtPct(k.change_30d_point.total, true), undefined, 'Last complete day vs 30 days earlier');
   }
 
   // ---------- chart ----------
@@ -284,8 +354,8 @@ details p, details li { margin: 6px 0; }
     const all = c.days;
     const rows = all.slice(-state.range);
     const complete = rows.filter((r) => !r.provisional);
-    $('chartTitle').textContent = 'Daily DEX spot volume · ' + c.display;
-    $('chartCap').textContent = 'Each bar is one UTC day. Stack: volume of tokens ≥ $100M market cap (bottom) and < $100M (top). ' + (c.last_complete_day ? 'Last complete day ' + fmtDate(c.last_complete_day) + '.' : '');
+    $('chartTitle').textContent = 'Daily trading volume';
+    $('chartCap').textContent = rows.length ? fmtDate(rows[0].date) + ' – ' + fmtDate(rows.at(-1).date) + ' (UTC). ' + (c.last_complete_day ? 'Last complete day: ' + fmtDate(c.last_complete_day) + '.' : '') : 'No daily observations available.';
     const legend = $('legend'); legend.textContent = '';
     const li = (cls, label) => { const s = el('span'); const sw = el('span', cls); sw.style.background = cls === 'sw' ? '' : ''; s.appendChild(sw); s.appendChild(document.createTextNode(label)); return s; };
     const swA = li('sw', 'Tokens ≥ $100M'); swA.querySelector('.sw').style.background = 'var(--series-above)'; legend.appendChild(swA);
@@ -299,12 +369,12 @@ details p, details li { margin: 6px 0; }
     if (state.table) { renderDayTable(rows, tableWrap); }
 
     // geometry
-    const W = Math.max(560, plot.clientWidth || 900), H = 340, m = { l: 60, r: 30, t: 26, b: 30 };
+    const W = Math.max(200, plot.clientWidth || 900), H = W < 500 ? 280 : 330, m = { l: W < 500 ? 42 : 52, r: 12, t: 24, b: 34 };
     const pw = W - m.l - m.r, ph = H - m.t - m.b, n = rows.length;
     const maxV = Math.max(1, ...rows.map((r) => r.total), ...(hasOverlay ? rows.map((r) => (r.extra && r.extra.hypercore_spot_orderbook) || 0) : [0]));
     const step = niceStep(maxV / 4), top = Math.ceil(maxV / step) * step;
     const y = (v) => m.t + ph - (v / top) * ph;
-    const band = pw / n, bw = Math.min(24, Math.max(4, band * 0.7));
+    const band = pw / Math.max(1, n), bw = Math.min(25, band * (n > 40 ? 0.72 : 0.68));
     const old = plot.querySelector('svg'); if (old) old.remove();
     const svg = svgEl('svg', { viewBox: `0 0 ${W} ${H}`, width: W, height: H, role: 'img', 'aria-label': 'Stacked daily volume chart' });
     // grid + y ticks
@@ -322,16 +392,17 @@ details p, details li { margin: 6px 0; }
       const base = y(0), gap = hA > 0 && hB > 0 ? 2 : 0;
       const op = r.provisional ? 0.4 : 1;
       if (hA > 0) { const topSeg = hB <= 0; g.appendChild(svgEl('path', { d: topSeg ? roundedTop(x, base - hA, bw, hA, 4) : rect(x, base - hA, bw, hA), fill: 'var(--series-above)', class: 'bar-seg', opacity: op })); }
-      if (hB > 0) { const yb = base - hA - gap - hB; g.appendChild(svgEl('path', { d: roundedTop(x, yb, bw, hB, 4), fill: hasSplit ? 'var(--series-below)' : 'var(--muted)', class: 'bar-seg', opacity: op })); }
+      if (hB > 0) { const yb = base - hA - hB; g.appendChild(svgEl('path', { d: roundedTop(x, yb, bw, Math.max(0, hB - Math.min(gap, hB / 2)), 3), fill: hasSplit ? 'var(--series-below)' : 'var(--muted)', class: 'bar-seg', opacity: op })); }
       // hit target: the whole band, full height
       const hit = svgEl('rect', { x: m.l + i * band, y: m.t, width: band, height: ph, class: 'hit', tabindex: 0, 'aria-label': fmtDate(r.date) + ' total ' + fmtUsd(r.total) });
-      const show = () => { g.classList.add('hover'); tip.style.display = 'block'; fillTip(r, hasSplit); const px = ((m.l + i * band + band / 2) / W) * plot.clientWidth; const left = Math.min(Math.max(8, px - 95), plot.clientWidth - 200); tip.style.left = left + 'px'; tip.style.top = '8px'; };
+      const show = () => { g.classList.add('hover'); tip.style.display = 'block'; fillTip(r, hasSplit); const px = ((m.l + i * band + band / 2) / W) * plot.clientWidth; const left = Math.max(8, Math.min(px - tip.offsetWidth / 2, plot.clientWidth - tip.offsetWidth - 8)); tip.style.left = left + 'px'; tip.style.top = '8px'; };
       const hide = () => { g.classList.remove('hover'); tip.style.display = 'none'; };
       hit.addEventListener('pointerenter', show); hit.addEventListener('pointerleave', hide); hit.addEventListener('focus', show); hit.addEventListener('blur', hide);
       svg.appendChild(g); svg.appendChild(hit);
-      // x labels: first, last and every ~5th
-      const every = n > 40 ? 10 : 5;
-      if (i === 0 || i === n - 1 || (i % every === 0 && i < n - 3)) { const t = svgEl('text', { x: m.l + i * band + band / 2, y: H - 10, 'text-anchor': 'middle' }); t.textContent = fmtDate(r.date); svg.appendChild(t); }
+      // Keep dates readable at their rendered size, including the right-aligned final label.
+      const labelIntervals = Math.min(6, Math.max(2, Math.floor(pw / 90)));
+      const every = Math.max(1, Math.ceil((n - 1) / labelIntervals));
+      if (i === 0 || i === n - 1 || (i % every === 0 && n - 1 - i >= every * 0.8)) { const t = svgEl('text', { x: m.l + i * band + band / 2, y: H - 10, 'text-anchor': i === 0 ? 'start' : i === n - 1 ? 'end' : 'middle' }); t.textContent = fmtDate(r.date); svg.appendChild(t); }
     });
     // overlay line (same axis, same unit)
     if (hasOverlay) {
@@ -345,18 +416,20 @@ details p, details li { margin: 6px 0; }
     }
     // selective direct label: the last complete day's total
     const lastC = complete[complete.length - 1];
-    if (lastC) { const i = rows.indexOf(lastC); const t = svgEl('text', { x: m.l + i * band + band / 2, y: y(lastC.total) - 8, 'text-anchor': 'middle', class: 'lbl' }); t.textContent = fmtUsd(lastC.total); svg.appendChild(t); }
+    if (lastC) { const i = rows.indexOf(lastC); const t = svgEl('text', { x: m.l + i * band + band / 2, y: y(lastC.total) - 8, 'text-anchor': i >= n - 2 ? 'end' : 'middle', class: 'lbl' }); t.textContent = fmtUsd(lastC.total); svg.appendChild(t); }
+    tip.style.display = 'none';
     plot.appendChild(svg);
 
     // data notes (methodology section)
-    const q = state.data.quality.per_chain[state.chain] || {}, k = c.kpi;
-    $('dataNotes').textContent = c.display + ': totals are DefiLlama\u2019s; the split is measured on pools covering ' + fmtPct(q.coverage_30d) + ' of the last 30 days\u2019 volume and the remainder is counted as below $100M' + (q.unknown_share_30d ? '; ' + fmtPct(q.unknown_share_30d) + ' of sampled volume had no verifiable market cap' : '') + (k.crosscheck_same_window && k.crosscheck_same_window.match ? '; the 30-day change matches DefiLlama\u2019s published figure.' : '.');
+    const q = state.data.quality.per_chain[state.chain] || {};
+    $('dataNotes').textContent = c.display + ': sampled / reported volume is ' + fmtPct(q.coverage_30d) + '. Unknown market caps represent ' + fmtPct(q.unknown_share_30d) + ' of sampled volume. Ratios above 100% indicate differences between data sources.';
+
   }
 
   function fillTip(r, hasSplit) {
     const tip = $('tip'); tip.textContent = '';
     tip.appendChild(el('div', 'd', fmtDate(r.date) + ' (UTC)' + (r.provisional ? ' · provisional' : '')));
-    const row = (label, val, color) => { const d = el('div', 'row'); const k = el('span', 'k'); if (color) { const key = el('span', 'key'); key.style.background = color; k.appendChild(key); } k.appendChild(document.createTextNode(label)); d.appendChild(el('span', 'v', val)); d.appendChild(k); tip.appendChild(d); };
+    const row = (label, val, color) => { const d = el('div', 'row'); const k = el('span', 'k'); if (color) { const key = el('span', 'key'); key.style.background = color; k.appendChild(key); } k.appendChild(document.createTextNode(label)); d.appendChild(k); d.appendChild(el('span', 'v', val)); tip.appendChild(d); };
     row('Total', fmtUsd(r.total));
     if (hasSplit) { row('≥ $100M', fmtUsd(r.above_100m) + ' (' + fmtPct(r.above_100m / r.total) + ')', 'var(--series-above)'); row('< $100M', fmtUsd(r.below_100m) + ' (' + fmtPct(r.below_100m / r.total) + ')', 'var(--series-below)'); }
     if (r.extra && r.extra.hypercore_spot_orderbook != null && state.overlay) row('HyperCore orderbook', fmtUsd(r.extra.hypercore_spot_orderbook), 'var(--series-extra)');
@@ -380,13 +453,13 @@ details p, details li { margin: 6px 0; }
     for (const key of ORDER) {
       const c = d.chains[key]; if (!c) continue; const k = c.kpi;
       const tr = el('tr'); if (key === state.chain) tr.className = 'sel';
-      tr.appendChild(el('td', null, c.display));
+      const chainCell = el('td'); const chainButton = el('button', 'chain-button', c.display); chainButton.type = 'button'; chainButton.setAttribute('aria-label', 'View ' + c.display + ' volume'); if (key === state.chain) chainButton.setAttribute('aria-current', 'true'); chainCell.appendChild(chainButton); tr.appendChild(chainCell);
       tr.appendChild(el('td', null, fmtUsd(k.total_30d)));
       const sh = el('td', null, fmtPct(k.share_above_30d)); const bar = el('span', 'share'); const fill = el('i'); fill.style.width = ((k.share_above_30d || 0) * 100) + '%'; bar.appendChild(fill); bar.title = 'blue = ≥ $100M, orange = < $100M'; sh.appendChild(bar); tr.appendChild(sh);
       tr.appendChild(el('td', null, fmtPct(k.change_30d.total, true)));
       tr.appendChild(el('td', null, fmtPct(k.change_30d.above_100m, true)));
       tr.appendChild(el('td', null, fmtPct(k.change_30d.below_100m, true)));
-      tr.addEventListener('click', () => { state.chain = key; render(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+      tr.addEventListener('click', () => { state.chain = key; render(); $('tab-' + key).focus({ preventScroll: true }); window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' }); });
       tb.appendChild(tr);
     }
     t.appendChild(tb); wrap.appendChild(t);
