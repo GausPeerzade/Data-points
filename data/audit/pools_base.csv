@@ -1,0 +1,233 @@
+pool,name,dex,base_id,quote_id,subject_id,subject_cap,bucket,reason,h24,vol_30d
+0x5a74ea01e29115bdd633ed7559802ddbdcc600ba22a778b6d200893c2e7a2690,"BSW / USAD",uniswap-v4-base,,lydia-coin,BSW,4918177,below,min_cap_of_two:gt_fdv,102449425,4422999977
+0x855fbdefe8ebb7830713b4327d044269c7fe9d7c,"FLAP / USDC",aerodrome-slipstream-3,,usd-coin,FLAP,61100225,below,single_subject:gt_fdv,54954007,54943305
+0x6c561b446416e1a00e8e93e221854d6ea4171372,"WETH / USDC 0.3%",uniswap-v3-base,weth,usd-coin,,,above,both_quote,44576559,1897248212
+0x3fe04a59ebd38cf06080a6f60a98d124eb59392a,"WETH / USDC 0.05%",aerodrome-slipstream-3,weth,usd-coin,,,above,both_quote,40295348,1528623191
+0xc2a13a8cdf4c3c6c86fdd37b761381a5c2a85e8c,"Cybercab / USDC",aerodrome-slipstream-3,,usd-coin,Cybercab,48418313,below,single_subject:gt_fdv,36416776,0
+0x42d4a22cad0f5a49681a5715ce994af73a43b76b,"cbBTC / WETH 0.05%",aerodrome-slipstream-3,coinbase-wrapped-btc,weth,,,above,both_quote,34227168,2158117496
+0x160d7e9d948b16c163332a277b393c288408eb12,"cbBTC / USDC 0.05%",aerodrome-slipstream-3,coinbase-wrapped-btc,usd-coin,,,above,both_quote,30258660,1084034720
+0x72ab388e2e2f6facef59e3c3fa2c4e29011c2d38,"WETH / USDC 0.01%",pancakeswap-v3-base,weth,usd-coin,,,above,both_quote,28453134,1317851826
+0xc211e1f853a898bd1302385ccde55f33a8c4b3f3,"cbBTC / WETH 0.01%",pancakeswap-v3-base,coinbase-wrapped-btc,weth,,,above,both_quote,25787217,1417303851
+0x7c7420dd105e2779316423ba3e973f434315efa9,"cbBTC / WETH 0.009%",aerodrome-slipstream-3,coinbase-wrapped-btc,weth,,,above,both_quote,22460521,709790589
+0xb2cc224c1c9fee385f8ad6a55b4d94e92359dc59,"WETH / USDC 0.05%",aerodrome-slipstream,weth,usd-coin,,,above,both_quote,21299234,899201828
+0x7aea2e8a3843516afa07293a10ac8e49906dabd1,"cbBTC / WETH 0.05%",uniswap-v3-base,coinbase-wrapped-btc,weth,,,above,both_quote,18917849,689243643
+0x78fa9fb7a76c8ea204754a8d4ff301aa29935e8e,"CP / USDC",aerodrome-slipstream-3,cluster-protocol,usd-coin,cluster-protocol,43956296,below,single_subject:cg_mcap,15092854,26678753
+0x4e962bb3889bf030368f56810a9c96b83cb3e778,"cbBTC / USDC 0.05%",aerodrome-slipstream,coinbase-wrapped-btc,usd-coin,,,above,both_quote,14343236,765308697
+0xb94b22332abf5f89877a14cc88f2abc48c34b3df,"cbBTC / USDC 0.01%",pancakeswap-v3-base,coinbase-wrapped-btc,usd-coin,,,above,both_quote,14008584,300516784
+0xd0b53d9277642d899df5c87a3966a349a798f224,"USDC / WETH 0.05%",uniswap-v3-base,usd-coin,weth,,,above,both_quote,13735280,419792478
+0x1a812b30ccd8756562081f9ed9124aecc1746144,"18932 / USDC",aerodrome-slipstream-3,,usd-coin,18932,5043315,below,single_subject:gt_fdv,12190623,12192566
+0xf2e3edace061f8ce69d4acb0faa57259346e283e,"闪迪股票 / USDC",aerodrome-slipstream-3,,usd-coin,闪迪股票,1981743,below,single_subject:gt_fdv,11911008,0
+0xfbb6eed8e7aa03b138556eedaf5d271a5e1e43ef,"cbBTC / USDC 0.05%",uniswap-v3-base,coinbase-wrapped-btc,usd-coin,,,above,both_quote,10313801,259617680
+0x811ff7582f20b5371c3d74bf5f5c5e0d78e2b349,"MEGA / ECT",uniswap-v2-base,,,MEGA,,unknown,gt_fdv_only_above_threshold,9123412,182399258
+0x09d333425f1279a0876a9badc8e35e7dfe9e3655,"kCAD / kUSD 0.05%",uniswap-v3-base,,,kCAD,,unknown,gt_fdv_only_above_threshold,9047010,210888241
+0xa41bc0affba7fd420d186b84899d7ab2ac57fcd1,"USDT / USDC 0.01%",aerodrome-slipstream,tether,usd-coin,,,above,both_quote,8293119,154704035
+0x0392b12a1ceb0cd13af5ea448cf5586ea609852d,"ZEN / WETH 0.15%",aerodrome-slipstream,zencash,weth,zencash,132800648,above,single_subject:cg_mcap,7678133,39235806
+0xc02e92d0098c53659e216323cb174eabebb8d4de,"MEME / USDC",aerodrome-slipstream-3,,usd-coin,MEME,,unknown,gt_fdv_only_above_threshold,7561777,7561777
+0x853f5f1b92b16714fe6cda67caad0856b83c7ab9,"NVDAc / USDC 0.034%",aerodrome-slipstream-3,nvidia-coinbase-tokenized-stock,usd-coin,nvidia-coinbase-tokenized-stock,3181500,below,single_subject:gt_mcap,6723145,106399852
+0x8324ed7661101d312f779cd93a738fc647202865,"kJPY / kUSD 0.05%",uniswap-v3-base,,,kJPY,,unknown,gt_fdv_only_above_threshold,6557149,421031098
+0x3e66e55e97ce60096f74b7c475e8249f2d31a9fb,"USDC / cbBTC 1%",aerodrome-slipstream,usd-coin,coinbase-wrapped-btc,,,above,both_quote,6554811,167577899
+0xdfe5f275020def30993f042174fc2d335678b626,"AERO / cbBTC 0.6%",aerodrome-slipstream,aerodrome-finance,coinbase-wrapped-btc,aerodrome-finance,509966171,above,single_subject:cg_mcap,5237990,100178927
+0x1131db5977242a03ebead1acd18f80a9a29e5922,"SOL / USDC 0.017%",aerodrome-slipstream-3,solana,usd-coin,,,above,both_quote,4755528,184089054
+0xf79478d5a6bae4546f7e489e80b2fc690b558944,"Basecat / WETH 1%",uniswap-v3-base,basecat,weth,basecat,58271158,below,single_subject:cg_mcap,4568893,62406398
+0xb4cb800910b228ed3d0834cf79d697127bbb00e5,"WETH / USDC 0.01%",uniswap-v3-base,weth,usd-coin,,,above,both_quote,4525998,161196715
+0xeaf57753bc382e0324a1d43f72e7027705a2273e,"METAc / USDC 0.07%",aerodrome-slipstream-3,meta-coinbase-tokenized-stock,usd-coin,meta-coinbase-tokenized-stock,1365112,below,single_subject:gt_mcap,4091658,41155456
+0xa3b1e3f9747065e2073722ff4c9027d3ea4994f0,"AAPL / USDC 0.012%",aerodrome-slipstream-3,apple-coinbase-tokenized-stock,usd-coin,apple-coinbase-tokenized-stock,1996263,below,single_subject:gt_mcap,3737561,42741944
+0xe846373c1a92b167b4e9cd5d8e4d6b1db9e90ec7,"EURC / USDC 0.05%",aerodrome-slipstream,euro-coin,usd-coin,,,above,both_quote,3600158,125196267
+0x12d76c5c8ec8edffd3c143995b0aa43fe44a6d71eb9113796272909e54b8e078,"cbBTC / USDC 0.05%",uniswap-v4-base,coinbase-wrapped-btc,usd-coin,,,above,both_quote,3414592,132555692
+0xb1987cad1682841b4b641d50e520777ec5ab5542,"GOOGLc / USDC 0.05%",aerodrome-slipstream-3,alphabet-coinbase-tokenized-stock,usd-coin,alphabet-coinbase-tokenized-stock,2071599,below,single_subject:gt_mcap,3289428,43441772
+0x8bb9eaf3c5a906d20c4cc10ea2f73a3ac2d5d41a,"cbETH / cbBTC 0.05%",aerodrome-slipstream-2,coinbase-wrapped-staked-eth,coinbase-wrapped-btc,,,above,both_quote,3231671,97012907
+0xf1cacd7e005b9337c58aae77bc88d93c635cdf4d,"PLAY / USDC 0.01%",pancakeswap-v3-base,playsout,usd-coin,playsout,13185879,below,single_subject:gt_mcap,3203003,23629213
+0x9785ef59e2b499fb741674ecf6faf912df7b3c1b,"USDT / WETH 0.05%",aerodrome-slipstream,tether,weth,,,above,both_quote,3157256,138333325
+0x4e506648d493c8870f55e870480f92f2f33ece51,"AERO / WETH 0.3%",aerodrome-slipstream-3,aerodrome-finance,weth,aerodrome-finance,509966171,above,single_subject:cg_mcap,3143327,76530299
+0x47f9e291bb766fc307ad7bba4f29f3eab6a97101,"ZEN / cbBTC 0.25%",aerodrome-slipstream,zencash,coinbase-wrapped-btc,zencash,132800648,above,single_subject:cg_mcap,3102466,12501143
+0xdde22a4e3b7de5f63a7024f0bc20ebbcb797e376d4747ce68d3d45b54ccd7a4c,"Basedog / WETH 0.01%",uniswap-v4-base,,weth,Basedog,289517,below,single_subject:gt_fdv,3022971,3022971
+0xf39b7c34be147f5dc1bc374f27af2e9f03ad3113,"EURC / USDC 0.007%",aerodrome-slipstream-3,euro-coin,usd-coin,,,above,both_quote,2957970,141960303
+0xaa5fe7dcc07dcb8b7afcd1b93874e7cb1e0ab50b,"EURC / WETH 0.05%",aerodrome-slipstream-3,euro-coin,weth,,,above,both_quote,2814956,111413095
+0x2fbe93bf7177596c5d04675bdcef7bacaf98bd954dc26829fcda39f122239459,"ETH / cbBTC 0.05%",uniswap-v4-base,ethereum,coinbase-wrapped-btc,,,above,both_quote,2802747,53528387
+0x74f72788f4814d7ff3c49b44684aa98eee140c0e,"msETH / WETH 0.05%",aerodrome-slipstream,metronome-synth-eth,weth,metronome-synth-eth,25542215,below,single_subject:gt_mcap,2799529,29431146
+0x0cd99f732718c6063d51d1d4fdbc1da3dc95b62026ba0b4414cd015c92880933,"SEX / WETH 0.01%",uniswap-v4-base,,weth,SEX,7884,below,single_subject:gt_fdv,2795268,2393618
+0x70acdf2ad0bf2402c957154f944c19ef4e1cbae1,"cbBTC / WETH 0.05%",aerodrome-slipstream,coinbase-wrapped-btc,weth,,,above,both_quote,2749138,100688923
+0xb775272e537cc670c65dc852908ad47015244eaf,"WETH / USDC 0.05%",pancakeswap-v3-base,weth,usd-coin,,,above,both_quote,2705074,83630064
+0xd30b9fa98713425c0302593d7f8f094be31e9710,"USDT / USDC 0.05%",quickswap-v4-base,tether,usd-coin,,,above,both_quote,2575868,16637550
+0xb5f0b4ae66c14f7efaa9aa1468e8fc536a3e288c,"MORPHO / WETH 0.3%",aerodrome-slipstream,morpho,weth,morpho,1752888034,above,single_subject:cg_mcap,2529609,53007132
+0xccfa472815563ff9eb2de95c7b2be1ccf91f7f31,"SOL / cbBTC 0.005%",aerodrome-slipstream-3,solana,coinbase-wrapped-btc,,,above,both_quote,2408088,153762521
+0x6cdcb1c4a4d1c3c6d054b27ac5b77e89eafb971d,"AERO / USDC",aerodrome-base,aerodrome-finance,usd-coin,aerodrome-finance,509966171,above,single_subject:cg_mcap,2059419,55601018
+0x2f42b291ab2ab2adf66a7a7fe7432bbea715c3c395c7bc767a1f5206748c4174,"BLUE / WETH 0.01%",uniswap-v4-base,,weth,BLUE,423355,below,single_subject:gt_fdv,2043218,1471374
+0x4e392fbfe4d0557c82d2f97f02ec39daa31516dd,"WETH / USDC 0.008%",aerodrome-slipstream-3,weth,usd-coin,,,above,both_quote,2012917,74983826
+0xa135b59fe221c0c8d441294f97f96fbc37bc9fbe,"VVV / WETH 0.3%",aerodrome-slipstream-3,venice-token,weth,venice-token,856442890,above,single_subject:cg_mcap,2004744,48731706
+0x29183f918920a2aef0115a9c7374945589968aea,"SOSO / USDC 0.01%",uniswap-v3-base,sosovalue,usd-coin,sosovalue,106122116,above,single_subject:cg_mcap,2003908,50529536
+0x215b2146c3164aba3f5b18e8619b737c7f7dd11e5ba693646dcd9a336c5a30ba,"Basecat / ETH",o1-launchpad,basecat,ethereum,basecat,58271158,below,single_subject:cg_mcap,1984840,85767740
+0x01784ef301d79e4b2df3a21ad9a536d4cf09a5ce,"VVV / WETH",aerodrome-base,venice-token,weth,venice-token,856442890,above,single_subject:cg_mcap,1831152,27546664
+0xd7338b6f338da54b922bbbc6fbe3efedd5ce35fa,"FLOCK / USDC 0.05%",aerodrome-slipstream,flock-2,usd-coin,flock-2,24211326,below,single_subject:cg_mcap,1828527,10384906
+0x18816b0a9ffba7fae928ed0315c756ffe9fba1eb6eaf18236ce82c700ddd20d7,"Basecat / ETH 0.2%",uniswap-v4-base,basecat,ethereum,basecat,58271158,below,single_subject:cg_mcap,1791977,9655294
+0x83f3aca29bc79b048b99c56013475570acc97ccf,"ELSA / USDC 0.01%",pancakeswap-v3-base,elsa,usd-coin,elsa,12063544,below,single_subject:gt_mcap,1785442,7476783
+0x861a2922be165a5bd41b1e482b49216b465e1b5f,"wstETH / WETH 0.3%",aerodrome-slipstream,ethereum,weth,,,above,both_quote,1781719,45082383
+0x0bf58fe0fac935ac69595c19b12ba0d75e3f8c0e,"SPCXc / USDC 0.009%",aerodrome-slipstream-3,,usd-coin,SPCXc,,unknown,not_on_coingecko,1761673,1313736
+0xda47bae265ff6b06b1df25c29a36cfc744db098712473c0311cc2b90d43f97f4,"SEX / WETH 0.01%",uniswap-v4-base,,weth,SEX,148700,below,single_subject:gt_fdv,1712770,1712770
+0x9e48d016ee76cf53e2de8dc8058c7549c8c202df,"HYPE / WETH 0.05%",aerodrome-slipstream-2,,weth,HYPE,2080209,below,single_subject:gt_fdv,1711147,63798651
+0x9d14ff91ae2c6e3d1a760542248b6c7f206894b0,"cbBTC / USDC 0.021%",aerodrome-slipstream-3,coinbase-wrapped-btc,usd-coin,,,above,both_quote,1617076,60386069
+0xd9fe2e7b30bfa41fbf02a53f9fb8d92786c9434e06981b09d6160ee3144123ff,"NEMIND / WETH 0.01%",uniswap-v4-base,,weth,NEMIND,24997,below,single_subject:gt_fdv,1586484,1586696
+0x417e4ce8bc801ee76790a7a0b3a5ea614048cb1c78a72d870030098aabcc4339,"SLINK / WETH 0.01%",uniswap-v4-base,,weth,SLINK,55420,below,single_subject:gt_fdv,1564693,638638
+0x85900924bd09898c73ef8b931691d069a943e54a,"halo / VIRTUAL",aerodrome-base,halo-4,virtual-protocol,halo-4,18591805,below,min_cap_of_two:cg_mcap,1543200,7225282
+0x8930762cccc36040f25fc29db58a8ec22e872a347260d992f39666a3cdce7e5a,"Basecat / USDC 0.9%",uniswap-v4-base,basecat,usd-coin,basecat,58271158,below,single_subject:cg_mcap,1517075,42322917
+0xe9837461342ba0cdd404d068c195f5b695cb42fc,"kPKR / kUSD 0.05%",uniswap-v3-base,,,kPKR,49762044,below,min_cap_of_two:gt_fdv,1509241,180069498
+0x41084f2d35b54dc0d070fbf76aa52c46f5d9c7e36c163252064b6b184d9429d9,"BLUECHIP / NVDAc",o1-launchpad,,nvidia-coinbase-tokenized-stock,nvidia-coinbase-tokenized-stock,3181500,below,min_cap_of_two:gt_mcap,1496741,22638824
+0xbd3443c9604daee7565db4f7e5edbfc353be3c4f,"kXOF / kUSD 0.05%",uniswap-v3-base,,,kXOF,49886349,below,min_cap_of_two:gt_fdv,1490414,31044443
+0x1c79441bf4c8946ce27269f203592069161b8259,"kXAF / kUSD 0.05%",uniswap-v3-base,,,kXAF,49944667,below,min_cap_of_two:gt_fdv,1490414,31702646
+0xb1383dc47d9971fc999c3a9088f79e744b376e97,"cbETH / WETH 0.05%",hydrex-integral,coinbase-wrapped-staked-eth,weth,,,above,both_quote,1457570,47193961
+0x7ec6c9d993d9832aa654593f2dbc21303650bc6c,"VVV / WETH 0.05%",aerodrome-slipstream,venice-token,weth,venice-token,856442890,above,single_subject:cg_mcap,1446794,51485294
+0x9520e1a3bfd86da6c1e9e5ee4b9c2f11c413358f,"VIRTUAL / WETH 0.016%",aerodrome-slipstream-3,virtual-protocol,weth,virtual-protocol,451055967,above,single_subject:cg_mcap,1441941,54689864
+0x15cebc6a0701da8f3e0f3866bec598df287a3d516d3be996c5203c5781c2d74a,"plumber / WETH 0.01%",uniswap-v4-base,,weth,plumber,31173,below,single_subject:gt_fdv,1413978,1413978
+0xf3d8cfb5b74e41457a27db6aaa23b2ce5f0a373e,"kILS / kUSD 0.05%",uniswap-v3-base,,,kILS,47931547,below,min_cap_of_two:gt_fdv,1412749,284720810
+0x3f0296bf652e19bca772ec3df08b32732f93014a,"VIRTUAL / WETH 0.05%",aerodrome-slipstream,virtual-protocol,weth,virtual-protocol,451055967,above,single_subject:cg_mcap,1367191,85505993
+0x63d8d458d63d18a7a5941575105f5c6521170854d85c141de96afdeaaa803776,"MOONBASE / SPCXc",o1-launchpad,,,MOONBASE,1294254,below,min_cap_of_two:gt_fdv,1361297,951052
+0xb90fe999be6869af0afc557dccfbe169ea3403d6,"cbXRP / WETH 0.017%",aerodrome-slipstream-3,coinbase-wrapped-xrp,weth,coinbase-wrapped-xrp,172529597,above,single_subject:gt_mcap,1359781,77074444
+0xe070797535b13431808f8fc81fdbe7b41362960ed0b55bc2b6117c49c51b7eb9,"ETH / USDC 0.3%",uniswap-v4-base,ethereum,usd-coin,,,above,both_quote,1325271,30765658
+0xc200f21efe67c7f41b81a854c26f9cda80593065,"VIRTUAL / WETH 0.7%",aerodrome-slipstream,virtual-protocol,weth,virtual-protocol,451055967,above,single_subject:cg_mcap,1302302,46799704
+0xef7e596aef9e4c6301b4d1f1e88f8ffe8c306222,"DRV / WETH 0.8%",aerodrome-slipstream-3,derive,weth,derive,190580783,above,single_subject:cg_mcap,1278646,10902998
+0x82321f3beb69f503380d6b233857d5c43562e2d0,"AERO / WETH 1%",aerodrome-slipstream,aerodrome-finance,weth,aerodrome-finance,509966171,above,single_subject:cg_mcap,1250050,20719664
+0xee4d755412da467c3358082cb74227fdf34d3c9b4279b3394f122d363948cd05,"MOONBASE / WETH 0.01%",uniswap-v4-base,,weth,MOONBASE,8307,below,single_subject:gt_fdv,1196783,1197257
+0x6b0f53cbd9272d8117e9535fe25371dedf39a1be,"VELVET / USDC 0.01%",aerodrome-slipstream,velvet,usd-coin,velvet,37025106,below,single_subject:cg_mcap,1184025,149995747
+0xc2e5fb54ebd717a63179a41963eea8eef6d3058f,"kMXN / kUSD 0.05%",uniswap-v3-base,,,kMXN,39365743,below,min_cap_of_two:gt_fdv,1134580,124553271
+0x47ca96ea59c13f72745928887f84c9f52c3d7348,"cbETH / WETH 0.05%",aerodrome-slipstream,coinbase-wrapped-staked-eth,weth,,,above,both_quote,1101345,80416223
+0x8c7080564b5a792a33ef2fd473fba6364d5495e5,"cbBTC / WETH 0.3%",uniswap-v3-base,coinbase-wrapped-btc,weth,,,above,both_quote,1091491,61694059
+0xd03bc8c7f2faedce2aac81bf0444aea08ea06e9b,"AMZNc / USDC 0.004%",aerodrome-slipstream-3,,usd-coin,AMZNc,,unknown,not_on_coingecko,1084418,953227
+0x9c087eb773291e50cf6c6a90ef0f4500e349b903,"VIRTUAL / WETH 0.05%",uniswap-v3-base,virtual-protocol,weth,virtual-protocol,451055967,above,single_subject:cg_mcap,1073042,35584985
+0x22906596bd81f53f01d700ddbdb3935bac2e1446,"Basecat / USDC 0.3%",uniswap-v3-base,basecat,usd-coin,basecat,58271158,below,single_subject:cg_mcap,1059131,10131935
+0x3fc7d0d6c9fc5639bb311d6ef4993f495e9733a7f08d4a3827d48da88b6db92b,"STC / WETH 0.01%",uniswap-v4-base,,weth,STC,115282,below,single_subject:gt_fdv,1043185,0
+0x01271a205e3f37cbfc9b353170d726060e193c0d,"VVV / DIEM 0.232%",aerodrome-slipstream-3,venice-token,diem,diem,63569380,below,min_cap_of_two:cg_mcap,1026415,11516104
+0x667701e51b4d1ca244f17c78f7ab8744b4c99f9b,"wstETH / ETH",fluid-base,ethereum,ethereum,,,above,both_quote,1003658,18214416
+0x85f1aa3a70fedd1c52705c15baed143e675cd626,"NOCK / USDC",aerodrome-base,nockchain,usd-coin,nockchain,51231524,below,single_subject:cg_mcap,998616,11293448
+0x1e7d8500a09005becbdec66f7a42b7a5578d126f,"kTWD / kUSD 0.05%",uniswap-v3-base,,,kTWD,49426120,below,min_cap_of_two:gt_fdv,995692,77714274
+0x22aee3699b6a0fed71490c103bd4e5f3309891d5,"WETH / cbBTC 0.01%",aerodrome-slipstream,weth,coinbase-wrapped-btc,,,above,both_quote,985684,25547397
+0xaac0dd1015345f54b51a59ad68159e13481280681352d1e6a2cccdad5270dc00,"COBIE / WETH 0.01%",uniswap-v4-base,,weth,COBIE,94717,below,single_subject:gt_fdv,985207,533163
+0x0d4ab2b5d4e82ecff0349c062e76c6ee3d7c8a62a3de108afbadacc49adda65d,"69ELEVEN / WETH 0.01%",uniswap-v4-base,,weth,69ELEVEN,727841,below,single_subject:gt_fdv,981121,0
+0xe2654cc01616e962fbfcc4277c23062e59e70e39f87221d77b6d438705a5f286,"DRV / USDC 0.49%",uniswap-v4-base,derive,usd-coin,derive,190580783,above,single_subject:cg_mcap,979226,4864765
+0xa4fdd479eda160671636e2ecf8f993cbf86258a8,"AERO / USDC 0.05%",aerodrome-slipstream,aerodrome-finance,usd-coin,aerodrome-finance,509966171,above,single_subject:cg_mcap,961347,18485614
+0xbe762d548f8ca86a78e9da6e3ddc87f91457e398,"ICP / WETH 0.05%",aerodrome-slipstream-2,internet-computer,weth,internet-computer,1470616678,above,single_subject:cg_mcap,942061,10643948
+0x592e01edeb601016a20a3e6cd5bf533ebbadbc8b,"CHIP / USDC 0.031%",aerodrome-slipstream-3,chip-2,usd-coin,chip-2,115468522,above,single_subject:cg_mcap,894514,3973260
+0x7501bc8bb51616f79bfa524e464fb7b41f0b10fb,"msUSD / USDC 0.05%",aerodrome-slipstream,metronome-synth-usd,usd-coin,metronome-synth-usd,24183714,below,single_subject:cg_mcap,878657,40442992
+0xd5eaea9da564217ea101d1e369fda168a3025686,"cbHYPE / USDC 0.02%",aerodrome-slipstream-3,coinbase-wrapped-hype,usd-coin,coinbase-wrapped-hype,829799,below,single_subject:gt_mcap,869836,3078276
+0x8d479a4c680a76d4ae03f10203569558405ddfff,"O / USDC 0.028%",aerodrome-slipstream-3,o1-exchange,usd-coin,o1-exchange,85529270,below,single_subject:cg_mcap,868327,30840952
+0x7692acc1cdd771d09ebcae3663e1843b2911bec7,"STONKEX / WETH 1%",uniswap-v3-base,the-stonks-exchange,weth,the-stonks-exchange,3060910,below,single_subject:gt_mcap,854599,9246392
+0x3f53f1fd5b7723ddf38d93a584d280b9b94c3111,"ZORA / USDC 0.27%",aerodrome-slipstream,zora,usd-coin,zora,38876874,below,single_subject:cg_mcap,804415,12979352
+0x0e4409f7a8eba3213f336daf608985302e79328c,"TIBBIR / WETH 0.25%",aerodrome-slipstream-3,ribbita-by-virtuals,weth,ribbita-by-virtuals,243767022,above,single_subject:cg_mcap,758099,19574263
+0x8df6dd38d718bd726374521c2dcfe90eb9cb7d43,"SOL / cbBTC 0.05%",pancakeswap-v3-base,solana,coinbase-wrapped-btc,,,above,both_quote,753992,38419287
+0xf64546bacb41b894571de583d8258b5831236060855a03b2072d689752d9d320,"MOONBASE / WETH 0.01%",uniswap-v4-base,,weth,MOONBASE,327774,below,single_subject:gt_fdv,753270,0
+0xdb8984d19a5f88bf9bb25c3b91a3f6ff7d5ee9c202e39a32937225abe5742185,"SETZ / WETH 0.01%",uniswap-v4-base,,weth,SETZ,25076,below,single_subject:gt_fdv,746754,746754
+0x8ec83481cef875d2c131c581f51da27aa479738e70918fe0571f82ea82c90a86,"BLUE / WETH 0.01%",uniswap-v4-base,,weth,BLUE,245134,below,single_subject:gt_fdv,741441,741441
+0x3693022bd390e147d8dd89a05403c80ff21dd64b,"ZEST / USDC",aerodrome-slipstream-3,zest-protocol,usd-coin,zest-protocol,18082269,below,single_subject:cg_mcap,733124,11452484
+0x00145e8fc9f06a0b71bd57fefbf451ec1db9d69f,"msUSD / msETH 0.005%",aerodrome-slipstream-3,metronome-synth-usd,metronome-synth-eth,metronome-synth-usd,24183714,below,min_cap_of_two:cg_mcap,731555,15628821
+0x3faa63c87b5e03ca694b511dc12bfa33bb0106372f843899a1016cf5c511d845,"SanDisk / WETH 0.01%",uniswap-v4-base,,weth,SanDisk,114901,below,single_subject:gt_fdv,729151,729151
+0x2f335a05efe9c099a893e0150c5f74881d68f32d,"BST / WETH 1%",uniswap-v3-base,,weth,BST,16557,below,single_subject:gt_fdv,721042,709230
+0xa6b822d2df99ac469ca159e70a893e692b43422117516bbb26f3f1d51541e687,"memestonk / WETH 0.01%",uniswap-v4-base,,weth,memestonk,282606,below,single_subject:gt_fdv,721008,0
+0xbe00ff35af70e8415d0eb605a286d8a45466a4c1,"AERO / USDC 1%",aerodrome-slipstream,aerodrome-finance,usd-coin,aerodrome-finance,509966171,above,single_subject:cg_mcap,712454,12417503
+0xe2b8c33ae97658cead06afd47c7f3857e5851871,"JitoSOL / cbBTC 0.01%",uniswap-v3-base,jito-staked-sol,coinbase-wrapped-btc,,,above,both_quote,693481,32662514
+0x6cdbbdadb9d3e65a773dd8e482f6ec5f07442e02b05ff32e072086ad9afae560,"MEME / WETH 0.01%",uniswap-v4-base,,weth,MEME,76658,below,single_subject:gt_fdv,692399,351434
+0x0ab02e160f0df68dc049b012c514857306960eae,"CTR / USDC 0.022%",aerodrome-slipstream-3,citrea,usd-coin,citrea,15105541,below,single_subject:gt_mcap,690060,16238213
+0x20e5fad2661ee9eb0c04824524030af31943b62d,"NVDAc / WETH 0.015%",aerodrome-slipstream-3,nvidia-coinbase-tokenized-stock,weth,nvidia-coinbase-tokenized-stock,3181500,below,single_subject:gt_mcap,684233,978742
+0x054cbc9f7ce2081d50bae4f6ccd5f82e1374161fe65e99aa16b53ac1e1c177c8,"BASEJUICE / ETH",o1-launchpad,base-juice,ethereum,base-juice,1109611,below,single_subject:gt_mcap,683055,10520088
+0x127a12fc0953ab2ab89558c67ba6d597d7140431,"SPCXc / USDC 1%",uniswap-v3-base,,usd-coin,SPCXc,,unknown,not_on_coingecko,672666,645418
+0xc5e51044eb7318950b1afb044fccfb25782c48c1,"EURC / USDC 0.01%",aerodrome-slipstream,euro-coin,usd-coin,,,above,both_quote,662811,57160271
+0x8a8e4170c09074b109352190d47e54d7c1f61e4e,"PROS / USDC 0.01%",aerodrome-slipstream-3,wrapped-pros,usd-coin,wrapped-pros,1814388,below,single_subject:gt_mcap,654881,22627483
+0x5d0bc342178c8fe2c2f9a9fcc9d52555c99936db,"USDbC / USDC 0.05%",quickswap-v4-base,bridged-usd-coin-base,usd-coin,bridged-usd-coin-base,74598716783,above,single_subject:cg_mcap,648231,7077132
+0x5e916637e7c271972049cf33039e0feba2e8b6ba43b5e163e7720f15b3163deb,"plumber / ETH",o1-launchpad,,ethereum,plumber,4845906,below,single_subject:gt_fdv,647314,12410340
+0x2275c910a731860c4475d89d5a2b2445d3b0139e9798cb7c2dc4677555c024ab,"DOBBY / WETH 0.01%",uniswap-v4-base,,weth,DOBBY,202923,below,single_subject:gt_fdv,629917,629917
+0xc9786476d2492eb8ddb2ebf8b4b69e227e1f31397c790d877541ab0ed5cf5ee2,"BSTONK / USDC 0.3%",uniswap-v4-base,basestonk,usd-coin,basestonk,5311045,below,single_subject:gt_mcap,612021,9300828
+0x529d2863a1521d0b57db028168fde2e97120017c,"VIRTUAL / USDC 0.3%",uniswap-v3-base,virtual-protocol,usd-coin,virtual-protocol,451055967,above,single_subject:cg_mcap,607044,22629579
+0x988702fe529a3461ec7fd09eea3f962856709fd9,"eUSD / USDC 0.01%",aerodrome-slipstream,electronic-usd,usd-coin,electronic-usd,22909737,below,single_subject:cg_mcap,606818,4721435
+0x9e1ce9c6dafc6c2290c48a38a604f08f76658da9,"USDT / USDbC 0.05%",quickswap-v4-base,tether,bridged-usd-coin-base,bridged-usd-coin-base,74598716783,above,single_subject:cg_mcap,582387,4199108
+0x4b095f294d8efca4b50b948865e68262025a68ba80e759b5b75cddb995c6b43f,"BLUECHIP / USDC 1%",uniswap-v4-base,,usd-coin,BLUECHIP,18683880,below,single_subject:gt_fdv,581078,7943890
+0x8aa681f2f3e1129adf5fe684eaab296a1fd1a276ae7a4c8bc7ee33e06f2d0cbb,"SDCARD / WETH 0.01%",uniswap-v4-base,,weth,SDCARD,123945,below,single_subject:gt_fdv,571935,0
+0x446b5aabf3dd366f1b7f1d47aeef653551c1c2ad,"kBRL / kUSD 0.05%",uniswap-v3-base,,,kBRL,23122416,below,min_cap_of_two:gt_fdv,557688,49649450
+0x3dfdecc334a8f2618321c78a9de0e9428438f871,"BLUECHIP / USDC",aerodrome-slipstream-3,,usd-coin,BLUECHIP,18683880,below,single_subject:gt_fdv,552630,4750355
+0x0ebe37cd5d9aeb775f28038c383c1bc220b41330acf2fc0883c97a887b5bdcaf,"MOONBASE / WETH 0.01%",uniswap-v4-base,,weth,MOONBASE,38782,below,single_subject:gt_fdv,551835,0
+0x7af45dfaf2fdea139b2295f37ffea2e16e6fd8ba,"FLOCK / USDC 0.3%",uniswap-v3-base,flock-2,usd-coin,flock-2,24211326,below,single_subject:cg_mcap,541904,2022815
+0x85164ddfd8319cc58b831073bc6d1f72291b5d88,"AP / WETH",uniswap-v2-base,,weth,AP,,unknown,not_on_coingecko,537351,309994
+0x0fc47c17af86078d809358db1b4db2debc988566,"cbZEC / USDC 0.2%",aerodrome-slipstream-3,coinbase-wrapped-zec,usd-coin,coinbase-wrapped-zec,610814,below,single_subject:gt_mcap,536619,3364043
+0xd517f8e037bf3cea91de4a61b0d85a95b03b2ed8dc3b5ed0ba8d7d740219294a,"BLUECHIP / ETH 0.9%",uniswap-v4-base,,ethereum,BLUECHIP,18683880,below,single_subject:gt_fdv,536315,603076
+0x9ab7730b09ebd9ff2df70f06339bd289a1680a46,"USDT / USDC",solidly-v3-base,tether,usd-coin,,,above,both_quote,529861,6607734
+0xbf9ec829bd84bb50aef89c7dc027c94bef5baef9,"FOMO / WETH 0.01%",uniswap-v3-base,,weth,FOMO,,unknown,gt_fdv_only_above_threshold,524526,3565533
+0x7796fc53b75960a9762ba267c19f5da9868b7853,"wtSPYM / USDC 0.05%",hydrex-integral,state-street-spdr-portfolio-s-p-500-etf-st0x,usd-coin,state-street-spdr-portfolio-s-p-500-etf-st0x,120253,below,single_subject:gt_mcap,523947,527647
+0x96d4b53a38337a5733179751781178a2613306063c511b78cd02684739288c0a,"ETH / USDC 0.05%",uniswap-v4-base,ethereum,usd-coin,,,above,both_quote,517706,17768811
+0xb07d7eece8866e549601af5c7622d8cdbedc914e,"EURC / cbBTC 0.05%",aerodrome-slipstream,euro-coin,coinbase-wrapped-btc,,,above,both_quote,515292,23770427
+0x7cb770d0513c30e0cb45e4899e4a2cbeed6f9830,"VIRTUAL / USDC 0.05%",pancakeswap-v3-base,virtual-protocol,usd-coin,virtual-protocol,451055967,above,single_subject:cg_mcap,510335,14175963
+0xedc625b74537ee3a10874f53d170e9c17a906b9c,"ZORA / USDC 0.3%",uniswap-v3-base,zora,usd-coin,zora,38876874,below,single_subject:cg_mcap,499174,7129076
+0x96e22b2f94e1f567bf0241114dd2aeedadbcad85,"SHRUB / WETH",uniswap-v2-base,,weth,SHRUB,,unknown,not_on_coingecko,499129,2284119
+0x469337fdcc5e8f38e2e4b670b04f57865d13a7bb,"TSLAc / USDC 0.005%",aerodrome-slipstream-3,,usd-coin,TSLAc,,unknown,not_on_coingecko,494941,388635
+0x155613e7a75a2ab73500f9b2c45910469500ff56,"JitoSOL / SOL 0.01%",pancakeswap-v3-base,jito-staked-sol,solana,,,above,both_quote,479992,27732312
+0x4a79b0168296c0ef7b8f314973b82ad406a29f1b,"AAVE / WETH 0.3%",aerodrome-slipstream,aave,weth,aave,2009582009,above,single_subject:cg_mcap,478521,15415290
+0xd17aee8c41ef4cf58bfc78478b6703e3afc0a1fb,"STOCKER / WETH",uniswap-v2-base,,weth,STOCKER,608628,below,single_subject:gt_fdv,472581,384612
+0xfcce67a155df9a1a95becfe7d09e32dfbe6f9816,"SOL / WETH",aerodrome-slipstream-3,solana,weth,,,above,both_quote,465323,18430640
+0x01c3d5ab34f5916edde578bbdc7a5cc2fcf89184,"kSAR / kUSD 0.01%",uniswap-v3-base,,,kSAR,5086532,below,min_cap_of_two:gt_fdv,457145,7294389
+0x6be1b9e3991b18380e0c4a122b5f9e56eac6f5804d41b2058b30d58a7f40a119,"PlutoCoin / WETH 0.01%",uniswap-v4-base,,weth,PlutoCoin,171656,below,single_subject:gt_fdv,455850,455850
+0x59deaa9d6594aca12c9246c81472cd30a8b521bfcd954736afe4e1b0f89002f5,"SEX / SPCXc",o1-launchpad,,,SEX,68135,below,min_cap_of_two:gt_fdv,452418,426629
+0xa2dd49519d81d1a22b1b21ed4ec9e352f11cd3f1,"kXNG / kUSD 0.05%",uniswap-v3-base,,,kXNG,21521614,below,min_cap_of_two:gt_fdv,431765,2061442
+0x07c4bc0f5fb6cb069124df3e1ae0b8fd8148ccc4,"QUID / USDC 0.01%",pancakeswap-v3-base,squid-3,usd-coin,squid-3,9337558,below,single_subject:gt_mcap,424528,216373589
+0xc61045a2a04ad3aa1b545643068d9da0e28dc3f8,"kPHP / kUSD 0.05%",uniswap-v3-base,,,kPHP,7505481,below,min_cap_of_two:gt_fdv,423775,14135960
+0x636da53e0251b3cb0b4d10dbaff488b294f97bd5212b7e2a7c1bc3fb57fd6e31,"SOSO / USDC",uniswap-v4-base,sosovalue,usd-coin,sosovalue,106122116,above,single_subject:cg_mcap,420957,425676
+0xab07de353e15b80fa3b4224d5c8fdf3ac9f50670,"SOL / WETH 0.05%",pancakeswap-v3-base,solana,weth,,,above,both_quote,420855,15585052
+0x7103eb3c9590d1281f7dc03b2a9ee27c39df5d54,"MSFTc / USDC 0.018%",aerodrome-slipstream-3,,usd-coin,MSFTc,,unknown,not_on_coingecko,420140,290009
+0x46d398a5b33709877f50c8918a7ee96f1be1d7dd,"VVV / WETH 0.3%",aerodrome-slipstream,venice-token,weth,venice-token,856442890,above,single_subject:cg_mcap,416650,4745433
+0x6e901b4173948242260001050264514018111d98e3096a3a24f781087ead80ab,"COBIE / ETH",o1-launchpad,,ethereum,COBIE,84392,below,single_subject:gt_fdv,415834,503538
+0xfcda5ab6bbc1fe5b8e1a185e86bb5f24b12e2278,"USDC / cbBTC 2%",aerodrome-slipstream-2,usd-coin,coinbase-wrapped-btc,,,above,both_quote,415016,14479124
+0xd974d59e30054cf1abeded0c9947b0d8baf90029,"WETH / cbBTC 0.05%",pancakeswap-v3-base,weth,coinbase-wrapped-btc,,,above,both_quote,412649,8522198
+0x74ad64bac8df96af2b63ea50c3d8840b79aa7a3b,"cbETH / WETH 0.005%",solidly-v3-base,coinbase-wrapped-staked-eth,weth,,,above,both_quote,410448,5689454
+0xd56da2b74ba826f19015e6b7dd9dae1903e85da1,"USDT / USDC 0.01%",uniswap-v3-base,tether,usd-coin,,,above,both_quote,408073,6095230
+0x8782d97c8b25b4d17dbfbaa03f25dc18e51e909d,"cbADA / cbBTC 0.25%",aerodrome-slipstream,coinbase-wrapped-ada,coinbase-wrapped-btc,coinbase-wrapped-ada,11638901,below,single_subject:gt_mcap,406409,15773145
+0x702d107fdc8c822ea837abfff90c14a05086f74a,"THRQN / USDC 0.01%",sushiswap-v3-base,,usd-coin,THRQN,,unknown,gt_fdv_only_above_threshold,401439,2362572
+0xd9edc75a3a797ec92ca370f19051babebfb2edee,"KTA / WETH",aerodrome-base,keeta,weth,keeta,41408122,below,single_subject:cg_mcap,396830,15674620
+0x3f9b863ef4b295d6ba370215bcca3785fcc44f44,"WETH / cbBTC 0.05%",hydrex-integral,weth,coinbase-wrapped-btc,,,above,both_quote,395925,59226258
+0xcf5c5eb7533db5377a0d69e3a2599d90793e7fd97e6fa84c9420a387c605a476,"SPCXc / USDC 3%",uniswap-v4-base,,usd-coin,SPCXc,,unknown,not_on_coingecko,392478,394980
+0x4910c78a1c75e36548f1f2f1f4dcb71a4f69fc07,"FLOCK / WETH",aerodrome-base,flock-2,weth,flock-2,24211326,below,single_subject:cg_mcap,392000,1283227
+0x717e174d5dae280802d1a2c15c1c0976561a3f61,"ZRO / WETH 0.057%",aerodrome-slipstream-3,layerzero,weth,layerzero,374044455,above,single_subject:cg_mcap,384887,14522296
+0x82dbe18346a8656dbb5e76f74bf3ae279cc16b29,"WETH / USDC 0.05%",hydrex-integral,weth,usd-coin,,,above,both_quote,383241,18356316
+0xb5cd6e82b8fca463b1708af6fec2073c7c107f3e6c750a817c8f8885fb835748,"BSTONK / USDC 2.5%",uniswap-v4-base,basestonk,usd-coin,basestonk,5311045,below,single_subject:gt_mcap,380525,2730076
+0xe5b5f522e98b5a2baae212d4da66b865b781db97,"AERO / USDC 0.05%",uniswap-v3-base,aerodrome-finance,usd-coin,aerodrome-finance,509966171,above,single_subject:cg_mcap,373426,8591089
+0x37500661293ce44166f263f23bbbe55112334b8287ebe0180446c231dc2e080d,"cbBTC / ETH 0.008%",uniswap-v4-base,coinbase-wrapped-btc,ethereum,,,above,both_quote,360245,7203220
+0xadb8fb846dbd3bd6a23335cee65bb610c1cf0ea3,"ZORA / WETH 0.05%",aerodrome-slipstream,zora,weth,zora,38876874,below,single_subject:cg_mcap,359749,6218624
+0x67a11022b7b6ed66f81233f6c8ed6e48f7826530,"USDC / VVV 0.3%",uniswap-v3-base,usd-coin,venice-token,venice-token,856442890,above,single_subject:cg_mcap,352149,12335673
+0xec558e484cc9f2210714e345298fdc53b253c27d,"cbBTC / USDC 0.3%",uniswap-v3-base,coinbase-wrapped-btc,usd-coin,,,above,both_quote,351857,15910172
+0x25f63549b2bb9fff114cdc39e8cfb16b450e2f9b,"GOOGLc / WETH 0.012%",aerodrome-slipstream-3,alphabet-coinbase-tokenized-stock,weth,alphabet-coinbase-tokenized-stock,2071599,below,single_subject:gt_mcap,346362,584075
+0x70b6752c1627fa7b842c2ee1c41f928d0e7b3109,"kBDT / kUSD 0.05%",uniswap-v3-base,,,kBDT,50169365,below,min_cap_of_two:gt_fdv,344147,501207448
+0xac4e562d7c6108f971321f14238e24ae2cc398ac,"DRV / WETH",aerodrome-base,derive,weth,derive,190580783,above,single_subject:cg_mcap,338998,3920406
+0xc2dd131e210679afff1749c7f5d219bf87e9dd436b0bdd48a6bd27075b205ac3,"STONX / wtSPYM",bankr,,state-street-spdr-portfolio-s-p-500-etf-st0x,state-street-spdr-portfolio-s-p-500-etf-st0x,120253,below,min_cap_of_two:gt_mcap,338511,281554
+0x34e3334e845d101205394e0bd8821fddc7cd5559,"REI / WETH 0.05%",aerodrome-slipstream-2,unit-00-rei,weth,unit-00-rei,16529288,below,single_subject:cg_mcap,337392,4231985
+0x8a02e1627d50a87bc42cde9c3e94a094b5b67e27,"kIDR / kUSD 0.05%",uniswap-v3-base,,,kIDR,10383520,below,min_cap_of_two:gt_fdv,323101,95070678
+0xbe4c36b9542610df83ca690c8b5bc53bbbc5d542,"LMTS / USDC 0.05%",aerodrome-slipstream-2,limitless-3,usd-coin,limitless-3,9536294,below,single_subject:gt_mcap,319873,11377489
+0x0c3b466104545efa096b8f944c1e524e1d0d4888,"TIBBIR / VIRTUAL",uniswap-v2-base,ribbita-by-virtuals,virtual-protocol,ribbita-by-virtuals,243767022,above,min_cap_of_two:cg_mcap,310496,11282249
+0x1471b38d94bd7d94af66efe376bcdc3e4df6199b4403593e103bff74bcd4562e,"RF / WETH 0.01%",uniswap-v4-base,,weth,RF,4915,below,single_subject:gt_fdv,308448,0
+0x867dbb1b6417abcb3696d5a5d9cc38cbf9f0f6d17355515fe1c8303e791832c4,"USDbC / USDC",uniswap-v4-base,bridged-usd-coin-base,usd-coin,bridged-usd-coin-base,74598716783,above,single_subject:cg_mcap,307077,3571380
+0xcdbe19a6ef1b633be744920c93ee40521d5cf2a6,"AERO / cbBTC 0.03%",aerodrome-slipstream-3,aerodrome-finance,coinbase-wrapped-btc,aerodrome-finance,509966171,above,single_subject:cg_mcap,302841,11152672
+0x2e86514cfd61fb19c5cf2b879d536d273d6e693d,"AAVE / WETH 0.3%",uniswap-v3-base,aave,weth,aave,2009582009,above,single_subject:cg_mcap,92582,2639926
+0x846e89cffc54160a7e4acbeecc4f99c2528d1ca8,"AAVE / WETH 0.05%",quickswap-v4-base,aave,weth,aave,2009582009,above,single_subject:cg_mcap,54055,735735
+0x31f207bccc4604a51fa099071c72cd025cc823e5,"AAVE / WETH 0.05%",pancakeswap-v3-base,aave,weth,aave,2009582009,above,single_subject:cg_mcap,34908,921761
+0x3d5d143381916280ff91407febeb52f2b60f33cf,"AERO / WETH 0.3%",uniswap-v3-base,aerodrome-finance,weth,aerodrome-finance,509966171,above,single_subject:cg_mcap,294908,6347092
+0x20cb8f872ae894f7c9e32e621c186e5afce82fd0,"AERO / WETH 0.05%",pancakeswap-v3-base,aerodrome-finance,weth,aerodrome-finance,509966171,above,single_subject:cg_mcap,230434,6132149
+0x99f0364e162a36a77e5d77b5eeb56539563735a3,"TAO / USDC 0.004%",aerodrome-slipstream-3,bittensor,usd-coin,bittensor,2260747791,above,single_subject:cg_mcap,201018,7131473
+0xcf307083dbf8b68be7f4bc24b0bc0d3bf79bfb54,"XCN / USDC 0.3%",uniswap-v3-base,chain-2,usd-coin,chain-2,163060818,above,single_subject:cg_mcap,41114,185482
+0x72be417afb0abea66913141c605d313bb389b59c,"LINK / WETH 0.25%",aerodrome-slipstream,chainlink,weth,chainlink,8843519107,above,single_subject:cg_mcap,128045,5015701
+0x08c049f958e7d1f1b7ae44466b80d7773ca09c8e,"LINK / USDC 0.3%",uniswap-v3-base,chainlink,usd-coin,chainlink,8843519107,above,single_subject:cg_mcap,87119,2262454
+0x7188cfc95722e160dc39cf32fbc3b44f0e0bc95319a152f659b7d6bfca8f4620,"CRV / USDC 0.3%",uniswap-v4-base,curve-dao-token,usd-coin,curve-dao-token,563425129,above,single_subject:cg_mcap,44006,1978961
+0xa0e2bac96ab51c92d3284781aee1eec817f6f9c2,"DRV / WETH 0.3%",aerodrome-slipstream,derive,weth,derive,190580783,above,single_subject:cg_mcap,28956,985248
+0x9011cbf8d2900908286c9bf4d5d1644ece7b684a,"DRV / WETH 0.3%",uniswap-v3-base,derive,weth,derive,190580783,above,single_subject:cg_mcap,26014,153678
+0xc422bfb18f9fc217f955d759d3753f31137ccefd,"ENA / WETH 0.3%",aerodrome-slipstream,ethena,weth,ethena,1653492628,above,single_subject:cg_mcap,33514,769395
+0x3de2a8642859649d22d4a6f6a87b1441c51fdf8bf2bcd8864628a6a0f7119843,"ETHFI / ETH 0.3%",uniswap-v4-base,ether-fi,ethereum,ether-fi,537504140,above,single_subject:cg_mcap,26109,1008909
+0xd32150715fcd30918b2dfe29eac483a69d435910,"ICP / USDC 0.05%",uniswap-v3-base,internet-computer,usd-coin,internet-computer,1470616678,above,single_subject:cg_mcap,45873,323606
+0x2c162dbe1132a099a15f66a04bebad4d477ed865,"ICP / WETH 0.04%",uniswap-v3-base,internet-computer,weth,internet-computer,1470616678,above,single_subject:cg_mcap,37396,235519
+0x2f42df4af5312b492e9d7f7b2110d9c7bf2d9e4f,"MORPHO / WETH 0.3%",uniswap-v3-base,morpho,weth,morpho,1752888034,above,single_subject:cg_mcap,161141,3975892
+0x2043b296ffc6b2d3bf4a3f3167d2afb3b0fbdbee,"MORPHO / USDC 1%",uniswap-v3-base,morpho,usd-coin,morpho,1752888034,above,single_subject:cg_mcap,78322,2343206
+0x3f413fccaea59b8053d605aea7ae847c02ed5d95,"WETH / NPC",uniswap-v2-base,weth,non-playable-coin,non-playable-coin,169443888,above,single_subject:cg_mcap,216633,3367305
+0xbf1713b92f4212f0fac0078e2cea7e182d40078b,"Cake / USDC 0.25%",pancakeswap-v3-base,pancakeswap-token,usd-coin,pancakeswap-token,683242459,above,single_subject:cg_mcap,113625,646810
+0x433fdee2ae9cea22a78499f8f8592ffd5d4e60c9,"Cake / WETH 0.25%",pancakeswap-v3-base,pancakeswap-token,weth,pancakeswap-token,683242459,above,single_subject:cg_mcap,113008,1320459
+0x016df91005f30039c9f1a89b44db5e8c60613603,"PENDLE / WETH 0.05%",aerodrome-slipstream,pendle,weth,pendle,332421157,above,single_subject:cg_mcap,114328,2354286
+0x0f664affb82f074937d5cfcd61b97f3f32d5dc50,"TIBBIR / WETH 0.3%",aerodrome-slipstream,ribbita-by-virtuals,weth,ribbita-by-virtuals,243767022,above,single_subject:cg_mcap,165352,6180882
+0xe96a4e9ea3a2c6db214174738a19eb7dbb8a3069,"SPX / WETH",aerodrome-base,spx6900,weth,spx6900,554970296,above,single_subject:cg_mcap,30716,716033
+0x7432aab631b801a10bef7d70c1507a32755595fa,"SYRUP / WETH 0.27%",aerodrome-slipstream,syrup,weth,syrup,250721397,above,single_subject:cg_mcap,92491,1511131
+0xbb345d35450bf9ee76f3d2ce214e8e7ac5e1071d,"VVV / DIEM",aerodrome-base,venice-token,diem,diem,63569380,below,min_cap_of_two:cg_mcap,193956,2705871
+0x1d2bdb7117a5a7d7fe4c1d95681a92e4df13bb69,"VVV / WETH 1%",uniswap-v3-base,venice-token,weth,venice-token,856442890,above,single_subject:cg_mcap,61796,1977598
+0x36d7043ec113e9926b8f98392544a1b00b027556269bd35e2945403c69806f97,"VVV / cbBTC 0.3%",uniswap-v4-base,venice-token,coinbase-wrapped-btc,venice-token,856442890,above,single_subject:cg_mcap,45283,1099650
+0xff8104251e7761163fac3211ef5583fb3f8583d6,"REPPO / VIRTUAL",baseline-base,reppo,virtual-protocol,reppo,6122997,below,min_cap_of_two:gt_mcap,137777,2336147
+0x21594b992f68495dd28d605834b58889d0a727c7,"VIRTUAL / WETH",aerodrome-base,virtual-protocol,weth,virtual-protocol,451055967,above,single_subject:cg_mcap,93589,5098199
+0xc0113e59471a17ce37b708572114162c3030307e,"VFY / ZEN 0.009%",aerodrome-slipstream-3,zkverify,zencash,zkverify,2773049,below,min_cap_of_two:gt_mcap,144619,319658
+0xbfa5184f90b071c34c85d065b8c7877617248ef7,"ZEN / USDC 0.3%",aerodrome-slipstream,zencash,usd-coin,zencash,132800648,above,single_subject:cg_mcap,28899,362806

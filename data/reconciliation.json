@@ -1,0 +1,484 @@
+{
+ "generated_at": "2026-09-05T14:23:59.082Z",
+ "window_days": 7,
+ "chains": {
+  "ethereum": {
+   "dates": [
+    "2026-08-29",
+    "2026-09-04"
+   ],
+   "venues": [
+    {
+     "venue": "Uniswap V4",
+     "gt_sampled": 2604588201.6186457,
+     "defillama": 2798518907,
+     "ratio": 0.9307023779984938
+    },
+    {
+     "venue": "Uniswap V3",
+     "gt_sampled": 2056158939.1695004,
+     "defillama": 2117865941,
+     "ratio": 0.9708635940377968
+    },
+    {
+     "venue": "Curve DEX",
+     "gt_sampled": 532428436.6424718,
+     "defillama": 789489111,
+     "ratio": 0.6743961749745676
+    },
+    {
+     "venue": "Fluid DEX",
+     "gt_sampled": 688910723.2017823,
+     "defillama": 702086049,
+     "ratio": 0.9812340299070411
+    },
+    {
+     "venue": "Ekubo",
+     "gt_sampled": 367065912.355232,
+     "defillama": 371170787,
+     "ratio": 0.9889407389036573
+    },
+    {
+     "venue": "Maverick V2",
+     "gt_sampled": 146239525.82169744,
+     "defillama": 147395482,
+     "ratio": 0.992157451757561
+    },
+    {
+     "venue": "PancakeSwap AMM V3",
+     "gt_sampled": 40337303.48666414,
+     "defillama": 46897137,
+     "ratio": 0.8601229428283467
+    },
+    {
+     "venue": "Uniswap V2",
+     "gt_sampled": 428379384.11517996,
+     "defillama": 24185243,
+     "ratio": 17.71242836448573
+    },
+    {
+     "venue": "Balancer V3",
+     "gt_sampled": 11225726.59276303,
+     "defillama": 16578779,
+     "ratio": 0.6771141947644655
+    },
+    {
+     "venue": "SushiSwap V3",
+     "gt_sampled": 6068433.306109817,
+     "defillama": 10282229,
+     "ratio": 0.5901865545019291
+    },
+    {
+     "venue": "DODO AMM",
+     "gt_sampled": 38206740.05631468,
+     "defillama": 8046116,
+     "ratio": 4.748469952001025
+    }
+   ],
+   "mapped_share_of_total": 0.7658467829045917,
+   "unmapped_gt_dexes": [
+    "ring-exchange-ethereum",
+    "cypher",
+    "balancer_ethereum"
+   ]
+  },
+  "solana": {
+   "dates": [
+    "2026-08-28",
+    "2026-09-04"
+   ],
+   "venues": [
+    {
+     "venue": "PumpSwap",
+     "gt_sampled": 3132151091.4234757,
+     "defillama": 5002804669,
+     "ratio": 0.626079029395636
+    },
+    {
+     "venue": "Orca DEX",
+     "gt_sampled": 1462793187.1347709,
+     "defillama": 1659788965,
+     "ratio": 0.8813127560073705
+    },
+    {
+     "venue": "Meteora DLMM",
+     "gt_sampled": 873856190.184748,
+     "defillama": 1219333642,
+     "ratio": 0.7166670057191353
+    },
+    {
+     "venue": "Manifest Trade",
+     "gt_sampled": 910325229.0572207,
+     "defillama": 968490379,
+     "ratio": 0.939942459724962
+    },
+    {
+     "venue": "Raydium AMM",
+     "gt_sampled": 486178764.6149593,
+     "defillama": 966363955,
+     "ratio": 0.5031010957098035
+    },
+    {
+     "venue": "Byreal",
+     "gt_sampled": 114119878.89080097,
+     "defillama": 158938731,
+     "ratio": 0.718011765746393
+    },
+    {
+     "venue": "PancakeSwap AMM V3",
+     "gt_sampled": 81575939.04343832,
+     "defillama": 127883537,
+     "ratio": 0.6378924211600303
+    },
+    {
+     "venue": "HumidiFi",
+     "gt_sampled": 63390740.45867523,
+     "defillama": 62681055,
+     "ratio": 1.0113221683756795
+    },
+    {
+     "venue": "Meteora DAMM V2",
+     "gt_sampled": 3951901.758953979,
+     "defillama": 36993957,
+     "ratio": 0.1068256028668136
+    },
+    {
+     "venue": "ZeroFi",
+     "gt_sampled": 263258176.7675927,
+     "defillama": 40170,
+     "ratio": 6553.601612337384
+    }
+   ],
+   "mapped_share_of_total": 0.6658886661282108,
+   "unmapped_gt_dexes": [
+    "saros-amm",
+    "metadao"
+   ]
+  },
+  "base": {
+   "dates": [
+    "2026-08-29",
+    "2026-09-04"
+   ],
+   "venues": [
+    {
+     "venue": "Aerodrome Slipstream",
+     "gt_sampled": 2304604010.9302745,
+     "defillama": 2857613318,
+     "ratio": 0.806478608009579
+    },
+    {
+     "venue": "Uniswap V3",
+     "gt_sampled": 1023325001.934831,
+     "defillama": 916062343,
+     "ratio": 1.1170910034174726
+    },
+    {
+     "venue": "PancakeSwap AMM V3",
+     "gt_sampled": 636526524.9045099,
+     "defillama": 662390549,
+     "ratio": 0.9609535127961343
+    },
+    {
+     "venue": "Uniswap V4",
+     "gt_sampled": 1303536837.4574995,
+     "defillama": 358053918,
+     "ratio": 3.6406160411223305
+    },
+    {
+     "venue": "Aerodrome V1",
+     "gt_sampled": 30130732.463209562,
+     "defillama": 54614833,
+     "ratio": 0.551695039756133
+    },
+    {
+     "venue": "Quickswap V4",
+     "gt_sampled": 7363984.787515187,
+     "defillama": 11332252,
+     "ratio": 0.6498253645890673
+    },
+    {
+     "venue": "Fluid DEX",
+     "gt_sampled": 6860779.744480916,
+     "defillama": 9343767,
+     "ratio": 0.7342627170049206
+    },
+    {
+     "venue": "Uniswap V2",
+     "gt_sampled": 189585029.54005593,
+     "defillama": 1428024,
+     "ratio": 132.76039446119668
+    }
+   ],
+   "mapped_share_of_total": 0.8502136165494545,
+   "unmapped_gt_dexes": [
+    "o1-launchpad",
+    "hydrex-integral",
+    "solidly-v3-base",
+    "sushiswap-v3-base",
+    "bankr",
+    "baseline-base"
+   ]
+  },
+  "bnb": {
+   "dates": [
+    "2026-08-29",
+    "2026-09-04"
+   ],
+   "venues": [
+    {
+     "venue": "PancakeSwap AMM V3",
+     "gt_sampled": 4602289272.679414,
+     "defillama": 3224888592,
+     "ratio": 1.4271157410201207
+    },
+    {
+     "venue": "PancakeSwap Infinity",
+     "gt_sampled": 2533218258.6294756,
+     "defillama": 1774974644,
+     "ratio": 1.4271856035761352
+    },
+    {
+     "venue": "Uniswap V4",
+     "gt_sampled": 459214844.976042,
+     "defillama": 665098500,
+     "ratio": 0.690446369937749
+    },
+    {
+     "venue": "PancakeSwap AMM",
+     "gt_sampled": 2038259007.1391704,
+     "defillama": 473164850,
+     "ratio": 4.307714334949374
+    },
+    {
+     "venue": "Uniswap V3",
+     "gt_sampled": 207984185.69180626,
+     "defillama": 198334216,
+     "ratio": 1.0486550928348453
+    },
+    {
+     "venue": "Topaz CL",
+     "gt_sampled": 134139858.45751958,
+     "defillama": 142378735,
+     "ratio": 0.9421340796258625
+    }
+   ],
+   "mapped_share_of_total": 0.8347583626568535,
+   "unmapped_gt_dexes": [
+    "nomiswap_stable",
+    "squadswap-v3-bsc",
+    "pancakeswap-v1-bsc",
+    "apeswap_bsc"
+   ]
+  },
+  "arbitrum": {
+   "dates": [
+    "2026-08-29",
+    "2026-09-04"
+   ],
+   "venues": [
+    {
+     "venue": "Uniswap V3",
+     "gt_sampled": 818453270.2459637,
+     "defillama": 739134039,
+     "ratio": 1.107313730745343
+    },
+    {
+     "venue": "Uniswap V4",
+     "gt_sampled": 166189262.026291,
+     "defillama": 174032171,
+     "ratio": 0.9549341427585306
+    },
+    {
+     "venue": "Fluid DEX",
+     "gt_sampled": 47725229.564742126,
+     "defillama": 58879406,
+     "ratio": 0.810558951031913
+    },
+    {
+     "venue": "PancakeSwap AMM V3",
+     "gt_sampled": 53000427.196792096,
+     "defillama": 54370756,
+     "ratio": 0.9747965836044674
+    },
+    {
+     "venue": "Camelot V3",
+     "gt_sampled": 39926861.40774142,
+     "defillama": 45444387,
+     "ratio": 0.8785873029322944
+    },
+    {
+     "venue": "Curve DEX",
+     "gt_sampled": 15214067.409804365,
+     "defillama": 16281159,
+     "ratio": 0.9344584995333787
+    },
+    {
+     "venue": "Maverick V2",
+     "gt_sampled": 2450192.950158131,
+     "defillama": 2495950,
+     "ratio": 0.9816674813830929
+    },
+    {
+     "venue": "SushiSwap V3",
+     "gt_sampled": 2335473.5524454284,
+     "defillama": 2270440,
+     "ratio": 1.0286435899849493
+    },
+    {
+     "venue": "Camelot V2",
+     "gt_sampled": 781927.8528114114,
+     "defillama": 1250786,
+     "ratio": 0.6251491884394383
+    }
+   ],
+   "mapped_share_of_total": 0.8739017880942535,
+   "unmapped_gt_dexes": [
+    "traderjoe-v2-2-arbitrum",
+    "sushiswap_arbitrum",
+    "solidly-v3-arbitrum",
+    "balancer-v3-arbitrum"
+   ]
+  },
+  "hyperevm": {
+   "dates": [
+    "2026-08-29",
+    "2026-09-04"
+   ],
+   "venues": [
+    {
+     "venue": "Project X",
+     "gt_sampled": 512296340.4479639,
+     "defillama": 514904846,
+     "ratio": 0.9949340046567825
+    },
+    {
+     "venue": "Ramses CL V2",
+     "gt_sampled": 172747306.37678146,
+     "defillama": 192744955,
+     "ratio": 0.896248134623194
+    },
+    {
+     "venue": "nest CL",
+     "gt_sampled": 75891747.61102052,
+     "defillama": 79068117,
+     "ratio": 0.9598274309608325
+    },
+    {
+     "venue": "HyperSwap V3",
+     "gt_sampled": 27218997.453138106,
+     "defillama": 54943238,
+     "ratio": 0.4954021358031011
+    },
+    {
+     "venue": "Ring Swap",
+     "gt_sampled": 19245386.35602849,
+     "defillama": 19230094,
+     "ratio": 1.0007952304356125
+    },
+    {
+     "venue": "Kittenswap Algebra",
+     "gt_sampled": 10456135.326181578,
+     "defillama": 11525135,
+     "ratio": 0.9072462340945748
+    },
+    {
+     "venue": "Hybra V4",
+     "gt_sampled": 10110494.86487497,
+     "defillama": 11386570,
+     "ratio": 0.8879315601515619
+    },
+    {
+     "venue": "HyperSwap V2",
+     "gt_sampled": 1495381.4539454514,
+     "defillama": 6682263,
+     "ratio": 0.22378368734445972
+    },
+    {
+     "venue": "Hybra V3",
+     "gt_sampled": 1321942.9531794954,
+     "defillama": 1433062,
+     "ratio": 0.9224604051879789
+    },
+    {
+     "venue": "Curve DEX",
+     "gt_sampled": 181854.77447687017,
+     "defillama": 296561,
+     "ratio": 0.613212035557171
+    }
+   ],
+   "mapped_share_of_total": 0.8985451144146754,
+   "unmapped_gt_dexes": [
+    "hypertrade",
+    "ramses-legacy-hyperevm",
+    "ultrasolid-v3"
+   ]
+  },
+  "robinhood": {
+   "dates": [
+    "2026-08-28",
+    "2026-09-03"
+   ],
+   "venues": [
+    {
+     "venue": "Uniswap V4",
+     "gt_sampled": 1030744359.2241821,
+     "defillama": 4456128627,
+     "ratio": 0.23130938208983215
+    },
+    {
+     "venue": "Uniswap V3",
+     "gt_sampled": 4946371955.348127,
+     "defillama": 2574744745,
+     "ratio": 1.9211115839555302
+    },
+    {
+     "venue": "Pons V2",
+     "gt_sampled": 48120982.7695022,
+     "defillama": 591597732,
+     "ratio": 0.08134071543313862
+    },
+    {
+     "venue": "Ramses CL V2",
+     "gt_sampled": 310280933.23361707,
+     "defillama": 387694707,
+     "ratio": 0.8003228510251935
+    },
+    {
+     "venue": "Uniswap V2",
+     "gt_sampled": 103683312.63570032,
+     "defillama": 372280778,
+     "ratio": 0.2785083699263686
+    },
+    {
+     "venue": "up v3",
+     "gt_sampled": 280313817.36354256,
+     "defillama": 351087953,
+     "ratio": 0.798414798822626
+    },
+    {
+     "venue": "GIGA V3",
+     "gt_sampled": 162157719.7858346,
+     "defillama": 193535870,
+     "ratio": 0.8378690719494769
+    },
+    {
+     "venue": "Alandale V3",
+     "gt_sampled": 50692654.97917064,
+     "defillama": 70608772,
+     "ratio": 0.7179370713198445
+    }
+   ],
+   "mapped_share_of_total": 0.9221052305012584,
+   "unmapped_gt_dexes": [
+    "bankr-robinhood",
+    "orvex-v4",
+    "o1-launchpad-robinhood",
+    "pons-dot-family",
+    "uniswap-pools-trade",
+    "sushiswap-v3-robinhood",
+    "virtuals-robinhood"
+   ]
+  }
+ }
+}

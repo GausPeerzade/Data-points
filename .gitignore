@@ -1,0 +1,6 @@
+.DS_Store
+node_modules/
+# raw API caches are large and reproducible; only aggregated outputs are committed
+data/raw/
+.env
+logs/
