@@ -23,7 +23,7 @@ CoinGecko enrichment for additional sampled IDs ──┤
                                       snapshot.mjs → standalone HTML
 ```
 
-`pipeline/run.mjs` runs those stages sequentially. `pipeline/reconcile.mjs` is a separate, manually invoked comparison of mapped venues; it is not currently called by the scheduled pipeline. Its timestamp must be checked before treating it as evidence for a new run.
+`pipeline/run.mjs` runs those stages sequentially and force-fetches DefiLlama totals again after the pool crawl, just before classification. This incorporates provider revisions arriving during the long crawl. `pipeline/reconcile.mjs` is a separate, manually invoked comparison of mapped venues; it is not currently called by the scheduled pipeline. Its timestamp must be checked before treating it as evidence for a new run.
 
 `pipeline/dune/dex_volume_by_mcap.sql` is an unconnected SQL draft with a placeholder uploaded table. Setting `DUNE_API_KEY` does not select another execution path. A trade-level alternative requires an implemented query, cap data, API integration and coverage validation; paying for a provider alone does not make its results complete.
 

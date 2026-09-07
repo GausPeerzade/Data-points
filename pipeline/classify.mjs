@@ -155,7 +155,7 @@ export function main() {
   console.log('wrote data/latest.json, data/volume_daily.csv, data/audit/pools_*.csv');
 }
 
-function kpis(days) {
+export function kpis(days) {
   const closed = days.filter((d) => d.total != null && !d.provisional);
   const last30 = closed.slice(-30), prev30 = closed.slice(-60, -30);
   const sum = (arr, k) => arr.reduce((s, d) => s + (d[k] ?? 0), 0);

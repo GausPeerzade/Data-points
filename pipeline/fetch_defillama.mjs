@@ -2,12 +2,12 @@
 import { getJson, writeJson, utcMidnight, dateStr } from './lib/http.mjs';
 import { CHAINS, DAYS } from './config.mjs';
 
-export async function main() {
+export async function main({ force = false } = {}) {
   const today = utcMidnight(Date.now());
   const out = { fetched_at: new Date().toISOString(), source: 'https://api.llama.fi/overview/dexs/{chain}', chains: {} };
   for (const c of CHAINS) {
     const url = `https://api.llama.fi/overview/dexs/${encodeURIComponent(c.llama)}?excludeTotalDataChart=false&excludeTotalDataChartBreakdown=false&dataType=dailyVolume`;
-    const raw = await getJson(url, { cacheFile: `data/raw/defillama/${c.key}.json`, ttlMs: 6 * 3600e3, label: 'llama' });
+    const raw = await getJson(url, { cacheFile: `data/raw/defillama/${c.key}.json`, ttlMs: force ? 0 : 6 * 3600e3, label: 'llama' });
     const cat = new Map();
     for (const p of raw.protocols || []) { cat.set(p.displayName || p.name, p.category); cat.set(p.name, p.category); }
     const chart = new Map(raw.totalDataChart.map(([ts, v]) => [ts, v]));

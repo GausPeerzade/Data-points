@@ -9,5 +9,7 @@ await step('defillama', async () => (await import('./fetch_defillama.mjs')).main
 await step('coingecko', async () => (await import('./fetch_coingecko.mjs')).main());
 if (!skipGt) await step('geckoterminal', async () => (await import('./fetch_geckoterminal.mjs')).main(only));
 await step('enrich', async () => (await import('./enrich_mcap.mjs')).main());
+// The pool crawl can take hours. Re-fetch reference totals to include late adapter updates.
+await step('final defillama totals', async () => (await import('./fetch_defillama.mjs')).main({ force: true }));
 await step('classify', async () => (await import('./classify.mjs')).main());
 await step('snapshot', async () => { await import('./snapshot.mjs'); });
