@@ -21,6 +21,7 @@ All numbers are per **closed UTC day** (the current day is never included). Volu
 - `unknown_share` — share of sampled volume whose subject token has no CoinGecko market cap (counted as below).
 - `boundary_share` — share of sampled volume whose subject token has a cap between $50M and $200M (sensitivity to the threshold).
 - `above_100m_proportional` — alternative estimator (`total × sampled_above / sampled_total`), for comparison only.
+- `sampled_total` / `sampled_above_100m` — explicit sample amounts, retained so revised reference totals can be applied without changing the sample.
 - `provisional` — true when DefiLlama adapters that report daily had not yet published this day at fetch time (`missing_protocols`, `missing_est`). Provisional days are excluded from KPIs and re-pulled on the next run.
 - `classified_with` — which market-cap snapshot classified the row. Every refresh reclassifies all historical rows using the current snapshot, rather than each trading day’s cap.
 
@@ -39,3 +40,5 @@ node pipeline/classify.mjs         # re-aggregate from cache without any network
 ```
 
 Optional env: `COINGECKO_DEMO_KEY`. `DUNE_API_KEY` is currently unused. See `../ARCHITECTURE.md` for the implemented methodology and limitations.
+
+For late revisions within the same date window, `node pipeline/reanchor.mjs /path/to/new-candidate-directory` fetches fresh DefiLlama totals and builds a separate candidate with updated buckets, KPIs, CSV and snapshot. It preserves the original `generated_at` and `classified_with`, and records `reference_refreshed_at` separately. It does not fetch new pool history or caps, rejects a changed date window, and never replaces the published dataset automatically. Validate the candidate before copying its generated files into `data/`; use the full pipeline for a new trading day.

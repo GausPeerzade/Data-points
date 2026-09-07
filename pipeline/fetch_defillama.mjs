@@ -2,7 +2,7 @@
 import { getJson, writeJson, utcMidnight, dateStr } from './lib/http.mjs';
 import { CHAINS, DAYS } from './config.mjs';
 
-export async function main({ force = false } = {}) {
+export async function main({ force = false, writeOutput = true } = {}) {
   const today = utcMidnight(Date.now());
   const out = { fetched_at: new Date().toISOString(), source: 'https://api.llama.fi/overview/dexs/{chain}', chains: {} };
   for (const c of CHAINS) {
@@ -52,6 +52,7 @@ export async function main({ force = false } = {}) {
     const prov = dates.filter((d) => days[d].provisional);
     console.log(`defillama ${c.key.padEnd(10)} ${dates.length} days ${dates[0]}..${dates.at(-1)}  last total=${Math.round(days[dates.at(-1)].total).toLocaleString()}  headline/chart max diff=${maxDiff.toFixed(2)}  provisional=${prov.join(',') || 'none'}`);
   }
-  writeJson('data/defillama_totals.json', out, true);
+  if (writeOutput) writeJson('data/defillama_totals.json', out, true);
+  return out;
 }
 if (import.meta.url === `file://${process.argv[1]}`) await main();

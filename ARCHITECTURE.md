@@ -25,6 +25,8 @@ CoinGecko enrichment for additional sampled IDs ──┤
 
 `pipeline/run.mjs` runs those stages sequentially and force-fetches DefiLlama totals again after the pool crawl, just before classification. This incorporates provider revisions arriving during the long crawl. `pipeline/reconcile.mjs` is a separate, manually invoked comparison of mapped venues; it is not currently called by the scheduled pipeline. Its timestamp must be checked before treating it as evidence for a new run.
 
+`pipeline/reanchor.mjs` can apply later reference-total revisions to an already completed sample for the same date window. It writes a separate candidate directory for review and retains the pool/cap generation timestamp. It records `reference_refreshed_at` independently and rejects date-window changes; it cannot replace a full daily refresh. Its regression tests run with `node --test pipeline/tests/reanchor.test.mjs`.
+
 `pipeline/dune/dex_volume_by_mcap.sql` is an unconnected SQL draft with a placeholder uploaded table. Setting `DUNE_API_KEY` does not select another execution path. A trade-level alternative requires an implemented query, cap data, API integration and coverage validation; paying for a provider alone does not make its results complete.
 
 | Chain | DefiLlama slug | CoinGecko platform | GeckoTerminal network |

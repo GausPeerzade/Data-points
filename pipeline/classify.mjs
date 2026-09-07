@@ -117,6 +117,7 @@ export function main() {
         boundaryShare = s.boundary / s.sampled;
       }
       days.push({ date, total, above_100m: above, below_100m: below, above_100m_proportional: aboveAlt,
+        sampled_total: s?.sampled ?? null, sampled_above_100m: s?.above ?? null,
         coverage, unknown_share: unknownShare, boundary_share: boundaryShare, pools_sampled: s?.pools ?? 0,
         defillama_headline: t.headline, ...(t.extra ? { extra: t.extra } : {}), mode, classified_with: out.classified_with,
         ...(provisional ? { provisional: true, missing_protocols: t.missing_protocols, missing_est: t.missing_est } : {}) });
