@@ -14,7 +14,7 @@ node pipeline/run.mjs          # full refresh, ~2 h (GeckoTerminal is rate-limit
 python3 -m http.server 8787    # then open http://127.0.0.1:8787/
 ```
 
-`node pipeline/classify.mjs` re-aggregates from cache without network calls. Optional env: `COINGECKO_DEMO_KEY`, `DUNE_API_KEY`.
+`node pipeline/classify.mjs` re-aggregates from cache without network calls. Optional env: `COINGECKO_DEMO_KEY`. The Dune SQL is a draft and `DUNE_API_KEY` is not used by the pipeline.
 
 ## Deploy and refresh (24 h)
 
@@ -31,4 +31,4 @@ python3 -m http.server 8787    # then open http://127.0.0.1:8787/
 
 ## Brand
 
-All brand tokens (font, accent colour, wordmark, radius) live in the first `<style>` block of `index.html`. Chart colours are a validated colour-blind-safe pair; swap them for brand hues only after re-running the palette validator described in `ARCHITECTURE.md`.
+The dashboard uses Nemesis's official logo, Cerebri Sans Pro and the ivory, orange and navy colors from [nemesis.trade](https://nemesis.trade/). Tokens live in the first `<style>` block of `index.html`; asset sources are documented in `assets/brand/README.md`. The secondary chart colors are dashboard adaptations. Run `node pipeline/snapshot.mjs` after a frontend change to update the standalone snapshot, including its embedded fonts.

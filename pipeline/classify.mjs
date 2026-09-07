@@ -3,6 +3,14 @@ import fs from 'node:fs';
 import { readJson, writeJson, safeName } from './lib/http.mjs';
 import { CHAINS, THRESHOLD_USD, BOUNDARY, NATIVE_IDS, UNDERLYING, MANUAL_ADDRESSES, BRIDGED_ID_PATTERN, SYMBOL_TO_MAJOR, NATIVE_PLACEHOLDERS, NATIVE_COIN } from './config.mjs';
 
+export const methodologyNotes = (snapshotDate) => [
+  'Total = DefiLlama reported DEX volume per closed UTC day. HyperEVM includes Dexs-category protocols on "Hyperliquid L1" excluding the HyperCore spot orderbook.',
+  'The estimated split samples today\'s top-200 pools plus up to 10 pools per active non-quote token with market cap >= $100M. Current-volume thresholds apply, so some large-cap pools and historically active pools can be missed.',
+  'Unknown market caps and unsampled volume are assigned to below $100M by assumption. When sampled volume exceeds the reference total, both buckets are scaled proportionally. Bucket sums matching the total do not validate the split.',
+  'Coverage = sampled pool volume / DefiLlama total; it is not accuracy. Unknown share refers only to the sample. Boundary share is sampled volume with a subject cap between $50M and $200M.',
+  `Classification uses the current market-cap snapshot (${snapshotDate}) for all historical rows, with wrapped/bridged assets mapped to their underlying. CoinGecko FDV is a fallback when circulating market cap is unavailable.`,
+];
+
 export function main() {
   const snap = readJson('data/mcap_snapshot.json');
   const llama = readJson('data/defillama_totals.json');
@@ -141,12 +149,7 @@ export function main() {
       pools_classified: (idx?.pools || []).filter((p) => p.days).length, whitelist_tokens: idx?.whitelist_tokens ?? 0, gt_meta_id_fallbacks: metaHits };
     console.log(`${c.key.padEnd(10)} mode=${mode} days=${days.length} cov30=${fmtPct(out.quality.per_chain[c.key].coverage_30d)} unk30=${fmtPct(out.quality.per_chain[c.key].unknown_share_30d)} 30d total=${fmtUsd(kpi.total_30d)} above=${fmtPct(kpi.share_above_30d)} chg30d total=${fmtPct(kpi.change_30d.total)} (llama ${fmtPct(kpi.defillama_change_30dover30d)})`);
   }
-  out.quality.notes = [
-    'total = DefiLlama chain DEX volume per closed UTC day (headline definition; HyperEVM = Dexs-category protocols on "Hyperliquid L1" excluding the HyperCore spot orderbook).',
-    'Split (estimate mode) = GeckoTerminal pool-level daily volume for top-200 pools + all pools of >= $100M tokens, classified by the lowest-cap non-quote leg; above_100m = min(sampled_above, total); below_100m = total - above_100m.',
-    'coverage = sampled pool volume / DefiLlama total. unknown_share = sampled volume in pools whose subject token has no CoinGecko market cap (counted as below). boundary_share = sampled volume with subject cap in [$50M, $200M].',
-    `Market caps: CoinGecko snapshot ${snap.snapshot_date} (market_cap, FDV fallback when market_cap is 0). Wrapped/bridged assets mapped to their underlying.`,
-  ];
+  out.quality.notes = methodologyNotes(snap.snapshot_date);
   writeJson('data/latest.json', out);
   fs.writeFileSync('data/volume_daily.csv', csv.join('\n'));
   console.log('wrote data/latest.json, data/volume_daily.csv, data/audit/pools_*.csv');
