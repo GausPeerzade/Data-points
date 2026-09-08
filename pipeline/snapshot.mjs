@@ -8,6 +8,8 @@ const csv = fs.readFileSync('data/volume_daily.csv').toString('base64');
 const inlined = html.replace('<script>\n(() => {', `<script>\n(() => {\n  window.__INLINE_DATA__ = ${data};`);
 if (inlined === html) throw new Error('could not find the main script tag in index.html');
 const out = inlined
+  .replace(/assets\/chains\/[a-z-]+\.(svg|jpg)/g, (file, ext) =>
+    `data:${ext === 'svg' ? 'image/svg+xml' : 'image/jpeg'};base64,${fs.readFileSync(file).toString('base64')}`)
   .replace('href="data/volume_daily.csv"', `href="data:text/csv;base64,${csv}"`)
   .replace('href="assets/brand/favicon.ico"', `href="data:image/x-icon;base64,${fs.readFileSync('assets/brand/favicon.ico').toString('base64')}"`)
   .replace(/url\("(assets\/brand\/[^"/]+\.otf)"\)/g, (_, file) =>

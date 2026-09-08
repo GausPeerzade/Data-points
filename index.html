@@ -18,9 +18,9 @@
   --brand-accent-ink: #000000;
   --brand-radius: 16px;
   color-scheme: light;
-  --page: #f7f7e8; --surface: #fffff3; --surface-2: #efefdf;
-  --ink: #000000; --ink-2: #53534b; --muted: #66665b; --link: #8f3400;
-  --grid: #e6e6d7; --axis: #bdbdaf; --border: #dcdccd;
+  --page: #f7f7e8; --surface: #ebebdd; --surface-2: #e7e7d9;
+  --ink: #000000; --ink-2: #53534b; --muted: #68685d; --link: #ae4000;
+  --grid: #e6e6d7; --axis: #bdbdaf; --border: #e6e6d8;
   --series-above: #ff5e00; --series-below: #33445c; --series-extra: #168365;
   --good: #18704d; --bad: #bb3c48; --warn: #875510; --tip-bg: #fffff3;
 }
@@ -48,53 +48,71 @@ body { margin: 0; font-family: var(--brand-font); font-size: 14px; line-height: 
 a { color: var(--link); text-underline-offset: 3px; }
 button, input { font: inherit; }
 button { cursor: pointer; }
-button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visible, [tabindex]:focus-visible { outline: 3px solid var(--ink); outline-offset: 4px; }
-.wrap { width: min(100%, 1328px); margin: 0 auto; padding: 0 40px 40px; }
-.masthead { min-height: 80px; display: flex; align-items: center; justify-content: space-between; gap: 24px; border-bottom: 1px solid var(--border); }
+button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
+.wrap { width: min(78%, 1120px); margin: 0 auto; }
+.masthead { width: 100%; min-height: 76px; padding: 18px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .wordmark { display: inline-flex; align-items: center; color: var(--ink); flex-shrink: 0; }
-.wordmark svg { display: block; width: 142px; height: 46px; }
-.meta { display: flex; align-items: center; gap: 20px; color: var(--muted); font-size: 12px; }
+.wordmark svg { display: block; width: 126px; height: 40px; }
+.meta { display: flex; align-items: center; gap: 6px; font-size: 12px; }
+.update-pill { display: flex; align-items: center; gap: 6px; border-radius: 14px; padding: 9px 12px; background: var(--surface); color: var(--ink-2); }
+.update-pill svg { width: 15px; height: 15px; flex-shrink: 0; }
 #updated { font-variant-numeric: tabular-nums; }
-.ghost { display: inline-flex; align-items: center; justify-content: center; gap: 7px; background: var(--surface); color: var(--ink-2); border: 1px solid var(--border); border-radius: 8px; padding: 0 14px; height: 38px; white-space: nowrap; }
-.ghost:hover { color: var(--ink); background: var(--surface-2); }
-.theme-icon { width: 15px; height: 15px; border: 1.5px solid currentColor; border-radius: 50%; background: linear-gradient(90deg, currentColor 50%, transparent 50%); }
-.page-intro { padding: 32px 0 26px; display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; }
-h1 { font-size: clamp(25px, 3vw, 34px); line-height: 1.2; letter-spacing: -.035em; font-weight: 600; margin: 0 0 10px; }
-.sub { max-width: 65ch; color: var(--ink-2); margin: 0; font-size: 14px; }
-.badge { display: inline-flex; align-items: center; flex-shrink: 0; gap: 7px; border: 1px solid var(--border); border-radius: 6px; padding: 6px 10px; font-size: 12px; color: var(--ink-2); background: var(--surface); }
-.badge::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--warn); }
-.tabs { display: flex; gap: 24px; overflow-x: auto; scrollbar-width: thin; border-bottom: 1px solid var(--border); margin-bottom: 24px; }
-.tab { position: relative; flex-shrink: 0; background: transparent; border: 0; border-bottom: 3px solid transparent; color: var(--ink-2); padding: 12px 0 14px; min-height: 46px; font-size: 14px; white-space: nowrap; }
-.tab:hover { color: var(--ink); }
-.tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--series-above); font-weight: 700; }
-.tab:focus-visible { outline-offset: -3px; }
-.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--brand-radius); margin-bottom: 24px; min-width: 0; }
-.summary-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 24px 28px 0; }
-.summary-head h2 { margin: 0; font-size: 15px; font-weight: 600; }
+.ghost { display: inline-flex; align-items: center; justify-content: center; gap: 7px; background: transparent; color: var(--ink-2); border: 0; border-radius: 12px; padding: 0 12px; min-height: 36px; white-space: nowrap; }
+.ghost:hover { color: var(--ink); background: var(--surface); }
+#themeBtn { width: 44px; height: 44px; color: var(--ink); padding: 10px; }
+.theme-icon { width: 24px; height: 24px; }
+.theme-sun { display: none; }
+:root[data-theme="dark"] .theme-sun { display: block; }
+:root[data-theme="dark"] .theme-moon { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-sun { display: block; }
+  :root:not([data-theme="light"]) .theme-moon { display: none; }
+}
+.page-intro { padding: 10px 0 22px; display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+h1 { font-size: clamp(28px, 3vw, 34px); line-height: 1.2; letter-spacing: -.04em; font-weight: 600; margin: 0 0 6px; }
+.sub { max-width: 75ch; color: var(--ink-2); margin: 0; font-size: 13px; }
+.badge { display: inline-flex; align-items: center; flex-shrink: 0; gap: 6px; font-size: 12px; color: var(--ink-2); }
+.badge::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--brand-accent); }
+.tabs { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: thin; padding: 2px 0 8px; margin-bottom: 14px; }
+.tab { display: inline-flex; align-items: center; gap: 5px; flex-shrink: 0; background: transparent; border: 0; border-radius: 12px; color: var(--ink-2); padding: 8px 12px; min-height: 36px; font-size: 12px; white-space: nowrap; }
+.tab:hover { color: var(--ink); background: var(--surface); }
+.tab[aria-selected="true"] { color: var(--ink); background: var(--surface-2); font-weight: 500; }
+.tab:focus-visible { outline-offset: -2px; }
+.chain-icon { display: inline-flex; width: 15px; height: 15px; flex-shrink: 0; vertical-align: middle; }
+.chain-icon img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.chain-icon .chain-mark-dark { display: none; }
+:root[data-theme="dark"] .chain-icon .chain-mark-light { display: none; }
+:root[data-theme="dark"] .chain-icon .chain-mark-dark { display: block; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .chain-icon .chain-mark-light { display: none; }
+  :root:not([data-theme="light"]) .chain-icon .chain-mark-dark { display: block; }
+}
+.card { margin-bottom: 38px; min-width: 0; }
+.summary-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
 .summary-head p { margin: 0; color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
-.kpis { display: grid; grid-template-columns: 1.15fr 1fr 1fr 1fr; padding: 22px 0 26px; border-bottom: 1px solid var(--border); }
-.tile { padding: 0 28px; min-width: 0; display: flex; flex-direction: column; }
-.tile + .tile { border-left: 1px solid var(--border); }
-.tile .label { color: var(--ink-2); font-size: 12px; min-height: 24px; display: flex; align-items: center; gap: 7px; }
-.tile.series-a .label::before, .tile.series-b .label::before { content: ''; width: 7px; height: 7px; border-radius: 2px; flex-shrink: 0; background: var(--series-above); }
-.tile.series-b .label::before { background: var(--series-below); }
-.tile .value { font-size: clamp(27px, 2.8vw, 36px); font-weight: 600; line-height: 1.3; letter-spacing: -.035em; font-variant-numeric: tabular-nums; margin: 4px 0 8px; }
-.tile .delta { font-size: 12px; color: var(--ink-2); display: flex; gap: 6px; align-items: baseline; flex-wrap: wrap; min-height: 20px; }
+.card h2 { font-size: 21px; margin: 0; font-weight: 600; letter-spacing: -.03em; line-height: 1.3; }
+.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 36px; padding: 20px 0 42px; }
+.tile { min-width: 0; display: flex; flex-direction: column; }
+.tile .label { color: var(--ink-2); font-size: 12px; min-height: 23px; display: flex; align-items: center; }
+.tile .value { font-size: clamp(28px, 2.8vw, 34px); font-weight: 600; line-height: 1.3; letter-spacing: -.04em; font-variant-numeric: tabular-nums; margin: 3px 0 3px; }
+.tile .delta { font-size: 12px; color: var(--ink-2); display: flex; gap: 4px; align-items: baseline; flex-wrap: wrap; min-height: 18px; }
+.tile:last-child .delta:empty { display: none; }
 .up { color: var(--good); } .down { color: var(--bad); } .flat { color: var(--muted); }
-.delta .up, .delta .down { font-weight: 600; }
-.tile .foot { color: var(--muted); font-size: 11px; padding-top: 8px; margin-top: auto; }
-.chart-body { padding: 24px 28px 14px; }
-.chart-head { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
-.card h2 { font-size: 17px; margin: 0; font-weight: 600; letter-spacing: -.015em; }
-.card .cap { color: var(--muted); font-size: 12px; margin: 4px 0 0; max-width: 75ch; }
-.chart-actions { display: flex; gap: 10px; align-items: center; flex-shrink: 0; }
-.seg { display: inline-flex; padding: 3px; border: 1px solid var(--border); border-radius: 9px; background: var(--page); }
-.seg button { background: transparent; border: 0; color: var(--ink-2); padding: 0 12px; height: 30px; border-radius: 6px; font-size: 12px; white-space: nowrap; }
-.seg button[aria-pressed="true"] { background: var(--surface-2); color: var(--ink); font-weight: 700; }
-.chart-context { display: flex; justify-content: space-between; gap: 14px; align-items: center; flex-wrap: wrap; padding: 18px 0 12px; }
+.delta .up, .delta .down { font-weight: 500; }
+.tile .foot { color: var(--muted); font-size: 12px; padding-top: 6px; }
+.chart-head { display: flex; justify-content: space-between; align-items: center; gap: 20px; margin-bottom: 18px; }
+.chart-head .cap { display: none; }
+.chart-actions { display: flex; gap: 12px; align-items: center; flex-shrink: 0; }
+.seg { display: inline-flex; gap: 4px; }
+.seg button { background: transparent; border: 0; color: var(--ink-2); padding: 0 14px; height: 34px; border-radius: 12px; font-size: 12px; white-space: nowrap; }
+.seg button[aria-pressed="true"] { background: var(--surface-2); color: var(--ink); font-weight: 500; }
+#tableBtn { font-size: 12px; }
+#tableBtn::before { content: '⇄'; font-size: 19px; line-height: 1; }
+.chart-surface { background: var(--surface); border-radius: var(--brand-radius); padding: 20px 22px 14px; }
+.chart-context { display: flex; justify-content: space-between; gap: 14px; align-items: center; flex-wrap: wrap; padding-bottom: 12px; }
 .legend { display: flex; gap: 18px; flex-wrap: wrap; font-size: 12px; color: var(--ink-2); align-items: center; }
 .legend > span { display: inline-flex; align-items: center; gap: 6px; }
-.legend .sw, .legend .prov { display: inline-block; width: 9px; height: 9px; border-radius: 2px; flex-shrink: 0; }
+.legend .sw, .legend .prov { display: inline-block; width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0; }
 .legend .ln { display: inline-block; width: 14px; height: 2px; background: var(--series-extra); }
 .legend .prov { background: var(--series-above); opacity: .4; }
 .chk { display: inline-flex; gap: 7px; align-items: center; color: var(--ink-2); cursor: pointer; font-size: 12px; }
@@ -103,86 +121,126 @@ h1 { font-size: clamp(25px, 3vw, 34px); line-height: 1.2; letter-spacing: -.035e
 .plot svg { display: block; width: 100%; height: auto; font-family: inherit; overflow: visible; }
 .plot text { fill: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
 .plot .lbl { fill: var(--ink); font-size: 11px; font-weight: 600; }
-.plot .grid { stroke: var(--grid); stroke-width: 1; stroke-dasharray: 3 4; }
+.plot .grid { stroke: var(--grid); stroke-width: 1; }
 .plot .base { stroke: var(--axis); stroke-width: 1; }
 .plot .hit { fill: transparent; cursor: crosshair; }
 .plot .hit:focus-visible { outline: none; stroke: var(--series-above); stroke-width: 1; }
 .plot .band.hover .bar-seg { filter: brightness(1.10); }
-.tip { position: absolute; pointer-events: none; background: var(--tip-bg); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; font-size: 12px; box-shadow: 0 8px 24px #00000018; width: 250px; max-width: calc(100% - 16px); z-index: 5; display: none; }
+.tip { position: absolute; pointer-events: none; background: var(--tip-bg); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; font-size: 12px; box-shadow: 0 8px 24px #00000018; width: 250px; max-width: calc(100% - 16px); z-index: 5; display: none; }
 .tip .d { color: var(--ink-2); margin-bottom: 8px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
 .tip .row { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin: 4px 0; }
 .tip .row .v { font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; white-space: nowrap; }
 .tip .row .k { color: var(--ink-2); }
 .tip .key { display: inline-block; width: 7px; height: 7px; border-radius: 2px; margin-right: 6px; }
 .tip .note { color: var(--warn); margin-top: 8px; }
-.section-head { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 24px 28px 18px; }
-.section-head a { font-size: 12px; white-space: nowrap; }
+.chart-caption { color: var(--muted); font-size: 11px; margin: 10px 0 0; }
+.comparison { border-top: 1px solid var(--border); padding-top: 38px; }
+.section-head { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-bottom: 22px; }
+.card .cap { color: var(--ink-2); font-size: 13px; margin: 7px 0 0; max-width: 75ch; }
+.section-head a { font-size: 12px; white-space: nowrap; color: var(--link); }
 .tablewrap { overflow-x: auto; scrollbar-width: thin; }
+#overview { background: var(--surface); border-radius: var(--brand-radius); padding: 8px 0; }
 table { width: 100%; border-collapse: collapse; font-size: 13px; }
-th, td { text-align: right; padding: 15px 20px; border-bottom: 1px solid var(--grid); font-variant-numeric: tabular-nums; white-space: nowrap; }
-th { color: var(--muted); font-weight: 500; font-size: 11px; background: var(--page); }
-th:first-child, td:first-child { text-align: left; padding-left: 28px; }
-th:last-child, td:last-child { padding-right: 28px; }
+th, td { text-align: right; padding: 13px 18px; border-bottom: 1px solid var(--grid); font-variant-numeric: tabular-nums; white-space: nowrap; }
+th { color: var(--muted); font-weight: 400; font-size: 12px; }
+th:first-child, td:first-child { text-align: left; padding-left: 24px; }
+th:last-child, td:last-child { padding-right: 24px; }
 tbody tr:last-child td { border-bottom: 0; }
 #overview tbody tr:hover td { background: var(--surface-2); }
 #overview tbody tr { cursor: pointer; }
-.chain-button { color: var(--ink); font-weight: 600; border: 0; padding: 4px 0; background: transparent; text-align: left; }
-.share { display: inline-flex; width: 64px; height: 5px; border-radius: 3px; overflow: hidden; vertical-align: middle; margin-left: 12px; background: var(--series-below); }
+.chain-button { display: inline-flex; gap: 6px; align-items: center; color: var(--ink); font-weight: 500; border: 0; padding: 3px 0; background: transparent; text-align: left; }
+.share { display: inline-flex; width: 48px; height: 4px; border-radius: 3px; overflow: hidden; vertical-align: middle; margin-left: 10px; background: var(--series-below); }
 .share i { display: block; height: 100%; background: var(--series-above); }
-tr.sel td { background: color-mix(in srgb, var(--series-above) 8%, var(--surface)); }
-tr.sel td:first-child { box-shadow: inset 3px 0 var(--series-above); }
-.table-caption { padding: 14px 28px; border-top: 1px solid var(--border); margin: 0; color: var(--muted); font-size: 11px; }
-#dayTable { margin: 8px -28px 20px; max-height: 420px; }
-#dayTable th { position: sticky; top: 0; }
-details { border-top: 1px solid var(--border); padding: 22px 0; color: var(--ink-2); font-size: 13px; }
-summary { cursor: pointer; color: var(--ink); font-weight: 600; }
+tr.sel td { background: color-mix(in srgb, var(--series-above) 6%, var(--surface)); }
+tr.sel td:first-child { box-shadow: inset 2px 0 var(--series-above); }
+.table-caption { padding: 12px 0 0; margin: 0; color: var(--muted); font-size: 11px; }
+#dayTable { max-height: 340px; }
+#dayTable th { position: sticky; top: 0; background: var(--surface); }
+details { border-top: 1px solid var(--border); padding: 34px 0; color: var(--ink-2); font-size: 13px; }
+summary { display: flex; align-items: center; gap: 16px; width: fit-content; cursor: pointer; color: var(--ink); font-size: 20px; font-weight: 600; letter-spacing: -.025em; list-style: none; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: ''; border: 4px solid transparent; border-top-color: currentColor; transform: translateY(2px); }
+details[open] summary::after { transform: rotate(180deg) translateY(2px); }
 details p, details li { margin: 10px 0; max-width: 85ch; line-height: 1.65; }
-details ul { padding-left: 18px; }
-.footer { display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid var(--border); padding-top: 20px; font-size: 11px; color: var(--muted); }
+details ul { padding-left: 18px; margin-top: 22px; }
+.footer { border-top: 1px solid var(--border); padding: 40px 0 22px; }
+.footer-main { display: grid; grid-template-columns: 1fr auto; gap: 64px; }
+.footer .wordmark svg { width: 146px; height: 48px; }
+.footer-tagline { font-size: 16px; font-weight: 500; letter-spacing: -.02em; margin: 16px 0 0; }
+.footer-nav { display: grid; grid-template-columns: repeat(3, minmax(110px, 1fr)); gap: 42px; }
+.footer-group h3 { font-size: 13px; font-weight: 400; color: var(--muted); margin: 0 0 20px; }
+.footer-group a { display: block; color: var(--ink); font-size: 13px; text-decoration: none; margin: 0 0 18px; width: fit-content; }
+.footer-group a:hover { text-decoration: underline; }
+.social-links { display: flex; align-items: center; gap: 16px; }
+.social-links a { display: inline-flex; width: 22px; height: 24px; }
+.social-links svg { width: 22px; height: 22px; fill: currentColor; }
+.footer-bottom { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 10px; margin-top: 64px; font-size: 12px; color: var(--muted); }
 .err { background: var(--surface); border: 1px solid var(--border); padding: 24px; border-radius: var(--brand-radius); color: var(--ink-2); }
 .hidden { display: none !important; }
 @media (max-width: 1000px) {
-  .wrap { padding-right: 24px; padding-left: 24px; }
-  .tile { padding: 0 20px; }
+  .wrap { width: calc(100% - 48px); }
+  .page-intro { align-items: flex-start; }
+  .badge { margin-top: 8px; }
+  .kpis { gap: 20px; }
   .tile .delta { display: block; }
   .tile .delta > span + span { display: block; margin-top: 2px; }
-  .tile .label { min-height: 36px; }
+  .footer-main { gap: 32px; }
+  .footer-nav { gap: 24px; grid-template-columns: repeat(3, minmax(90px, 1fr)); }
 }
 @media (max-width: 700px) {
-  .wrap { padding: 0 16px 24px; }
-  .masthead { min-height: 68px; gap: 12px; }
-  .meta { gap: 12px; }
-  #updated { display: none; }
-  .page-intro { padding: 24px 0 16px; align-items: flex-start; flex-direction: column; gap: 14px; }
-  .sub { font-size: 13px; }
-  .tabs { gap: 22px; margin-bottom: 18px; }
-  .summary-head { padding: 20px 20px 0; align-items: flex-start; flex-direction: column; gap: 4px; }
-  .kpis { grid-template-columns: 1fr 1fr; padding: 20px 0 0; row-gap: 20px; }
-  .tile { padding: 0 20px 18px; }
-  .tile .label { min-height: 36px; }
-  .tile:nth-child(3) { border-left: 0; }
-  .tile:nth-child(n+3) { border-top: 1px solid var(--border); padding-top: 20px; }
+  .wrap { width: calc(100% - 32px); }
+  .masthead { padding: 12px 16px; gap: 12px; flex-wrap: wrap; min-height: 68px; }
+  .masthead .wordmark svg { width: 110px; height: 36px; }
+  .meta { gap: 0; }
+  .update-pill { background: none; padding: 0; font-size: 10px; max-width: 145px; line-height: 1.4; }
+  .update-pill svg { display: none; }
+  #themeBtn { width: 36px; height: 40px; padding: 8px; }
+  .page-intro { padding: 24px 0 18px; flex-direction: column; gap: 10px; }
+  .badge { margin-top: 0; font-size: 11px; }
+  .tabs { margin-bottom: 20px; gap: 2px; }
+  .tab { padding: 8px 10px; }
+  .summary-head { align-items: flex-start; flex-direction: column; gap: 6px; }
+  .summary-head p { font-size: 11px; }
+  .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 20px; padding: 22px 0 34px; }
+  .tile .label { font-size: 11px; min-height: 22px; }
   .tile .value { font-size: 29px; }
-  .tile .delta { font-size: 11px; }
-  .tile .foot { padding-top: 6px; }
-  .chart-body { padding: 20px 16px 12px; }
-  .chart-head { align-items: flex-start; flex-direction: column; gap: 16px; }
-  .chart-actions { width: 100%; justify-content: space-between; }
-  .chart-context { padding-top: 16px; }
-  .legend { gap: 10px 16px; font-size: 11px; }
-  .section-head { padding: 20px; align-items: flex-start; }
-  .section-head a { margin-top: 3px; }
-  .card h2 { font-size: 16px; }
-  .table-caption { padding: 14px 20px; }
-  #dayTable { margin-left: -16px; margin-right: -16px; }
-  .footer { flex-direction: column; gap: 6px; }
+  .tile .delta, .tile .foot { font-size: 11px; }
+  .chart-head { align-items: flex-start; flex-direction: column; gap: 14px; margin-bottom: 14px; }
+  .chart-actions { width: 100%; justify-content: space-between; gap: 6px; }
+  .chart-surface { padding: 16px 12px 12px; }
+  .legend { gap: 8px 14px; font-size: 11px; }
+  .chk { font-size: 11px; }
+  .chart-caption { font-size: 10px; line-height: 1.5; }
+  .card { margin-bottom: 28px; }
+  .card h2 { font-size: 19px; }
+  .comparison { padding-top: 26px; }
+  .section-head { align-items: flex-start; gap: 12px; padding-bottom: 18px; }
+  .section-head .cap { font-size: 12px; }
+  .section-head a { margin-top: 5px; font-size: 11px; }
+  th, td { padding: 14px 16px; }
+  th:first-child, td:first-child { padding-left: 18px; }
+  details { padding: 28px 0; }
+  summary { font-size: 18px; gap: 12px; }
+  .footer { padding-top: 32px; }
+  .footer-main { grid-template-columns: 1fr; gap: 32px; }
+  .footer-nav { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+  .footer-group h3, .footer-group a { font-size: 12px; }
+  .social-links { gap: 10px; }
+  .social-links a, .social-links svg { width: 19px; }
+  .footer-bottom { margin-top: 34px; font-size: 11px; }
+  #footerDate { max-width: 36ch; }
+}
+@media (max-width: 360px) {
+  .masthead { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; }
+  .meta { display: contents; }
+  .update-pill { grid-column: 1 / -1; grid-row: 2; max-width: none; }
+  #themeBtn { grid-column: 2; grid-row: 1; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; } }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
+<header>
     <div class="masthead">
       <a class="wordmark" href="https://nemesis.trade/" aria-label="Nemesis home"><svg aria-hidden="true" focusable="false" width="142" height="46" viewBox="0 0 141.709 46" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g aria-hidden="true">
@@ -197,10 +255,12 @@ details ul { padding-left: 18px; }
 </g>
 </svg></a>
       <div class="meta">
-        <time id="updated">Loading data…</time>
-        <button class="ghost" id="themeBtn" type="button" aria-label="Toggle dark mode"><span class="theme-icon" aria-hidden="true"></span> Theme</button>
+        <div class="update-pill"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="M10 5v5l3 2"/></svg><time id="updated">Loading data…</time></div>
+        <button class="ghost" id="themeBtn" type="button" aria-label="Toggle dark mode"><svg class="theme-icon theme-moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 15.2A9 9 0 0 1 8.8 3.5 9.2 9.2 0 1 0 20.5 15.2Z"/></svg><svg class="theme-icon theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 1v3m0 16v3M1 12h3m16 0h3M4.2 4.2l2.1 2.1m11.4 11.4 2.1 2.1M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></button>
       </div>
     </div>
+  </header>
+<div class="wrap">
     <div class="page-intro">
       <div>
         <h1>Onchain spot volume</h1>
@@ -208,7 +268,6 @@ details ul { padding-left: 18px; }
       </div>
       <span class="badge" id="modeBadge">Loading methodology</span>
     </div>
-  </header>
 
   <main id="app" class="hidden">
     <nav class="tabs" id="tabs" role="tablist" aria-label="Select chain"></nav>
@@ -217,7 +276,7 @@ details ul { padding-left: 18px; }
       <div class="kpis" id="kpis"></div>
       <div class="chart-body">
         <div class="chart-head">
-          <div><h2 id="chartTitle"></h2><p class="cap" id="chartCap"></p></div>
+          <div><h2 id="chartTitle"></h2></div>
           <div class="chart-actions">
             <div class="seg" role="group" aria-label="Chart range">
               <button type="button" data-range="30" aria-pressed="true">30 days</button>
@@ -226,16 +285,19 @@ details ul { padding-left: 18px; }
             <button class="ghost" id="tableBtn" type="button" aria-pressed="false">Table view</button>
           </div>
         </div>
+        <div class="chart-surface">
         <div class="chart-context">
           <div class="legend" id="legend"></div>
           <label class="chk hidden" id="overlayWrap"><input type="checkbox" id="overlay"> Show HyperCore orderbook</label>
         </div>
         <div class="plot" id="plot"><div class="tip" id="tip" role="status" aria-live="polite"></div></div>
         <div class="tablewrap hidden" id="dayTable" tabindex="0" role="region" aria-label="Daily volume table"></div>
+        <p class="chart-caption" id="chartCap"></p>
+        </div>
       </div>
     </section>
 
-    <section class="card" aria-labelledby="comparisonTitle">
+    <section class="card comparison" aria-labelledby="comparisonTitle">
       <div class="section-head">
         <div><h2 id="comparisonTitle">Compare chains</h2><p class="cap">30-day totals and change versus the prior 30 days.</p></div>
         <a href="data/volume_daily.csv" download="nemesis-volume-daily.csv">Download CSV</a>
@@ -254,7 +316,32 @@ details ul { padding-left: 18px; }
     </details>
   </main>
   <div id="error" class="err hidden" role="alert"></div>
-  <footer class="footer"><span>Nemesis research</span><span id="footerDate">USD volumes. UTC trading days.</span></footer>
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-brand"><a class="wordmark" href="https://nemesis.trade/" aria-label="Nemesis home"><svg aria-hidden="true" focusable="false" width="142" height="46" viewBox="0 0 141.709 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g aria-hidden="true">
+<path d="M31.5967 0L23.8861 18.6639C23.4713 19.682 23.7164 20.832 24.5082 21.5861L36.4607 32.9541L22.6607 28.2221C20.8697 27.6189 18.909 28.2221 17.759 29.7303L5.52377 46L12.9893 26.3369C13.5361 24.8852 13.0836 23.2262 11.8582 22.2648L0 13.0459L14.8557 17.2311C16.3074 17.6459 17.8533 17.1369 18.7771 15.968L31.5967 0Z" fill="currentColor"/>
+<path d="M135.963 30.8351C135.239 30.8351 134.508 30.737 133.769 30.541C133.03 30.3298 132.374 30.0056 131.8 29.5682C131.227 29.1308 130.813 28.5652 130.556 27.8715L133.248 26.9439C133.384 27.4869 133.723 27.8865 134.266 28.1429C134.809 28.3842 135.39 28.5049 136.008 28.5049C136.325 28.5049 136.634 28.4672 136.936 28.3918C137.253 28.3164 137.517 28.1957 137.728 28.0298C137.954 27.8488 138.067 27.6226 138.067 27.3511C138.067 27.0947 137.939 26.876 137.682 26.6951C137.426 26.499 137.019 26.318 136.461 26.1521L134.764 25.6544C133.844 25.3528 133.128 24.9531 132.615 24.4554C132.102 23.9577 131.846 23.3469 131.846 22.6229C131.846 21.8085 132.087 21.1374 132.57 20.6095C133.052 20.0816 133.671 19.6895 134.425 19.4331C135.194 19.1616 136.008 19.0259 136.868 19.0259C137.577 19.0259 138.256 19.1164 138.904 19.2974C139.553 19.4783 140.126 19.7574 140.623 20.1344C141.121 20.5115 141.483 21.0167 141.709 21.6501L139.017 22.5777C138.866 22.0951 138.565 21.7708 138.112 21.6049C137.66 21.4239 137.177 21.3334 136.664 21.3334C136.393 21.3334 136.121 21.3636 135.85 21.4239C135.579 21.4842 135.345 21.5898 135.149 21.7406C134.968 21.8764 134.877 22.0724 134.877 22.3288C134.877 22.5701 134.975 22.7813 135.171 22.9623C135.382 23.1282 135.714 23.279 136.167 23.4147L137.863 23.9124C138.98 24.2593 139.801 24.6665 140.329 25.1341C140.857 25.6016 141.121 26.1898 141.121 26.8987C141.121 27.7734 140.88 28.5049 140.397 29.0931C139.93 29.6813 139.304 30.1187 138.52 30.4052C137.735 30.6918 136.883 30.8351 135.963 30.8351Z" fill="currentColor"/>
+<path d="M124.837 30.541L126.715 21.718H124.905L125.425 19.32H130.402L128.004 30.541H124.837ZM129.384 17.4197C128.857 17.4197 128.404 17.2311 128.027 16.8541C127.65 16.4771 127.461 16.0246 127.461 15.4967C127.461 14.9538 127.65 14.5013 128.027 14.1393C128.404 13.7623 128.857 13.5738 129.384 13.5738C129.927 13.5738 130.38 13.7623 130.742 14.1393C131.119 14.5013 131.307 14.9538 131.307 15.4967C131.307 16.0246 131.119 16.4771 130.742 16.8541C130.365 17.2311 129.912 17.4197 129.384 17.4197Z" fill="currentColor"/>
+<path d="M117.935 30.8351C117.212 30.8351 116.48 30.737 115.741 30.541C115.002 30.3298 114.346 30.0056 113.773 29.5682C113.2 29.1308 112.785 28.5652 112.529 27.8715L115.221 26.9439C115.356 27.4869 115.696 27.8865 116.239 28.1429C116.782 28.3842 117.362 28.5049 117.981 28.5049C118.297 28.5049 118.607 28.4672 118.908 28.3918C119.225 28.3164 119.489 28.1957 119.7 28.0298C119.926 27.8488 120.039 27.6226 120.039 27.3511C120.039 27.0947 119.911 26.876 119.655 26.6951C119.398 26.499 118.991 26.318 118.433 26.1521L116.736 25.6544C115.816 25.3528 115.1 24.9531 114.587 24.4554C114.074 23.9577 113.818 23.3469 113.818 22.6229C113.818 21.8085 114.059 21.1374 114.542 20.6095C115.025 20.0816 115.643 19.6895 116.397 19.4331C117.166 19.1616 117.981 19.0259 118.84 19.0259C119.549 19.0259 120.228 19.1164 120.876 19.2974C121.525 19.4783 122.098 19.7574 122.596 20.1344C123.093 20.5115 123.455 21.0167 123.682 21.6501L120.99 22.5777C120.839 22.0951 120.537 21.7708 120.085 21.6049C119.632 21.4239 119.15 21.3334 118.637 21.3334C118.365 21.3334 118.094 21.3636 117.822 21.4239C117.551 21.4842 117.317 21.5898 117.121 21.7406C116.94 21.8764 116.85 22.0724 116.85 22.3288C116.85 22.5701 116.948 22.7813 117.144 22.9623C117.355 23.1282 117.687 23.279 118.139 23.4147L119.836 23.9124C120.952 24.2593 121.774 24.6665 122.302 25.1341C122.83 25.6016 123.093 26.1898 123.093 26.8987C123.093 27.7734 122.852 28.5049 122.37 29.0931C121.902 29.6813 121.276 30.1187 120.492 30.4052C119.708 30.6918 118.855 30.8351 117.935 30.8351Z" fill="currentColor"/>
+<path d="M105.799 30.8124C104.713 30.8124 103.763 30.6013 102.949 30.179C102.149 29.7567 101.523 29.1685 101.071 28.4144C100.619 27.6452 100.392 26.7629 100.392 25.7675C100.392 24.8475 100.551 23.9803 100.867 23.1659C101.199 22.3515 101.659 21.6351 102.247 21.0167C102.836 20.3983 103.522 19.9157 104.306 19.5688C105.105 19.2069 105.988 19.0259 106.953 19.0259C108.175 19.0259 109.2 19.32 110.03 19.9082C110.859 20.4964 111.44 21.3033 111.772 22.3288C112.103 23.3393 112.119 24.4856 111.817 25.7675H103.379C103.409 26.3105 103.537 26.778 103.763 27.1702C103.989 27.5472 104.299 27.8338 104.691 28.0298C105.083 28.2259 105.543 28.3239 106.071 28.3239C106.478 28.3239 106.893 28.2711 107.315 28.1656C107.737 28.0449 108.077 27.8036 108.333 27.4416L110.912 28.5049C110.263 29.2741 109.494 29.8547 108.604 30.2469C107.715 30.6239 106.78 30.8124 105.799 30.8124ZM103.718 23.7767H109.26C109.291 23.2639 109.2 22.8341 108.989 22.4872C108.778 22.1252 108.491 21.8538 108.129 21.6728C107.767 21.4918 107.338 21.4013 106.84 21.4013C106.267 21.4013 105.769 21.5144 105.347 21.7406C104.94 21.9669 104.6 22.261 104.329 22.6229C104.072 22.9849 103.869 23.3695 103.718 23.7767Z" fill="currentColor"/>
+<path d="M79.877 30.541L82.275 19.32H84.9672L85.0803 20.8583C85.4272 20.3606 85.9022 19.9308 86.5055 19.5688C87.1088 19.2069 87.8252 19.0259 88.6547 19.0259C89.439 19.0259 90.0875 19.1993 90.6003 19.5462C91.1281 19.878 91.4826 20.3833 91.6635 21.062C92.2517 20.338 92.8852 19.8177 93.5639 19.501C94.2426 19.1842 94.9891 19.0259 95.8036 19.0259C96.6029 19.0259 97.259 19.2069 97.7718 19.5688C98.2996 19.9308 98.654 20.4587 98.835 21.1524C99.016 21.8462 98.9934 22.6983 98.7672 23.7088L97.3193 30.541H94.1747L95.5095 24.1839C95.6904 23.3997 95.6829 22.7587 95.4868 22.261C95.3058 21.7482 94.876 21.4918 94.1973 21.4918C93.4885 21.4918 92.9003 21.7633 92.4327 22.3062C91.9652 22.8341 91.6183 23.6485 91.3921 24.7495L90.1704 30.541H87.0032L88.3606 24.1839C88.5416 23.3997 88.534 22.7587 88.338 22.261C88.1419 21.7482 87.7121 21.4918 87.0485 21.4918C86.3245 21.4918 85.7363 21.7708 85.2839 22.3288C84.8314 22.8869 84.4921 23.6938 84.2658 24.7495L83.0442 30.541H79.877Z" fill="currentColor"/>
+<path d="M73.1019 30.8124C72.016 30.8124 71.0659 30.6013 70.2515 30.179C69.4521 29.7567 68.8262 29.1685 68.3737 28.4144C67.9213 27.6452 67.6951 26.7629 67.6951 25.7675C67.6951 24.8475 67.8534 23.9803 68.1701 23.1659C68.5019 22.3515 68.9619 21.6351 69.5501 21.0167C70.1383 20.3983 70.8246 19.9157 71.6088 19.5688C72.4082 19.2069 73.2905 19.0259 74.2557 19.0259C75.4774 19.0259 76.5029 19.32 77.3324 19.9082C78.1619 20.4964 78.7426 21.3033 79.0744 22.3288C79.4062 23.3393 79.4213 24.4856 79.1197 25.7675H70.6813C70.7115 26.3105 70.8397 26.778 71.0659 27.1702C71.2921 27.5472 71.6013 27.8338 71.9934 28.0298C72.3856 28.2259 72.8456 28.3239 73.3734 28.3239C73.7806 28.3239 74.1954 28.2711 74.6177 28.1656C75.04 28.0449 75.3793 27.8036 75.6357 27.4416L78.2147 28.5049C77.5662 29.2741 76.797 29.8547 75.9072 30.2469C75.0174 30.6239 74.0823 30.8124 73.1019 30.8124ZM71.0206 23.7767H76.5633C76.5934 23.2639 76.5029 22.8341 76.2918 22.4872C76.0806 22.1252 75.7941 21.8538 75.4321 21.6728C75.0701 21.4918 74.6403 21.4013 74.1426 21.4013C73.5695 21.4013 73.0718 21.5144 72.6495 21.7406C72.2423 21.9669 71.9029 22.261 71.6315 22.6229C71.3751 22.9849 71.1715 23.3695 71.0206 23.7767Z" fill="currentColor"/>
+<path d="M50.9812 30.541L54.1936 15.4288H58.1753L62.1343 26.6498L64.5323 15.4288H67.6995L64.4871 30.541H60.4828L56.5464 19.3426L54.171 30.541H50.9812Z" fill="currentColor"/>
+</g>
+</svg></a><p class="footer-tagline">Swap, long or short any onchain tokens.</p></div>
+      <nav class="footer-nav" aria-label="Nemesis links">
+        <div class="footer-group"><h3>Protocol</h3><a href="https://nemesis.trade/trade">Trade</a><a href="https://nemesis.trade/liquidity">Liquidity</a><a href="https://nemesis.trade/explore">Explore</a></div>
+        <div class="footer-group"><h3>Company</h3><a href="https://www.figma.com/design/l0hlmcNxLPqU2GzMrXX9F4/Brand-Assets?node-id=0-1&amp;p=f&amp;m=dev">Brand Assets</a></div>
+        <div class="footer-group"><h3>Socials</h3><div class="social-links">
+          <a href="https://x.com/Nemesisdottrade" aria-label="Nemesis on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.6 5.5 22H2.3l8.2-9.4L.8 2h6.5l4.5 6.7L18.9 2ZM17.8 20h1.8L6.2 3.9H4.3L17.8 20Z"/></svg></a>
+          <a href="https://discord.gg/XfqaJn6gcP" aria-label="Nemesis on Discord"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.7 5a18 18 0 0 0-4.4-1.4l-.5 1a16.4 16.4 0 0 0-5.6 0l-.5-1A18 18 0 0 0 4.3 5C1.5 9.2.8 13.3 1.2 17.4a18 18 0 0 0 5.4 2.7l1.1-1.8-1.7-.8.4-.3a13.4 13.4 0 0 0 11.2 0l.4.3-1.7.8 1.1 1.8a18 18 0 0 0 5.4-2.7C23.3 12.7 22 8.6 19.7 5ZM8.6 14.9c-1 0-1.7-.9-1.7-2s.7-2 1.7-2 1.7.9 1.7 2-.8 2-1.7 2Zm6.8 0c-1 0-1.7-.9-1.7-2s.7-2 1.7-2 1.7.9 1.7 2-.8 2-1.7 2Z"/></svg></a>
+          <a href="https://t.me/nemesisdottrade" aria-label="Nemesis on Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21.8 3.3-3.2 17c-.2 1-1 1.2-1.8.7l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.3L6.2 13.8l-4.8-1.5c-1-.3-1-1 .2-1.5L20.4 3c.9-.3 1.6.2 1.4.3Z"/></svg></a>
+        </div></div>
+      </nav>
+    </div>
+    <div class="footer-bottom"><span>2026 Nemesis. All rights reserved.</span><span id="footerDate">USD volumes. UTC trading days.</span></div>
+  </footer>
 </div>
 
 <script>
@@ -262,6 +349,20 @@ details ul { padding-left: 18px; }
   const $ = (id) => document.getElementById(id);
   const state = { data: null, chain: 'ethereum', range: 30, overlay: false, table: false };
   const ORDER = ['ethereum', 'solana', 'robinhood', 'base', 'bnb', 'arbitrum', 'hyperevm'];
+
+  const CHAIN_ICONS = {
+    ethereum: 'assets/chains/ethereum.svg', solana: 'assets/chains/solana.svg',
+    robinhood: 'assets/chains/robinhood.jpg', base: 'assets/chains/base.svg',
+    bnb: 'assets/chains/bnb.svg', arbitrum: 'assets/chains/arbitrum.svg', hyperevm: 'assets/chains/hyperevm.svg',
+  };
+  const CHAIN_ICONS_DARK = { hyperevm: 'assets/chains/hyperevm-dark.svg' };
+  const chainIcon = (key) => {
+    const box = document.createElement('span'); box.className = 'chain-icon'; box.setAttribute('aria-hidden', 'true');
+    const add = (src, className) => { const img = document.createElement('img'); img.src = src; img.alt = ''; img.width = 15; img.height = 15; img.className = className; box.appendChild(img); };
+    add(CHAIN_ICONS[key], CHAIN_ICONS_DARK[key] ? 'chain-mark-light' : 'chain-mark');
+    if (CHAIN_ICONS_DARK[key]) add(CHAIN_ICONS_DARK[key], 'chain-mark-dark');
+    return box;
+  };
 
   // ---------- formatting ----------
   const fmtUsd = (v) => {
@@ -307,7 +408,7 @@ details ul { padding-left: 18px; }
     const t = $('tabs'); t.textContent = '';
     for (const k of ORDER) {
       const c = state.data.chains[k]; if (!c) continue;
-      const b = el('button', 'tab', c.display); b.type = 'button'; b.setAttribute('role', 'tab'); b.setAttribute('aria-controls', 'chainPanel'); b.id = 'tab-' + k; b.dataset.chain = k;
+      const b = el('button', 'tab', c.display); b.type = 'button'; b.setAttribute('role', 'tab'); b.setAttribute('aria-controls', 'chainPanel'); b.id = 'tab-' + k; b.dataset.chain = k; b.prepend(chainIcon(k));
       b.addEventListener('click', () => { state.chain = k; render(); });
       b.addEventListener('keydown', (e) => {
         const buttons = [...t.querySelectorAll('button')], i = buttons.indexOf(b);
@@ -324,6 +425,8 @@ details ul { padding-left: 18px; }
 
   // ---------- render ----------
   function render() {
+    const dark = document.documentElement.getAttribute('data-theme') === 'dark' || (!document.documentElement.hasAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches);
+    $('themeBtn').setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
     const d = state.data; if (!d) return;
     const c = d.chains[state.chain];
     document.querySelectorAll('.tab').forEach((b) => { const selected = b.dataset.chain === state.chain; b.setAttribute('aria-selected', String(selected)); b.tabIndex = selected ? 0 : -1; });
@@ -356,7 +459,7 @@ details ul { padding-left: 18px; }
       const dv = el('div', 'delta');
       if (delta === undefined) dv.textContent = '';
       else if (delta == null) dv.appendChild(el('span', 'flat', '— vs prior 30 days'));
-      else { const s = el('span', delta > 0.0005 ? 'up' : delta < -0.0005 ? 'down' : 'flat', (delta > 0 ? '▲ ' : delta < 0 ? '▼ ' : '') + fmtPct(delta, true)); dv.appendChild(s); dv.appendChild(el('span', null, 'vs prior 30 days')); }
+      else { const s = el('span', delta > 0.0005 ? 'up' : delta < -0.0005 ? 'down' : 'flat', fmtPct(delta, true)); dv.appendChild(s); dv.appendChild(el('span', null, 'vs prior 30 days')); }
       t.appendChild(dv);
       t.appendChild(el('div', 'foot', foot || ''));
       box.appendChild(t); return t;
@@ -471,9 +574,9 @@ details ul { padding-left: 18px; }
     for (const key of ORDER) {
       const c = d.chains[key]; if (!c) continue; const k = c.kpi;
       const tr = el('tr'); if (key === state.chain) tr.className = 'sel';
-      const chainCell = el('td'); const chainButton = el('button', 'chain-button', c.display); chainButton.type = 'button'; chainButton.setAttribute('aria-label', 'View ' + c.display + ' volume'); if (key === state.chain) chainButton.setAttribute('aria-current', 'true'); chainCell.appendChild(chainButton); tr.appendChild(chainCell);
+      const chainCell = el('td'); const chainButton = el('button', 'chain-button', c.display); chainButton.type = 'button'; chainButton.prepend(chainIcon(key)); chainButton.setAttribute('aria-label', 'View ' + c.display + ' volume'); if (key === state.chain) chainButton.setAttribute('aria-current', 'true'); chainCell.appendChild(chainButton); tr.appendChild(chainCell);
       tr.appendChild(el('td', null, fmtUsd(k.total_30d)));
-      const sh = el('td', null, fmtPct(k.share_above_30d)); const bar = el('span', 'share'); const fill = el('i'); fill.style.width = ((k.share_above_30d || 0) * 100) + '%'; bar.appendChild(fill); bar.title = 'blue = ≥ $100M, orange = < $100M'; sh.appendChild(bar); tr.appendChild(sh);
+      const sh = el('td', null, fmtPct(k.share_above_30d)); const bar = el('span', 'share'); const fill = el('i'); fill.style.width = ((k.share_above_30d || 0) * 100) + '%'; bar.appendChild(fill); bar.title = 'Orange = ≥ $100M; slate = < $100M'; sh.appendChild(bar); tr.appendChild(sh);
       tr.appendChild(el('td', null, fmtPct(k.change_30d.total, true)));
       tr.appendChild(el('td', null, fmtPct(k.change_30d.above_100m, true)));
       tr.appendChild(el('td', null, fmtPct(k.change_30d.below_100m, true)));
