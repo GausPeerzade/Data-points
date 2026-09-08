@@ -15,7 +15,8 @@ All numbers are per **closed UTC day** (the current day is never included). Volu
 ## Row fields (`latest.json` → `chains.<key>.days[]`)
 
 - `total` — DefiLlama chain DEX volume for the day (headline definition). HyperEVM = `Dexs`-category protocols on DefiLlama's "Hyperliquid L1" excluding the HyperCore spot orderbook; the orderbook is kept in `extra.hypercore_spot_orderbook`.
-- `above_100m` / `below_100m` — the split. Sums to `total` when the split is available; both values can be null without sampled history.
+- `above_100m` — **Estimated ≥ $100M**, based on sampled pools.
+- `below_100m` — **Below $100M + unclassified**. Includes unknown caps and unsampled volume assigned by assumption. When sampled volume exceeds the reported total, the split is scaled proportionally. The two buckets sum to `total` when available; both can be null without sampled history. CSV column names remain `above_100m` and `below_100m`.
 - `mode` — `estimate` (GeckoTerminal pool sampling) or `totals_only` when no pool index exists. The Dune draft is not integrated; configuring its key does not enable a different mode.
 - `coverage` — sampled pool volume ÷ DefiLlama total. Below 1.0 indicates a gap relative to the reference total; sampling omissions and source differences can both contribute. The residual is assigned to `below_100m` by assumption. Coverage is not accuracy.
 - `unknown_share` — share of sampled volume whose subject token has no CoinGecko market cap (counted as below).

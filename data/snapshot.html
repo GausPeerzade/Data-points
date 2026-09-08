@@ -91,7 +91,10 @@ h1 { font-size: clamp(28px, 3vw, 34px); line-height: 1.2; letter-spacing: -.04em
 .summary-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
 .summary-head p { margin: 0; color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
 .card h2 { font-size: 21px; margin: 0; font-weight: 600; letter-spacing: -.03em; line-height: 1.3; }
-.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 36px; padding: 20px 0 42px; }
+.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 36px; padding: 20px 0 18px; }
+.split-note { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 6px 24px; margin: 0 0 32px; color: var(--ink-2); font-size: 12px; line-height: 1.6; }
+.split-note-copy { max-width: 76ch; }
+.split-coverage { font-weight: 500; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .tile { min-width: 0; display: flex; flex-direction: column; }
 .tile .label { color: var(--ink-2); font-size: 12px; min-height: 23px; display: flex; align-items: center; }
 .tile .value { font-size: clamp(28px, 2.8vw, 34px); font-weight: 600; line-height: 1.3; letter-spacing: -.04em; font-variant-numeric: tabular-nums; margin: 3px 0 3px; }
@@ -126,7 +129,7 @@ h1 { font-size: clamp(28px, 3vw, 34px); line-height: 1.2; letter-spacing: -.04em
 .plot .hit { fill: transparent; cursor: crosshair; }
 .plot .hit:focus-visible { outline: none; stroke: var(--series-above); stroke-width: 1; }
 .plot .band.hover .bar-seg { filter: brightness(1.10); }
-.tip { position: absolute; pointer-events: none; background: var(--tip-bg); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; font-size: 12px; box-shadow: 0 8px 24px #00000018; width: 250px; max-width: calc(100% - 16px); z-index: 5; display: none; }
+.tip { position: absolute; pointer-events: none; background: var(--tip-bg); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; font-size: 12px; box-shadow: 0 8px 24px #00000018; width: 360px; max-width: calc(100% - 16px); z-index: 5; display: none; }
 .tip .d { color: var(--ink-2); margin-bottom: 8px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
 .tip .row { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin: 4px 0; }
 .tip .row .v { font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; white-space: nowrap; }
@@ -142,7 +145,7 @@ h1 { font-size: clamp(28px, 3vw, 34px); line-height: 1.2; letter-spacing: -.04em
 #overview { background: var(--surface); border-radius: var(--brand-radius); padding: 8px 0; }
 table { width: 100%; border-collapse: collapse; font-size: 13px; }
 th, td { text-align: right; padding: 13px 18px; border-bottom: 1px solid var(--grid); font-variant-numeric: tabular-nums; white-space: nowrap; }
-th { color: var(--muted); font-weight: 400; font-size: 12px; }
+th { color: var(--muted); font-weight: 400; font-size: 12px; white-space: normal; min-width: 110px; }
 th:first-child, td:first-child { text-align: left; padding-left: 24px; }
 th:last-child, td:last-child { padding-right: 24px; }
 tbody tr:last-child td { border-bottom: 0; }
@@ -182,6 +185,7 @@ details ul { padding-left: 18px; margin-top: 22px; }
   .page-intro { align-items: flex-start; }
   .badge { margin-top: 8px; }
   .kpis { gap: 20px; }
+  .tile .label { min-height: 36px; align-items: flex-start; }
   .tile .delta { display: block; }
   .tile .delta > span + span { display: block; margin-top: 2px; }
   .footer-main { gap: 32px; }
@@ -201,8 +205,9 @@ details ul { padding-left: 18px; margin-top: 22px; }
   .tab { padding: 8px 10px; }
   .summary-head { align-items: flex-start; flex-direction: column; gap: 6px; }
   .summary-head p { font-size: 11px; }
-  .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 20px; padding: 22px 0 34px; }
-  .tile .label { font-size: 11px; min-height: 22px; }
+  .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 20px; padding: 22px 0 18px; }
+  .split-note { font-size: 11px; margin-bottom: 28px; }
+  .tile .label { font-size: 11px; min-height: 33px; }
   .tile .value { font-size: 29px; }
   .tile .delta, .tile .foot { font-size: 11px; }
   .chart-head { align-items: flex-start; flex-direction: column; gap: 14px; margin-bottom: 14px; }
@@ -273,7 +278,11 @@ details ul { padding-left: 18px; margin-top: 22px; }
     <nav class="tabs" id="tabs" role="tablist" aria-label="Select chain"></nav>
     <section class="card" id="chainPanel" role="tabpanel" aria-labelledby="summaryTitle">
       <div class="summary-head"><h2 id="summaryTitle">30-day overview</h2><p id="summaryWindow"></p></div>
-      <div class="kpis" id="kpis"></div>
+      <div class="kpis" id="kpis" aria-describedby="splitNote"></div>
+      <p class="split-note" id="splitNote">
+        <span class="split-note-copy">Split estimated from sampled pools. Unknown caps and unsampled volume are included in the second bucket.</span>
+        <span class="split-coverage" id="splitCoverage" title="Sampled volume divided by reported volume; a source-volume ratio, not an accuracy score."></span>
+      </p>
       <div class="chart-body">
         <div class="chart-head">
           <div><h2 id="chartTitle"></h2></div>
@@ -364,6 +373,8 @@ details ul { padding-left: 18px; margin-top: 22px; }
     if (CHAIN_ICONS_DARK[key]) add(CHAIN_ICONS_DARK[key], 'chain-mark-dark');
     return box;
   };
+
+  const SPLIT_LABELS = { above: 'Estimated ≥ $100M', below: 'Below $100M + unclassified' };
 
   // ---------- formatting ----------
   const fmtUsd = (v) => {
@@ -466,9 +477,11 @@ details ul { padding-left: 18px; margin-top: 22px; }
       box.appendChild(t); return t;
     };
     tile('Total spot volume', fmtUsd(k.total_30d), k.change_30d.total, 'Reported by DefiLlama');
-    tile('Market cap ≥ $100M', fmtUsd(k.above_30d), k.change_30d.above_100m, k.share_above_30d != null ? fmtPct(k.share_above_30d) + ' of volume (estimated)' : '').classList.add('series-a');
-    tile('Market cap < $100M', fmtUsd(k.below_30d), k.change_30d.below_100m, k.share_above_30d != null ? fmtPct(1 - k.share_above_30d) + ' of volume (estimated)' : '').classList.add('series-b');
+    tile(SPLIT_LABELS.above, fmtUsd(k.above_30d), k.change_30d.above_100m, k.share_above_30d != null ? fmtPct(k.share_above_30d) + ' of volume (estimated)' : '').classList.add('series-a');
+    tile(SPLIT_LABELS.below, fmtUsd(k.below_30d), k.change_30d.below_100m, k.share_above_30d != null ? fmtPct(1 - k.share_above_30d) + ' of volume (estimated)' : '').classList.add('series-b');
     tile('Daily volume change', fmtPct(k.change_30d_point.total, true), undefined, 'Latest day vs prior-period end');
+    const q = state.data.quality.per_chain[state.chain] || {};
+    $('splitCoverage').textContent = 'Sampled / reported volume: ' + fmtPct(q.coverage_30d);
   }
 
   // ---------- chart ----------
@@ -480,8 +493,8 @@ details ul { padding-left: 18px; margin-top: 22px; }
     $('chartCap').textContent = rows.length ? fmtDate(rows[0].date) + ' – ' + fmtDate(rows.at(-1).date) + ' (UTC). ' + (c.last_complete_day ? 'Last complete day: ' + fmtDate(c.last_complete_day) + '.' : '') : 'No daily observations available.';
     const legend = $('legend'); legend.textContent = '';
     const li = (cls, label) => { const s = el('span'); const sw = el('span', cls); sw.style.background = cls === 'sw' ? '' : ''; s.appendChild(sw); s.appendChild(document.createTextNode(label)); return s; };
-    const swA = li('sw', 'Tokens ≥ $100M'); swA.querySelector('.sw').style.background = 'var(--series-above)'; legend.appendChild(swA);
-    const swB = li('sw', 'Tokens < $100M'); swB.querySelector('.sw').style.background = 'var(--series-below)'; legend.appendChild(swB);
+    const swA = li('sw', SPLIT_LABELS.above); swA.querySelector('.sw').style.background = 'var(--series-above)'; legend.appendChild(swA);
+    const swB = li('sw', SPLIT_LABELS.below); swB.querySelector('.sw').style.background = 'var(--series-below)'; legend.appendChild(swB);
     const hasOverlay = state.overlay && rows.some((r) => r.extra && r.extra.hypercore_spot_orderbook != null);
     if (hasOverlay) legend.appendChild(li('ln', 'HyperCore spot orderbook (not in total)'));
     if (rows.some((r) => r.provisional)) legend.appendChild(li('prov', 'Provisional day'));
@@ -553,7 +566,7 @@ details ul { padding-left: 18px; margin-top: 22px; }
     tip.appendChild(el('div', 'd', fmtDate(r.date) + ' (UTC)' + (r.provisional ? ' · provisional' : '')));
     const row = (label, val, color) => { const d = el('div', 'row'); const k = el('span', 'k'); if (color) { const key = el('span', 'key'); key.style.background = color; k.appendChild(key); } k.appendChild(document.createTextNode(label)); d.appendChild(k); d.appendChild(el('span', 'v', val)); tip.appendChild(d); };
     row('Total', fmtUsd(r.total));
-    if (hasSplit) { row('≥ $100M', fmtUsd(r.above_100m) + ' (' + fmtPct(r.above_100m / r.total) + ')', 'var(--series-above)'); row('< $100M', fmtUsd(r.below_100m) + ' (' + fmtPct(r.below_100m / r.total) + ')', 'var(--series-below)'); }
+    if (hasSplit) { row(SPLIT_LABELS.above, fmtUsd(r.above_100m) + ' (' + fmtPct(r.above_100m / r.total) + ')', 'var(--series-above)'); row(SPLIT_LABELS.below, fmtUsd(r.below_100m) + ' (' + fmtPct(r.below_100m / r.total) + ')', 'var(--series-below)'); }
     if (r.extra && r.extra.hypercore_spot_orderbook != null && state.overlay) row('HyperCore orderbook', fmtUsd(r.extra.hypercore_spot_orderbook), 'var(--series-extra)');
     if (r.provisional) tip.appendChild(el('div', 'note', 'Some venues not yet published by DefiLlama'));
   }
@@ -561,7 +574,7 @@ details ul { padding-left: 18px; margin-top: 22px; }
   function renderDayTable(rows, wrap) {
     wrap.textContent = '';
     const t = el('table'); const th = el('thead'); const trh = el('tr');
-    for (const h of ['Date (UTC)', 'Total', '≥ $100M', '< $100M', 'Share ≥ $100M', 'Status']) trh.appendChild(el('th', null, h));
+    for (const h of ['Date (UTC)', 'Total', SPLIT_LABELS.above, SPLIT_LABELS.below, SPLIT_LABELS.above + ' share', 'Status']) trh.appendChild(el('th', null, h));
     th.appendChild(trh); t.appendChild(th); const tb = el('tbody');
     for (const r of [...rows].reverse()) { const tr = el('tr'); [r.date, fmtUsd(r.total), fmtUsd(r.above_100m), fmtUsd(r.below_100m), r.above_100m != null ? fmtPct(r.above_100m / r.total) : '—', r.provisional ? 'provisional' : 'complete'].forEach((v) => tr.appendChild(el('td', null, v))); tb.appendChild(tr); }
     t.appendChild(tb); wrap.appendChild(t);
@@ -570,14 +583,14 @@ details ul { padding-left: 18px; margin-top: 22px; }
   function renderOverview(d) {
     const wrap = $('overview'); wrap.textContent = '';
     const t = el('table'); const th = el('thead'); const trh = el('tr');
-    for (const h of ['Chain', '30d volume', 'Share ≥ $100M', '30d change', '≥ $100M change', '< $100M change']) trh.appendChild(el('th', null, h));
+    for (const h of ['Chain', '30d volume', SPLIT_LABELS.above + ' share', '30d change', SPLIT_LABELS.above + ' change', SPLIT_LABELS.below + ' change']) trh.appendChild(el('th', null, h));
     th.appendChild(trh); t.appendChild(th); const tb = el('tbody');
     for (const key of ORDER) {
       const c = d.chains[key]; if (!c) continue; const k = c.kpi;
       const tr = el('tr'); if (key === state.chain) tr.className = 'sel';
       const chainCell = el('td'); const chainButton = el('button', 'chain-button', c.display); chainButton.type = 'button'; chainButton.prepend(chainIcon(key)); chainButton.setAttribute('aria-label', 'View ' + c.display + ' volume'); if (key === state.chain) chainButton.setAttribute('aria-current', 'true'); chainCell.appendChild(chainButton); tr.appendChild(chainCell);
       tr.appendChild(el('td', null, fmtUsd(k.total_30d)));
-      const sh = el('td', null, fmtPct(k.share_above_30d)); const bar = el('span', 'share'); const fill = el('i'); fill.style.width = ((k.share_above_30d || 0) * 100) + '%'; bar.appendChild(fill); bar.title = 'Orange = ≥ $100M; slate = < $100M'; sh.appendChild(bar); tr.appendChild(sh);
+      const sh = el('td', null, fmtPct(k.share_above_30d)); const bar = el('span', 'share'); const fill = el('i'); fill.style.width = ((k.share_above_30d || 0) * 100) + '%'; bar.appendChild(fill); bar.title = 'Orange = ' + SPLIT_LABELS.above + '; slate = ' + SPLIT_LABELS.below; sh.appendChild(bar); tr.appendChild(sh);
       tr.appendChild(el('td', null, fmtPct(k.change_30d.total, true)));
       tr.appendChild(el('td', null, fmtPct(k.change_30d.above_100m, true)));
       tr.appendChild(el('td', null, fmtPct(k.change_30d.below_100m, true)));
