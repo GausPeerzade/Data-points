@@ -1,8 +1,14 @@
 name: refresh-volume-data
 on:
-  schedule:
-    - cron: '0 14 * * *'   # 14:00 UTC daily: after DefiLlama's once-a-day adapters have published the previous UTC day
-  workflow_dispatch: {}
+  # Daily scheduling is paused until the paid refresh test is confirmed.
+  workflow_dispatch:
+    inputs:
+      not_before_utc:
+        description: 'Optional earliest refresh time, ISO UTC (YYYY-MM-DDTHH:mm:ssZ); at most 20 minutes ahead'
+        required: false
+        default: ''
+        type: string
+run-name: 'Paid volume refresh — ${{ inputs.not_before_utc || ''immediate'' }}'
 permissions:
   contents: write
 concurrency:
@@ -10,21 +16,92 @@ concurrency:
   cancel-in-progress: false
 jobs:
   refresh:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 300
+    timeout-minutes: 360
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with: { node-version: '24' }
-      - name: Run pipeline
+      - name: Wait until the requested test time
+        if: inputs.not_before_utc != ''
+        timeout-minutes: 21
         env:
+          REFRESH_NOT_BEFORE: ${{ inputs.not_before_utc }}
+        run: |
+          node --input-type=module <<'NODE'
+          const value = process.env.REFRESH_NOT_BEFORE;
+          const target = Date.parse(value);
+          if (!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$/.test(value) || !Number.isFinite(target)) {
+            throw new Error('not_before_utc must be a valid ISO UTC timestamp');
+          }
+          const remaining = target - Date.now();
+          if (remaining > 20 * 60 * 1000) throw new Error('Requested delay exceeds 20 minutes');
+          console.log(`Refresh target: ${value}. Waiting ${Math.max(0, Math.ceil(remaining / 1000))} seconds.`);
+          if (remaining > 0) await new Promise((resolve) => setTimeout(resolve, remaining));
+          NODE
+      - name: Require the paid CoinGecko repository secret
+        env:
+          COINGECKO_PRO_API_KEY: ${{ secrets.COINGECKO_PRO_API_KEY }}
+        run: |
+          node --input-type=module <<'NODE'
+          import { coinGeckoConfig } from './pipeline/lib/coingecko.mjs';
+          if (coinGeckoConfig().tier !== 'pro') {
+            throw new Error('Add the GitHub Actions repository secret COINGECKO_PRO_API_KEY before dispatching this workflow. Vercel environment variables are not available here.');
+          }
+          console.log('Paid CoinGecko configuration is present.');
+          NODE
+      - name: Pin the refresh window
+        run: |
+          node --input-type=module <<'NODE' >> "$GITHUB_ENV"
+          const started = new Date().toISOString();
+          console.log('REFRESH_CUTOFF=' + started.slice(0, 10));
+          console.log('REFRESH_STARTED_AT=' + started);
+          NODE
+      - name: Restore raw responses from the latest compatible run
+        id: raw-cache
+        uses: actions/cache/restore@v5
+        timeout-minutes: 5
+        with:
+          path: data/raw
+          key: raw-v2-${{ runner.os }}-${{ hashFiles('pipeline/**/*.mjs') }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: raw-v2-${{ runner.os }}-${{ hashFiles('pipeline/**/*.mjs') }}-
+      - name: Run pipeline
+        id: pipeline
+        # Leave job time for validation, recovery artifacts and publication after a slow crawl.
+        timeout-minutes: 325
+        env:
+          COINGECKO_PRO_API_KEY: ${{ secrets.COINGECKO_PRO_API_KEY }}
           COINGECKO_DEMO_KEY: ${{ secrets.COINGECKO_DEMO_KEY }}
           DUNE_API_KEY: ${{ secrets.DUNE_API_KEY }}
-        run: node pipeline/run.mjs
-      - name: Commit data
         run: |
-          git config user.name "volume-bot"
-          git config user.email "volume-bot@users.noreply.github.com"
-          git add data/
-          git diff --cached --quiet || git commit -m "data: refresh $(date -u +%Y-%m-%d)"
-          git push
+          set -o pipefail
+          mkdir -p logs
+          node pipeline/run.mjs 2>&1 | tee logs/refresh.log
+      - name: Validate fresh sources and generated data
+        id: validate
+        timeout-minutes: 2
+        run: node pipeline/validate.mjs
+      - name: Save resumable raw responses
+        if: always() && steps.pipeline.outcome != 'skipped'
+        uses: actions/cache/save@v5
+        timeout-minutes: 5
+        continue-on-error: true
+        with:
+          path: data/raw
+          key: raw-v2-${{ runner.os }}-${{ hashFiles('pipeline/**/*.mjs') }}-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: Publish validated data against the latest main
+        if: success() && steps.validate.outcome == 'success'
+        timeout-minutes: 5
+        run: node pipeline/publish_data.mjs --publish
+      - name: Preserve run evidence and recovery files
+        if: always() && steps.pipeline.outcome != 'skipped'
+        uses: actions/upload-artifact@v7
+        timeout-minutes: 8
+        with:
+          name: volume-refresh-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            data/
+            logs/
+          retention-days: 7
+          if-no-files-found: warn

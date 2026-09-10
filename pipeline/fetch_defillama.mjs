@@ -1,10 +1,11 @@
 // DefiLlama: daily per-chain DEX volume totals (closed UTC days only) + category breakdown.
-import { getJson, writeJson, utcMidnight, dateStr } from './lib/http.mjs';
+import { getJson, writeJson, dateStr } from './lib/http.mjs';
 import { CHAINS, DAYS } from './config.mjs';
+import { refreshCutoff } from './lib/run_context.mjs';
 
 export async function main({ force = false, writeOutput = true } = {}) {
-  const today = utcMidnight(Date.now());
-  const out = { fetched_at: new Date().toISOString(), source: 'https://api.llama.fi/overview/dexs/{chain}', chains: {} };
+  const today = refreshCutoff();
+  const out = { fetched_at: new Date().toISOString(), cutoff_utc: dateStr(today), source: 'https://api.llama.fi/overview/dexs/{chain}', chains: {} };
   for (const c of CHAINS) {
     const url = `https://api.llama.fi/overview/dexs/${encodeURIComponent(c.llama)}?excludeTotalDataChart=false&excludeTotalDataChartBreakdown=false&dataType=dailyVolume`;
     const raw = await getJson(url, { cacheFile: `data/raw/defillama/${c.key}.json`, ttlMs: force ? 0 : 6 * 3600e3, label: 'llama' });

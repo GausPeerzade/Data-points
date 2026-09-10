@@ -18,7 +18,10 @@ export function main() {
   const isQ = (id) => !!id && (stable.has(id) || NATIVE_IDS.has(id) || NATIVE_IDS.has(UNDERLYING[id]));
   const cgCap = (id) => { const c = snap.coins[UNDERLYING[id] || id]; if (!c) return [null, null]; return c.market_cap > 0 ? [c.market_cap, 'cg_mcap'] : c.fdv > 0 ? [c.fdv, 'cg_fdv'] : [null, null]; };
 
-  const out = { generated_at: new Date().toISOString(), threshold_usd: THRESHOLD_USD, classified_with: `snapshot:${snap.snapshot_date}`, chains: {}, quality: { per_chain: {}, notes: [] } };
+  const out = { generated_at: new Date().toISOString(),
+    ...(process.env.REFRESH_CUTOFF ? { cutoff_utc: process.env.REFRESH_CUTOFF } : {}),
+    ...(process.env.REFRESH_STARTED_AT ? { refresh_started_at: process.env.REFRESH_STARTED_AT } : {}),
+    threshold_usd: THRESHOLD_USD, classified_with: `snapshot:${snap.snapshot_date}`, chains: {}, quality: { per_chain: {}, notes: [] } };
   const csv = ['chain,date,total,above_100m,below_100m,coverage,unknown_share,boundary_share,mode,classified_with'];
 
   for (const c of CHAINS) {

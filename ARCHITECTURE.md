@@ -1,6 +1,6 @@
 # Onchain spot volume by market cap
 
-Implementation review: 2026-09-07. This document describes the code that runs today. It replaces earlier design notes that incorrectly described an implemented Dune mode and historical market-cap freezing.
+Implementation review: 2026-09-10. This document describes the current code, including paid CoinGecko support and the manual end-to-end test workflow. It replaces earlier design notes that incorrectly described an implemented Dune mode and historical market-cap freezing.
 
 ## Scope and confidence
 
@@ -10,12 +10,12 @@ The current approach is useful for exploratory comparisons. It does not establis
 
 ## Sources and execution
 
-The production path is:
+The refresh path is:
 
 ```
 DefiLlama daily protocol totals ───────────────────┐
 CoinGecko current caps and address mappings ───────┤
-GeckoTerminal sampled pool history ────────────────┤
+CoinGecko onchain / GeckoTerminal pool history ────┤
 CoinGecko enrichment for additional sampled IDs ──┤
                                                  ▼
                                       classify.mjs → latest.json / CSV / pool audits
@@ -24,6 +24,12 @@ CoinGecko enrichment for additional sampled IDs ──┤
 ```
 
 `pipeline/run.mjs` runs those stages sequentially and force-fetches DefiLlama totals again after the pool crawl, just before classification. This incorporates provider revisions arriving during the long crawl. `pipeline/reconcile.mjs` is a separate, manually invoked comparison of mapped venues; it is not currently called by the scheduled pipeline. Its timestamp must be checked before treating it as evidence for a new run.
+
+`pipeline/lib/coingecko.mjs` selects the request provider when a stage starts. A nonblank `COINGECKO_PRO_API_KEY` takes priority over `COINGECKO_DEMO_KEY`. Paid subscriptions, including Basic, use `https://pro-api.coingecko.com/api/v3` for market data and `https://pro-api.coingecko.com/api/v3/onchain` for pools, tokens and OHLCV, with the `x-cg-pro-api-key` header. The metadata value `provider_tier: "pro"` identifies this API route, not a particular subscription plan.
+
+All paid requests within a pipeline run share the same host queue, starting with at least 250ms between request starts (240 requests/minute). Independent pool requests run with concurrency six; this does not multiply the shared request allowance. HTTP 429 responses apply shared cooldowns and increase the spacing adaptively. Without a paid key, market requests retain `https://api.coingecko.com/api/v3`, at 700ms intervals with a demo key or 21-second intervals without one. Pool requests use `https://api.geckoterminal.com/api/v2`, at 3.3-second intervals with adaptive rate limiting and concurrency one. Public GeckoTerminal never receives either CoinGecko API-key header.
+
+Provider selection changes access and throughput; pool selection, thresholds and classification rules remain the same. Pool caches retain the `data/raw/geckoterminal/` directory under either route. Cached response metadata binds each entry to its URL, so switching between public and paid hosts refetches the corresponding response. Token-cap records still use their existing 12-hour freshness window.
 
 `pipeline/reanchor.mjs` can apply later reference-total revisions to an already completed sample for the same date window. It writes a separate candidate directory for review and retains the pool/cap generation timestamp. It records `reference_refreshed_at` independently and rejects date-window changes; it cannot replace a full daily refresh. Its regression tests run with `node --test pipeline/tests/reanchor.test.mjs`.
 
@@ -51,7 +57,7 @@ The provider may revise history or omit venues. A matching provider total is evi
 
 ## Pool selection
 
-GeckoTerminal supplies today's top 200 pools per chain. CoinGecko supplies a whitelist of non-quote tokens with current market cap at least $100M. Quote assets, including native assets and large stablecoins, are excluded from this extra lookup, so their quote/quote pools rely on the top-pool sample. Only whitelist tokens with reported 24-hour volume at least $250,000 receive a pool lookup, limited to their top 10 pools.
+CoinGecko's paid onchain API or public GeckoTerminal supplies today's top 200 pools per chain. CoinGecko supplies a whitelist of non-quote tokens with current market cap at least $100M. Quote assets, including native assets and large stablecoins, are excluded from this extra lookup, so their quote/quote pools rely on the top-pool sample. Only whitelist tokens with reported 24-hour volume at least $250,000 receive a pool lookup, limited to their top 10 pools.
 
 The union is deduplicated by pool address. Daily history is fetched only for pools with current 24-hour volume of at least $50,000 when in the top-pool list, or $25,000 otherwise. This is **not all pools of all large-cap tokens**. Today's ranking can miss pools that were important earlier in the historical window.
 
@@ -93,9 +99,21 @@ KPIs use the last 30 non-provisional observations and the 30 before them. The ma
 
 ## Refresh and deployment
 
-`.github/workflows/refresh.yml` schedules GitHub Actions daily at 14:00 UTC (19:30 IST), with manual dispatch available. A successful run commits `data/`; the connected Vercel project then redeploys the static site. Vercel does not itself fetch market data.
+`.github/workflows/refresh.yml` currently accepts manual dispatch on `main`, with an optional `not_before_utc` timestamp for a delayed test. Daily scheduling is paused until the test is confirmed; the intended restored daily time is 14:00 UTC (19:30 IST). The workflow pins `REFRESH_CUTOFF` and `REFRESH_STARTED_AT`, restores raw responses from a compatible pipeline-source version, and validates sources and exports before publication. A successful publication commits generated data; the connected Vercel project then redeploys the static site. Vercel does not itself fetch market data.
 
-The GeckoTerminal rate limit makes a cold run roughly 2–3 hours. The workflow timeout is five hours. Scheduling and provider delays can push publication later than the scheduled start; a cron declaration is not proof that a run succeeded. Verify the Actions result, data commit, Vercel deployment, and the live `generated_at` value.
+The workflow requires the GitHub Actions repository secret `COINGECKO_PRO_API_KEY` and fails before fetching if it is missing. Vercel environment variables are not available to this runner. Local scripts still support the optional demo/public fallback. For local execution, use Node 24 and keep the paid key in a private environment file outside the served repository root:
+
+```bash
+node --env-file=/path/outside-webroot/coingecko.env pipeline/run.mjs
+```
+
+The runner writes `logs/refresh-metrics.json` at stage boundaries and on completion or failure. It records the selected provider tier, date window, run status, elapsed seconds and each stage's status and duration. Its HTTP section contains counts per host for requests, cache hits, successful responses, response statuses, retries, network errors and timeouts; it does not serialize request headers or credentials. This report is retained with workflow logs and recovery files rather than published as dashboard data. The September 10 paid benchmark completed in 7 minutes 57 seconds with empty local API caches and no retries. See [the benchmark report](docs/paid-refresh-benchmark-2026-09-10.md); future runs still depend on provider response times and data volume.
+
+Public-provider throttling can make a cold run take several hours. The September 8 and 9 runs each spent about 3.7 hours in logged GeckoTerminal 429 retry delays and exceeded the old five-hour job timeout before reaching all chains. The pipeline step now has a 325-minute limit within a 360-minute job, leaving time for validation, raw-cache saving and recovery artifacts. Raw caches use a source-hash prefix and unique run keys; request expiry and freshness validation still apply after restoration. Logs, raw responses and generated files are retained for seven days as a workflow artifact when the runner can finish its recovery steps. Failed-run exports may be old or incomplete and must not be published without validation.
+
+`pipeline/publish_data.mjs` validates the completed run, then creates a temporary publication checkout at the latest `main`. It refuses changed pipeline sources, newer already-published data or a regressed chain date window. It copies only generated JSON/CSV/audit files, rebuilds the standalone snapshot from that checkout's current UI/assets, and validates exports again. A normal push is retried at most three times when `main` advances; no force push is used. This prevents a long crawl from overwriting later UI changes or losing its output solely because the branch advanced. The helper requires the main-branch GitHub Actions environment and is not part of local `run.mjs` execution.
+
+Scheduling and provider delays can push publication later than the scheduled start; a cron declaration is not proof that a run succeeded. Verify the Actions result, data commit, Vercel deployment, and the live `generated_at` value.
 
 The browser fetches `data/latest.json` on page load. An already-open tab does not poll automatically. The standalone snapshot never refreshes itself.
 

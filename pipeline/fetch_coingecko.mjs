@@ -1,15 +1,14 @@
 // CoinGecko: market-cap snapshot (top ~1000 coins + all stablecoins) and contract addresses per chain.
-import { getJson, writeJson, utcMidnight, dateStr, sleep } from './lib/http.mjs';
+import { getJson, writeJson, utcMidnight, dateStr } from './lib/http.mjs';
+import { coinGeckoConfig } from './lib/coingecko.mjs';
 import { CHAINS, THRESHOLD_USD, normAddr } from './config.mjs';
 
-export async function main() {
-  const KEY = process.env.COINGECKO_DEMO_KEY;
-  const headers = KEY ? { 'x-cg-demo-api-key': KEY } : {};
-  const minIntervalMs = KEY ? 700 : 21000;  // keyless: ~4 calls/min before 429
-  const base = 'https://api.coingecko.com/api/v3';
+export async function main(env = process.env) {
+  const provider = coinGeckoConfig(env);
+  const base = provider.baseUrl;
   const today = dateStr(utcMidnight(Date.now()));
   const dir = `data/raw/coingecko/${today}`;
-  const o = { headers, minIntervalMs, ttlMs: 20 * 3600e3, label: 'coingecko' };
+  const o = { ...provider.marketOptions, ttlMs: 20 * 3600e3, label: 'coingecko' };
 
   const markets = [];
   for (let p = 1; p <= 4; p++) {
@@ -35,7 +34,8 @@ export async function main() {
     }
   }
   const above = Object.values(coins).filter((x) => x.market_cap >= THRESHOLD_USD).length;
-  const snap = { snapshot_date: today, fetched_at: new Date().toISOString(), threshold_usd: THRESHOLD_USD, keyed: !!KEY,
+  const fetchedAt = new Date().toISOString();
+  const snap = { snapshot_date: fetchedAt.slice(0, 10), fetched_at: fetchedAt, threshold_usd: THRESHOLD_USD, keyed: provider.tier !== 'public', provider_tier: provider.tier,
     counts: { coins_with_cap: Object.keys(coins).length, coins_above_threshold: above, stables_above_threshold: stableIds.length, listed_coins: list.length, addresses_mapped: n },
     stable_ids: stableIds, coins, addresses };
   writeJson('data/mcap_snapshot.json', snap);

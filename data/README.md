@@ -7,10 +7,10 @@ All numbers are per **closed UTC day** (the current day is never included). Volu
 | `latest.json` | Dashboard input: per chain, 61 days of `total / above_100m / below_100m` plus KPIs and data-quality fields | yes |
 | `volume_daily.csv` | Same daily rows as a flat table (`chain,date,total,above_100m,below_100m,coverage,unknown_share,boundary_share,mode,classified_with`) | yes |
 | `defillama_totals.json` | Per chain-day totals from DefiLlama, category breakdown, provisional-day flags, DefiLlama's own 30d change for cross-checking | yes |
-| `mcap_snapshot.json` | CoinGecko market-cap snapshot used for classification (coins with caps, stablecoin ids, address→coin map for the 7 chains) | yes |
+| `mcap_snapshot.json` | CoinGecko market-cap snapshot used for classification (coins with caps, stablecoin ids, address→coin map for the 7 chains); `provider_tier` records `pro`, `demo` or `public` access | yes |
 | `audit/pools_<chain>.csv` | Every sampled pool with both legs' CoinGecko ids, the subject token, its cap, the bucket and the reason. This is the evidence trail for the split. | yes |
 | `snapshot.html` | The dashboard with `latest.json` inlined (self-contained, opens from a file) | yes |
-| `raw/` | Cached API responses (DefiLlama, CoinGecko, GeckoTerminal), not committed. Exact reproduction of an older run requires retaining its raw responses because APIs and pool rankings can change. | no |
+| `raw/` | Cached API responses (DefiLlama, CoinGecko market data, CoinGecko Pro onchain or public GeckoTerminal pool data), not committed. Pool caches retain the `raw/geckoterminal/` path for either provider. Exact reproduction of an older run requires retaining its raw responses because APIs and pool rankings can change. | no |
 
 ## Row fields (`latest.json` → `chains.<key>.days[]`)
 
@@ -34,12 +34,24 @@ Pool-level, so each pool execution is counted once rather than once per token le
 
 ## Running
 
-```
-node pipeline/run.mjs              # full refresh (≈2 h, GeckoTerminal is rate-limited to ~18 calls/min)
-node pipeline/run.mjs --skip-gt    # totals + caps only, reuse cached pool history
+```bash
+node pipeline/run.mjs              # full refresh using the current environment
 node pipeline/classify.mjs         # re-aggregate from cache without any network calls
+node pipeline/validate.mjs         # validate source freshness and exports before accepting a refresh
 ```
 
-Optional env: `COINGECKO_DEMO_KEY`. `DUNE_API_KEY` is currently unused. See `../ARCHITECTURE.md` for the implemented methodology and limitations.
+For paid access with Node 24, store `COINGECKO_PRO_API_KEY` in a private environment file outside the served repository root and run:
+
+```bash
+node --env-file=/path/outside-webroot/coingecko.env pipeline/run.mjs
+```
+
+The paid key takes priority over `COINGECKO_DEMO_KEY` and routes market and pool calls through `pro-api.coingecko.com` (`/api/v3` and `/api/v3/onchain`). Both share a starting pace of 240 requests/minute; pool requests have concurrency six. Rate-limit responses slow the shared host queue. Without a paid key, the optional demo key applies only to market requests; pool requests use public GeckoTerminal without CoinGecko headers, at 3.3-second intervals and concurrency one. The public crawl can take several hours; the September 10 paid cold-cache benchmark completed in 7 minutes 57 seconds.
+
+The run writes `logs/refresh-metrics.json` at the repository root, outside this `data/` directory. It contains stage durations, run status, provider tier and host-level HTTP counts, including cache hits, retries and response statuses; HTTP counters contain no credentials or headers. This report is included in the workflow's recovery artifact and is not a published dashboard data file.
+
+Partial refresh flags are rejected before fetching: mixing fresh totals/caps with old chain history is not a validated refresh. Use individual modules for maintenance in an isolated data directory. `DUNE_API_KEY` is currently unused. See `../ARCHITECTURE.md` for the implemented methodology and limitations. The GitHub workflow requires the `COINGECKO_PRO_API_KEY` Actions repository secret; a Vercel environment variable alone is insufficient. Daily scheduling is paused during the manually dispatched paid test.
+
+The refresh workflow saves compatible raw-response caches and a seven-day recovery artifact containing `data/` and logs. An unsuccessful run can leave old exports next to partial fresh raw data; its artifact is evidence for investigation, not an accepted refresh. Reuse cached responses only through the pipeline's expiry/source checks, then run the validator before accepting regenerated output. `node pipeline/validate.mjs --exports-only` checks an exported bundle without requiring raw responses. Local commands do not publish or change Git history.
 
 For late revisions within the same date window, `node pipeline/reanchor.mjs /path/to/new-candidate-directory` fetches fresh DefiLlama totals and builds a separate candidate with updated buckets, KPIs, CSV and snapshot. It preserves the original `generated_at` and `classified_with`, and records `reference_refreshed_at` separately. It does not fetch new pool history or caps, rejects a changed date window, and never replaces the published dataset automatically. Validate the candidate before copying its generated files into `data/`; use the full pipeline for a new trading day.

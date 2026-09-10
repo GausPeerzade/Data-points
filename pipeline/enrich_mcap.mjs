@@ -1,13 +1,13 @@
 // After the GeckoTerminal crawl: fetch market caps for CoinGecko-listed tokens seen in pools that fell outside
 // the ranked top-1000 pull (e.g. bridged assets such as USDT0 that CoinGecko does not rank). Batches of 250 ids.
-import fs from 'node:fs';
 import { getJson, readJson, writeJson, safeName } from './lib/http.mjs';
+import { coinGeckoConfig } from './lib/coingecko.mjs';
 import { CHAINS, MANUAL_ADDRESSES } from './config.mjs';
 
-export async function main() {
+export async function main(env = process.env) {
   const snap = readJson('data/mcap_snapshot.json');
-  const KEY = process.env.COINGECKO_DEMO_KEY;
-  const o = { headers: KEY ? { 'x-cg-demo-api-key': KEY } : {}, minIntervalMs: KEY ? 700 : 21000, label: 'coingecko' };
+  const provider = coinGeckoConfig(env);
+  const o = { ...provider.marketOptions, label: 'coingecko' };
   const need = new Set();
   for (const c of CHAINS) {
     const idx = readJson(`data/raw/geckoterminal/${c.key}/pools_index.json`);
@@ -30,7 +30,7 @@ export async function main() {
   let added = 0;
   for (let i = 0; i < ids.length; i += 250) {
     const batch = ids.slice(i, i + 250);
-    const rows = await getJson(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${encodeURIComponent(batch.join(','))}&per_page=250&page=1&sparkline=false`,
+    const rows = await getJson(`${provider.baseUrl}/coins/markets?vs_currency=usd&ids=${encodeURIComponent(batch.join(','))}&per_page=250&page=1&sparkline=false`,
       { ...o, cacheFile: `${dir}/ids_batch_${i / 250}.json`, ttlMs: 20 * 3600e3 });
     for (const r of rows || []) {
       snap.coins[r.id] = { symbol: r.symbol, name: r.name, market_cap: r.market_cap ?? 0, fdv: r.fully_diluted_valuation ?? null, rank: r.market_cap_rank ?? null, source: 'ids_lookup' };
