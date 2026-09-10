@@ -1,138 +1,97 @@
 pool,name,dex,base_id,quote_id,subject_id,subject_cap,bucket,reason,h24,vol_30d
-0xc6962004f452be9203591991d15f6b388e09e8d0,"USDC / WETH 0.05%",uniswap_v3_arbitrum,usd-coin,weth,,,above,both_quote,41293672,1400320390
-0x2f5e87c9312fa29aed5c179e456625d79015299c,"WBTC / WETH 0.05%",uniswap_v3_arbitrum,arbitrum-bridged-wbtc-arbitrum-one,weth,,,above,both_quote,21988785,813264166
-0xc6f780497a95e246eb9449f5e4770916dcd6396a,"ARB / WETH 0.05%",uniswap_v3_arbitrum,arbitrum,weth,arbitrum,908276740,above,single_subject:cg_mcap,11965016,158747780
-0x0e4831319a50228b9e450861297ab92dee15b44f,"USDC / WBTC 0.05%",uniswap_v3_arbitrum,usd-coin,arbitrum-bridged-wbtc-arbitrum-one,,,above,both_quote,8793917,266367537
-0x3c0441b42195f4ad6aa9a0978e06096ea616cda7,"USDC / USDT",fluid-arbitrum,usd-coin,usdt0,usdt0,183398859944,above,single_subject:cg_mcap,5301166,145536203
-0xab05003a63d2f34ac7eec4670bca3319f0e3d2f62af5c2b9cbd69d03fd804fd2,"USDC / USDT",uniswap-v4-arbitrum,usd-coin,usdt0,usdt0,183398859944,above,single_subject:cg_mcap,4231985,204667901
-0x864abca0a6202dba5b8868772308da953ff125b0f95015adbf89aaf579e903a8,"ETH / USDC 0.05%",uniswap-v4-arbitrum,ethereum,usd-coin,,,above,both_quote,4165358,368475388
-0x641c00a822e8b671738d32a431a4fb6074e5c79d,"WETH / USDT 0.05%",uniswap_v3_arbitrum,weth,usdt0,usdt0,183398859944,above,single_subject:cg_mcap,4003815,163238178
-0x80c735c5a0222241f211b3edb8df2ccefad94553ec18f1c29143f0399c78f500,"WBTC / USDC 0.05%",uniswap-v4-arbitrum,arbitrum-bridged-wbtc-arbitrum-one,usd-coin,,,above,both_quote,3944692,59372576
-0x5969efdde3cf5c0d9a88ae51e47d721096a97203,"WBTC / USDT 0.05%",uniswap_v3_arbitrum,arbitrum-bridged-wbtc-arbitrum-one,usdt0,usdt0,183398859944,above,single_subject:cg_mcap,3518389,153731576
-0x4bfc22a4da7f31f8a912a79a7e44a822398b4390,"WBTC / WETH 0.01%",pancakeswap-v3-arbitrum,arbitrum-bridged-wbtc-arbitrum-one,weth,,,above,both_quote,2973185,107562861
-0x49340dbb8fb5ece2f9b594e77ab774e65725e9d8,"CHIP / USDC 0.01%",uniswap_v3_arbitrum,chip-2,usd-coin,chip-2,115468522,above,single_subject:cg_mcap,2620151,22564045
-0xa17afcab059f3c6751f5b64347b5a503c3291868,"USDC / USDT 0.003%",camelot-v3,usd-coin,usdt0,usdt0,183398859944,above,single_subject:cg_mcap,2318697,25263360
-0x689c96ceab93f5e131631d225d75dea3fd37747e,"ARB / WBTC 0.3%",uniswap_v3_arbitrum,arbitrum,arbitrum-bridged-wbtc-arbitrum-one,arbitrum,908276740,above,single_subject:cg_mcap,2054744,24299419
-0xc86eb7b85807020b4548ee05b54bfc956eebbfcd,"USDC / USDC",camelot-v3,usd-coin,usd-coin-ethereum-bridged,usd-coin-ethereum-bridged,74598716783,above,single_subject:cg_mcap,1739348,49049029
-0x6f38e884725a116c9c7fbf208e79fe8828a2595f,"USDC / WETH 0.01%",uniswap_v3_arbitrum,usd-coin,weth,,,above,both_quote,1433357,20965759
-0xbe3ad6a5669dc0b8b12febc03608860c31e2eef6,"USDC / USDT 0.01%",uniswap_v3_arbitrum,usd-coin,usdt0,usdt0,183398859944,above,single_subject:cg_mcap,1382929,61807004
-0xb1026b8e7276e7ac75410f1fcbbe21796e8f7526,"USDC / WETH 0.01%",camelot-v3,usd-coin,weth,,,above,both_quote,1274297,46073729
-0xc473e2aee3441bf9240be85eb122abb059a3b57c,"USDC / WETH 0.3%",uniswap_v3_arbitrum,usd-coin,weth,,,above,both_quote,1185697,34048626
-0xcda53b1f66614552f834ceef361a8d12a0b8dad8,"ARB / USDC 0.05%",uniswap_v3_arbitrum,arbitrum,usd-coin-ethereum-bridged,arbitrum,908276740,above,min_cap_of_two:cg_mcap,1061909,7774304
-0xd13040d4fe917ee704158cfcb3338dcd2838b245,"RAIN / WETH 0.01%",uniswap_v3_arbitrum,rain,weth,rain,11661163088,above,single_subject:cg_mcap,985796,38810445
-0x7f90122bf0700f9e7e1f688fe926940e8839f353,"USDC / USDT",curve_arbitrum,usd-coin-ethereum-bridged,usdt0,usd-coin-ethereum-bridged,74598716783,above,min_cap_of_two:cg_mcap,946202,18836509
-0xd9e2a1a61b6e61b275cec326465d417e52c1b95c,"USDC / WETH 0.05%",pancakeswap-v3-arbitrum,usd-coin,weth,,,above,both_quote,684805,21498540
-0xf4873a85b1a6824cb2364d87cebb96fe7ded5fc975b93faaf53e91eb835ef11f,"USDai / USDC 0.001%",uniswap-v4-arbitrum,usdai,usd-coin,usdai,280952298,above,single_subject:cg_mcap,636920,54525362
-0x7fcdc35463e3770c2fb992716cd070b63540b947,"USDC / WETH 0.01%",pancakeswap-v3-arbitrum,usd-coin,weth,,,above,both_quote,593498,26327583
-0x15eb51a325cbce6c1cc8202a6f8a76224c5b7540,"ESP / USDC 0.01%",uniswap_v3_arbitrum,espresso,usd-coin,espresso,59018005,below,single_subject:cg_mcap,569775,23820247
-0xe51635ae8136abac44906a8f230c2d235e9c195f,"ARB / WETH 0.025%",camelot-v3,arbitrum,weth,arbitrum,908276740,above,single_subject:cg_mcap,542067,6627013
-0xe88bba0ec2fc9091d68344b32b504abcc59f0aa9e1ae2ef048b69bc7ec3f4df8,"ETH / USDT 0.05%",uniswap-v4-arbitrum,ethereum,usdt0,usdt0,183398859944,above,single_subject:cg_mcap,522129,10867097
-0x843ac8dc6d34aeb07a56812b8b36429ee46bdd07,"USDC / WBTC 0.05%",pancakeswap-v3-arbitrum,usd-coin,arbitrum-bridged-wbtc-arbitrum-one,,,above,both_quote,500295,14951704
-0xec6e37b2d66aa5ef5a9fc296b4da3474b121f512428dd425a51c6424955fc5eb,"Dory / USDC 1%",uniswap-v4-arbitrum,,usd-coin,Dory,3201041,below,single_subject:gt_fdv,445163,36021135
-0xdbaeb7f0dfe3a0aafd798ccecb5b22e708f7852c,"PENDLE / WETH 0.3%",uniswap_v3_arbitrum,pendle,weth,pendle,332421157,above,single_subject:cg_mcap,419968,6950137
-0x50e7b9293aef80c304234e86c84a01be8401c530,"PENDLE / USDT 0.3%",uniswap_v3_arbitrum,pendle,usdt0,pendle,332421157,above,min_cap_of_two:cg_mcap,370987,9564946
-0x49b720f1aab26260beaec93a7beb5bf2925b2a8f,"USDC / USDT",curve_arbitrum,usd-coin,usdt0,usdt0,183398859944,above,single_subject:cg_mcap,358198,39681298
-0x9b42809aaae8d088ee01fe637e948784730f0386,"cbBTC / WBTC 0.01%",uniswap_v3_arbitrum,coinbase-wrapped-btc,arbitrum-bridged-wbtc-arbitrum-one,,,above,both_quote,328777,23294828
-0x03df2300e83353309c1069ae3ea89c31b361a009f9c36a1de5c8f0afcc45bde8,"ETH / USDC 0.3%",uniswap-v4-arbitrum,ethereum,usd-coin,,,above,both_quote,320614,12600490
-0xe8c831687ce8c9d015eb10b430d1a54faa0cb4ed,"sUSDai / USDT",fluid-arbitrum,susdai,usdt0,susdai,459761048,above,min_cap_of_two:gt_mcap,304490,15403330
-0xfc7b3ad139daaf1e9c3637ed921c154d1b04286f8a82b805a6c352da57028653,"WETH / USDC 0.05%",uniswap-v4-arbitrum,weth,usd-coin,,,above,both_quote,301149,1539615
-0x713e1346d585a1dccadc093210e33cd6bc8cf3d1,"USDC / USDT 0.001%",maverick-v2-arbitrum,usd-coin,usdt0,usdt0,183398859944,above,single_subject:cg_mcap,289782,6642776
-0xc31e54c7a869b9fcbecc14363cf510d1c41fa443,"WETH / USDC 0.05%",uniswap_v3_arbitrum,weth,usd-coin-ethereum-bridged,usd-coin-ethereum-bridged,74598716783,above,single_subject:cg_mcap,278751,10986390
-0x8b3781471ab98774c59775df9cc505ce20b36afffd297aef2dc17daafce3b140,"ETH / WBTC 0.05%",uniswap-v4-arbitrum,ethereum,arbitrum-bridged-wbtc-arbitrum-one,,,above,both_quote,270186,10517444
-0x91308bc9ce8ca2db82aa30c65619856cc939d907,"LINK / WETH 0.05%",uniswap_v3_arbitrum,chainlink,weth,chainlink,8843519107,above,single_subject:cg_mcap,259985,10450196
-0x628854f0cfd7debd6e04361421ee9c06c77048c3,"ODYS / WETH 1%",uniswap_v3_arbitrum,,weth,ODYS,1433614,below,single_subject:gt_fdv,249154,9542283
-0x9576c70b482e79544a9c6afc322e450d7a035b8a4114ede9039a112e7c14c8a8,"cbBTC / WBTC 0.004%",uniswap-v4-arbitrum,coinbase-wrapped-btc,arbitrum-bridged-wbtc-arbitrum-one,,,above,both_quote,226990,12164472
-0xf3eb87c1f6020982173c908e7eb31aa66c1f0296,"USDC / WETH 0.05%",sushiswap-v3-arbitrum,usd-coin,weth,,,above,both_quote,215989,9661661
-0xc24f7d8e51a64dc1238880bd00bb961d54cbeb29,"UNI / WETH 0.3%",uniswap_v3_arbitrum,uniswap,weth,uniswap,3982049326,above,single_subject:cg_mcap,201438,4516019
-0x80ceb98632409080924dce50c26acc25458dde17,"AAVE / WETH 0.05%",pancakeswap-v3-arbitrum,aave,weth,aave,2009582009,above,single_subject:cg_mcap,180287,3789828
-0x64f68f27a2e2b477e70f98f32376bf3989884526947b9d46ee990d3882ff1a76,"PENDLE / ETH 0.45%",uniswap-v4-arbitrum,pendle,ethereum,pendle,332421157,above,single_subject:cg_mcap,171536,2009803
-0x13fd8faf63c1b0dbd44157df1a390224d734bdcf1f60451fb84a8b48dd3d388a,"USDC / USDT",uniswap-v4-arbitrum,usd-coin,usdt0,usdt0,183398859944,above,single_subject:cg_mcap,167165,5039385
-0x389938cf14be379217570d8e4619e51fbdafaa21,"WETH / USDT 0.01%",pancakeswap-v3-arbitrum,weth,usdt0,usdt0,183398859944,above,single_subject:cg_mcap,165146,5185703
-0x35218a1cbac5bbc3e57fd9bd38219d37571b3537,"wstETH / WETH 0.01%",uniswap_v3_arbitrum,arbitrum-bridged-wsteth-arbitrum,weth,,,above,both_quote,159342,15779466
-0xa7b7064a428fa4391a7efb7054cde38bcf0967348fe403e04de9c98811de327f,"cbBTC / WBTC 0.005%",uniswap-v4-arbitrum,coinbase-wrapped-btc,arbitrum-bridged-wbtc-arbitrum-one,,,above,both_quote,158424,5610401
-0xba9ed8ae94c70ef9aa2cd1045ed473aaa405c6c7,"USDai / USDC",fluid-arbitrum,usdai,usd-coin,usdai,280952298,above,single_subject:cg_mcap,150936,1285246
-0xa7cf5543a27badc3a74d51ea0a02e84799140e4e,"sUSDai / USDC",curve_arbitrum,susdai,usd-coin,susdai,459761048,above,single_subject:gt_mcap,144996,4241579
-0x076994463d511adbe0c113b93dcb084a839b0d80,"EVA / WBTC 0.3%",uniswap_v3_arbitrum,evervalue-coin,arbitrum-bridged-wbtc-arbitrum-one,evervalue-coin,,unknown,gt_fdv_only_above_threshold,142448,3116237
-0xb7236b927e03542ac3be0a054f2bea8868af9508,"WETH / USDC",traderjoe-v2-2-arbitrum,weth,usd-coin,,,above,both_quote,140074,4194713
-0x468b88941e7cc0b88c1869d68ab6b570bcef62ff,"LINK / WETH 0.3%",uniswap_v3_arbitrum,chainlink,weth,chainlink,8843519107,above,single_subject:cg_mcap,139513,6173796
-0xb08a8794a5d3ccca3725d92964696858d3201909,"PENDLE / WETH 0.05%",uniswap_v3_arbitrum,pendle,weth,pendle,332421157,above,single_subject:cg_mcap,134621,2505166
-0x41b1e6b28a39199365f5348a2bf71d0f785167e920d05254b3f2efd1b9487db5,"WBTC / USDT 0.05%",uniswap-v4-arbitrum,arbitrum-bridged-wbtc-arbitrum-one,usdt0,usdt0,183398859944,above,single_subject:cg_mcap,127719,11248756
-0x44d1592a3ac6c42c77d6543544c3b1543a44bd9c4057335da7a1d48051999d16,"cbBTC / WBTC 0.01%",uniswap-v4-arbitrum,coinbase-wrapped-btc,arbitrum-bridged-wbtc-arbitrum-one,,,above,both_quote,127539,6112265
-0x4fd69d55704d8c40ebbd6d0086f1c827eed02bfb4a42cea8aafda66b45dab22e,"cbBTC / WBTC 0.005%",uniswap-v4-arbitrum,coinbase-wrapped-btc,arbitrum-bridged-wbtc-arbitrum-one,,,above,both_quote,125986,9111316
-0x960ea3e3c7fb317332d990873d354e18d7645590,"USDT / WBTC / WETH",curve_arbitrum,usdt0,arbitrum-bridged-wbtc-arbitrum-one,usdt0,183398859944,above,single_subject:cg_mcap,108666,519424
-0x2a3b2c8635df706f29d9110068b4ad8338746f5c,"MANFD / USDT",sushiswap_arbitrum,,usdt0,MANFD,2578745,below,min_cap_of_two:gt_fdv,121345,133435
-0xbfca4230115de8341f3a3d5e8845ffb3337b2be3,"PENDLE / WETH",camelot,pendle,weth,pendle,332421157,above,single_subject:cg_mcap,119559,2923134
-0x86f874212335af27c41cdb855c2255543d1499ce,"sUSDai / USDC",fluid-arbitrum,susdai,usd-coin,susdai,459761048,above,single_subject:gt_mcap,115744,13530266
-0x74b8bcadc831369ce75543e0d7517875af1c157d,"VSN / USDC 0.01%",pancakeswap-v3-arbitrum,vision-3,usd-coin,vision-3,154156202,above,single_subject:cg_mcap,114422,10057210
-0xa88b2cd3fa085831eee75aa5fee54fd55b2f7f9c,"ORBITUM / WETH 1%",uniswap_v3_arbitrum,,weth,ORBITUM,48076,below,single_subject:gt_fdv,103175,103175
-0xa95b0f5a65a769d82ab4f3e82842e45b8bbaf101,"CRV / WETH 0.3%",uniswap_v3_arbitrum,curve-dao-token,weth,curve-dao-token,563425129,above,single_subject:cg_mcap,99526,6259701
-0x7f580f8a02b759c350e6b8340e7c2d4b8162b6a9,"DAI / USDT 0.01%",uniswap_v3_arbitrum,makerdao-arbitrum-bridged-dai-arbitrum-one,usdt0,makerdao-arbitrum-bridged-dai-arbitrum-one,4596325376,above,min_cap_of_two:cg_mcap,96666,5935566
-0x4fd47e5102dfbf95541f64ed6fe13d4ed26d2546,"LPT / WETH 0.3%",uniswap_v3_arbitrum,livepeer,weth,livepeer,72921937,below,single_subject:cg_mcap,96015,1974670
-0x560093b297e9c149e8566f329122c1790b4da306,"CHIP / USDC 0.3%",uniswap_v3_arbitrum,chip-2,usd-coin,chip-2,115468522,above,single_subject:cg_mcap,95843,1437145
-0xd9f6d67f109e67b9b28117dcf4aafbc874fbd89f92bdca1a66901a3965582748,"UNI / ETH 0.3%",uniswap-v4-arbitrum,uniswap,ethereum,uniswap,3982049326,above,single_subject:cg_mcap,95298,1328765
-0xaebdca1bc8d89177ebe2308d62af5e74885dccc3,"ARB / USDC 0.3%",uniswap_v3_arbitrum,arbitrum,usd-coin,arbitrum,908276740,above,single_subject:cg_mcap,93786,4210007
-0x9ffca51d23ac7f7df82da414865ef1055e5afcc3,"ARB / USDC 0.05%",pancakeswap-v3-arbitrum,arbitrum,usd-coin,arbitrum,908276740,above,single_subject:cg_mcap,86811,1493773
-0xc6af8e73e2261264ef95466b97b13e03bd88165e,"PENDLE / USDC 0.3%",uniswap_v3_arbitrum,pendle,usd-coin,pendle,332421157,above,single_subject:cg_mcap,85946,1951417
-0x0bacc7a9717e70ea0da5ac075889bd87d4c81197,"WETH / USDT 0.05%",pancakeswap-v3-arbitrum,weth,usdt0,usdt0,183398859944,above,single_subject:cg_mcap,85435,3443404
-0x3361639d2847c58a52393556b51ff579314e83cc,"MXNB / USDC 0.05%",uniswap_v3_arbitrum,mxnb,usd-coin,mxnb,2408679,below,single_subject:cg_mcap,81281,186692
-0xf5fac36c2429e1cf84d4abacdb18477ef32589c9,"Cake / WETH 0.25%",pancakeswap-v3-arbitrum,pancakeswap-token,weth,pancakeswap-token,683242459,above,single_subject:cg_mcap,78344,769840
-0xd845f7d4f4deb9ff5bcf09d140ef13718f6f6c71,"WBTC / WETH 0.009%",camelot-v3,arbitrum-bridged-wbtc-arbitrum-one,weth,,,above,both_quote,76917,4653564
-0x042691f78269ba3d6325c945044239758aecc275,"PENDLE / WETH 0.05%",pancakeswap-v3-arbitrum,pendle,weth,pendle,332421157,above,single_subject:cg_mcap,70321,781263
-0x7e928afb59f5de9d2f4d162f754c6eb40c88aa8e,"USDC / USDT 0.01%",pancakeswap-v3-arbitrum,usd-coin,usdt0,usdt0,183398859944,above,single_subject:cg_mcap,68444,4234096
-0xd3b190d7e8b7f91ffd1827a5611c1958c7e2623a8214d75bbd700917a42491dc,"GMX / ETH 0.05%",uniswap-v4-arbitrum,gmx,ethereum,gmx,78044065,below,single_subject:cg_mcap,66478,2528427
-0x163b3bfaa38d10b384f726650782ff6764300ed4f86e5ef5c188cb51862a9ab4,"PENDLE / USDC 0.45%",uniswap-v4-arbitrum,pendle,usd-coin,pendle,332421157,above,single_subject:cg_mcap,66407,77040
-0x92c63d0e701caae670c9415d91c474f686298f00,"ARB / WETH 0.3%",uniswap_v3_arbitrum,arbitrum,weth,arbitrum,908276740,above,single_subject:cg_mcap,66207,480920
-0xe8795cf9c2309ecfe05df028eb0f21d5d6e3a951,"LINK / WETH 0.1%",camelot-v3,chainlink,weth,chainlink,8843519107,above,single_subject:cg_mcap,63654,2154696
-0xdd672b3b768a16b9bcb4ee1060d3e8221435beaa,"AAVE / WETH 0.3%",uniswap_v3_arbitrum,aave,weth,aave,2009582009,above,single_subject:cg_mcap,60226,1871296
-0x973b2ab0a5108ead5eb3c6feeffc5c2b9c3c4004be8376d51f6f3241c41aca6e,"ARB / ETH 0.3%",uniswap-v4-arbitrum,arbitrum,ethereum,arbitrum,908276740,above,single_subject:cg_mcap,58180,746093
-0x97bca422ec0ee4851f2110ea743c1cd0a14835a1,"ARB / USDT 0.3%",uniswap_v3_arbitrum,arbitrum,usdt0,arbitrum,908276740,above,min_cap_of_two:cg_mcap,57905,679305
-0x45fae8d0d2ace73544baab452f9020925afccc75,"USDC / DAI 0.005%",camelot-v3,usd-coin,makerdao-arbitrum-bridged-dai-arbitrum-one,makerdao-arbitrum-bridged-dai-arbitrum-one,4596325376,above,single_subject:cg_mcap,57432,2893115
-0x9b6ff025aee245d314c09f57b72f0de6e231c3a6,"GNS / WETH 0.3%",camelot-v3,gains-network,weth,gains-network,11226578,below,single_subject:gt_mcap,55490,672998
-0x05477c22a5349cee601500da0489dad137fd6bfa,"USDC / UNI 0.3%",uniswap_v3_arbitrum,usd-coin,uniswap,uniswap,3982049326,above,single_subject:cg_mcap,55395,1288881
-0x149e36e72726e0bcea5c59d40df2c43f60f5a22d,"WBTC / WETH 0.3%",uniswap_v3_arbitrum,arbitrum-bridged-wbtc-arbitrum-one,weth,,,above,both_quote,55253,1318494
-0xe2c28a234aadc40f115dcc56b70a759d02a372db90dfeed19048392d942ee286,"USDT / USDC",uniswap-v4-arbitrum,usdt0,usd-coin,usdt0,183398859944,above,single_subject:cg_mcap,54897,4388785
-0xe252fb1eab899250361feab4ecbc358b02d81b3e,"USDC / USDT 0.001%",maverick-v2-arbitrum,usd-coin,usdt0,usdt0,183398859944,above,single_subject:cg_mcap,52899,1554933
-0xc82819f72a9e77e2c0c3a69b3196478f44303cf4,"WETH / USDT 0.3%",uniswap_v3_arbitrum,weth,usdt0,usdt0,183398859944,above,single_subject:cg_mcap,52779,1564254
-0xe461f84c3fe6bcdd1162eb0ef4284f3bb6e4cad3,"PENDLE / WETH 0.101%",camelot-v3,pendle,weth,pendle,332421157,above,single_subject:cg_mcap,51344,903708
-0x7cf803e8d82a50504180f417b8bc7a493c0a0503,"USDC / DAI 0.01%",uniswap_v3_arbitrum,usd-coin,makerdao-arbitrum-bridged-dai-arbitrum-one,makerdao-arbitrum-bridged-dai-arbitrum-one,4596325376,above,single_subject:cg_mcap,51139,4556637
-0x1186b18a85250ef23bafb3a2382b169b4f8e5d60,"EDGE / USDC 0.3%",uniswap_v3_arbitrum,,usd-coin,EDGE,111405,below,single_subject:gt_fdv,47890,355955
-0x3db70832f48f8c01ee041671f7bb1cfaa2677584,"USDC / AAVE 0.3%",uniswap_v3_arbitrum,usd-coin,aave,aave,2009582009,above,single_subject:cg_mcap,46118,1971329
-0x42a4755709dd1bbfe959b3dea7200d4cb4f357d1,"EVA / WBTC 1%",uniswap_v3_arbitrum,evervalue-coin,arbitrum-bridged-wbtc-arbitrum-one,evervalue-coin,,unknown,gt_fdv_only_above_threshold,45926,3123748
-0x5886e46e6dd497d7501f103a58ff4242bcaa2556,"thBILL / USDC 0.01%",uniswap_v3_arbitrum,theo-short-duration-us-treasury-fund,usd-coin,theo-short-duration-us-treasury-fund,117828934,above,single_subject:cg_mcap,44837,422626
-0x8c9d230d45d6cfee39a6680fb7cb7e8de7ea8e71,"USDT / USDC 0.01%",uniswap_v3_arbitrum,usdt0,usd-coin-ethereum-bridged,usd-coin-ethereum-bridged,74598716783,above,min_cap_of_two:cg_mcap,44207,1024406
-0x1aeedd3727a6431b8f070c0afaa81cc74f273882,"GMX / WETH 0.3%",uniswap_v3_arbitrum,gmx,weth,gmx,78044065,below,single_subject:cg_mcap,43924,2235864
-0x70db444986a997eb74e520f19d367e13d75ef97f,"cbBTC / WBTC 0.01%",pancakeswap-v3-arbitrum,coinbase-wrapped-btc,arbitrum-bridged-wbtc-arbitrum-one,,,above,both_quote,43350,2966225
-0x5cbddc44f31067df328aa7a8da03aca6f2edd2ad,"ATH / WETH 0.3%",uniswap_v3_arbitrum,aethir,weth,aethir,92885306,below,single_subject:cg_mcap,43200,835921
-0x92fd143a8fa0c84e016c2765648b9733b0aa519e,"ARB / WETH 1%",uniswap_v3_arbitrum,arbitrum,weth,arbitrum,908276740,above,single_subject:cg_mcap,42152,282743
-0x4d1576158518dd61924218446c1057cf03138d57,"WETH / USDC 0.3%",sushiswap-v3-arbitrum,weth,usd-coin-ethereum-bridged,usd-coin-ethereum-bridged,74598716783,above,single_subject:cg_mcap,38354,1230857
-0xbba37ba8332b43a358eb31e6059e2c5f82e2a6c9e615ebd1785119fff4871552,"USDC / USDC 0.002%",uniswap-v4-arbitrum,usd-coin,usd-coin-ethereum-bridged,usd-coin-ethereum-bridged,74598716783,above,single_subject:cg_mcap,38122,782628
-0x1b2c9a12ccd172e95c2e09a6ebb7c715445e2b91e29ea0c5e18ac5d2c6fca665,"ETH / PENDLE 0.3%",uniswap-v4-arbitrum,ethereum,pendle,pendle,332421157,above,single_subject:cg_mcap,37549,1065612
-0xac70bd92f89e6739b3a08db9b6081a923912f73d,"WBTC / USDC 0.05%",uniswap_v3_arbitrum,arbitrum-bridged-wbtc-arbitrum-one,usd-coin-ethereum-bridged,usd-coin-ethereum-bridged,74598716783,above,single_subject:cg_mcap,37118,702608
-0x080574d224e960c272e005aa03efbe793f317640,"sUSDe / USDT",fluid-arbitrum,ethena-staked-usde,usdt0,ethena-staked-usde,1420198585,above,min_cap_of_two:gt_mcap,36283,304786
-0xadf56f4966f965d1759ecd3d63028d610e773817,"USDC / USDT",solidly-v3-arbitrum,usd-coin,usdt0,usdt0,183398859944,above,single_subject:cg_mcap,36187,768507
-0xa978cc348a0b5de8bd564a1d8fe437787fd12664,"waArbUSDCn / EURe 0.15%",balancer-v3-arbitrum,wrapped-aave-arbitrum-usdcn,monerium-eur-money-2,wrapped-aave-arbitrum-usdcn,332853,below,min_cap_of_two:gt_mcap,35085,1987274
-0xec090cf6dd891d2d014bea6edada6e05e025d93d,"crvUSD / USDC",curve_arbitrum,crvusd,usd-coin,,,above,both_quote,34515,592822
-0x5a2b8dc0eae54a23c263e17e085169415757dc05,"ARB / AAVE 0.3%",uniswap_v3_arbitrum,arbitrum,aave,arbitrum,908276740,above,min_cap_of_two:cg_mcap,32479,176839
-0xfae2ae0a9f87fd35b5b0e24b47bac796a7eefea1,"ARB / USDC 0.025%",camelot-v3,arbitrum,usd-coin,arbitrum,908276740,above,single_subject:cg_mcap,30704,755510
-0x889af944e95788f770983062b13b5a52e367029b,"tBTC / WBTC 0.01%",uniswap_v3_arbitrum,tbtc,arbitrum-bridged-wbtc-arbitrum-one,,,above,both_quote,29791,1370085
-0x73af1150f265419ef8a5db41908b700c32d49135,"crvUSD / USDT",curve_arbitrum,crvusd,usdt0,usdt0,183398859944,above,single_subject:cg_mcap,28903,404859
-0x17c14d2c404d167802b16c450d3c99f88f2c4f4d,"WETH / USDC 0.3%",uniswap_v3_arbitrum,weth,usd-coin-ethereum-bridged,usd-coin-ethereum-bridged,74598716783,above,single_subject:cg_mcap,28021,928617
-0x977f5d9a39049c73bc26edb3fa15d5f7c0ac82e9,"LINK / WETH 0.05%",pancakeswap-v3-arbitrum,chainlink,weth,chainlink,8843519107,above,single_subject:cg_mcap,27232,1432338
-0x6985cb98ce393fce8d6272127f39013f61e36166,"USDC / WBTC 0.3%",uniswap_v3_arbitrum,usd-coin,arbitrum-bridged-wbtc-arbitrum-one,,,above,both_quote,27092,916896
-0x8d68772af387a003cc74f993822b3b7f082c23bc,"LINK / UNI 0.3%",uniswap_v3_arbitrum,chainlink,uniswap,uniswap,3982049326,above,min_cap_of_two:cg_mcap,27067,454254
-0x32a5746ba6826828716cc1a394bc33301ebc7656,"LINK / USDT 0.3%",uniswap_v3_arbitrum,chainlink,usdt0,chainlink,8843519107,above,min_cap_of_two:cg_mcap,26524,1082012
-0x70bf44c3a9b6b047bf60e5a05968225dbf3d6a5b9e8a95a73727e48921e889c1,"WBTC / USDC 0.3%",uniswap-v4-arbitrum,arbitrum-bridged-wbtc-arbitrum-one,usd-coin,,,above,both_quote,26090,1103922
-0x74d0ae8b8e1fca6039707564704a25ad2ee036b0,"GRT / WETH 0.3%",uniswap_v3_arbitrum,the-graph,weth,the-graph,191509314,above,single_subject:cg_mcap,25794,498012
-0xda97eeae449aaddb80d9fbc630770b9d039a9c4ed14ecfe9a6ac4e1d1acf58b5,"AAVE / LINK 0.3%",uniswap-v4-arbitrum,aave,chainlink,aave,2009582009,above,min_cap_of_two:cg_mcap,5316,123956
-0xddd452b45c31ae6a73de96c1065a5dbed447630c420c5cfceae1852e2efdeb8a,"AAVE / USDC 0.3%",uniswap-v4-arbitrum,aave,usd-coin,aave,2009582009,above,single_subject:cg_mcap,5187,102145
-0x845c8bc94610807fcbab5dd2bc7ac9dabaff3c55,"crvUSD / ARB / CRV",curve_arbitrum,crvusd,arbitrum,arbitrum,908276740,above,single_subject:cg_mcap,7633,75268
-0x90adeaeba1b0550987637183712c138484af473093e2006a0fecaad3241ddb1c,"ARB / USDT 0.3%",uniswap-v4-arbitrum,arbitrum,usdt0,arbitrum,908276740,above,min_cap_of_two:cg_mcap,7348,80163
-0xa4a3cd24e1f52d8075715e6f54d15f10bc8f2c1a,"LDO / ARB 0.3%",uniswap_v3_arbitrum,lido-dao,arbitrum,lido-dao,321076460,above,min_cap_of_two:cg_mcap,6482,68254
-0x69dc51302b48199311568c0e7ab6e0a2a961b1ba52d9bd006003d59efd123b75,"LINK / USDC 0.3%",uniswap-v4-arbitrum,chainlink,usd-coin,chainlink,8843519107,above,single_subject:cg_mcap,6808,164867
-0xbbe36e6f0331c6a36ab44bc8421e28e1a1871c1e,"USDC / LINK 0.3%",uniswap_v3_arbitrum,usd-coin,chainlink,chainlink,8843519107,above,single_subject:cg_mcap,5064,146336
-0x7e34f5809149acb927470bcc270de60b9908cc9723b966abfb20c2ab4aa8c351,"ETHFI / ETH 1%",uniswap-v4-arbitrum,ether-fi,ethereum,ether-fi,537504140,above,single_subject:cg_mcap,5522,376915
-0xf0346b437fe43e64fa799c2bd3cf5db1f7e9327c,"ZRO / WETH 0.05%",pancakeswap-v3-arbitrum,layerzero,weth,layerzero,374044455,above,single_subject:cg_mcap,7209,358847
-0x105ba85d9047daf3f9fe941d8188d4b9a6900388,"ZRO / WETH 0.425%",camelot-v3,layerzero,weth,layerzero,374044455,above,single_subject:cg_mcap,5539,198745
-0xbc4d874430834e90a4c9baeb3db470cacb0dcce2,"LDO / USDC 0.3%",uniswap_v3_arbitrum,lido-dao,usd-coin,lido-dao,321076460,above,single_subject:cg_mcap,5343,200247
-0x35dadb36f41fdbca0cc35f0d4797be8851218ab2bee5292fa134ad17c035b8ef,"PENDLE / USDT 0.3%",uniswap-v4-arbitrum,pendle,usdt0,pendle,332421157,above,min_cap_of_two:cg_mcap,6793,268514
-0xad198ad5f32cba24bcafa6e9ffece312c2ddcd6f,"UNI / WETH 0.05%",pancakeswap-v3-arbitrum,uniswap,weth,uniswap,3982049326,above,single_subject:cg_mcap,6026,342808
+0xc6962004f452be9203591991d15f6b388e09e8d0,"USDC / WETH 0.05%",uniswap_v3_arbitrum,usd-coin,weth,,,above,both_quote,47447929,1451595045
+0x2f5e87c9312fa29aed5c179e456625d79015299c,"WBTC / WETH 0.05%",uniswap_v3_arbitrum,arbitrum-bridged-wbtc-arbitrum-one,weth,,,above,both_quote,18095963,842782351
+0xc6f780497a95e246eb9449f5e4770916dcd6396a,"ARB / WETH 0.05%",uniswap_v3_arbitrum,arbitrum,weth,arbitrum,1015356991,above,single_subject:cg_mcap,10551956,220929335
+0x0e4831319a50228b9e450861297ab92dee15b44f,"USDC / WBTC 0.05%",uniswap_v3_arbitrum,usd-coin,arbitrum-bridged-wbtc-arbitrum-one,,,above,both_quote,9601254,286759234
+0xab05003a63d2f34ac7eec4670bca3319f0e3d2f62af5c2b9cbd69d03fd804fd2,"USDC / USDT",uniswap-v4-arbitrum,usd-coin,usdt0,usdt0,183407439858,above,single_subject:cg_mcap,5660564,197861686
+0x3c0441b42195f4ad6aa9a0978e06096ea616cda7,"USDC / USDT",fluid-arbitrum,usd-coin,usdt0,usdt0,183407439858,above,single_subject:cg_mcap,5509326,151075297
+0x864abca0a6202dba5b8868772308da953ff125b0f95015adbf89aaf579e903a8,"ETH / USDC 0.05%",uniswap-v4-arbitrum,ethereum,usd-coin,,,above,both_quote,5014630,382736639
+0x641c00a822e8b671738d32a431a4fb6074e5c79d,"WETH / USDT 0.05%",uniswap_v3_arbitrum,weth,usdt0,usdt0,183407439858,above,single_subject:cg_mcap,4704636,170541800
+0x5969efdde3cf5c0d9a88ae51e47d721096a97203,"WBTC / USDT 0.05%",uniswap_v3_arbitrum,arbitrum-bridged-wbtc-arbitrum-one,usdt0,usdt0,183407439858,above,single_subject:cg_mcap,4068793,151979084
+0x80c735c5a0222241f211b3edb8df2ccefad94553ec18f1c29143f0399c78f500,"WBTC / USDC 0.05%",uniswap-v4-arbitrum,arbitrum-bridged-wbtc-arbitrum-one,usd-coin,,,above,both_quote,3718282,71879023
+0x4bfc22a4da7f31f8a912a79a7e44a822398b4390,"WBTC / WETH 0.01%",pancakeswap-v3-arbitrum,arbitrum-bridged-wbtc-arbitrum-one,weth,,,above,both_quote,3520845,128074425
+0xec6e37b2d66aa5ef5a9fc296b4da3474b121f512428dd425a51c6424955fc5eb,"Dory / USDC 1%",uniswap-v4-arbitrum,,usd-coin,Dory,19262753,below,single_subject:gt_fdv,2061791,36662235
+0xf4873a85b1a6824cb2364d87cebb96fe7ded5fc975b93faaf53e91eb835ef11f,"USDai / USDC 0.001%",uniswap-v4-arbitrum,usdai,usd-coin,usdai,288569680,above,single_subject:cg_mcap,2022487,59296287
+0xb1026b8e7276e7ac75410f1fcbbe21796e8f7526,"USDC / WETH 0.01%",camelot-v3,usd-coin,weth,,,above,both_quote,1506315,50285953
+0xa17afcab059f3c6751f5b64347b5a503c3291868,"USDC / USDT 0.003%",camelot-v3,usd-coin,usdt0,usdt0,183407439858,above,single_subject:cg_mcap,1398836,30173513
+0xc86eb7b85807020b4548ee05b54bfc956eebbfcd,"USDC / USDC",camelot-v3,usd-coin,usd-coin-ethereum-bridged,usd-coin-ethereum-bridged,74241919595,above,single_subject:cg_mcap,1308305,52692541
+0xd13040d4fe917ee704158cfcb3338dcd2838b245,"RAIN / WETH 0.01%",uniswap_v3_arbitrum,rain,weth,rain,11298999867,above,single_subject:cg_mcap,1237417,36786636
+0xc473e2aee3441bf9240be85eb122abb059a3b57c,"USDC / WETH 0.3%",uniswap_v3_arbitrum,usd-coin,weth,,,above,both_quote,1166233,35761303
+0x49340dbb8fb5ece2f9b594e77ab774e65725e9d8,"CHIP / USDC 0.01%",uniswap_v3_arbitrum,chip-2,usd-coin,chip-2,94731362,below,single_subject:cg_mcap,1136656,29167135
+0xbe3ad6a5669dc0b8b12febc03608860c31e2eef6,"USDC / USDT 0.01%",uniswap_v3_arbitrum,usd-coin,usdt0,usdt0,183407439858,above,single_subject:cg_mcap,1127362,57813541
+0x9576c70b482e79544a9c6afc322e450d7a035b8a4114ede9039a112e7c14c8a8,"cbBTC / WBTC 0.004%",uniswap-v4-arbitrum,coinbase-wrapped-btc,arbitrum-bridged-wbtc-arbitrum-one,,,above,both_quote,1085988,14877720
+0x86f874212335af27c41cdb855c2255543d1499ce,"sUSDai / USDC",fluid-arbitrum,susdai,usd-coin,susdai,464370028,above,single_subject:cg_mcap,1185893,14212935
+0x6f38e884725a116c9c7fbf208e79fe8828a2595f,"USDC / WETH 0.01%",uniswap_v3_arbitrum,usd-coin,weth,,,above,both_quote,860478,24682907
+0xd9e2a1a61b6e61b275cec326465d417e52c1b95c,"USDC / WETH 0.05%",pancakeswap-v3-arbitrum,usd-coin,weth,,,above,both_quote,782718,21859538
+0x7fcdc35463e3770c2fb992716cd070b63540b947,"USDC / WETH 0.01%",pancakeswap-v3-arbitrum,usd-coin,weth,,,above,both_quote,769047,26932426
+0x7f90122bf0700f9e7e1f688fe926940e8839f353,"USDC / USDT",curve_arbitrum,usd-coin-ethereum-bridged,usdt0,usd-coin-ethereum-bridged,74241919595,above,min_cap_of_two:cg_mcap,665927,20550739
+0xe8c831687ce8c9d015eb10b430d1a54faa0cb4ed,"sUSDai / USDT",fluid-arbitrum,susdai,usdt0,susdai,464370028,above,min_cap_of_two:cg_mcap,641369,11951200
+0x15eb51a325cbce6c1cc8202a6f8a76224c5b7540,"ESP / USDC 0.01%",uniswap_v3_arbitrum,espresso,usd-coin,espresso,59351907,below,single_subject:cg_mcap,492015,19008537
+0xe88bba0ec2fc9091d68344b32b504abcc59f0aa9e1ae2ef048b69bc7ec3f4df8,"ETH / USDT 0.05%",uniswap-v4-arbitrum,ethereum,usdt0,usdt0,183407439858,above,single_subject:cg_mcap,493281,12994815
+0x9b42809aaae8d088ee01fe637e948784730f0386,"cbBTC / WBTC 0.01%",uniswap_v3_arbitrum,coinbase-wrapped-btc,arbitrum-bridged-wbtc-arbitrum-one,,,above,both_quote,481093,27670525
+0x843ac8dc6d34aeb07a56812b8b36429ee46bdd07,"USDC / WBTC 0.05%",pancakeswap-v3-arbitrum,usd-coin,arbitrum-bridged-wbtc-arbitrum-one,,,above,both_quote,429879,14206879
+0xfc7b3ad139daaf1e9c3637ed921c154d1b04286f8a82b805a6c352da57028653,"WETH / USDC 0.05%",uniswap-v4-arbitrum,weth,usd-coin,,,above,both_quote,454392,2913268
+0xd845f7d4f4deb9ff5bcf09d140ef13718f6f6c71,"WBTC / WETH 0.009%",camelot-v3,arbitrum-bridged-wbtc-arbitrum-one,weth,,,above,both_quote,401855,5706034
+0xf3eb87c1f6020982173c908e7eb31aa66c1f0296,"USDC / WETH 0.05%",sushiswap-v3-arbitrum,usd-coin,weth,,,above,both_quote,374909,9842278
+0xe51635ae8136abac44906a8f230c2d235e9c195f,"ARB / WETH 0.025%",camelot-v3,arbitrum,weth,arbitrum,1015356991,above,single_subject:cg_mcap,367289,10222900
+0xdbaeb7f0dfe3a0aafd798ccecb5b22e708f7852c,"PENDLE / WETH 0.3%",uniswap_v3_arbitrum,pendle,weth,pendle,338879587,above,single_subject:cg_mcap,356483,9176856
+0x03df2300e83353309c1069ae3ea89c31b361a009f9c36a1de5c8f0afcc45bde8,"ETH / USDC 0.3%",uniswap-v4-arbitrum,ethereum,usd-coin,,,above,both_quote,355975,12930921
+0x41b1e6b28a39199365f5348a2bf71d0f785167e920d05254b3f2efd1b9487db5,"WBTC / USDT 0.05%",uniswap-v4-arbitrum,arbitrum-bridged-wbtc-arbitrum-one,usdt0,usdt0,183407439858,above,single_subject:cg_mcap,353839,10847495
+0x076994463d511adbe0c113b93dcb084a839b0d80,"EVA / WBTC 0.3%",uniswap_v3_arbitrum,evervalue-coin,arbitrum-bridged-wbtc-arbitrum-one,evervalue-coin,768843013,above,single_subject:cg_fdv,346280,3230280
+0xc31e54c7a869b9fcbecc14363cf510d1c41fa443,"WETH / USDC 0.05%",uniswap_v3_arbitrum,weth,usd-coin-ethereum-bridged,usd-coin-ethereum-bridged,74241919595,above,single_subject:cg_mcap,318105,10898126
+0x50e7b9293aef80c304234e86c84a01be8401c530,"PENDLE / USDT 0.3%",uniswap_v3_arbitrum,pendle,usdt0,pendle,338879587,above,min_cap_of_two:cg_mcap,302933,10710517
+0xcda53b1f66614552f834ceef361a8d12a0b8dad8,"ARB / USDC 0.05%",uniswap_v3_arbitrum,arbitrum,usd-coin-ethereum-bridged,arbitrum,1015356991,above,min_cap_of_two:cg_mcap,310819,11369873
+0xb7236b927e03542ac3be0a054f2bea8868af9508,"WETH / USDC",traderjoe-v2-2-arbitrum,weth,usd-coin,,,above,both_quote,265155,5565139
+0x45fae8d0d2ace73544baab452f9020925afccc75,"USDC / DAI 0.005%",camelot-v3,usd-coin,makerdao-arbitrum-bridged-dai-arbitrum-one,makerdao-arbitrum-bridged-dai-arbitrum-one,4584030408,above,single_subject:cg_mcap,284269,3243522
+0x91308bc9ce8ca2db82aa30c65619856cc939d907,"LINK / WETH 0.05%",uniswap_v3_arbitrum,chainlink,weth,chainlink,8706931478,above,single_subject:cg_mcap,277655,11806645
+0x49b720f1aab26260beaec93a7beb5bf2925b2a8f,"USDC / USDT",curve_arbitrum,usd-coin,usdt0,usdt0,183407439858,above,single_subject:cg_mcap,248317,34483290
+0x628854f0cfd7debd6e04361421ee9c06c77048c3,"ODYS / WETH 1%",uniswap_v3_arbitrum,,weth,ODYS,2127632,below,single_subject:gt_fdv,245637,11723390
+0x8b3781471ab98774c59775df9cc505ce20b36afffd297aef2dc17daafce3b140,"ETH / WBTC 0.05%",uniswap-v4-arbitrum,ethereum,arbitrum-bridged-wbtc-arbitrum-one,,,above,both_quote,243547,10819624
+0x13fd8faf63c1b0dbd44157df1a390224d734bdcf1f60451fb84a8b48dd3d388a,"USDC / USDT",uniswap-v4-arbitrum,usd-coin,usdt0,usdt0,183407439858,above,single_subject:cg_mcap,230638,5299069
+0x389938cf14be379217570d8e4619e51fbdafaa21,"WETH / USDT 0.01%",pancakeswap-v3-arbitrum,weth,usdt0,usdt0,183407439858,above,single_subject:cg_mcap,217379,5411995
+0x64f68f27a2e2b477e70f98f32376bf3989884526947b9d46ee990d3882ff1a76,"PENDLE / ETH 0.45%",uniswap-v4-arbitrum,pendle,ethereum,pendle,338879587,above,single_subject:cg_mcap,217178,3202824
+0x468b88941e7cc0b88c1869d68ab6b570bcef62ff,"LINK / WETH 0.3%",uniswap_v3_arbitrum,chainlink,weth,chainlink,8706931478,above,single_subject:cg_mcap,215067,7126952
+0x4fd69d55704d8c40ebbd6d0086f1c827eed02bfb4a42cea8aafda66b45dab22e,"cbBTC / WBTC 0.005%",uniswap-v4-arbitrum,coinbase-wrapped-btc,arbitrum-bridged-wbtc-arbitrum-one,,,above,both_quote,213651,10406365
+0xc24f7d8e51a64dc1238880bd00bb961d54cbeb29,"UNI / WETH 0.3%",uniswap_v3_arbitrum,uniswap,weth,uniswap,3700569621,above,single_subject:cg_mcap,200230,5587095
+0x74b8bcadc831369ce75543e0d7517875af1c157d,"VSN / USDC 0.01%",pancakeswap-v3-arbitrum,vision-3,usd-coin,vision-3,155508413,above,single_subject:cg_mcap,195580,11453582
+0x42a4755709dd1bbfe959b3dea7200d4cb4f357d1,"EVA / WBTC 1%",uniswap_v3_arbitrum,evervalue-coin,arbitrum-bridged-wbtc-arbitrum-one,evervalue-coin,768843013,above,single_subject:cg_fdv,194745,2936304
+0x0b1a513ee24972daef112bc777a5610d4325c9e7,"wstETH / ETH",fluid-arbitrum,arbitrum-bridged-wsteth-arbitrum,ethereum,,,above,both_quote,191893,15532958
+0xb49eae16e45faebaa406e57c93263a5fcbc0c8d3,"ORDER / WETH 0.25%",pancakeswap-v3-arbitrum,orderly-network,weth,orderly-network,16017003,below,single_subject:cg_mcap,181036,726701
+0xa7cf5543a27badc3a74d51ea0a02e84799140e4e,"sUSDai / USDC",curve_arbitrum,susdai,usd-coin,susdai,464370028,above,single_subject:cg_mcap,201140,4342957
+0x7f580f8a02b759c350e6b8340e7c2d4b8162b6a9,"DAI / USDT 0.01%",uniswap_v3_arbitrum,makerdao-arbitrum-bridged-dai-arbitrum-one,usdt0,makerdao-arbitrum-bridged-dai-arbitrum-one,4584030408,above,min_cap_of_two:cg_mcap,157033,5722627
+0xa95b0f5a65a769d82ab4f3e82842e45b8bbaf101,"CRV / WETH 0.3%",uniswap_v3_arbitrum,curve-dao-token,weth,curve-dao-token,542593311,above,single_subject:cg_mcap,152996,6437739
+0x1aeedd3727a6431b8f070c0afaa81cc74f273882,"GMX / WETH 0.3%",uniswap_v3_arbitrum,gmx,weth,gmx,78264236,below,single_subject:cg_mcap,147339,2607010
+0xa7b7064a428fa4391a7efb7054cde38bcf0967348fe403e04de9c98811de327f,"cbBTC / WBTC 0.005%",uniswap-v4-arbitrum,coinbase-wrapped-btc,arbitrum-bridged-wbtc-arbitrum-one,,,above,both_quote,146259,5997980
+0x35218a1cbac5bbc3e57fd9bd38219d37571b3537,"wstETH / WETH 0.01%",uniswap_v3_arbitrum,arbitrum-bridged-wsteth-arbitrum,weth,,,above,both_quote,131784,16071389
+0xd3b190d7e8b7f91ffd1827a5611c1958c7e2623a8214d75bbd700917a42491dc,"GMX / ETH 0.05%",uniswap-v4-arbitrum,gmx,ethereum,gmx,78264236,below,single_subject:cg_mcap,130577,3093952
+0x713e1346d585a1dccadc093210e33cd6bc8cf3d1,"USDC / USDT 0.001%",maverick-v2-arbitrum,usd-coin,usdt0,usdt0,183407439858,above,single_subject:cg_mcap,128187,7516497
+0xba9ed8ae94c70ef9aa2cd1045ed473aaa405c6c7,"USDai / USDC",fluid-arbitrum,usdai,usd-coin,usdai,288569680,above,single_subject:cg_mcap,118243,3091441
+0x80ceb98632409080924dce50c26acc25458dde17,"AAVE / WETH 0.05%",pancakeswap-v3-arbitrum,aave,weth,aave,1885766414,above,single_subject:cg_mcap,116769,4469507
+0x57df9434cab6bc174899287fad42058da712ae85,"EVA / WBTC 1%",pancakeswap-v3-arbitrum,evervalue-coin,arbitrum-bridged-wbtc-arbitrum-one,evervalue-coin,768843013,above,single_subject:cg_fdv,116835,1401041
+0x12a46b5de0c34ade7eee54a2c3310001b303a20e,"RAIN / USDT 0.3%",uniswap_v3_arbitrum,rain,usdt0,rain,11298999867,above,min_cap_of_two:cg_mcap,111115,2706921
+0x0bacc7a9717e70ea0da5ac075889bd87d4c81197,"WETH / USDT 0.05%",pancakeswap-v3-arbitrum,weth,usdt0,usdt0,183407439858,above,single_subject:cg_mcap,103020,3505743
+0x960ea3e3c7fb317332d990873d354e18d7645590,"USDT / WBTC / WETH",curve_arbitrum,usdt0,arbitrum-bridged-wbtc-arbitrum-one,usdt0,183407439858,above,single_subject:cg_mcap,95144,574104
+0xbfca4230115de8341f3a3d5e8845ffb3337b2be3,"PENDLE / WETH",camelot,pendle,weth,pendle,338879587,above,single_subject:cg_mcap,103303,3626311
+0xb08a8794a5d3ccca3725d92964696858d3201909,"PENDLE / WETH 0.05%",uniswap_v3_arbitrum,pendle,weth,pendle,338879587,above,single_subject:cg_mcap,98319,3244745
+0x7cf803e8d82a50504180f417b8bc7a493c0a0503,"USDC / DAI 0.01%",uniswap_v3_arbitrum,usd-coin,makerdao-arbitrum-bridged-dai-arbitrum-one,makerdao-arbitrum-bridged-dai-arbitrum-one,4584030408,above,single_subject:cg_mcap,95532,3437427
+0x804cbb88a0e990a889e8bb5d5acd3302d33cc9e0,"IODIG / USDT",sushiswap_arbitrum,,usdt0,IODIG,711700,below,min_cap_of_two:gt_fdv,89468,0
+0x7e928afb59f5de9d2f4d162f754c6eb40c88aa8e,"USDC / USDT 0.01%",pancakeswap-v3-arbitrum,usd-coin,usdt0,usdt0,183407439858,above,single_subject:cg_mcap,79018,4323822
+0xa1b666d3158f109dc6756dcba38cc8980197de8b,"WETH / USDC 0.1%",balancer_arbitrum,weth,usd-coin,,,above,both_quote,75539,634943
+0xa978cc348a0b5de8bd564a1d8fe437787fd12664,"waArbUSDCn / EURe 0.15%",balancer-v3-arbitrum,wrapped-aave-arbitrum-usdcn,monerium-eur-money-2,wrapped-aave-arbitrum-usdcn,290464,below,min_cap_of_two:cg_mcap,82615,1931223
+0xe5cf22ee4988d54141b77050967e1052bd9c7f7a,"MOR / WETH 0.3%",uniswap_v3_arbitrum,morpheusai,weth,morpheusai,16308783,below,single_subject:cg_mcap,80266,554701
+0xbbf3209130df7d19356d72eb8a193e2d9ec5c234,"ANIME / WETH 0.3%",uniswap_v3_arbitrum,anime,weth,anime,16898508,below,single_subject:cg_mcap,79010,55044
+0x689c96ceab93f5e131631d225d75dea3fd37747e,"ARB / WBTC 0.3%",uniswap_v3_arbitrum,arbitrum,arbitrum-bridged-wbtc-arbitrum-one,arbitrum,1015356991,above,single_subject:cg_mcap,77780,53069157
+0xb2d0b9fc11381130897f50656a9705bb6fdeb9d9,"NOLA / WETH 1%",uniswap_v3_arbitrum,,weth,NOLA,280719,below,single_subject:gt_fdv,73659,1525814
+0xc6af8e73e2261264ef95466b97b13e03bd88165e,"PENDLE / USDC 0.3%",uniswap_v3_arbitrum,pendle,usd-coin,pendle,338879587,above,single_subject:cg_mcap,68818,2235235
+0x9ffca51d23ac7f7df82da414865ef1055e5afcc3,"ARB / USDC 0.05%",pancakeswap-v3-arbitrum,arbitrum,usd-coin,arbitrum,1015356991,above,single_subject:cg_mcap,64919,2090141
+0x7e9cb8ad4a7683070e233f3eb1d07d87272b9b26,"ETHFI / WETH 0.3%",uniswap_v3_arbitrum,ether-fi,weth,ether-fi,663974505,above,single_subject:cg_mcap,66176,628700
+0x05477c22a5349cee601500da0489dad137fd6bfa,"USDC / UNI 0.3%",uniswap_v3_arbitrum,usd-coin,uniswap,uniswap,3700569621,above,single_subject:cg_mcap,64170,1499376
+0xd9f6d67f109e67b9b28117dcf4aafbc874fbd89f92bdca1a66901a3965582748,"UNI / ETH 0.3%",uniswap-v4-arbitrum,uniswap,ethereum,uniswap,3700569621,above,single_subject:cg_mcap,61476,1748323
+0xaebdca1bc8d89177ebe2308d62af5e74885dccc3,"ARB / USDC 0.3%",uniswap_v3_arbitrum,arbitrum,usd-coin,arbitrum,1015356991,above,single_subject:cg_mcap,55939,4473452
+0xfb9b65c351d7094dadcecb7cf9d0b79ccc7d587283e82f8b6cc51ffef896929d,"EVA / USDT 0.3%",uniswap-v4-arbitrum,evervalue-coin,usdt0,evervalue-coin,768843013,above,min_cap_of_two:cg_fdv,55271,586297
+0x5418a64e0cdb20548acb394f5d00a089baf02161,"waArbWETH / rETH 0.04%",balancer-v3-arbitrum,wrapped-aave-arbitrum-weth,rocket-pool-eth,wrapped-aave-arbitrum-weth,177944,below,single_subject:cg_mcap,55001,646978
+0xc82819f72a9e77e2c0c3a69b3196478f44303cf4,"WETH / USDT 0.3%",uniswap_v3_arbitrum,weth,usdt0,usdt0,183407439858,above,single_subject:cg_mcap,52650,1666216
+0x3db70832f48f8c01ee041671f7bb1cfaa2677584,"USDC / AAVE 0.3%",uniswap_v3_arbitrum,usd-coin,aave,aave,1885766414,above,single_subject:cg_mcap,51589,2055671
+0xf5fac36c2429e1cf84d4abacdb18477ef32589c9,"Cake / WETH 0.25%",pancakeswap-v3-arbitrum,pancakeswap-token,weth,pancakeswap-token,675370601,above,single_subject:cg_mcap,52303,1151507
+0xc23f308cf1bfa7efffb592920a619f00990f8d74,"USDe / USDC 0.01%",camelot-v3,ethena-usde,usd-coin,,,above,both_quote,51080,1454910
+0x0f143fc50d6c71fee95d6ec1030e62d788507b84,"ETHFI / WETH 0.25%",camelot-v3,ether-fi,weth,ether-fi,663974505,above,single_subject:cg_mcap,50592,519274
