@@ -1,6 +1,7 @@
 name: refresh-volume-data
 on:
-  # Daily scheduling is paused until the paid refresh test is confirmed.
+  schedule:
+    - cron: '0 14 * * *'  # Daily at 14:00 UTC (19:30 IST), after the previous UTC day's adapter reports.
   workflow_dispatch:
     inputs:
       not_before_utc:
@@ -8,7 +9,7 @@ on:
         required: false
         default: ''
         type: string
-run-name: 'Paid volume refresh — ${{ inputs.not_before_utc || ''immediate'' }}'
+run-name: 'Paid volume refresh — ${{ github.event_name == ''schedule'' && ''daily'' || inputs.not_before_utc || ''manual'' }}'
 permissions:
   contents: write
 concurrency:
@@ -24,7 +25,7 @@ jobs:
       - uses: actions/setup-node@v5
         with: { node-version: '24' }
       - name: Wait until the requested test time
-        if: inputs.not_before_utc != ''
+        if: github.event_name == 'workflow_dispatch' && inputs.not_before_utc != ''
         timeout-minutes: 21
         env:
           REFRESH_NOT_BEFORE: ${{ inputs.not_before_utc }}
