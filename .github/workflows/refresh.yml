@@ -1,9 +1,15 @@
 name: refresh-volume-data
 on:
   schedule:
-    - cron: '0 14 * * *'  # Daily at 14:00 UTC (19:30 IST), after the previous UTC day's adapter reports.
+    # Avoid the busy top of the hour. Later attempts only crawl if today's publication is missing.
+    - cron: '17 14,16,18,20,22 * * *'  # First attempt 14:17 UTC (19:47 IST); catch-up every two hours.
   workflow_dispatch:
     inputs:
+      skip_if_fresh:
+        description: 'Skip when today is already published (use to test the scheduled freshness gate)'
+        required: false
+        default: false
+        type: boolean
       not_before_utc:
         description: 'Optional earliest refresh time, ISO UTC (YYYY-MM-DDTHH:mm:ssZ); at most 20 minutes ahead'
         required: false
@@ -16,12 +22,34 @@ concurrency:
   group: refresh
   cancel-in-progress: false
 jobs:
-  refresh:
+  check-refresh:
     if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    outputs:
+      due: ${{ steps.check.outputs.due }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main  # A delayed/queued trigger must inspect the latest published data.
+      - uses: actions/setup-node@v5
+        with: { node-version: '24' }
+      - name: Check whether today's data is published
+        id: check
+        env:
+          SKIP_IF_FRESH: ${{ inputs.skip_if_fresh }}
+        run: node scripts/refresh_due.mjs
+  refresh:
+    needs: check-refresh
+    if: needs.check-refresh.outputs.due == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 360
     steps:
       - uses: actions/checkout@v5
+        with:
+          ref: main
       - uses: actions/setup-node@v5
         with: { node-version: '24' }
       - name: Wait until the requested test time

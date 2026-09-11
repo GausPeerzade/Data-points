@@ -1,6 +1,6 @@
 # Onchain spot volume by token market cap
 
-Daily DEX spot volume for Ethereum, Solana, Robinhood Chain, Base, BNB Chain, Arbitrum and HyperEVM, with an estimated market-cap split and the 30-day change. GitHub Actions schedules a refresh daily at 14:00 UTC (19:30 IST); publication depends on successful fetching and validation.
+Daily DEX spot volume for Ethereum, Solana, Robinhood Chain, Base, BNB Chain, Arbitrum and HyperEVM, with an estimated market-cap split and the 30-day change. GitHub Actions first attempts a daily refresh at 14:17 UTC (19:47 IST), with catch-up checks at 16:17, 18:17, 20:17 and 22:17 UTC. Once the current UTC cutoff is published across all seven chains, later checks skip the API crawl. Publication depends on successful fetching and validation.
 
 - `index.html` — the dashboard (single static page, no build step). Reads `data/latest.json`.
 - `data/` — outputs published after a successful refresh. See `data/README.md`. `data/snapshot.html` is the same dashboard with the data inlined: it opens from a file or an email attachment, no hosting needed.
@@ -28,7 +28,7 @@ node --env-file=/path/outside-webroot/coingecko.env pipeline/run.mjs
 ## Deploy and test the refresh
 
 1. Merge the pipeline and workflow to `main`. Keep the existing generated dataset when testing that the workflow itself produces and publishes fresh data.
-2. Add `COINGECKO_PRO_API_KEY` under repository Settings → Secrets and variables → Actions. `refresh-volume-data` runs on `main` daily at 14:00 UTC (19:30 IST), and can also be dispatched manually. For manual dispatch only, the optional `not_before_utc` input sets an earliest refresh time in ISO UTC, at most 20 minutes ahead; a late runner starts immediately. Scheduled runs have no added delay. The workflow requires the paid secret and fails before fetching if it is missing. It pins one UTC date window, restores compatible raw responses, fetches and validates all chains, then publishes only generated data.
+2. Add `COINGECKO_PRO_API_KEY` under repository Settings → Secrets and variables → Actions. `refresh-volume-data` checks `main` at 14:17, 16:17, 18:17, 20:17 and 22:17 UTC. Catch-up checks skip collection after a successful daily publication. Manual dispatch forces a refresh by default; select `skip_if_fresh` to exercise the same freshness gate as scheduled runs. For manual dispatch only, the optional `not_before_utc` input sets an earliest refresh time in ISO UTC, at most 20 minutes ahead; a late runner starts immediately. Scheduled runs have no added delay. The workflow requires the paid secret and fails before fetching if it is missing. It pins one UTC date window, restores compatible raw responses, fetches and validates all chains, then publishes only generated data.
 3. Host the static site from the repo root so every data commit redeploys it:
    - **Vercel**: import the GitHub repo, framework "Other", no build command, output directory `.`.
    - **GitHub Pages**: Settings → Pages → Deploy from branch `main`, folder `/`.
@@ -43,3 +43,9 @@ If `main` changes during a crawl, publication rebuilds from the latest head, pre
 ## Brand
 
 The dashboard uses Nemesis's official logo, Cerebri Sans Pro and the ivory, orange and navy colors from [nemesis.trade](https://nemesis.trade/). Tokens live in the first `<style>` block of `index.html`; asset sources are documented in `assets/brand/README.md`. The secondary chart colors are dashboard adaptations. Run `node pipeline/snapshot.mjs` after a frontend change to update the standalone snapshot, including its embedded fonts.
+
+## Schedule troubleshooting
+
+GitHub cron is best-effort: triggers can be delayed or dropped, particularly at the start of an hour. The schedule is now off that boundary and includes catch-up attempts. Workflow concurrency serializes checks and crawls; each check reads current `main`, so a queued attempt sees a preceding successful publication and skips duplicate API usage. Missing or malformed data requests a refresh. A provisional last day is allowed, consistent with the existing validation policy.
+
+If there is no workflow run, check the schedule/Actions service; if a run exists and fails, inspect that run's logs. To recover immediately, dispatch `refresh.yml` on `main` (leave `skip_if_fresh` false). Verify the resulting commit, Vercel deployment and https://onchaindata.nemesis.trade/data/latest.json. There is no guaranteed exact wall-clock publication time. If independent scheduling becomes necessary, use a company-managed external cron to dispatch this existing workflow; keep the multi-minute collector on the Actions runner, and avoid a second competing publication implementation.

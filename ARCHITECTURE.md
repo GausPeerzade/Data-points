@@ -99,7 +99,7 @@ KPIs use the last 30 non-provisional observations and the 30 before them. The ma
 
 ## Refresh and deployment
 
-`.github/workflows/refresh.yml` runs on `main` daily at 14:00 UTC (19:30 IST), following the successful [September 10 end-to-end test](https://github.com/Nemesisdottrade/onchain-analytics/actions/runs/34492452948), whose pipeline took 7 minutes 26 seconds. Manual dispatch remains available, with an optional `not_before_utc` timestamp for a delayed test; this delay applies only to manual dispatch. The workflow pins `REFRESH_CUTOFF` and `REFRESH_STARTED_AT`, restores raw responses from a compatible pipeline-source version, and validates sources and exports before publication. A successful publication commits generated data; the connected Vercel project then redeploys the static site. Vercel does not itself fetch market data.
+`.github/workflows/refresh.yml` checks `main` at 14:17 UTC (19:47 IST), with catch-up checks at 16:17, 18:17, 20:17 and 22:17 UTC, following the successful [September 10 end-to-end test](https://github.com/Nemesisdottrade/onchain-analytics/actions/runs/34492452948), whose pipeline took 7 minutes 26 seconds. Manual dispatch remains available, with an optional `not_before_utc` timestamp for a delayed test; this delay applies only to manual dispatch. The workflow pins `REFRESH_CUTOFF` and `REFRESH_STARTED_AT`, restores raw responses from a compatible pipeline-source version, and validates sources and exports before publication. A successful publication commits generated data; the connected Vercel project then redeploys the static site. Vercel does not itself fetch market data.
 
 The workflow requires the GitHub Actions repository secret `COINGECKO_PRO_API_KEY` and fails before fetching if it is missing. Vercel environment variables are not available to this runner. Local scripts still support the optional demo/public fallback. For local execution, use Node 24 and keep the paid key in a private environment file outside the served repository root:
 
@@ -126,3 +126,5 @@ The logo, Cerebri Sans Pro and core palette come from nemesis.trade. See `assets
 ## Accuracy improvements that require new work
 
 Use indexed swap executions and historical circulating caps from a common, defined venue universe. Keep unmatched caps and uncovered volume separately identifiable, validate address mappings, and reconcile by venue/day before aggregating. State whether volume counts each pool execution or each user-level swap. Store source timestamps and completeness checks per chain. A new provider must be audited for chain/venue coverage; “trade-level” alone does not mean complete.
+
+Catch-up checks read the latest `main` and skip the API crawl once the current UTC cutoff is published for all seven chains. Manual dispatch forces a refresh unless `skip_if_fresh` is selected. GitHub scheduling is best-effort; these off-hour attempts reduce dependence on a single delayed or missed trigger without adding another collector.
