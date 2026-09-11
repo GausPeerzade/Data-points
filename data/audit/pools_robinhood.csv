@@ -1,224 +1,228 @@
 pool,name,dex,base_id,quote_id,subject_id,subject_cap,bucket,reason,h24,vol_30d
-0x52e65b17fb6e5ba00ed806f37afcd2daa50271ca,"USDG / WETH 0.01%",uniswap-v3-robinhood,global-dollar,weth,,,above,both_quote,589551026,9643701736
-0xed50bdeea8adc232f159486192a4157281d722ff,"PONS / WETH 0.3%",uniswap-v3-robinhood,pons,weth,pons,408234914,above,single_subject:cg_mcap,38787997,418816220
-0xbac3aa3b91584a53a579b3c999a56756e954e59247e497bad1d25a4334bde551,"WETH / USDG",uniswap-v4-robinhood,ethereum,global-dollar,,,above,both_quote,35645117,235135381
-0x4be9657ec9002e528f4f17a5c43edc525a07f888f7b180c2afbf75e096c4f38a,"PONS / USDG 0.3%",uniswap-v4-robinhood,pons,global-dollar,pons,408234914,above,single_subject:cg_mcap,34659309,342395961
-0xf2a0be59ab76b96f957bd5e5b967f2b75e8db269,"PONS / USDG 0.3%",ramses-v3-robinhood,pons,global-dollar,pons,408234914,above,single_subject:cg_mcap,32888912,132280319
-0xd4eb21209c4d6093f80b5b84f5c45cc093ea14a3,"NVDA / USDG 0.05%",uniswap-v3-robinhood,nvidia-robinhood-tokenized-stock,global-dollar,nvidia-robinhood-tokenized-stock,18640156,below,single_subject:cg_mcap,29501963,636278771
-0x16679e2ac1a798865ecf1c1639e67693ddb1c220,"WETH / USDG 0.05%",up-v3,weth,global-dollar,,,above,both_quote,26164922,355066461
-0xc61284332117c3fb23a2a56cceffd07f7af60029,"SPCX / USDG 0.05%",uniswap-v3-robinhood,spacex-robinhood-tokenized-stock,global-dollar,spacex-robinhood-tokenized-stock,10919200,below,single_subject:cg_mcap,23476291,353060175
-0x24107d152f14a76d292123265ae3f3c71f863fc2f4ef7ba49d64e78d28ea379e,"WETH / USDG 0.01%",uniswap-v4-robinhood,ethereum,global-dollar,,,above,both_quote,22319128,246484475
-0x588b0785f50063260003b7790c42f1ef74902746,"JUGGERNAUT / WETH 1%",uniswap-v3-robinhood,the-juggernaut,weth,the-juggernaut,16841254,below,single_subject:cg_mcap,22577289,37213927
-0x69bfaf19c9f377bb306a89aed9f6b07e2c1a8d9a,"USDG / WETH 0.05%",uniswap-v3-robinhood,global-dollar,weth,,,above,both_quote,22256021,399149192
-0xfae65eaa11943f45e83d5b45dc7a7c801c51bfb0,"WETH / USDG 0.01%",ramses-v3-robinhood,weth,global-dollar,,,above,both_quote,17826520,331718595
-0xacea8920877840033f0275c37f9b61550b5326917e948bcf8339714d96f9521a,"FRONG / WETH 0.25%",uniswap-pools-trade,frong,ethereum,frong,9687533,below,single_subject:cg_mcap,17051593,49871474
-0x3416b8d8aa6ae642ffdc2f65165ff479d4bd3007,"astro / WETH",uniswap-v2-robinhood,,weth,astro,2350101,below,single_subject:gt_fdv,16195690,15155601
-0xd42a491087a15e5afd51feb3606066cc152d2b09,"CASHCAT / WETH 0.3%",uniswap-v3-robinhood,cash-cat,weth,cash-cat,165601938,above,single_subject:cg_mcap,15091724,501221144
-0xfa8ff9fd5bd7d653272335d476a74c305db71579,"CLUBY / WETH",uniswap-v2-robinhood,,weth,CLUBY,16495,below,single_subject:gt_fdv,14292524,436768
-0x4b7c86491df95f366b31217b2950d2c5136a2f19b6879613eac73d0e69092a1a,"MEME / USDG 0.7%",uniswap-v4-robinhood,a-meme-coin,global-dollar,a-meme-coin,55466017,below,single_subject:cg_mcap,11881013,116006389
-0xddcbba3666f578e3f09516f21ff85bfee859ab5e,"SPY / WETH 0.05%",uniswap-v3-robinhood,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,weth,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,24719116,below,single_subject:cg_mcap,10673308,193617898
-0x3c8b091a934fb769da969e84fffc3eb09e69ad389d3a20617ea34f87dc3ea022,"ND4 / WETH",pons-v2-dex,nd4-eth,ethereum,nd4-eth,1403254,below,single_subject:cg_mcap,9997692,7731028
-0xbdee01234623438632f22d609ed3a296f8222302,"BRIAN / WETH",uniswap-v2-robinhood,,weth,BRIAN,5678497,below,single_subject:gt_fdv,9957485,0
-0x3b0cbf0603ecc67b5fc9bb4fbb6ac9e08d3b2f406b63d1662a36063a7fe5e866,"WETH / USDG 0.009%",uniswap-v4-robinhood,ethereum,global-dollar,,,above,both_quote,9225656,63223588
-0xbe05adff5cf9a0bfd2f1eeb69458d5dda27e7075d6f49b0458db4b4c1967b6b1,"DOGO / WETH",uniswap-v4-robinhood,dogbull,ethereum,dogbull,9399744,below,single_subject:cg_mcap,9717381,125068945
-0x8068ab043efd411b87506c41be1add38faaf18c0af0016c663ca92feff0b8159,"WETH / USDG",orvex-v4,weth,global-dollar,,,above,both_quote,9459884,163740782
-0x7aebd80541bfaaf23dbb6e99ce13d4d31c1a84c91414f971eadbff7db5f85995,"AI / USDG 0.23%",uniswap-v4-robinhood,artificial-inu-3,global-dollar,artificial-inu-3,190837627,above,single_subject:cg_mcap,9498874,79931963
-0x10cc6bd38112cac182db90b6a71d8bb5939526ba,"PONS / WETH 1%",uniswap-v3-robinhood,pons,weth,pons,408234914,above,single_subject:cg_mcap,8643534,124945132
-0xb2a6ad51b3ea3cdc8d3508cca147a43471382e53,"WETH / USDG 0.01%",giga-v3,weth,global-dollar,,,above,both_quote,8590205,250520570
-0xaae0d815ee56e4092a5e5c2911e676fea50b2d6d,"AAPL / USDG 0.05%",uniswap-v3-robinhood,apple-robinhood-tokenized-stock,global-dollar,apple-robinhood-tokenized-stock,6616950,below,single_subject:cg_mcap,8328284,37620924
-0x68518a0a7081c15381b2d34b70fbf10210c5c7d1706b6fcb65ac953041cbffc1,"USDG / JUGGERNAUT 1%",uniswap-v4-robinhood,global-dollar,the-juggernaut,the-juggernaut,16841254,below,single_subject:cg_mcap,7994294,5489990
-0x4a6a85252a6f6b383a5f747259ee157e65ff1307,"SHRUB / WETH",uniswap-v2-robinhood,lil-shrub,weth,lil-shrub,1806173,below,single_subject:cg_mcap,7712404,128236644
-0x51b6ca77deae9f17c1d89edfb301ae50053c57a5,"PONS / WETH 1%",ramses-v3-robinhood,pons,weth,pons,408234914,above,single_subject:cg_mcap,7648952,83138284
-0x7a35168956f129c032ec035cc47383a605a71df0,"WETH / USDG 0.004%",alandale-cl,weth,global-dollar,,,above,both_quote,7571112,73550125
-0x62ab521f71431f78ac374cdbadc6cda3c8916b6c,"NVDA / WETH 0.05%",uniswap-v3-robinhood,nvidia-robinhood-tokenized-stock,weth,nvidia-robinhood-tokenized-stock,18640156,below,single_subject:cg_mcap,7331801,66807336
-0xc4a21f9d6485fc5893dd4a491b320a83daf4da1d,"AI / WETH 1%",uniswap-v3-robinhood,artificial-inu-3,weth,artificial-inu-3,190837627,above,single_subject:cg_mcap,6859817,198512131
-0xc3c9f0171490ef0f4536fe493f3b0ebb5ee0cb5e,"SPCX / WETH 0.05%",uniswap-v3-robinhood,spacex-robinhood-tokenized-stock,weth,spacex-robinhood-tokenized-stock,10919200,below,single_subject:cg_mcap,6613244,51863660
-0x7a92902c08235b8f458790c8ece80632c93110c27e4cb283ac2e5da1e66f88b5,"WETH / USDG",uniswap-v4-robinhood,ethereum,global-dollar,,,above,both_quote,6339812,4205056
-0x3e1afde90341f843c941ff4077d915bde3008c7e,"SPY / WETH 0.01%",ramses-v3-robinhood,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,weth,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,24719116,below,single_subject:cg_mcap,5451162,48541856
-0xe2c12a7379706a291cadaaec1d22458be2f7239d,"MEME / WETH 0.3%",uniswap-v3-robinhood,a-meme-coin,weth,a-meme-coin,55466017,below,single_subject:cg_mcap,5271613,9558367
-0x38453c115607463ac284820ce959831042f3df4e,"SPY / USDG 0.01%",ramses-v3-robinhood,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,global-dollar,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,24719116,below,single_subject:cg_mcap,5265154,132330415
-0xc40d3cac54f587debdcef3887912767656255c9b04f3914ffa70e01370e046f8,"HOOD / WETH",uniswap-v4-robinhood,greenhood,ethereum,greenhood,52365711,below,single_subject:cg_mcap,5190103,50064893
-0xfbadffca5e8dfa71f33f9cd22bb5ceaab6ad9e17b6f1ce8f0c21012bac3e2db3,"Jacob / USDG",pons-v2-dex,be-like-jacob,global-dollar,be-like-jacob,573267,below,single_subject:cg_fdv,5108881,13309928
-0x714442e9a611f8561a7df108d6d925132937cfb8,"CHUMP / WETH 1%",uniswap-v3-robinhood,chump-coin,weth,chump-coin,34420352,below,single_subject:cg_mcap,4972262,52933607
-0x7a192e71564ec66ee0763e328a3ac274942de4e1,"PONS / USDG 1%",uniswap-v3-robinhood,pons,global-dollar,pons,408234914,above,single_subject:cg_mcap,4782312,54262371
-0x84bd4e2d8be11aeb0afc1195b38f587b61e90068548f1063fdbe448fb8cad0b6,"USDG / WETH 0.02%",uniswap-v4-robinhood,global-dollar,weth,,,above,both_quote,4692243,123660761
-0x797c7b19db11e7199b94079190001e827fb60bc1b550a71bd7cb8dc761450f83,"XCOINS / WETH",pons-v2-dex,,ethereum,XCOINS,200921,below,single_subject:gt_fdv,4786883,0
-0x27ccf0a6d1ee74840220715bcca7d3b01e0d33aa30d0259b47ae1585b3f4c071,"amc / MEME",bankr-robinhood,amc-entertainment-holdings-inc-robinhood-token,a-meme-coin,amc-entertainment-holdings-inc-robinhood-token,5234555,below,min_cap_of_two:cg_mcap,4511367,142058319
-0xaa34fea710a1a737840329051d81d3b0b7c564d5,"amc / USDG 0.3%",uniswap-v3-robinhood,amc-entertainment-holdings-inc-robinhood-token,global-dollar,amc-entertainment-holdings-inc-robinhood-token,5234555,below,single_subject:cg_mcap,4517320,153958009
-0xa92a3df27a00a276183ff7265fd8affa11df1fe8bb23ddfaf13f6c879a3f818b,"CASHCAT / USDG 0.269%",uniswap-v4-robinhood,cash-cat,global-dollar,cash-cat,165601938,above,single_subject:cg_mcap,4312669,154925716
-0xc748f4671a867db48b552f6b7650bf3255e05f80f00e3f7aad1b17ccb7898fdb,"USDG / AAPL 0.3%",uniswap-v4-robinhood,global-dollar,apple-robinhood-tokenized-stock,apple-robinhood-tokenized-stock,6616950,below,single_subject:cg_mcap,4295517,19198094
-0xcbdfea90430a30ee4469c9902e120a77e7c7e4711d5643671c1d1957f2f1ce27,"AI / NVDA",bankr-robinhood,artificial-inu-3,nvidia-robinhood-tokenized-stock,nvidia-robinhood-tokenized-stock,18640156,below,min_cap_of_two:cg_mcap,4255135,92643067
-0xe2b46c905e12ab8e2f864e4821a4325884c1b126,"GME / USDG 0.05%",uniswap-v3-robinhood,gamestop-robinhood-tokenized-stock,global-dollar,gamestop-robinhood-tokenized-stock,3342932,below,single_subject:cg_mcap,4457654,136574905
-0x54f7883914619af9105355bf83ed678bcf9f63560218ac61c9963b9503d0ba32,"WETH / USDG 0.046%",uniswap-v4-robinhood,ethereum,global-dollar,,,above,both_quote,4135534,164542505
-0xa70fc67c9f69da90b63a0e4c05d229954574e313,"CASHCAT / WETH 1%",uniswap-v3-robinhood,cash-cat,weth,cash-cat,165601938,above,single_subject:cg_mcap,4166509,132690417
-0x33451f9ada6380f2b94ac5743956e8619110f503581809ccdb6b16f8153c1fcc,"MEME / USDG 0.667%",uniswap-v4-robinhood,a-meme-coin,global-dollar,a-meme-coin,55466017,below,single_subject:cg_mcap,4063553,2057978
-0xba2f1ed4ceb2169d538d1e614d847e83c5a55913,"gld / USDG 0.05%",uniswap-v3-robinhood,spdr-gold-shares-robinhood-token,global-dollar,spdr-gold-shares-robinhood-token,9665865,below,single_subject:cg_mcap,4052248,56820320
-0x34d0dc122cf9a8eb296fc5e0d3a233625d7d19b7,"GOOGL / USDG 0.05%",uniswap-v3-robinhood,alphabet-class-a-robinhood-tokenized-stock,global-dollar,alphabet-class-a-robinhood-tokenized-stock,3731505,below,single_subject:cg_mcap,4036891,35925683
-0x88965bcf02baffa293daabe2bdea2b2a761c060a6cc1795790fa55d5935e5f23,"ZenoCoin / NVDA",pons-v2-dex,,nvidia-robinhood-tokenized-stock,ZenoCoin,144161,below,min_cap_of_two:gt_fdv,3972055,0
-0xfe2a80bb5618fd14984b92ca6d45bf5ba67443ddb1435e28b2e48df2fc1526cd,"SPY / USDG 0.3%",uniswap-v4-robinhood,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,global-dollar,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,24719116,below,single_subject:cg_mcap,3675943,61931617
-0x8bb3514e2204e1cdf3ac149efee7ff04d91b719f,"AAPL / WETH 0.05%",uniswap-v3-robinhood,apple-robinhood-tokenized-stock,weth,apple-robinhood-tokenized-stock,6616950,below,single_subject:cg_mcap,3642192,27145416
-0x7accaeb3d245292298b8b3eb413698e709780fb67318d0d723d597de9629dfc3,"WETH / USDG",uniswap-v4-robinhood,ethereum,global-dollar,,,above,both_quote,3590795,0
-0x7499938c352d5b5b8f0c648722aca5ee964ef9b85c3a3041f1ec379726291d9d,"amc / USDG 0.1%",uniswap-v4-robinhood,amc-entertainment-holdings-inc-robinhood-token,global-dollar,amc-entertainment-holdings-inc-robinhood-token,5234555,below,single_subject:cg_mcap,3346814,87219604
-0x2f393b60ef0cfaf669af63284e5592dc3a657b73,"PONS / USDG 0.3%",up-v3,pons,global-dollar,pons,408234914,above,single_subject:cg_mcap,3347100,72956849
-0xee7b0d28a5c9015f09dfd211fe3476628b2fc26a,"ND4 / WETH",uniswap-v2-robinhood,,weth,ND4,0,below,single_subject:gt_fdv,3303119,2743738
-0x0ff2e264ba5a85052e0ba970365fbce49a7bf426c78ee15fefc51077cd377355,"AI / USDG 1%",uniswap-v4-robinhood,artificial-inu-3,global-dollar,artificial-inu-3,190837627,above,single_subject:cg_mcap,3299763,36008119
-0xefcec38281d4cccaf9c9d7da02aff071d3b94d54fa50bb14b8e6b8e74529a16b,"WETH / USDG 0.008%",uniswap-v4-robinhood,ethereum,global-dollar,,,above,both_quote,3291722,23134216
-0x15a09db785c7b5fc9d794f685a04e4ad38842a2035b9a8fab17909c0e54c425f,"SPCX / ASTEROID",bankr-robinhood,spacex-robinhood-tokenized-stock,asteroid-3,asteroid-3,6955463,below,min_cap_of_two:cg_mcap,3256970,12742621
-0x18a5af4e442f8be68968cc1f00d537f8af2d12cd,"NVDA / USDG 0.3%",up-v3,nvidia-robinhood-tokenized-stock,global-dollar,nvidia-robinhood-tokenized-stock,18640156,below,single_subject:cg_mcap,3283259,24553942
-0x0ba74b5cfa46025d8af64396ab45edf1752da0e9cc7d6733553a16f56a59b243,"DUO / WETH 0.3%",uniswap-v4-robinhood,,weth,DUO,158936,below,single_subject:gt_fdv,3199650,110218
-0xc3cc877a8a7d28efdb5dbec9ae71724652431e6411aa1a9fc8928028da554aa1,"MOO / MU",bankr-robinhood,memory-cow-moo,micron-technology-robinhood-tokenized-stock,micron-technology-robinhood-tokenized-stock,706793,below,min_cap_of_two:cg_mcap,3201524,51651418
-0xa85f02f8e836e92912c8e0588f60b8868eedc154e558c10a1966269e5122b77c,"NOVAAI / WETH",pons-v2-dex,,ethereum,NOVAAI,,unknown,gt_fdv_only_above_threshold,3035321,12180260
-0x5d37b1d887b502594414a82d2cf7d4ef774a8027,"MEME / USDG 0.3%",uniswap-v3-robinhood,a-meme-coin,global-dollar,a-meme-coin,55466017,below,single_subject:cg_mcap,2941126,33359346
-0xf121e2678b056690bf42c13c887aeb75c33dfadd3d1cbce963a62e6f6a4e7c9a,"TCORGI / WETH 0.3%",uniswap-v4-robinhood,,weth,TCORGI,88005,below,single_subject:gt_fdv,2980208,2684533
-0x778a632fdd85577efe9cfce4a2c9ac91b9decdb24c351f9b56e25d38fbe587b4,"SHROOM / USDG 0.9%",uniswap-v4-robinhood,mushroom-2,global-dollar,mushroom-2,19198922,below,single_subject:cg_mcap,2870931,43665579
-0x29a424ad09382763fb034cfea00fcb4f0804dcaaedfb849c668957aadbd194c7,"FLY / GOOGL",pons-v2-dex,,alphabet-class-a-robinhood-tokenized-stock,FLY,518893,below,min_cap_of_two:gt_fdv,2869235,0
-0x7a6a053eccf1446a2633e05aa6d40d09381997ec,"gld / USDG 0.3%",uniswap-v3-robinhood,spdr-gold-shares-robinhood-token,global-dollar,spdr-gold-shares-robinhood-token,9665865,below,single_subject:cg_mcap,2708756,64992737
-0xd057b1bc54917855bbee58ead58647f47cab35e5,"MU / USDG 0.3%",uniswap-v3-robinhood,micron-technology-robinhood-tokenized-stock,global-dollar,micron-technology-robinhood-tokenized-stock,706793,below,single_subject:cg_mcap,2602685,32205887
-0x9501a20bedb8bea0798fe5d4c411f5e270965d49,"WALLET / WETH 1%",uniswap-v3-robinhood,,weth,WALLET,50350479,below,single_subject:gt_fdv,2553276,15225716
-0xd78480cafef722d75519e13b9f516e5704d0d659,"AI / WETH 0.3%",uniswap-v3-robinhood,artificial-inu-3,weth,artificial-inu-3,190837627,above,single_subject:cg_mcap,2563585,58750126
-0xcb1f828d496e4d973c457a4fab93cf957fab56bbae518a074a4abba01f9d21b1,"DARK / WETH",pons-v2-dex,darkroute,ethereum,darkroute,1976519,below,single_subject:gt_fdv,2559630,1011666
-0x06e308b77bdafd691d179645296ce8c40e33c6af4a879a913efc7eedc402581c,"BUN / WETH",pons-v2-dex,bundle-cat,ethereum,bundle-cat,11205300,below,single_subject:cg_mcap,2559384,18795071
-0xa2347ba69167e5602f74640ffbf737ee7cdd825e4726d3462564fc6533070147,"AAPL / USDG",uniswap-v4-robinhood,apple-robinhood-tokenized-stock,global-dollar,apple-robinhood-tokenized-stock,6616950,below,single_subject:cg_mcap,2547511,16374724
-0x09a431261e3d0f1dc2f7e0b14718dbbbcbe19ae4,"FRONG / WETH 1%",uniswap-v3-robinhood,frong,weth,frong,9687533,below,single_subject:cg_mcap,2514781,8065243
-0x55f2df399bf61fd758b99848452eaf217ee9d2f98fb9c79deb23fe9a2652bc5a,"djt / USDG 0.206%",uniswap-v4-robinhood,trump-media-technology-group-corp-robinhood-token,global-dollar,trump-media-technology-group-corp-robinhood-token,2448541,below,single_subject:cg_mcap,2485863,63494851
-0x8660c1c24d58fdad98d9008be534240e5d79ece4d4d4ef16f215af001779ec1f,"MEME / USDG",uniswap-v4-robinhood,a-meme-coin,global-dollar,a-meme-coin,55466017,below,single_subject:cg_mcap,2451672,864611
-0x066df1548d4dbb0469a4b515f2a20d1bdd1509cf40bde1609b68c99a5c3337b9,"Unicoin / WETH 0.25%",uniswap-pools-trade,,ethereum,Unicoin,31429,below,single_subject:gt_fdv,2448930,0
-0xcd8ac75788ae81c1c9fba2130a7469f1d6142fc3c618975a34af52e2d52d2d1e,"GOOSE / WETH",uniswap-v4-robinhood,goose-token,ethereum,goose-token,7705686,below,single_subject:cg_mcap,2385583,25514537
-0xa3318d6ff46aa685b3dcee29cb09211d19a53b142fe503f8ff572258fd4c5aad,"microduck / USDG 0.78%",uniswap-v4-robinhood,microduck,global-dollar,microduck,8891656,below,single_subject:cg_mcap,2383966,60185980
-0x6d56f66e52e63e8be558d708a987426314bb4de92bc9b43a44effee1f2abf317,"UBIK / USDG 1%",uniswap-v4-robinhood,ubik,global-dollar,ubik,19115157,below,single_subject:cg_mcap,2363937,8868985
-0x50e43b43a8ee1e07e0ac978e92adff7dfbfb88e7,"PONS / WETH 0.2%",giga-v3,pons,weth,pons,408234914,above,single_subject:cg_mcap,2353027,25088164
-0x6538e2c223ed70228114983afecbe5e69fe627e2fafdf367bdd6bdeff2ad391f,"ZZZ / WETH",pons-v2-dex,zzz-2,ethereum,zzz-2,32955575,below,single_subject:cg_mcap,2337424,51205067
-0x835fc15594d538bef826c9efa585504a068e7a1d011346121d6735bf888de55c,"IRA / WETH 0.3%",uniswap-v4-robinhood,,weth,IRA,193212,below,single_subject:gt_fdv,2303877,76785
-0xc1bbd75e51ef5d3b1cb84e5d5e1d552a789d2093,"TABS / WETH",uniswap-v2-robinhood,,weth,TABS,183,below,single_subject:gt_fdv,2286600,0
-0xd29893ffac8b29ec4db2cfe0cdb3fe1377c028ff,"Index / WETH 1%",uniswap-v3-robinhood,the-index,weth,the-index,32249298,below,single_subject:cg_mcap,2270011,76967019
-0xf7880051b1964f764735590223e68cdd353e0eeb7afd2171c5fd0b72769c3265,"CLAWNCH / NVDA",pons-v2-dex,,nvidia-robinhood-tokenized-stock,CLAWNCH,706701,below,min_cap_of_two:gt_fdv,2137673,1062608
-0x0fdf4c345d528a29aa9c7437f0f6c3ae92572d3168f2e5e08346c7e1ad482764,"SIS / WETH",pons-v2-dex,,ethereum,SIS,8122,below,single_subject:gt_fdv,2121834,2121644
-0x19d55aba3e5d2c389b7011c634725136dfdcae33,"AAPL / USDG 0.3%",up-v3,apple-robinhood-tokenized-stock,global-dollar,apple-robinhood-tokenized-stock,6616950,below,single_subject:cg_mcap,2075973,33018582
-0x11bf739a7804f554288daddc9138c6c20ac5dc5b0024fe7750f85af4e5e9c675,"RFACT / WETH 0.3%",uniswap-v4-robinhood,,weth,RFACT,278495,below,single_subject:gt_fdv,2054841,2008484
-0x7fff70d5748390779e573a1995952c3dddf57a9c,"SUSHI / WETH 0.3%",sushiswap-v3-robinhood,sushi,weth,sushi,61648976,below,single_subject:cg_mcap,2020082,640128
-0xd60a5d14db690b7afad71f76b108071d7175597d,"QQQ / USDG 0.05%",uniswap-v3-robinhood,invesco-qqq-robinhood-tokenized-stock,global-dollar,invesco-qqq-robinhood-tokenized-stock,3946261,below,single_subject:cg_mcap,1970723,60539835
-0xc8c90d3a1c1a24967e773ac2ad0d456ba3e31f64,"HIMS / USDG 0.3%",uniswap-v3-robinhood,hims-hers-health-inc-robinhood-token,global-dollar,hims-hers-health-inc-robinhood-token,3355505,below,single_subject:cg_mcap,1900151,56759179
-0x20d317b609c9a9af863d0dd6cd95953f8c209f775cd148171e9566b86cc6bc7f,"FRONG / USDG 2.1%",uniswap-v4-robinhood,frong,global-dollar,frong,9687533,below,single_subject:cg_mcap,1955353,3037292
-0xdd3c8aa6551bf5049310399c124cbb699b7d1c5c,"ZZZ / WETH 1%",uniswap-v3-robinhood,zzz-2,weth,zzz-2,32955575,below,single_subject:cg_mcap,1933029,2226530
-0x0019150f6efdc622d69d1edc697dc79da477c232159e5b9e761aa1d08a1d4172,"NUDES / USDG 0.9%",uniswap-v4-robinhood,send-nudes,global-dollar,send-nudes,5699046,below,single_subject:cg_mcap,1944276,28091379
-0xe5923c8a8be481ec89a2ca784a2bbfa4235de6d88f92260fd66b660c4babf907,"SPY / USDG 0.05%",uniswap-v4-robinhood,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,global-dollar,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,24719116,below,single_subject:cg_mcap,1911798,73802580
-0x459b6f6f038cceffb6b10ad0d38c80a64ec70b04,"NUKE / USDG 2%",giga-v3,nuke,global-dollar,nuke,2881653,below,single_subject:cg_fdv,1867053,26742558
-0x85a3cd053eecbcf2a67fd2c391479a2267e237edcea3acf19609b329e3a482fa,"MOO / USDG 2%",uniswap-v4-robinhood,memory-cow-moo,global-dollar,memory-cow-moo,33096717,below,single_subject:cg_mcap,1874487,6755754
-0x5eac4195930d5ff8b7a34a347f2bde951c42eb730d6e26075bea3dd7c66feb40,"ROBIN / USDG",pons-v2-dex,robin-the-frog,global-dollar,robin-the-frog,11359805,below,single_subject:cg_mcap,1876499,15138218
-0x9036a9406dac1c252c364d037f489e5f0a752f54,"MOO / WETH 1%",uniswap-v3-robinhood,memory-cow-moo,weth,memory-cow-moo,33096717,below,single_subject:cg_mcap,1870668,11650682
-0xfec7b1efe77aa60887986db5bcbfff39ca40b56d964bb8ce3d9dd0d9baaca4d4,"BONER / USDG 0.9%",uniswap-v4-robinhood,boner-coin,global-dollar,boner-coin,37907625,below,single_subject:cg_mcap,1859075,64964491
-0x9d25d4de3075afedb50fd7e215193312c799e1a5e341faf5d8565a8f76de1951,"HOT / WETH",pons-v2-dex,,ethereum,HOT,12396,below,single_subject:gt_fdv,1832706,6947106
-0x1674d09f5964a0b2b427e958eb670ad0c1cb9553323d7288ab77336a19049e01,"PONIE / WETH 0.25%",uniswap-v4-robinhood,ponie,ethereum,ponie,211202,below,single_subject:cg_mcap,1823216,1981042
-0x2e4cc4c65587faca7a08b69a13c86ca8c86599d90ad818ceaa1a875176f5fb52,"snap / USDG 0.195%",uniswap-v4-robinhood,snap-inc-robinhood-token,global-dollar,snap-inc-robinhood-token,1018743,below,single_subject:cg_mcap,1803835,12924935
-0x60e7d9e82a208f501f020f84d2ec47401837ad5993ac7faae893021434170347,"DUO / AAPL",bankr-robinhood,,apple-robinhood-tokenized-stock,DUO,107171,below,min_cap_of_two:gt_fdv,1787745,2773871
-0x6e9f838fd4987990319105c2e8d704b142ecd74fa2da1503458add72e32d01e0,"RBLT / RBLX",pons-v2-dex,,roblox-robinhood-tokenized-stock,roblox-robinhood-tokenized-stock,1004889,below,min_cap_of_two:cg_mcap,1816667,1646918
-0x95def4ea143630d64caa8f55f7570d8023f20265,"djt / WETH 0.05%",uniswap-v3-robinhood,trump-media-technology-group-corp-robinhood-token,weth,trump-media-technology-group-corp-robinhood-token,2448541,below,single_subject:cg_mcap,1786527,7630177
-0xf13bd0bd4bcaf6a3eaaecedb56cfee2fc864414950588f16f2b708f5a8538fd9,"BRIAN / ANTHROPIC",bankr-robinhood,,,BRIAN,73129,below,min_cap_of_two:gt_fdv,1769468,0
-0x999a38409abb48656f0745db2656781898268784871d76c59f12871bbfead18c,"DOGSHIT / SPCX",pons-v2-dex,,spacex-robinhood-tokenized-stock,DOGSHIT,228096,below,min_cap_of_two:gt_fdv,1757235,5992596
-0x9b050cb1f265094b0977160a2bd7da8c9e529c3c,"WETH / USDG 0.05%",sushiswap-v3-robinhood,weth,global-dollar,,,above,both_quote,1743490,34547627
-0x0d662a58507a46cd6a22632228306dc0d9c26f5fce90c37ced3b8358db33deb3,"NET / USDG 0.9%",uniswap-v4-robinhood,netnet,global-dollar,netnet,2928673,below,single_subject:cg_mcap,1717943,37448425
-0xf7dc0af99fce7169eb76854c0b39beb9915526894d42229946e5cb469cab50b1,"WETH / CASHCAT 2%",uniswap-v4-robinhood,ethereum,cash-cat,cash-cat,165601938,above,single_subject:cg_mcap,1716222,16743748
-0xcf296a39a4536d068dc9cea2eca461b9da3ed9b1ea03095fa7e2da0df5d50f43,"MIDORI / MSFT",pons-v2-dex,,microsoft-robinhood-tokenized-stock,MIDORI,284992,below,min_cap_of_two:gt_fdv,1675891,0
-0x46ba8216b5d05ff33427b976663836ec5b34b3e261f374f9a5e773d776d3af85,"FATCOIN / LLY",o1-launchpad-robinhood,fatcoin-2,eli-lilly-robinhood-tokenized-stock,eli-lilly-robinhood-tokenized-stock,2608276,below,min_cap_of_two:cg_mcap,1671658,49519353
-0x9c89b04303dfa76f3f6fb02c2b77be0e8a00ab8fa00d507119acd54ab3e8640d,"BONER / HIMS",bankr-robinhood,boner-coin,hims-hers-health-inc-robinhood-token,hims-hers-health-inc-robinhood-token,3355505,below,min_cap_of_two:cg_mcap,1562672,51400829
-0x3402a37056b37ec07e505622e00c4421c979ad60c6c39394b8839317905cdb6e,"CANAL / SNDK",pons-v2-dex,,sandisk-corporation-robinhood-tokenized-stock,sandisk-corporation-robinhood-tokenized-stock,1553988,below,min_cap_of_two:cg_mcap,1646715,140262
-0x02175608f1b5e6b5ed221ccfdc7be197d111d915,"USDG / USO 0.3%",uniswap-v3-robinhood,global-dollar,united-states-oil-fund-robinhood-tokenized-stock,united-states-oil-fund-robinhood-tokenized-stock,1519110,below,single_subject:cg_mcap,1636594,26596603
-0x383957bce2341f59ff97c47eda2ad3b3b839b7050adc8a4747a398abca0ad552,"NUDES / snap",o1-launchpad-robinhood,send-nudes,snap-inc-robinhood-token,snap-inc-robinhood-token,1018743,below,min_cap_of_two:cg_mcap,1612377,26863852
-0x0e13a8f96118c2712131ead19eab069f0a94d28cc968a58b5d890afa92d367c1,"NOTE / USDG 1%",uniswap-pools-trade,,global-dollar,NOTE,2706707,below,single_subject:gt_fdv,1569694,5417410
-0xe741cb4b3b7b1c6870fd1d0937a937253964d51ef847886f2543ff5af6899d10,"DRILL / WETH 0.3%",uniswap-v4-robinhood,,weth,DRILL,1548219,below,single_subject:gt_fdv,1598250,8944322
-0xc39187cec78a076c41a4085598b4cc05be2ed9b04a3443167471fa0fc4984188,"ICOIN / AAPL",bankr-robinhood,icoin-2,apple-robinhood-tokenized-stock,icoin-2,3331203,below,min_cap_of_two:cg_mcap,1606275,26440247
-0x25a9b0f45e8c1a60e56423f2d28ce1a9360afcb28c26a38fcb677c15642ea6ba,"XCOINS / USDG 2.5%",uniswap-v4-robinhood,,global-dollar,XCOINS,200921,below,single_subject:gt_fdv,1565288,0
-0xa95b1fbdccb15d2b07509b980f63adab8a94303b1781f5ebc53b72942d12ddc1,"ORBIO / NVDA",pons-v2-dex,orbio-so,nvidia-robinhood-tokenized-stock,orbio-so,18636264,below,min_cap_of_two:cg_mcap,1559763,19592042
-0xf5e7fe619dff198ba4d4728b56b1b686ffffd0b773c2097a5595781e8de27ae8,"TTM / WETH 0.25%",uniswap-v4-robinhood,,ethereum,TTM,18410,below,single_subject:gt_fdv,1555250,63998
-0x8674c1c5544f3c9563565b5d4bd5916701d90b3559b072acf7cef5b4fc5b8dcd,"SPY / USDG",uniswap-v4-robinhood,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,global-dollar,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,24719116,below,single_subject:cg_mcap,1537860,47183305
-0xd64fbda67e1015df43fa5e49f02ca844729e5f94,"DELTA / WETH 1%",pons-dot-family,delta,weth,delta,10282076,below,single_subject:cg_mcap,1541951,78926513
-0xca5e2b2046cfffb4fc8d5c7a57e33c9e855d33c982a35f248d560470fd6df768,"ANTHROPIC / WETH 0.9%",uniswap-v4-robinhood,,ethereum,ANTHROPIC,575975,below,single_subject:gt_fdv,1529152,18102014
-0xcc2a903a8744a65258bb07fbeea553a25410f731c9fef306321d0c176a09542c,"SPY / MU 0.05%",uniswap-v4-robinhood,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,micron-technology-robinhood-tokenized-stock,micron-technology-robinhood-tokenized-stock,706793,below,min_cap_of_two:cg_mcap,1517037,44207381
-0xeb60bcd1d920ad6e102690ccfc6fb488899e1510,"MSFT / USDG 0.3%",uniswap-v3-robinhood,microsoft-robinhood-tokenized-stock,global-dollar,microsoft-robinhood-tokenized-stock,2859856,below,single_subject:cg_mcap,1495632,10554426
-0x42390bbfe41b5034eca83ae5ee1ef4e86578b2179db7e7f9024e5bb28f920bb1,"SCOUTY / WETH",pons-v2-dex,,ethereum,SCOUTY,11516,below,single_subject:gt_fdv,1502385,1355250
-0x5ad1a528cd9de3962cb6c75ff250e434887479c1,"SPY / USDG 0.1%",up-v3,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,global-dollar,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,24719116,below,single_subject:cg_mcap,1501626,22877089
-0x56000f3980200d0f39a9f2eefd5233b2196b4445,"PONS / USDG 0.05%",giga-v3,pons,global-dollar,pons,408234914,above,single_subject:cg_mcap,1460815,2400723
-0x590dcb6a87828bf688b48089a62239b693378f1fb64d2286e6a399ed8c005fdf,"HOOKR / WETH 0.25%",uniswap-pools-trade,hookr-fun,ethereum,hookr-fun,14948697,below,single_subject:cg_mcap,1445947,56989647
-0x935c1401e40a4eeec0e722f1841cc4be9d7a523cf90cdc52900f9e343304f0fe,"RSTR / WETH",pons-v2-dex,robinhood-hat-strategy,ethereum,robinhood-hat-strategy,334886,below,single_subject:cg_mcap,1444580,13677395
-0x8651e656738064177752a395dbde2b2a9e3fc469edc2a9212e6060c0990bb7eb,"PROLOGUE / WETH 0.25%",uniswap-pools-trade,prologue,ethereum,prologue,6834304,below,single_subject:cg_mcap,1423889,55440102
-0x7fb39eb653999feb9f0d3b1410848911383dfc681f3585229df4aa5b560bf0ba,"HOOD / USDG 0.2%",uniswap-v4-robinhood,,global-dollar,HOOD,1488037,below,single_subject:gt_fdv,1418808,31186814
-0x4807c828520154e26da802711ea4a74ff5cc518b,"HAMSTERUNITE / WETH 0.01%",uniswap-v3-robinhood,,weth,HAMSTERUNITE,10922,below,single_subject:gt_fdv,1411691,1411685
-0x1f1778596d8c1ee3e1eaf64ea83a5e77063b142fa3ef59a7c81e520c516379bc,"AI / BONER 0.9%",uniswap-v4-robinhood,artificial-inu-3,boner-coin,boner-coin,37907625,below,min_cap_of_two:cg_mcap,1400029,39363648
-0x3b8300501398e574a17d9efecd57ee3f6cdc4b345299d659e7ea63b889a556e0,"SHIT / WETH 0.25%",uniswap-v4-robinhood,,ethereum,SHIT,7140,below,single_subject:gt_fdv,1400558,1400558
-0x9d38c5d5562635f60f73d8fa638819cd15675a492136a7135c807bc57ccd474a,"CUP / SPY",bankr-robinhood,,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,CUP,55398,below,min_cap_of_two:gt_fdv,1396470,0
-0x98785ad64d07143b3e5d8537528fa6ad9b02412e,"iHOLD / WETH",uniswap-v2-robinhood,,weth,iHOLD,1,below,single_subject:gt_fdv,1389026,0
-0x6a6e98b08f48865837d6a1b5dd41706bfeb59ca6dab82c8623be2559f7b18dd8,"MOW / WETH",uniswap-v4-robinhood,mowcat,ethereum,mowcat,5539803,below,single_subject:cg_mcap,1385996,114444929
-0x451208ae65fae2703dd5b0d4d382de51a235e159050b3a115b0afd95f46e65f5,"ANTHROPIC / USDG 0.8%",uniswap-v4-robinhood,,global-dollar,ANTHROPIC,575975,below,single_subject:gt_fdv,1385149,912478
-0x58eb75a987d41275d46c8f72b3a7b2b707c013f8a0974e71d8148dcd1c10a99f,"ZFORGE / WETH",pons-v2-dex,,ethereum,ZFORGE,117916,below,single_subject:gt_fdv,1393729,0
-0x486435a1f76cd58193f854c6e6213cd05fd58d637865d02065ff558b387fa6ea,"PONS / USDG",uniswap-v4-robinhood,pons,global-dollar,pons,408234914,above,single_subject:cg_mcap,1378656,164965
-0x60ad81d5bd6d64ae7a90dad5e20abef459cde14559b162284d6e6b75191a8257,"ND4 / USDG 4%",uniswap-v4-robinhood,nd4-eth,global-dollar,nd4-eth,1403254,below,single_subject:cg_mcap,1361979,563601
-0x6c614c38c65fea492f4cb2b90fd664f924a7b828c7384620662217e2e2df43ed,"ZZZ / USDG 2.8%",uniswap-v4-robinhood,zzz-2,global-dollar,zzz-2,32955575,below,single_subject:cg_mcap,1351151,1320761
-0xf19efd2ed203106b311b1e0eb4be165c34de42cc7e5821290155eb3767d5170d,"Jacob / USDG 4%",uniswap-v4-robinhood,be-like-jacob,global-dollar,be-like-jacob,573267,below,single_subject:cg_fdv,1342866,4125040
-0xf212d02146a897f5f686e9d629f6a73da534324a,"LLY / USDG 0.05%",uniswap-v3-robinhood,eli-lilly-robinhood-tokenized-stock,global-dollar,eli-lilly-robinhood-tokenized-stock,2608276,below,single_subject:cg_mcap,1336649,42156975
-0x945128e681ad911cd70b892529728e7263c0f6547a201630b02edc90ba146c86,"MOO / WETH",pons-v2-dex,,ethereum,MOO,834881,below,single_subject:gt_fdv,1334346,3486757
-0x8bc8e2958a8dd50c773a4327bd60fc9126659369f672b99813b21998905d5bf6,"CLARITY / WETH 0.25%",uniswap-v4-robinhood,,ethereum,CLARITY,1629,below,single_subject:gt_fdv,1330694,0
-0x26250ba84465454bc731f710e46f1f32b167d66b,"gld / WETH 0.05%",uniswap-v3-robinhood,spdr-gold-shares-robinhood-token,weth,spdr-gold-shares-robinhood-token,9665865,below,single_subject:cg_mcap,1299023,8225678
-0x9efa53a212ab6f6a8db791e62bc14afebaf0dd5eb4ae152018835522d08b8ae6,"Elon / WETH",pons-v2-dex,,ethereum,Elon,20980,below,single_subject:gt_fdv,1316576,0
-0x02cb4415278e0dde5fd5864045d439684a17cdc5e72e6366846118f533a8e923,"FATCOIN / USDG 3.011%",uniswap-v4-robinhood,fatcoin-2,global-dollar,fatcoin-2,8459254,below,single_subject:cg_mcap,1313919,10459728
-0xcde4d35e341901bc0308c2ffc789448ccd0f238a59597fe702e6710484b9c370,"microduck / NVDA",pons-v2-dex,microduck,nvidia-robinhood-tokenized-stock,microduck,8891656,below,min_cap_of_two:cg_mcap,1288818,25705774
-0xfe087245ef80038c5301227fbb78204345ff12ed,"MACBOOK / WETH 0.01%",uniswap-v3-robinhood,,weth,MACBOOK,11229,below,single_subject:gt_fdv,1282675,1296528
-0x231764ab2a3150a9b9c21c294cfe3269d7ff6933d7bbe4fc56ede6d246cb2bda,"GAGE / WETH",pons-v2-dex,gage,ethereum,gage,2302793,below,single_subject:cg_mcap,1281223,8449001
-0x7a9e3a23e329cb01721feff86738edcb95fc8b5e8305a07a4ddb438c8f17ddd7,"p(doom) / NVDA",pons-v2-dex,,nvidia-robinhood-tokenized-stock,p(doom),11016,below,min_cap_of_two:gt_fdv,1255138,1222229
-0xfad0b2c67dd7750f4f9392361ea1567db57b87ac015bfc519960089e73df2f15,"MARIO / NVDA",pons-v2-dex,,nvidia-robinhood-tokenized-stock,MARIO,1024909,below,min_cap_of_two:gt_fdv,1431503,0
-0xaf9a95d4c820ac3de8e220622b482390d588212f90d7e4d70c6128d53a6e5b5c,"Chroma / WETH",pons-v2-dex,,ethereum,Chroma,45285,below,single_subject:gt_fdv,1231928,599311
-0xd33c8fd38b06e989cdbd4dffdefab71c4bdd415b24964c8d69e38ff35b068f92,"STONKBROKER / WETH 1%",uniswap-v4-robinhood,stonkbroker,ethereum,stonkbroker,21784653,below,single_subject:cg_mcap,1208583,70412946
-0x319bac87e616a89e241c10aeb8afd4892a852cdd8b373cd9765ecddc40b87cfe,"MSTR / USDG 0.25%",uniswap-v4-robinhood,strategy-inc-robinhood-tokenized-stock,global-dollar,strategy-inc-robinhood-tokenized-stock,3185667,below,single_subject:cg_mcap,1231216,45306704
-0x237609918f330add285b8bc5f8f2922283d1c4c5,"TENDIES / WETH 1%",uniswap-v3-robinhood,tendies-2,weth,tendies-2,16281446,below,single_subject:cg_mcap,1199861,40106218
-0xe6b713cf680868a40aafca45810b0c894eb5c696f5a2230d4816e6695e90e681,"SPY / META 0.05%",uniswap-v4-robinhood,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,meta-platforms-robinhood-tokenized-stock,meta-platforms-robinhood-tokenized-stock,2089439,below,min_cap_of_two:cg_mcap,1199859,10021229
-0x4230750b3c69ae6054a3f778d75adc2e9a27d70f,"MSFT / USDG 0.3%",up-v3,microsoft-robinhood-tokenized-stock,global-dollar,microsoft-robinhood-tokenized-stock,2859856,below,single_subject:cg_mcap,1184340,9521003
-0x31a89afd92f9397465649ad03226c52292fc1ae5,"djt / USDG 1%",uniswap-v3-robinhood,trump-media-technology-group-corp-robinhood-token,global-dollar,trump-media-technology-group-corp-robinhood-token,2448541,below,single_subject:cg_mcap,1166680,26978454
-0x29c3cc4d642146af5589568b504a495c2a97319036aef1bb23aeaf7f882f0501,"rob / WETH 0.01%",uniswap-v4-robinhood,,weth,rob,81714,below,single_subject:gt_fdv,1154841,375911
-0x647bfd55cc873f3a4165064cf423d505d95289cd,"AI / USDG 0.01%",ramses-v3-robinhood,artificial-inu-3,global-dollar,artificial-inu-3,190837627,above,single_subject:cg_mcap,1138174,1375955
-0x09df115d3bb42c7af3864b75769f9c301623ccb6,"SWOLE / HOOD 1%",uniswap-v3-robinhood,swole-cat,,HOOD,1488037,below,min_cap_of_two:gt_fdv,1138892,14928097
-0x8cd848ce18b829c5c769aff27164078bb52e0e97,"ibm / USDG 0.3%",uniswap-v3-robinhood,international-business-machines-corporation-robinhood-token,global-dollar,international-business-machines-corporation-robinhood-token,669963,below,single_subject:cg_mcap,793513,6081465
-0xeb07d9587efd1778dfb9c385ec43ef6d5f9fe401,"SPCX / USDG 0.3%",uniswap-v3-robinhood,spacex-robinhood-tokenized-stock,global-dollar,spacex-robinhood-tokenized-stock,10919200,below,single_subject:cg_mcap,1125750,15251319
-0xd4ecb79fdc521d7725d22b33ed43cb4e47aa96bfad76aa29577e3151f723ac5e,"GOOGL / USDG 0.3%",uniswap-v4-robinhood,alphabet-class-a-robinhood-tokenized-stock,global-dollar,alphabet-class-a-robinhood-tokenized-stock,3731505,below,single_subject:cg_mcap,1123958,7998477
-0xabda5ff992286756515ed18c8c68458a61f3b2cb4239b586f67af1b9cf4fd2bb,"TUTANKHAMOOLAH / MSFT",pons-v2-dex,,microsoft-robinhood-tokenized-stock,TUTANKHAMOOLAH,6565,below,min_cap_of_two:gt_fdv,1120610,1129980
-0x23d641feccd207e8794c593e8240444a0674c4ba,"UP / WETH 1%",up-v3,up-2,weth,up-2,8521450,below,single_subject:cg_mcap,1118660,43132819
-0xccadcfb77490b11197023c2caf26e259cf8799b90f6f3a1853b32b986b9f801e,"WETH / USDG",uniswap-v4-robinhood,ethereum,global-dollar,,,above,both_quote,1117311,3986789
-0x7ce69a29e50d26fa96f7331516789fb834cd542469c86bce303b4352c85b2327,"microduck / WETH 1.002%",uniswap-v4-robinhood,microduck,ethereum,microduck,8891656,below,single_subject:cg_mcap,1117189,120650
-0x827534609c9f74fc7d950b91e268d22419611e8a1d7a557dec6716cba11ee605,"COPY / WETH",pons-v2-dex,,ethereum,COPY,89774,below,single_subject:gt_fdv,1109895,0
-0x4b83b47e62e9a5986a7badf9d2369911034a01c079532ede3c2819f332ac830a,"ORBIO / USDG 5%",uniswap-v4-robinhood,orbio-so,global-dollar,orbio-so,18636264,below,single_subject:cg_mcap,1099849,7246145
-0x4562ca679dccc38f2dd59d28b2ebfec99f507af2,"LOCK / WETH 1%",pons-dot-family,hoodlock,weth,hoodlock,900730,below,single_subject:cg_mcap,1126535,5592053
-0x459c1b3043b2969b0c15207bee8617efa09c5e9e1bd04c45324b2de11129c1d7,"CLUBY / WETH",pons-v2-dex,cluby-credit,ethereum,cluby-credit,181358,below,single_subject:cg_mcap,1104978,866584
-0xcb6ffbcc84359535c2cc0a5688c0a76520ea6e0a4820fddd3ac8d7880e576370,"SPCX / USDG 1%",uniswap-v4-robinhood,spacex-robinhood-tokenized-stock,global-dollar,spacex-robinhood-tokenized-stock,10919200,below,single_subject:cg_mcap,1051487,20499209
-0x1226e3caf46db1a7da37e68ee4ebb03d9b58729ffcf1ebc6e7f643d4a70eb6df,"KRC / WETH",pons-v2-dex,,ethereum,KRC,2742,below,single_subject:gt_fdv,1091323,1095892
-0xdd96a8b750ee5eb3c13dcf874ee7dfdfd8b2b04706ed676db7b9921536290641,"ZZZ / USDG 0.98%",uniswap-v4-robinhood,zzz-2,global-dollar,zzz-2,32955575,below,single_subject:cg_mcap,1086542,3974266
-0xda721df1eaea6aef854ee5b7a8eb70d3f44eb22f,"MIDORI / WETH",uniswap-v2-robinhood,,weth,MIDORI,1,below,single_subject:gt_fdv,1070579,0
-0xa53e1fc004413094cb0a6a175b145ed085486a6ffa58bf61d55be48005f2cea2,"KERMIT / USDG",pons-v2-dex,kermit-2,global-dollar,kermit-2,555666,below,single_subject:cg_mcap,1067664,532667
-0x65a51212a506dd7403ec0e64a9d774f907b3dbfae302e922d70aaafddb1e0bee,"BURNTEST / WETH",pons-v2-dex,,ethereum,BURNTEST,3677,below,single_subject:gt_fdv,1054923,0
-0x4cb61eace9155def3794461562828b1d0e02add2927f0ced4f2416fb218d8789,"O1BOT / WETH",o1-launchpad-robinhood,o1bot,ethereum,o1bot,792647,below,single_subject:cg_mcap,1062181,6648745
-0x46e3503ac79d3bc1b86a71c9dc825996ad7b37e8ea3c5405f535706b602fec04,"Trumpdrop / djt",pons-v2-dex,,trump-media-technology-group-corp-robinhood-token,Trumpdrop,8998,below,min_cap_of_two:gt_fdv,1052743,0
-0xf38009b348295f907c1f2e22aba84d731de3b7360d312881df1c206e85ea3b0b,"SPY / QQQ 0.05%",uniswap-v4-robinhood,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,invesco-qqq-robinhood-tokenized-stock,invesco-qqq-robinhood-tokenized-stock,3946261,below,min_cap_of_two:cg_mcap,1053892,22029174
-0x72364152987322fc42ab1158e235d41c7d75fe31c82266767005a5f68dea6013,"LIFT / WETH 0.25%",uniswap-v4-robinhood,,ethereum,LIFT,1105352,below,single_subject:gt_fdv,1046509,0
-0x94c62eebf6454231b2fcd0259ede448ae3c6ad8617718cd88dab20b30cfae48a,"cbBTC / USDG 0.15%",uniswap-v4-robinhood,coinbase-wrapped-btc,global-dollar,,,above,both_quote,997128,15203608
-0x4e8649be40ae67ebbcff99c291b92ee03015917b,"CASHCAT / WETH 1%",up-v3,cash-cat,weth,cash-cat,165601938,above,single_subject:cg_mcap,1043244,28651972
-0x0f2ca1d996224a0c9dd140b865142aad381a4287,"DTF / WETH 1%",uniswap-v3-robinhood,down-to-finance,weth,down-to-finance,7424110,below,single_subject:cg_mcap,1026841,32810653
-0x44dfd7e7573db49e741291cd7e581bb56dea8ded4bce2c2c5d021d14e22c0295,"AI / ICOIN 0.9%",uniswap-v4-robinhood,artificial-inu-3,icoin-2,icoin-2,3331203,below,min_cap_of_two:cg_mcap,725618,1642368
-0x1e49a549e9fbbc09e95f7126dce2071511868ade,"AI / WETH 0.3%",up-v3,artificial-inu-3,weth,artificial-inu-3,190837627,above,single_subject:cg_mcap,697705,11626058
-0x887c1c1e1a55ff3fd803a4544ab11253fe9c84b1b20625932091aedd344a64b5,"AI / WETH 1.004%",uniswap-v4-robinhood,artificial-inu-3,ethereum,artificial-inu-3,190837627,above,single_subject:cg_mcap,647247,4393275
-0x129b392490aac7b4320aeade8d1054c06c2ce224,"TAO / USDG 0.3%",giga-v3,bittensor,global-dollar,bittensor,2304448425,above,single_subject:cg_mcap,328357,1165754
-0x3f048149f291f459a38fe1d937a361b153cba43e,"TAO / USDG 1%",uniswap-v3-robinhood,bittensor,global-dollar,bittensor,2304448425,above,single_subject:cg_mcap,298931,5626826
-0xfe1f5a89d9586d6431bdfe907acdebfc176bd5ceadc4f3ae9e0e284a3c022b91,"SN6900 / TAO",pons-v2-dex,,bittensor,SN6900,1763168,below,min_cap_of_two:gt_fdv,247403,2422943
-0x572d51a3de7c220fdd19451e4e24183b9f2ecadc,"TAO / WETH 1%",uniswap-v3-robinhood,bittensor,weth,bittensor,2304448425,above,single_subject:cg_mcap,88269,320042
-0x43781f7ae77d99df3a52095c0b7d162828467a6e,"CASHCAT / USDG 0.2%",giga-v3,cash-cat,global-dollar,cash-cat,165601938,above,single_subject:cg_mcap,816050,22579273
-0x31608601d541e868706aa557558a4d4f99c57e6dd13bd3362edcf05d00a16212,"CASHCAT / USDG",uniswap-v4-robinhood,cash-cat,global-dollar,cash-cat,165601938,above,single_subject:cg_mcap,662752,210105
-0x1b619a121d6c5bfd10d149e7246da3c838a66b48,"CASHCAT / WETH 0.3%",up-v3,cash-cat,weth,cash-cat,165601938,above,single_subject:cg_mcap,551265,27673545
-0xd970d92e1ca8c2aeed43692d24d8687cb75c8096795bcc0e9f2548c0fca874c2,"CASHCAT / WETH 1.008%",uniswap-v4-robinhood,cash-cat,ethereum,cash-cat,165601938,above,single_subject:cg_mcap,323915,253161
-0x3986840e83e64c113b4ebeeed6b3223528e06ed9,"CASHCAT / USDG 0.3%",up-v3,cash-cat,global-dollar,cash-cat,165601938,above,single_subject:cg_mcap,258263,8322850
-0xecc90c8bd08ff7138856f4205e30ae38adfd529578ee925f010b0134f2c91f6a,"LIT / USDG 0.9%",uniswap-v4-robinhood,lighter,global-dollar,lighter,1141753131,above,single_subject:cg_mcap,332453,7609856
-0x9cc8c4f6118419a27f113723f1dea646685be55f,"VIRTUAL / WETH 0.05%",uniswap-v3-robinhood,virtual-protocol,weth,virtual-protocol,422502028,above,single_subject:cg_mcap,828607,63822803
-0xd95e8e2cd04c207625c6f23c974d365a5f3a91d3,"VIRTUAL / WETH",uniswap-v2-robinhood,virtual-protocol,weth,virtual-protocol,422502028,above,single_subject:cg_mcap,410921,23928484
-0x7a11bc7f32aea2f81e83da399c70315d9662869c,"VIRTUAL / WETH 0.3%",uniswap-v3-robinhood,virtual-protocol,weth,virtual-protocol,422502028,above,single_subject:cg_mcap,409012,15670312
-0xa95732060867f07aa9b8ae9a4b7b8d737bc3374f1dfbb952759c5ed676e8737c,"USDG / VIRTUAL 0.3%",uniswap-v4-robinhood,global-dollar,virtual-protocol,virtual-protocol,422502028,above,single_subject:cg_mcap,348033,10140277
-0x817f16f5d8da83d1b089b082c0172af3923618da,"VEX / VIRTUAL",uniswap-v2-robinhood,projectvex,virtual-protocol,projectvex,3601240,below,min_cap_of_two:cg_mcap,318765,8325561
-0x851d1b0342d2257a4172826b68221d2366c1c6b5,"VIRTUAL / WETH 0.05%",up-v3,virtual-protocol,weth,virtual-protocol,422502028,above,single_subject:cg_mcap,180426,9300159
-0x27f8f8f1b080c7349c0f3bd66fe07732fbffd427,"MERRYMEN / VIRTUAL",uniswap-v2-robinhood,merrymen-by-virtuals,virtual-protocol,merrymen-by-virtuals,384953,below,min_cap_of_two:cg_mcap,103880,1424512
-0xa20b68e2e1de71f1426b546ed5514bf253215a48,"RAXOL / VIRTUAL",uniswap-v2-robinhood,raxol,virtual-protocol,raxol,1543349,below,min_cap_of_two:cg_mcap,84227,2654922
-0xee8d21c0e5aaa31269867db4e3c66a90c3d5951d,"USDG / VIRTUAL",uniswap-v2-robinhood,global-dollar,virtual-protocol,virtual-protocol,422502028,above,single_subject:cg_mcap,45734,1663191
-0x27eaa4899098f0566ee995391db0da49ca60be27,"PHOOD / VIRTUAL",uniswap-v2-robinhood,privacy-hood-by-virtuals,virtual-protocol,privacy-hood-by-virtuals,191751,below,min_cap_of_two:cg_mcap,38702,1135867
+0x52e65b17fb6e5ba00ed806f37afcd2daa50271ca,"USDG / WETH 0.01%",uniswap-v3-robinhood,global-dollar,weth,,,above,both_quote,734898964,10085952987
+0xd986decace9ec31ff37f5e0b28155fd5f83e604d8ea995163541cbd119c24614,"WETH / USDG",uniswap-v4-robinhood,ethereum,global-dollar,,,above,both_quote,357852164,0
+0x6191331ead43b8876ea312020ca58e539c51ef48021b3b93fac2718893c0b771,"FLYBRAIN / USDG 0.9%",uniswap-v4-robinhood,flybrain,global-dollar,flybrain,17119657,below,single_subject:cg_fdv,39505846,33117
+0x6ac6b3a1e78c32ab48152ec079c12014d2a72e8c,"ZFORGE / WETH",uniswap-v2-robinhood,,weth,ZFORGE,1858273,below,single_subject:gt_fdv,39245324,9799233
+0xbac3aa3b91584a53a579b3c999a56756e954e59247e497bad1d25a4334bde551,"WETH / USDG",uniswap-v4-robinhood,ethereum,global-dollar,,,above,both_quote,36813540,268597146
+0xd4eb21209c4d6093f80b5b84f5c45cc093ea14a3,"NVDA / USDG 0.05%",uniswap-v3-robinhood,nvidia-robinhood-tokenized-stock,global-dollar,nvidia-robinhood-tokenized-stock,19889480,below,single_subject:cg_mcap,32933584,674961496
+0xc61284332117c3fb23a2a56cceffd07f7af60029,"SPCX / USDG 0.05%",uniswap-v3-robinhood,spacex-robinhood-tokenized-stock,global-dollar,spacex-robinhood-tokenized-stock,10777747,below,single_subject:cg_mcap,32356318,378834591
+0x34d0dc122cf9a8eb296fc5e0d3a233625d7d19b7,"GOOGL / USDG 0.05%",uniswap-v3-robinhood,alphabet-class-a-robinhood-tokenized-stock,global-dollar,alphabet-class-a-robinhood-tokenized-stock,5264263,below,single_subject:cg_mcap,31661881,46049797
+0x24107d152f14a76d292123265ae3f3c71f863fc2f4ef7ba49d64e78d28ea379e,"WETH / USDG 0.01%",uniswap-v4-robinhood,ethereum,global-dollar,,,above,both_quote,30780903,265518149
+0xfae65eaa11943f45e83d5b45dc7a7c801c51bfb0,"WETH / USDG 0.01%",ramses-v3-robinhood,weth,global-dollar,,,above,both_quote,30545970,354406813
+0x16679e2ac1a798865ecf1c1639e67693ddb1c220,"WETH / USDG 0.05%",up-v3,weth,global-dollar,,,above,both_quote,28688569,380441872
+0xf2a0be59ab76b96f957bd5e5b967f2b75e8db269,"PONS / USDG 0.3%",ramses-v3-robinhood,pons,global-dollar,pons,434746446,above,single_subject:cg_mcap,27879730,158781278
+0x4be9657ec9002e528f4f17a5c43edc525a07f888f7b180c2afbf75e096c4f38a,"PONS / USDG 0.3%",uniswap-v4-robinhood,pons,global-dollar,pons,434746446,above,single_subject:cg_mcap,25343375,369238352
+0x69bfaf19c9f377bb306a89aed9f6b07e2c1a8d9a,"USDG / WETH 0.05%",uniswap-v3-robinhood,global-dollar,weth,,,above,both_quote,25143862,412721637
+0xed50bdeea8adc232f159486192a4157281d722ff,"PONS / WETH 0.3%",uniswap-v3-robinhood,pons,weth,pons,434746446,above,single_subject:cg_mcap,22562044,444355453
+0x6f638b29e275cab8f584df0a4c6a045922217aed8747f2459eedb034abb31ac7,"FLYBRAIN / GOOGL",pons-v2-dex,flybrain,alphabet-class-a-robinhood-tokenized-stock,alphabet-class-a-robinhood-tokenized-stock,5264263,below,min_cap_of_two:cg_mcap,22343623,4343315
+0xe2b46c905e12ab8e2f864e4821a4325884c1b126,"GME / USDG 0.05%",uniswap-v3-robinhood,gamestop-robinhood-tokenized-stock,global-dollar,gamestop-robinhood-tokenized-stock,3324705,below,single_subject:cg_mcap,18655781,142997658
+0x7accaeb3d245292298b8b3eb413698e709780fb67318d0d723d597de9629dfc3,"WETH / USDG",uniswap-v4-robinhood,ethereum,global-dollar,,,above,both_quote,17395450,9257172
+0xddcbba3666f578e3f09516f21ff85bfee859ab5e,"SPY / WETH 0.05%",uniswap-v3-robinhood,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,weth,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,25130414,below,single_subject:cg_mcap,13759502,202845306
+0x749bd3291f9297be7e1782d4a57bbf9d7f6a5e6c,"Nvidia / WETH",uniswap-v2-robinhood,,weth,Nvidia,3651132,below,single_subject:gt_fdv,13177515,673361
+0xc3c9f0171490ef0f4536fe493f3b0ebb5ee0cb5e,"SPCX / WETH 0.05%",uniswap-v3-robinhood,spacex-robinhood-tokenized-stock,weth,spacex-robinhood-tokenized-stock,10777747,below,single_subject:cg_mcap,12759539,61425937
+0x7aebd80541bfaaf23dbb6e99ce13d4d31c1a84c91414f971eadbff7db5f85995,"AI / USDG 0.23%",uniswap-v4-robinhood,artificial-inu-3,global-dollar,artificial-inu-3,264751592,above,single_subject:cg_mcap,12240709,89278899
+0xd42a491087a15e5afd51feb3606066cc152d2b09,"CASHCAT / WETH 0.3%",uniswap-v3-robinhood,cash-cat,weth,cash-cat,177010878,above,single_subject:cg_mcap,11288775,505138570
+0xc40d3cac54f587debdcef3887912767656255c9b04f3914ffa70e01370e046f8,"HOOD / WETH",uniswap-v4-robinhood,greenhood,ethereum,greenhood,54837604,below,single_subject:cg_mcap,10792255,54678867
+0x255cce38af51f693038110410f0c3d111698945eb5f9aec414af11ec9b9bcf44,"RIDE / RIVN",pons-v2-dex,rhivian,rivian-automotive-robinhood-tokenized-stock,rhivian,151328,below,min_cap_of_two:cg_mcap,10775854,14233958
+0xd275d10af9a9f70f9cbb041e9414605947755353,"Orus / WETH",uniswap-v2-robinhood,,weth,Orus,21,below,single_subject:gt_fdv,10555396,1018131
+0x5c0eaa89799f7b76606f4ff66c92a2654d178927,"GOOGL / USDG 0.01%",ramses-v3-robinhood,alphabet-class-a-robinhood-tokenized-stock,global-dollar,alphabet-class-a-robinhood-tokenized-stock,5264263,below,single_subject:cg_mcap,10292337,944666
+0x3b0cbf0603ecc67b5fc9bb4fbb6ac9e08d3b2f406b63d1662a36063a7fe5e866,"WETH / USDG 0.009%",uniswap-v4-robinhood,ethereum,global-dollar,,,above,both_quote,9857453,71202778
+0xd4ecb79fdc521d7725d22b33ed43cb4e47aa96bfad76aa29577e3151f723ac5e,"GOOGL / USDG 0.3%",uniswap-v4-robinhood,alphabet-class-a-robinhood-tokenized-stock,global-dollar,alphabet-class-a-robinhood-tokenized-stock,5264263,below,single_subject:cg_mcap,9404897,10826182
+0x8068ab043efd411b87506c41be1add38faaf18c0af0016c663ca92feff0b8159,"WETH / USDG",orvex-v4,weth,global-dollar,,,above,both_quote,9352815,173822895
+0x62ab521f71431f78ac374cdbadc6cda3c8916b6c,"NVDA / WETH 0.05%",uniswap-v3-robinhood,nvidia-robinhood-tokenized-stock,weth,nvidia-robinhood-tokenized-stock,19889480,below,single_subject:cg_mcap,9182925,75846452
+0xbf9d7204409913120e7feec3a0da935392e560c383665addc84a59501ed8a920,"STONKFLY / WETH",pons-v2-dex,,ethereum,STONKFLY,14447,below,single_subject:gt_fdv,8845396,8829559
+0x7a92902c08235b8f458790c8ece80632c93110c27e4cb283ac2e5da1e66f88b5,"WETH / USDG",uniswap-v4-robinhood,ethereum,global-dollar,,,above,both_quote,8691357,12427690
+0x29a424ad09382763fb034cfea00fcb4f0804dcaaedfb849c668957aadbd194c7,"FLY / GOOGL",pons-v2-dex,flycoin-2,alphabet-class-a-robinhood-tokenized-stock,flycoin-2,176698,below,min_cap_of_two:cg_fdv,8202469,10002926
+0xb30a75b200d98a600a3766869344928e35823e23,"RIVN / USDG 1%",uniswap-v3-robinhood,rivian-automotive-robinhood-tokenized-stock,global-dollar,rivian-automotive-robinhood-tokenized-stock,627436,below,single_subject:cg_mcap,8025697,12548681
+0xc4a21f9d6485fc5893dd4a491b320a83daf4da1d,"AI / WETH 1%",uniswap-v3-robinhood,artificial-inu-3,weth,artificial-inu-3,264751592,above,single_subject:cg_mcap,7963152,205117683
+0xb2a6ad51b3ea3cdc8d3508cca147a43471382e53,"WETH / USDG 0.01%",giga-v3,weth,global-dollar,,,above,both_quote,7877306,258250756
+0x588b0785f50063260003b7790c42f1ef74902746,"JUGGERNAUT / WETH 1%",uniswap-v3-robinhood,the-juggernaut,weth,the-juggernaut,11888089,below,single_subject:cg_mcap,7544701,62547184
+0x38453c115607463ac284820ce959831042f3df4e,"SPY / USDG 0.01%",ramses-v3-robinhood,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,global-dollar,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,25130414,below,single_subject:cg_mcap,7248009,137543670
+0xe09b664c2c00e55ec97aefd141c2c36891de95fc5b7dc34dad37642fe7f6bbbe,"GME / +",pons-v2-dex,gamestop-robinhood-tokenized-stock,,+,148074,below,min_cap_of_two:gt_fdv,7097563,0
+0x760d38c10e2b82b39ed7b632ff2909c975563446,"FLY / WETH",uniswap-v2-robinhood,,weth,FLY,5886220,below,single_subject:gt_fdv,7011766,7011766
+0xd60a5d14db690b7afad71f76b108071d7175597d,"QQQ / USDG 0.05%",uniswap-v3-robinhood,invesco-qqq-robinhood-tokenized-stock,global-dollar,invesco-qqq-robinhood-tokenized-stock,4480792,below,single_subject:cg_mcap,6924986,62575799
+0xfcada2212dc41a40d8a96e92d0d3a5bc355fa6b1875ff453bb62a3793879545f,"SEXFLY / GOOGL",pons-v2-dex,,alphabet-class-a-robinhood-tokenized-stock,SEXFLY,227823,below,min_cap_of_two:gt_fdv,6501977,0
+0x7a35168956f129c032ec035cc47383a605a71df0,"WETH / USDG 0.004%",alandale-cl,weth,global-dollar,,,above,both_quote,6263794,80380416
+0x10cc6bd38112cac182db90b6a71d8bb5939526ba,"PONS / WETH 1%",uniswap-v3-robinhood,pons,weth,pons,434746446,above,single_subject:cg_mcap,6079586,130409852
+0x54f7883914619af9105355bf83ed678bcf9f63560218ac61c9963b9503d0ba32,"WETH / USDG 0.046%",uniswap-v4-robinhood,ethereum,global-dollar,,,above,both_quote,5644793,167275856
+0x46525dc119850396470f132c4a989d7192cb692139db891b5a4cdcd684c11b17,"MEME / USDG 0.297%",uniswap-v4-robinhood,a-meme-coin,global-dollar,a-meme-coin,54115531,below,single_subject:cg_mcap,5532556,304011
+0x84bd4e2d8be11aeb0afc1195b38f587b61e90068548f1063fdbe448fb8cad0b6,"USDG / WETH 0.02%",uniswap-v4-robinhood,global-dollar,weth,,,above,both_quote,5519012,125985559
+0x43fe16b75cabbf38f5b185d16142b02d1d9200d8f1ba17cb6cf899f562c6197f,"GOOGL / USDG 0.03%",uniswap-v4-robinhood,alphabet-class-a-robinhood-tokenized-stock,global-dollar,alphabet-class-a-robinhood-tokenized-stock,5264263,below,single_subject:cg_mcap,5456623,1792683
+0xa92a3df27a00a276183ff7265fd8affa11df1fe8bb23ddfaf13f6c879a3f818b,"CASHCAT / USDG 0.269%",uniswap-v4-robinhood,cash-cat,global-dollar,cash-cat,177010878,above,single_subject:cg_mcap,5385098,156951786
+0x4a6a85252a6f6b383a5f747259ee157e65ff1307,"SHRUB / WETH",uniswap-v2-robinhood,lil-shrub,weth,lil-shrub,1959938,below,single_subject:cg_mcap,5340830,134110934
+0x11b42b0bdfac97074b79d6e277cb65a9879f2083,"SEXFLY / WETH",uniswap-v2-robinhood,,weth,SEXFLY,96,below,single_subject:gt_fdv,5316869,0
+0xfad0b2c67dd7750f4f9392361ea1567db57b87ac015bfc519960089e73df2f15,"MARIO / NVDA",pons-v2-dex,,nvidia-robinhood-tokenized-stock,MARIO,338903,below,min_cap_of_two:gt_fdv,5256808,14085636
+0x177bdbd68b066e33dec8d0d303e989127af099782eb4f55b0f5e9ed48be19d03,"CME / USDG 3.11%",uniswap-v4-robinhood,commodity-market-exchange,global-dollar,commodity-market-exchange,10117713,below,single_subject:cg_fdv,5131258,6333957
+0xba2f1ed4ceb2169d538d1e614d847e83c5a55913,"gld / USDG 0.05%",uniswap-v3-robinhood,spdr-gold-shares-robinhood-token,global-dollar,spdr-gold-shares-robinhood-token,9135805,below,single_subject:cg_mcap,5060003,60848013
+0x7fb39eb653999feb9f0d3b1410848911383dfc681f3585229df4aa5b560bf0ba,"HOOD / USDG 0.2%",uniswap-v4-robinhood,,global-dollar,HOOD,1477356,below,single_subject:gt_fdv,4932636,35709631
+0xaae0d815ee56e4092a5e5c2911e676fea50b2d6d,"AAPL / USDG 0.05%",uniswap-v3-robinhood,apple-robinhood-tokenized-stock,global-dollar,apple-robinhood-tokenized-stock,5290712,below,single_subject:cg_mcap,4766301,44136260
+0xff0aa5f0acd38204bcf7113cc8027b7269b34c675248129fff74371d7d2197b9,"CME / WETH",pons-v2-dex,commodity-market-exchange,ethereum,commodity-market-exchange,10117713,below,single_subject:cg_fdv,4751500,12226906
+0x4b7c86491df95f366b31217b2950d2c5136a2f19b6879613eac73d0e69092a1a,"MEME / USDG 0.7%",uniswap-v4-robinhood,a-meme-coin,global-dollar,a-meme-coin,54115531,below,single_subject:cg_mcap,4724674,120994055
+0x51b6ca77deae9f17c1d89edfb301ae50053c57a5,"PONS / WETH 1%",ramses-v3-robinhood,pons,weth,pons,434746446,above,single_subject:cg_mcap,4608419,88703168
+0x21f20a5797940735e771d95a2d44c29f84de595e034abd4dc245b41bd8e0527c,"KEKIUS / WETH",pons-v2-dex,,ethereum,KEKIUS,3578,below,single_subject:gt_fdv,4597126,4599759
+0xa95abefb9d970a6e653e31e9d9e616c9a244e260,"CPU / WETH",uniswap-v2-robinhood,,weth,CPU,7,below,single_subject:gt_fdv,4492097,154404
+0xd29893ffac8b29ec4db2cfe0cdb3fe1377c028ff,"Index / WETH 1%",uniswap-v3-robinhood,the-index,weth,the-index,36347819,below,single_subject:cg_mcap,4453014,78087808
+0x0dc5b955a54f987cb2948b614b9f607c5aa75e9837f3c9cdc7024b2c3729e937,"BYCOCKET / HOOD 0.3%",uniswap-v4-robinhood,,,BYCOCKET,455039,below,min_cap_of_two:gt_fdv,4390580,4050531
+0x486435a1f76cd58193f854c6e6213cd05fd58d637865d02065ff558b387fa6ea,"PONS / USDG",uniswap-v4-robinhood,pons,global-dollar,pons,434746446,above,single_subject:cg_mcap,4359536,2391880
+0xacea8920877840033f0275c37f9b61550b5326917e948bcf8339714d96f9521a,"FRONG / WETH 0.25%",uniswap-pools-trade,frong,ethereum,frong,7019964,below,single_subject:cg_mcap,4328661,66218893
+0x714442e9a611f8561a7df108d6d925132937cfb8,"CHUMP / WETH 1%",uniswap-v3-robinhood,chump-coin,weth,chump-coin,43810249,below,single_subject:cg_mcap,4302747,58466518
+0xcd8ac75788ae81c1c9fba2130a7469f1d6142fc3c618975a34af52e2d52d2d1e,"GOOSE / WETH",uniswap-v4-robinhood,goose-token,ethereum,goose-token,7705686,below,single_subject:cg_mcap,4271104,27900132
+0x3e1afde90341f843c941ff4077d915bde3008c7e,"SPY / WETH 0.01%",ramses-v3-robinhood,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,weth,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,25130414,below,single_subject:cg_mcap,4248906,53888474
+0xace103c9201b3a12fe47104004fc3cb128af3ac9,"MARIO / WETH",uniswap-v2-robinhood,,weth,MARIO,7,below,single_subject:gt_fdv,3914162,4147203
+0x08afa6e148c348588185c1b6a19e948ea8263b4ddcfea635746bff564b1be6ba,"OPAI / QQQ",pons-v2-dex,,invesco-qqq-robinhood-tokenized-stock,OPAI,279576,below,min_cap_of_two:gt_fdv,3981667,0
+0x46ba8216b5d05ff33427b976663836ec5b34b3e261f374f9a5e773d776d3af85,"FATCOIN / LLY",o1-launchpad-robinhood,fatcoin-2,eli-lilly-robinhood-tokenized-stock,eli-lilly-robinhood-tokenized-stock,2342589,below,min_cap_of_two:cg_mcap,3869007,51212040
+0x99c61d6e34c667740003a7c7ce8f07719dd15d5cba8c4568a12253381ae4823c,"FLYBRAIN / USDG 5%",uniswap-v4-robinhood,flybrain,global-dollar,flybrain,17119657,below,single_subject:cg_fdv,3761065,252658
+0x8186f87af41fda2f1004622906800eee5881ff3fc356d672a85d1c6fd37aa072,"DRAFT / WETH",pons-v2-dex,draft-2,ethereum,draft-2,56443,below,single_subject:cg_fdv,3745139,1377109
+0xfe2a80bb5618fd14984b92ca6d45bf5ba67443ddb1435e28b2e48df2fc1526cd,"SPY / USDG 0.3%",uniswap-v4-robinhood,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,global-dollar,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,25130414,below,single_subject:cg_mcap,3719872,65013870
+0xf9aec85dd4eb9ec9148e0b4b50a3fd8e9886dcae6ecc979f9369b84b01037c0b,"Rialto / WETH",pons-v2-dex,rialto-2,ethereum,rialto-2,93576,below,single_subject:cg_fdv,3689234,210447
+0x25c0dad350613a02f2c0843f02dd15c30c45e20417909bef8a6311d54dc4d43a,"MANY / WETH",pons-v2-dex,manyways-inference,ethereum,manyways-inference,3906675,below,single_subject:cg_mcap,3497890,10628414
+0xfab520051f96f4d2a32c22b6a3dd7fffdf231bfe,"SGOV / USDG 0.3%",uniswap-v3-robinhood,ishares-0-3-month-treasury-bond-etf-robinhood-tokenized-stock,global-dollar,ishares-0-3-month-treasury-bond-etf-robinhood-tokenized-stock,5082106,below,single_subject:cg_mcap,3490309,27136431
+0x3416b8d8aa6ae642ffdc2f65165ff479d4bd3007,"astro / WETH",uniswap-v2-robinhood,astronaut-2,weth,astronaut-2,21986784,below,single_subject:cg_mcap,3406073,24698724
+0x2f393b60ef0cfaf669af63284e5592dc3a657b73,"PONS / USDG 0.3%",up-v3,pons,global-dollar,pons,434746446,above,single_subject:cg_mcap,3361717,75359848
+0x39dfaa654d79373c030a75908384d5aeda3adcf1b63c79570ac09bd17211e11d,"RocketFrog / SPCX",pons-v2-dex,,spacex-robinhood-tokenized-stock,RocketFrog,17948,below,min_cap_of_two:gt_fdv,3323621,3182872
+0x319bac87e616a89e241c10aeb8afd4892a852cdd8b373cd9765ecddc40b87cfe,"MSTR / USDG 0.25%",uniswap-v4-robinhood,strategy-inc-robinhood-tokenized-stock,global-dollar,strategy-inc-robinhood-tokenized-stock,3901550,below,single_subject:cg_mcap,3294554,47546372
+0x8bb3514e2204e1cdf3ac149efee7ff04d91b719f,"AAPL / WETH 0.05%",uniswap-v3-robinhood,apple-robinhood-tokenized-stock,weth,apple-robinhood-tokenized-stock,5290712,below,single_subject:cg_mcap,3250608,29344149
+0x7a192e71564ec66ee0763e328a3ac274942de4e1,"PONS / USDG 1%",uniswap-v3-robinhood,pons,global-dollar,pons,434746446,above,single_subject:cg_mcap,3201528,57641108
+0x02175608f1b5e6b5ed221ccfdc7be197d111d915,"USDG / USO 0.3%",uniswap-v3-robinhood,global-dollar,united-states-oil-fund-robinhood-tokenized-stock,united-states-oil-fund-robinhood-tokenized-stock,2126334,below,single_subject:cg_mcap,3159194,27747609
+0x3b7b78fc4bc377d6d7e8eae25e982c1d7ee875e54bb45f5c9bda0b9606601593,"Harvest / WETH",pons-v2-dex,,ethereum,Harvest,8946,below,single_subject:gt_fdv,3155518,2515905
+0x230247316909abf225c50d64c9ec36c16c60a621c06f811bdef4c4e34d20852d,"DIVIDEND / djt",pons-v2-dex,,trump-media-technology-group-corp-robinhood-token,DIVIDEND,105689,below,min_cap_of_two:gt_fdv,3142962,555625
+0x40cf82865945240923255f1a237d3eae1903571458ac359f9e8e6d1a1ecd9ef4,"GALAXY / WETH",pons-v2-dex,,ethereum,GALAXY,3609,below,single_subject:gt_fdv,3057131,0
+0xa70fc67c9f69da90b63a0e4c05d229954574e313,"CASHCAT / WETH 1%",uniswap-v3-robinhood,cash-cat,weth,cash-cat,177010878,above,single_subject:cg_mcap,3002227,132351311
+0xe85f633a1374ee279140fa997b547d6a2ccd94fc5eae0e98f7d15ce0e3ddfa93,"AI / WETH",uniswap-v4-robinhood,artificial-inu-3,ethereum,artificial-inu-3,264751592,above,single_subject:cg_mcap,2997582,1210213
+0x55f2df399bf61fd758b99848452eaf217ee9d2f98fb9c79deb23fe9a2652bc5a,"djt / USDG 0.206%",uniswap-v4-robinhood,trump-media-technology-group-corp-robinhood-token,global-dollar,trump-media-technology-group-corp-robinhood-token,2476114,below,single_subject:cg_mcap,2931677,65953599
+0x0ff2e264ba5a85052e0ba970365fbce49a7bf426c78ee15fefc51077cd377355,"AI / USDG 1%",uniswap-v4-robinhood,artificial-inu-3,global-dollar,artificial-inu-3,264751592,above,single_subject:cg_mcap,2902750,39521146
+0xfa29e6cd2536e82e12ef269a80a42df4685ef5177066ecd5f0698d0458e0ec3d,"RIVN / USDG 0.5%",uniswap-v4-robinhood,rivian-automotive-robinhood-tokenized-stock,global-dollar,rivian-automotive-robinhood-tokenized-stock,627436,below,single_subject:cg_mcap,2886318,5648375
+0xcbdfea90430a30ee4469c9902e120a77e7c7e4711d5643671c1d1957f2f1ce27,"AI / NVDA",bankr-robinhood,artificial-inu-3,nvidia-robinhood-tokenized-stock,nvidia-robinhood-tokenized-stock,19889480,below,min_cap_of_two:cg_mcap,2816009,94746922
+0x18a5af4e442f8be68968cc1f00d537f8af2d12cd,"NVDA / USDG 0.3%",up-v3,nvidia-robinhood-tokenized-stock,global-dollar,nvidia-robinhood-tokenized-stock,19889480,below,single_subject:cg_mcap,2756573,29928283
+0x9b050cb1f265094b0977160a2bd7da8c9e529c3c,"WETH / USDG 0.05%",sushiswap-v3-robinhood,weth,global-dollar,,,above,both_quote,2747597,36159520
+0xa63aa803dbbbe29ba4833187ed9ea1b2f7fdd0fb6eada37c1128daaa9e1e02e2,"Microhood / MSFT",pons-v2-dex,,microsoft-robinhood-tokenized-stock,Microhood,107650,below,min_cap_of_two:gt_fdv,2738828,0
+0xf38009b348295f907c1f2e22aba84d731de3b7360d312881df1c206e85ea3b0b,"SPY / QQQ 0.05%",uniswap-v4-robinhood,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,invesco-qqq-robinhood-tokenized-stock,invesco-qqq-robinhood-tokenized-stock,4480792,below,min_cap_of_two:cg_mcap,2724109,23263358
+0x7a6a053eccf1446a2633e05aa6d40d09381997ec,"gld / USDG 0.3%",uniswap-v3-robinhood,spdr-gold-shares-robinhood-token,global-dollar,spdr-gold-shares-robinhood-token,9135805,below,single_subject:cg_mcap,2689042,67227954
+0xe9713f453adb9245b19559790c96f470a18f2fdf,"GME / USDG 1%",uniswap-v3-robinhood,gamestop-robinhood-tokenized-stock,global-dollar,gamestop-robinhood-tokenized-stock,3324705,below,single_subject:cg_mcap,2678699,20107891
+0xe4210b591cac72656cbc80104e2caf766f2d6557,"RocketFrog / WETH",uniswap-v2-robinhood,,weth,RocketFrog,10,below,single_subject:gt_fdv,2635389,2635978
+0x15a09db785c7b5fc9d794f685a04e4ad38842a2035b9a8fab17909c0e54c425f,"SPCX / ASTEROID",bankr-robinhood,spacex-robinhood-tokenized-stock,asteroid-3,asteroid-3,6942158,below,min_cap_of_two:cg_mcap,2616670,15550605
+0xff55831b1213ea7ec5c0de7e23bd8355b846ed6583a427535953cb8440b5c4bb,"PPILOT / WETH 0.3%",uniswap-v4-robinhood,,weth,PPILOT,286648,below,single_subject:gt_fdv,2584891,0
+0x5171a62abf9131d4e1dbc3725b04e38feb91f59321f00815d1f3e30fefa51317,"Stonkfly / WETH 0.01%",uniswap-v4-robinhood,,weth,Stonkfly,979614,below,single_subject:gt_fdv,2534629,2045144
+0x62b9bb5caff4e9a4564961b5e477a290a7a93b1011aae53dd567c1c3658a3437,"CPU / INTC",pons-v2-dex,,intel-robinhood-tokenized-stock,CPU,76928,below,min_cap_of_two:gt_fdv,2497681,1174373
+0x26250ba84465454bc731f710e46f1f32b167d66b,"gld / WETH 0.05%",uniswap-v3-robinhood,spdr-gold-shares-robinhood-token,weth,spdr-gold-shares-robinhood-token,9135805,below,single_subject:cg_mcap,2454315,9571930
+0xdbfac7455917591f250241ee92e78cee2c6e7a52ac7e0677291f2ab113c3c24c,"roost / QQQ",uniswap-v4-robinhood,,invesco-qqq-robinhood-tokenized-stock,roost,214243,below,min_cap_of_two:gt_fdv,2416113,0
+0x778a632fdd85577efe9cfce4a2c9ac91b9decdb24c351f9b56e25d38fbe587b4,"SHROOM / USDG 0.9%",uniswap-v4-robinhood,mushroom-2,global-dollar,mushroom-2,13366083,below,single_subject:cg_mcap,2382836,45959151
+0xaa34fea710a1a737840329051d81d3b0b7c564d5,"amc / USDG 0.3%",uniswap-v3-robinhood,amc-entertainment-holdings-inc-robinhood-token,global-dollar,amc-entertainment-holdings-inc-robinhood-token,4885076,below,single_subject:cg_mcap,2376391,156530663
+0xeb60bcd1d920ad6e102690ccfc6fb488899e1510,"MSFT / USDG 0.3%",uniswap-v3-robinhood,microsoft-robinhood-tokenized-stock,global-dollar,microsoft-robinhood-tokenized-stock,2898562,below,single_subject:cg_mcap,2367600,12286608
+0xba25e3dd3a9f70d2272d691d6f2dde5c5534ad3d,"LPAD / WETH 1%",uniswap-v3-robinhood,launchpad-meme,weth,launchpad-meme,1169210,below,single_subject:cg_fdv,2353550,884082
+0x53bdbefd9a3e8683d669f312473bf83d5a6b3a0b,"GROMPANY / WETH 0.01%",uniswap-v3-robinhood,,weth,GROMPANY,7875,below,single_subject:gt_fdv,2328149,0
+0x9501a20bedb8bea0798fe5d4c411f5e270965d49,"WALLET / WETH 1%",uniswap-v3-robinhood,,weth,WALLET,44503572,below,single_subject:gt_fdv,2300111,18231207
+0xe2c12a7379706a291cadaaec1d22458be2f7239d,"MEME / WETH 0.3%",uniswap-v3-robinhood,a-meme-coin,weth,a-meme-coin,54115531,below,single_subject:cg_mcap,2240631,12526015
+0xd78480cafef722d75519e13b9f516e5704d0d659,"AI / WETH 0.3%",uniswap-v3-robinhood,artificial-inu-3,weth,artificial-inu-3,264751592,above,single_subject:cg_mcap,2217587,61256505
+0xc6bcc95043dc48c204bb2d57fb264a10efe0a607,"GME / WETH 0.05%",uniswap-v3-robinhood,gamestop-robinhood-tokenized-stock,weth,gamestop-robinhood-tokenized-stock,3324705,below,single_subject:cg_mcap,2148192,17379144
+0x8cd848ce18b829c5c769aff27164078bb52e0e97,"ibm / USDG 0.3%",uniswap-v3-robinhood,international-business-machines-corporation-robinhood-token,global-dollar,international-business-machines-corporation-robinhood-token,682916,below,single_subject:cg_mcap,2142488,6624575
+0x6538e2c223ed70228114983afecbe5e69fe627e2fafdf367bdd6bdeff2ad391f,"ZZZ / WETH",pons-v2-dex,zzz-2,ethereum,zzz-2,37994261,below,single_subject:cg_mcap,2129465,52963936
+0xb61f19ce5b7064b5c583b53d2d6d1b54ee51c3d6,"GALAXY / WETH 0.01%",uniswap-v3-robinhood,,weth,GALAXY,67377,below,single_subject:gt_fdv,2116781,0
+0x6d56f66e52e63e8be558d708a987426314bb4de92bc9b43a44effee1f2abf317,"UBIK / USDG 1%",uniswap-v4-robinhood,ubik,global-dollar,ubik,28211288,below,single_subject:cg_mcap,2104404,11244231
+0x68518a0a7081c15381b2d34b70fbf10210c5c7d1706b6fcb65ac953041cbffc1,"USDG / JUGGERNAUT 1%",uniswap-v4-robinhood,global-dollar,the-juggernaut,the-juggernaut,11888089,below,single_subject:cg_mcap,2086439,15729356
+0x38fcfc7e532f394f1cdcdd1550ba517b1a1d1df54ed7d505e8c3109521aea9d1,"GOOGL / USDG",uniswap-v4-robinhood,alphabet-class-a-robinhood-tokenized-stock,global-dollar,alphabet-class-a-robinhood-tokenized-stock,5264263,below,single_subject:cg_mcap,2063248,0
+0x8660c1c24d58fdad98d9008be534240e5d79ece4d4d4ef16f215af001779ec1f,"MEME / USDG",uniswap-v4-robinhood,a-meme-coin,global-dollar,a-meme-coin,54115531,below,single_subject:cg_mcap,2035046,3259725
+0x0d662a58507a46cd6a22632228306dc0d9c26f5fce90c37ced3b8358db33deb3,"NET / USDG 0.9%",uniswap-v4-robinhood,netnet,global-dollar,netnet,2399436,below,single_subject:cg_mcap,2022709,38881155
+0x590dcb6a87828bf688b48089a62239b693378f1fb64d2286e6a399ed8c005fdf,"HOOKR / WETH 0.25%",uniswap-pools-trade,hookr-fun,ethereum,hookr-fun,11474418,below,single_subject:cg_mcap,2006299,57803321
+0x1273d403d1eee5bf63bb56dfb1986fde69145e8f,"+ / WETH",uniswap-v2-robinhood,,weth,+,,unknown,gt_fdv_only_above_threshold,1993816,0
+0x8e29858a8ea2d12ae8ac5d0754b224b527999e76,"TOGE / WETH 0.01%",uniswap-v3-robinhood,,weth,TOGE,12881,below,single_subject:gt_fdv,1987464,0
+0x7e271c400427ecb727f5fbb27dec69254bce7c4219e95e3535d0ed128f79648a,"INU / AAPL",bankr-robinhood,,apple-robinhood-tokenized-stock,INU,1330739,below,min_cap_of_two:gt_fdv,1977233,0
+0xd057b1bc54917855bbee58ead58647f47cab35e5,"MU / USDG 0.3%",uniswap-v3-robinhood,micron-technology-robinhood-tokenized-stock,global-dollar,micron-technology-robinhood-tokenized-stock,696832,below,single_subject:cg_mcap,1969499,34302937
+0xc8c90d3a1c1a24967e773ac2ad0d456ba3e31f64,"HIMS / USDG 0.3%",uniswap-v3-robinhood,hims-hers-health-inc-robinhood-token,global-dollar,hims-hers-health-inc-robinhood-token,3503067,below,single_subject:cg_mcap,1956247,58552922
+0x9b6d3396d75800c37e2c306ce5b540cd5ed0d52aa49dfd1ba74102f501aedb93,"OPAI / WETH",pons-v2-dex,,ethereum,OPAI,4307,below,single_subject:gt_fdv,1955193,0
+0xf9e71558eef115b6c8fbfc9ad5fda00033e9d69c,"RIVN / USDG 0.3%",uniswap-v3-robinhood,rivian-automotive-robinhood-tokenized-stock,global-dollar,rivian-automotive-robinhood-tokenized-stock,627436,below,single_subject:cg_mcap,1955068,1959068
+0xa85f02f8e836e92912c8e0588f60b8868eedc154e558c10a1966269e5122b77c,"NOVAAI / WETH",pons-v2-dex,novaai,ethereum,novaai,300388514,above,single_subject:cg_fdv,1937082,15367861
+0xebd0b31198c5399989b25cdafddb8f1de0d22433f94712c0a8ac51f7097c650a,"MANY / USDG 0.9%",uniswap-v4-robinhood,manyways-inference,global-dollar,manyways-inference,3906675,below,single_subject:cg_mcap,1936172,1371970
+0x6b5dbb6ee0f7f1668197ee33c13bc6fa8fe491cedba82f01b46a6457f9286c6b,"AIBUD / WETH 0.3%",uniswap-v4-robinhood,,weth,AIBUD,144840,below,single_subject:gt_fdv,1926517,2061
+0xefcec38281d4cccaf9c9d7da02aff071d3b94d54fa50bb14b8e6b8e74529a16b,"WETH / USDG 0.008%",uniswap-v4-robinhood,ethereum,global-dollar,,,above,both_quote,1924724,25042994
+0x27ccf0a6d1ee74840220715bcca7d3b01e0d33aa30d0259b47ae1585b3f4c071,"amc / MEME",bankr-robinhood,amc-entertainment-holdings-inc-robinhood-token,a-meme-coin,amc-entertainment-holdings-inc-robinhood-token,4885076,below,min_cap_of_two:cg_mcap,1923296,143724276
+0xa1b2f5ad01e620bdc3965d9a22d9ab691f09f40a,"Microhood / WETH",uniswap-v2-robinhood,,weth,Microhood,627677,below,single_subject:gt_fdv,1895337,0
+0xfec7b1efe77aa60887986db5bcbfff39ca40b56d964bb8ce3d9dd0d9baaca4d4,"BONER / USDG 0.9%",uniswap-v4-robinhood,boner-coin,global-dollar,boner-coin,37319901,below,single_subject:cg_mcap,1889157,66727286
+0x95def4ea143630d64caa8f55f7570d8023f20265,"djt / WETH 0.05%",uniswap-v3-robinhood,trump-media-technology-group-corp-robinhood-token,weth,trump-media-technology-group-corp-robinhood-token,2476114,below,single_subject:cg_mcap,1875988,9801105
+0x0e83588ff3914c9801584d55d4dabf9d28880728d73ccff7394ded9aae02afa8,"GASOLINU / USO",bankr-robinhood,,united-states-oil-fund-robinhood-tokenized-stock,GASOLINU,1513797,below,min_cap_of_two:gt_fdv,1863892,6352533
+0x2d17aa32ba9192ce43ed6f06ab673e28bfe179ed,"GALAXY / WETH",uniswap-v2-robinhood,,weth,GALAXY,2708978,below,single_subject:gt_fdv,1849846,0
+0xc3cc877a8a7d28efdb5dbec9ae71724652431e6411aa1a9fc8928028da554aa1,"MOO / MU",bankr-robinhood,memory-cow-moo,micron-technology-robinhood-tokenized-stock,micron-technology-robinhood-tokenized-stock,696832,below,min_cap_of_two:cg_mcap,1833026,53964131
+0xba6736b083e437a366a6604b7d75e1ada15f4fa2,"OPAI / WETH",uniswap-v2-robinhood,,weth,OPAI,10057051,below,single_subject:gt_fdv,1804459,0
+0x44e7d5e358437598979f16eb499fcd2ae01152a0a0b893a515dd478448bb2c97,"MACRO / MSTR",bankr-robinhood,,strategy-inc-robinhood-tokenized-stock,MACRO,215218,below,min_cap_of_two:gt_fdv,1785166,1625435
+0xa95b1fbdccb15d2b07509b980f63adab8a94303b1781f5ebc53b72942d12ddc1,"ORBIO / NVDA",pons-v2-dex,orbio-so,nvidia-robinhood-tokenized-stock,nvidia-robinhood-tokenized-stock,19889480,below,min_cap_of_two:cg_mcap,1781699,21028257
+0x046ed437024576eab0451331e0854c57de28fbbe0cd32e437486ba07338f771e,"LUMO / WETH",pons-v2-dex,,ethereum,LUMO,86270,below,single_subject:gt_fdv,1779799,0
+0x85a3cd053eecbcf2a67fd2c391479a2267e237edcea3acf19609b329e3a482fa,"MOO / USDG 2%",uniswap-v4-robinhood,memory-cow-moo,global-dollar,memory-cow-moo,31544580,below,single_subject:cg_mcap,1763404,8584111
+0x7ce69a29e50d26fa96f7331516789fb834cd542469c86bce303b4352c85b2327,"microduck / WETH 1.002%",uniswap-v4-robinhood,microduck,ethereum,microduck,6186278,below,single_subject:cg_mcap,1763259,1500482
+0x6ba50150b17ffd0972915aaf04ffd5e8f4fa49b4,"SGOV / USDG 0.05%",uniswap-v3-robinhood,ishares-0-3-month-treasury-bond-etf-robinhood-tokenized-stock,global-dollar,ishares-0-3-month-treasury-bond-etf-robinhood-tokenized-stock,5082106,below,single_subject:cg_mcap,1761437,14209154
+0x966c5213b20f0a88ae8cb7b30ba0a239a868d54755ff02405cf025f2f0ab5e66,"Orus / WETH",pons-v2-dex,,ethereum,Orus,728098,below,single_subject:gt_fdv,1756112,2220865
+0x7499938c352d5b5b8f0c648722aca5ee964ef9b85c3a3041f1ec379726291d9d,"amc / USDG 0.1%",uniswap-v4-robinhood,amc-entertainment-holdings-inc-robinhood-token,global-dollar,amc-entertainment-holdings-inc-robinhood-token,4885076,below,single_subject:cg_mcap,1718779,88785405
+0x4211f9237c675b159ed2e495adbec184065a807c,"+ / WETH",uniswap-v2-robinhood,,weth,+,3,below,single_subject:gt_fdv,1718283,0
+0x6ec55798d58f78bf04db6e895f9e1aa6df7999e0e7f1bea49cbe08bfa263fde1,"MICROFLY / NVDA",pons-v2-dex,,nvidia-robinhood-tokenized-stock,MICROFLY,104733,below,min_cap_of_two:gt_fdv,1710478,0
+0x6c614c38c65fea492f4cb2b90fd664f924a7b828c7384620662217e2e2df43ed,"ZZZ / USDG 2.8%",uniswap-v4-robinhood,zzz-2,global-dollar,zzz-2,37994261,below,single_subject:cg_mcap,1705649,2715846
+0x3e5392a7769b475be45d9499e344c59cb8c7a4a384f252884329ab81b9041670,"MARIO / WETH",pons-v2-dex,,ethereum,MARIO,3081,below,single_subject:gt_fdv,1675613,2397731
+0x50e43b43a8ee1e07e0ac978e92adff7dfbfb88e7,"PONS / WETH 0.2%",giga-v3,pons,weth,pons,434746446,above,single_subject:cg_mcap,1668607,26611682
+0x568bf0e9b93cd669ed0e00e81729886b049dab37000e7b4d9bb4af00b9f88b42,"SEXFLY / USDG 5%",uniswap-v4-robinhood,,global-dollar,SEXFLY,227823,below,single_subject:gt_fdv,1661043,0
+0x9036a9406dac1c252c364d037f489e5f0a752f54,"MOO / WETH 1%",uniswap-v3-robinhood,memory-cow-moo,weth,memory-cow-moo,31544580,below,single_subject:cg_mcap,1660750,13212599
+0xd64fbda67e1015df43fa5e49f02ca844729e5f94,"DELTA / WETH 1%",pons-dot-family,delta,weth,delta,12158300,below,single_subject:cg_mcap,1655290,79987191
+0xf212d02146a897f5f686e9d629f6a73da534324a,"LLY / USDG 0.05%",uniswap-v3-robinhood,eli-lilly-robinhood-tokenized-stock,global-dollar,eli-lilly-robinhood-tokenized-stock,2342589,below,single_subject:cg_mcap,1654223,43397001
+0xf4d0171f995d576b972aa982080eaf4da456cf9e,"WETH / USDG 0.005%",giga-v3,weth,global-dollar,,,above,both_quote,1646545,833630
+0xd4effaff1adc0e59d5adc88ffe5605a47b351474964a30e80991df23cb79cabd,"FLY / USDG 5%",uniswap-v4-robinhood,flycoin-2,global-dollar,flycoin-2,176698,below,single_subject:cg_fdv,1639062,1485418
+0x2bca43d9d8c75399e3c6ba14e9dc88f44ca8968bb4694a8be4f80bd5a550df2e,"SPY / GOOGL 0.05%",uniswap-v4-robinhood,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,alphabet-class-a-robinhood-tokenized-stock,alphabet-class-a-robinhood-tokenized-stock,5264263,below,min_cap_of_two:cg_mcap,1611775,7760239
+0x2ccff2afb4cf31c776de9bfa47a53cd859c68f55288542111aa05c993f7a5c94,"ibm / Bob",pons-v2-dex,international-business-machines-corporation-robinhood-token,,Bob,86146,below,min_cap_of_two:gt_fdv,1596671,0
+0x4e7bfa984c903f3310eec7bca7c6e390c8d75f84de439ba91e4592fedaedba83,"Fruitless / GOOGL",pons-v2-dex,,alphabet-class-a-robinhood-tokenized-stock,Fruitless,5918,below,min_cap_of_two:gt_fdv,1588855,0
+0x8674c1c5544f3c9563565b5d4bd5916701d90b3559b072acf7cef5b4fc5b8dcd,"SPY / USDG",uniswap-v4-robinhood,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,global-dollar,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,25130414,below,single_subject:cg_mcap,1578141,48372741
+0x5abf8697b055dedd160f5937686fdf4d19f89c8cf5a076ddd6145939e70182a6,"INFINITE / USDG",pons-v2-dex,,global-dollar,INFINITE,4215,below,single_subject:gt_fdv,1570727,1564424
+0xc748f4671a867db48b552f6b7650bf3255e05f80f00e3f7aad1b17ccb7898fdb,"USDG / AAPL 0.3%",uniswap-v4-robinhood,global-dollar,apple-robinhood-tokenized-stock,apple-robinhood-tokenized-stock,5290712,below,single_subject:cg_mcap,1562147,20823784
+0x1c1f6e283a72a68c15c816324363c794151cf913,"HOOD / USDG 1%",uniswap-v3-robinhood,,global-dollar,HOOD,1477356,below,single_subject:gt_fdv,1551549,25148661
+0x6104d831551bc88629ba715e2ea982e2a10d0b81b5e908112adf73a34f3f5994,"jar / GOOGL",pons-v2-dex,,alphabet-class-a-robinhood-tokenized-stock,jar,45329,below,min_cap_of_two:gt_fdv,1538323,0
+0x883e64cde1a609ac51fe38cc0170fff9a5c40ab651a091f41e081a604b88ae3f,"SHELL / WETH",uniswap-v4-robinhood,,ethereum,SHELL,233122,below,single_subject:gt_fdv,1534146,1426237
+0xf121d8d6270b111af0561edc7abb568df7e92d37,"FLYBRAIN / WETH 1%",up-v3,flybrain,weth,flybrain,17119657,below,single_subject:cg_fdv,1508480,96813
+0xdac1904d823f7d6bcaaf431ceee40c934fed321b,"NVDA / USDG 0.05%",ramses-v3-robinhood,nvidia-robinhood-tokenized-stock,global-dollar,nvidia-robinhood-tokenized-stock,19889480,below,single_subject:cg_mcap,1494713,13832500
+0x1994a3866f0499f51f19227f8dd52444d7b0a757e7b5cdca59f71e9fa871514c,"TFLY / WETH",pons-v2-dex,,ethereum,TFLY,105899,below,single_subject:gt_fdv,1479248,837077
+0x02cb4415278e0dde5fd5864045d439684a17cdc5e72e6366846118f533a8e923,"FATCOIN / USDG 3.011%",uniswap-v4-robinhood,fatcoin-2,global-dollar,fatcoin-2,4068594,below,single_subject:cg_mcap,1468171,11644869
+0xe8d3a2cb45f53cbcf3d34a5c4e24c4adb1742ae9e455daf8a70528258f12c6f9,"W2R / WETH 0.25%",uniswap-v4-robinhood,,ethereum,W2R,547,below,single_subject:gt_fdv,1464784,1256747
+0xe5923c8a8be481ec89a2ca784a2bbfa4235de6d88f92260fd66b660c4babf907,"SPY / USDG 0.05%",uniswap-v4-robinhood,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,global-dollar,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,25130414,below,single_subject:cg_mcap,1439118,73464275
+0x795a4991afc7b16c2197fad44bd1b8b62a18b25b,"RSGP / USDG 0.05%",uniswap-v3-robinhood,,global-dollar,RSGP,135345,below,single_subject:gt_fdv,1433445,1116187
+0x4dd72058679d1457903616693ec36e44f0973166c775013d4650bf8c379c51d1,"MARIO / USDG 3%",uniswap-v4-robinhood,,global-dollar,MARIO,338903,below,single_subject:gt_fdv,1412985,1663573
+0x7bacae64bbaff0b58cfade9df72480019acd1275,"共建 / WETH",uniswap-v2-robinhood,,weth,共建,17,below,single_subject:gt_fdv,1410500,0
+0xa3318d6ff46aa685b3dcee29cb09211d19a53b142fe503f8ff572258fd4c5aad,"microduck / USDG 0.78%",uniswap-v4-robinhood,microduck,global-dollar,microduck,6186278,below,single_subject:cg_mcap,1408748,62100604
+0x7bd2b09a2eb0d9b76c104874a4f39ce2af0a2cea,"Microhood / WETH",uniswap-v2-robinhood,,weth,Microhood,1473829,below,single_subject:gt_fdv,1406841,0
+0xcc2a903a8744a65258bb07fbeea553a25410f731c9fef306321d0c176a09542c,"SPY / MU 0.05%",uniswap-v4-robinhood,spdr-s-p-500-etf-trust-robinhood-tokenized-stock,micron-technology-robinhood-tokenized-stock,micron-technology-robinhood-tokenized-stock,696832,below,min_cap_of_two:cg_mcap,1395285,44549216
+0x17f34a62d4b4687d5cbd9fd81fa88cfff154fec38a7e307c8c80860bd175f7c1,"EXAMCN / WETH",pons-v2-dex,,ethereum,EXAMCN,320626,below,single_subject:gt_fdv,1393416,0
+0xf85fd6dc30fea4e8e95ff54e51d2719e07b32b7e93adac37e15c5c9286fc20f6,"Openraise / WETH",pons-v2-dex,,ethereum,Openraise,9063,below,single_subject:gt_fdv,1387417,0
+0x94c62eebf6454231b2fcd0259ede448ae3c6ad8617718cd88dab20b30cfae48a,"cbBTC / USDG 0.15%",uniswap-v4-robinhood,coinbase-wrapped-btc,global-dollar,,,above,both_quote,1381587,16266395
+0x9ad1ce8bd9aa98f7ad5e59855345a224a17f358f,"OPAI / WETH",uniswap-v2-robinhood,,weth,OPAI,1836471,below,single_subject:gt_fdv,1378024,0
+0x4230750b3c69ae6054a3f778d75adc2e9a27d70f,"MSFT / USDG 0.3%",up-v3,microsoft-robinhood-tokenized-stock,global-dollar,microsoft-robinhood-tokenized-stock,2898562,below,single_subject:cg_mcap,1360992,10677563
+0x935c1401e40a4eeec0e722f1841cc4be9d7a523cf90cdc52900f9e343304f0fe,"RSTR / WETH",pons-v2-dex,robinhood-hat-strategy,ethereum,robinhood-hat-strategy,236920,below,single_subject:cg_mcap,1339596,15437803
+0x9c19cceb8e4467d957760b372d92cffe69fe69b5,"MARIO / WETH",uniswap-v2-robinhood,,weth,MARIO,303636,below,single_subject:gt_fdv,1332203,1332203
+0xc952d5d1cb59d7c1bba147611092d1b1715dd54b68aaa60ea507ef5b3f2bd9fb,"WINNING / SGOV",pons-v2-dex,,ishares-0-3-month-treasury-bond-etf-robinhood-tokenized-stock,WINNING,5200,below,min_cap_of_two:gt_fdv,1329553,0
+0x9171c06d4b47ceed7626490f52906b702ce4222de50f5860738fc9dcc7b7aa1b,"WORM / WETH",pons-v2-dex,,ethereum,WORM,15536,below,single_subject:gt_fdv,1311191,0
+0x06e308b77bdafd691d179645296ce8c40e33c6af4a879a913efc7eedc402581c,"BUN / WETH",pons-v2-dex,bundle-cat,ethereum,bundle-cat,10180835,below,single_subject:cg_mcap,1310109,21236662
+0xf9bb10a8277b44d30d5a4338a73e1c30d8e659d5,"AAPL / USDG 0.025%",alandale-cl,apple-robinhood-tokenized-stock,global-dollar,apple-robinhood-tokenized-stock,5290712,below,single_subject:cg_mcap,1307699,943288
+0x31608601d541e868706aa557558a4d4f99c57e6dd13bd3362edcf05d00a16212,"CASHCAT / USDG",uniswap-v4-robinhood,cash-cat,global-dollar,cash-cat,177010878,above,single_subject:cg_mcap,1296217,897029
+0x04eda7a114721f279fefe9c9bbac805ff45f76591389d119eebbc91d96ab4673,"MIDORU / MSFT",pons-v2-dex,,microsoft-robinhood-tokenized-stock,MIDORU,82501,below,min_cap_of_two:gt_fdv,1284729,1163370
+0x5eac4195930d5ff8b7a34a347f2bde951c42eb730d6e26075bea3dd7c66feb40,"ROBIN / USDG",pons-v2-dex,robin-the-frog,global-dollar,robin-the-frog,8789744,below,single_subject:cg_mcap,1281183,16562710
+0xfc0b5e94babcaffad702b0dbc94fd053513e814cc76e241812db1fd6d8033b63,"Flame / WETH",pons-v2-dex,,ethereum,Flame,4038,below,single_subject:gt_fdv,1275302,0
+0x431b005650bcde540b87caa0ec06553953956b5820ae8e5ab5a3a5f122e3d721,"CME / USDG 0.9%",uniswap-v4-robinhood,commodity-market-exchange,global-dollar,commodity-market-exchange,10117713,below,single_subject:cg_fdv,1254143,0
+0x647bfd55cc873f3a4165064cf423d505d95289cd,"AI / USDG 0.01%",ramses-v3-robinhood,artificial-inu-3,global-dollar,artificial-inu-3,264751592,above,single_subject:cg_mcap,1237249,2528189
+0x1f1778596d8c1ee3e1eaf64ea83a5e77063b142fa3ef59a7c81e520c516379bc,"AI / BONER 0.9%",uniswap-v4-robinhood,artificial-inu-3,boner-coin,boner-coin,37319901,below,min_cap_of_two:cg_mcap,1013991,40538936
+0x1e49a549e9fbbc09e95f7126dce2071511868ade,"AI / WETH 0.3%",up-v3,artificial-inu-3,weth,artificial-inu-3,264751592,above,single_subject:cg_mcap,757890,12171078
+0x887c1c1e1a55ff3fd803a4544ab11253fe9c84b1b20625932091aedd344a64b5,"AI / WETH 1.004%",uniswap-v4-robinhood,artificial-inu-3,ethereum,artificial-inu-3,264751592,above,single_subject:cg_mcap,634125,5038523
+0x129b392490aac7b4320aeade8d1054c06c2ce224,"TAO / USDG 0.3%",giga-v3,bittensor,global-dollar,bittensor,2286295870,above,single_subject:cg_mcap,276693,1526259
+0x3f048149f291f459a38fe1d937a361b153cba43e,"TAO / USDG 1%",uniswap-v3-robinhood,bittensor,global-dollar,bittensor,2286295870,above,single_subject:cg_mcap,266044,6008309
+0xfe1f5a89d9586d6431bdfe907acdebfc176bd5ceadc4f3ae9e0e284a3c022b91,"SN6900 / TAO",pons-v2-dex,,bittensor,SN6900,1599350,below,min_cap_of_two:gt_fdv,195505,2626371
+0xb0779a568b09652888b18534b4f26467e1eeedde0f495d96a1805a8521032de0,"GENERAL / TAO",pons-v2-dex,,bittensor,GENERAL,128242,below,min_cap_of_two:gt_fdv,57347,0
+0x572d51a3de7c220fdd19451e4e24183b9f2ecadc,"TAO / WETH 1%",uniswap-v3-robinhood,bittensor,weth,bittensor,2286295870,above,single_subject:cg_mcap,52790,401304
+0x54a2fe75b0fbdccbc9c39364409dd1f57da0f08e192b383ba39faacdce5211ff,"TAO / TAO",pons-v2-dex,bittensor,,TAO,2713,below,min_cap_of_two:gt_fdv,40302,40267
+0x43781f7ae77d99df3a52095c0b7d162828467a6e,"CASHCAT / USDG 0.2%",giga-v3,cash-cat,global-dollar,cash-cat,177010878,above,single_subject:cg_mcap,824073,23106299
+0x4e8649be40ae67ebbcff99c291b92ee03015917b,"CASHCAT / WETH 1%",up-v3,cash-cat,weth,cash-cat,177010878,above,single_subject:cg_mcap,677513,28818020
+0x1b619a121d6c5bfd10d149e7246da3c838a66b48,"CASHCAT / WETH 0.3%",up-v3,cash-cat,weth,cash-cat,177010878,above,single_subject:cg_mcap,453439,27695934
+0x3986840e83e64c113b4ebeeed6b3223528e06ed9,"CASHCAT / USDG 0.3%",up-v3,cash-cat,global-dollar,cash-cat,177010878,above,single_subject:cg_mcap,449497,8639211
+0xf7dc0af99fce7169eb76854c0b39beb9915526894d42229946e5cb469cab50b1,"WETH / CASHCAT 2%",uniswap-v4-robinhood,ethereum,cash-cat,cash-cat,177010878,above,single_subject:cg_mcap,363198,17988721
+0x4b0c312ffbb068f6a0bea128759e35d94b94d0e1,"CASHCAT / USDG 1%",uniswap-v3-robinhood,cash-cat,global-dollar,cash-cat,177010878,above,single_subject:cg_mcap,279563,4282199
+0x56000f3980200d0f39a9f2eefd5233b2196b4445,"PONS / USDG 0.05%",giga-v3,pons,global-dollar,pons,434746446,above,single_subject:cg_mcap,1061065,3677762
+0xd95e8e2cd04c207625c6f23c974d365a5f3a91d3,"VIRTUAL / WETH",uniswap-v2-robinhood,virtual-protocol,weth,virtual-protocol,423526790,above,single_subject:cg_mcap,493509,22165363
+0x9cc8c4f6118419a27f113723f1dea646685be55f,"VIRTUAL / WETH 0.05%",uniswap-v3-robinhood,virtual-protocol,weth,virtual-protocol,423526790,above,single_subject:cg_mcap,469348,62762020
+0xa95732060867f07aa9b8ae9a4b7b8d737bc3374f1dfbb952759c5ed676e8737c,"USDG / VIRTUAL 0.3%",uniswap-v4-robinhood,global-dollar,virtual-protocol,virtual-protocol,423526790,above,single_subject:cg_mcap,323709,10130614
+0x851d1b0342d2257a4172826b68221d2366c1c6b5,"VIRTUAL / WETH 0.05%",up-v3,virtual-protocol,weth,virtual-protocol,423526790,above,single_subject:cg_mcap,322308,8863007
+0x817f16f5d8da83d1b089b082c0172af3923618da,"VEX / VIRTUAL",uniswap-v2-robinhood,projectvex,virtual-protocol,projectvex,3385949,below,min_cap_of_two:cg_mcap,240146,8531933
+0xa20b68e2e1de71f1426b546ed5514bf253215a48,"RAXOL / VIRTUAL",uniswap-v2-robinhood,raxol,virtual-protocol,raxol,1996776,below,min_cap_of_two:cg_mcap,100346,2653288
+0xad1c924013712c337e84983c8e52777635cf5e7c,"SBSECURITY / VIRTUAL",virtuals-robinhood,,virtual-protocol,SBSECURITY,23983,below,min_cap_of_two:gt_fdv,85994,0
+0x27f8f8f1b080c7349c0f3bd66fe07732fbffd427,"MERRYMEN / VIRTUAL",uniswap-v2-robinhood,merrymen-by-virtuals,virtual-protocol,merrymen-by-virtuals,300710,below,min_cap_of_two:cg_mcap,84182,1504354
+0x7a11bc7f32aea2f81e83da399c70315d9662869c,"VIRTUAL / WETH 0.3%",uniswap-v3-robinhood,virtual-protocol,weth,virtual-protocol,423526790,above,single_subject:cg_mcap,68989,15523932
+0xee8d21c0e5aaa31269867db4e3c66a90c3d5951d,"USDG / VIRTUAL",uniswap-v2-robinhood,global-dollar,virtual-protocol,virtual-protocol,423526790,above,single_subject:cg_mcap,41520,1630154
