@@ -1,26 +1,12 @@
 {
- "fetched_at": "2026-09-11T16:28:40.325Z",
- "cutoff_utc": "2026-09-11",
+ "fetched_at": "2026-09-12T00:24:05.996Z",
+ "cutoff_utc": "2026-09-12",
  "source": "https://api.llama.fi/overview/dexs/{chain}",
  "chains": {
   "ethereum": {
    "slug": "Ethereum",
    "filter": null,
    "days": {
-    "2026-07-12": {
-     "total": 658081740.16,
-     "headline": 658081740.16,
-     "by_category": {
-      "Dexs": 646144438.16,
-      "Yield": 2968906,
-      "Payments": 49847,
-      "DEX Aggregator": 7563753,
-      "NFT Marketplace": 104356,
-      "Lending": 13249,
-      "RWA": 40452,
-      "Crypto Card Issuer": 1196739
-     }
-    },
     "2026-07-13": {
      "total": 1485657242.9799998,
      "headline": 1485657242.9799998,
@@ -1045,6 +1031,24 @@
       "Crypto Card Issuer": 4574889,
       "Luck Games": 75300
      }
+    },
+    "2026-09-11": {
+     "total": 1807648240.67,
+     "headline": 1807648240.67,
+     "by_category": {
+      "Dexs": 1754369362.93,
+      "Yield": 9203502,
+      "Payments": 93173,
+      "DEX Aggregator": 32165847,
+      "NFT Marketplace": 308278,
+      "Services": 315,
+      "RWA": 3957809.5,
+      "Lending": 2831.24,
+      "Basis Trading": 37314,
+      "Crypto Card Issuer": 7408231,
+      "Luck Games": 101542,
+      "Launchpad": 35
+     }
     }
    },
    "change_30dover30d": 42.37,
@@ -1055,21 +1059,6 @@
    "slug": "Solana",
    "filter": null,
    "days": {
-    "2026-07-12": {
-     "total": 1205709920.5,
-     "headline": 1205709920.5,
-     "by_category": {
-      "Dexs": 1158060371,
-      "Payments": 158705,
-      "Yield": 1578686,
-      "Launchpad": 42543323,
-      "RWA": 3984,
-      "Physical TCG": 3316615.5,
-      "Crypto Card Issuer": 34797,
-      "Lending": 12020,
-      "Prediction Market": 1419
-     }
-    },
     "2026-07-13": {
      "total": 1762727682.69,
      "headline": 1762727682.69,
@@ -2033,6 +2022,22 @@
       "Lending": 53298,
       "Prediction Market": 361
      }
+    },
+    "2026-09-11": {
+     "total": 3264363646.0199995,
+     "headline": 3264363646.0199995,
+     "by_category": {
+      "Dexs": 3146590553.9900002,
+      "Payments": 107046,
+      "Yield": 6499,
+      "Physical TCG": 6672354,
+      "Launchpad": 110763722.03,
+      "AI Agents": 5040,
+      "RWA": 145409,
+      "Crypto Card Issuer": 19363,
+      "Lending": 53298,
+      "Prediction Market": 361
+     }
     }
    },
    "change_30dover30d": 56.42,
@@ -2043,24 +2048,6 @@
    "slug": "Base",
    "filter": null,
    "days": {
-    "2026-07-12": {
-     "total": 442903322.00000006,
-     "headline": 442903322.00000006,
-     "by_category": {
-      "Dexs": 435931149.61000013,
-      "Yield": 3781.35,
-      "Prediction Market": 4150904.93,
-      "Payments": 777379,
-      "DEX Aggregator": 59389,
-      "SoFi": 377.11,
-      "Algo-Stables": 260,
-      "Launchpad": 9370,
-      "Physical TCG": 241452,
-      "Crypto Card Issuer": 1727711,
-      "Gaming": 1494,
-      "NFT Marketplace": 54
-     }
-    },
     "2026-07-13": {
      "total": 1095450523.98,
      "headline": 1095450523.98,
@@ -3205,6 +3192,26 @@
       "Gaming": 1048,
       "NFT Marketplace": 2004
      }
+    },
+    "2026-09-11": {
+     "total": 1231328222.86,
+     "headline": 1231328222.86,
+     "by_category": {
+      "Dexs": 1227189746.86,
+      "Yield": 14666,
+      "Prediction Market": 899349,
+      "Payments": 528219,
+      "SoFi": 8741,
+      "RWA": 238082,
+      "Algo-Stables": 1284,
+      "Launchpad": 14212,
+      "Physical TCG": 143927,
+      "Crypto Card Issuer": 2038913,
+      "Gaming": 1408,
+      "NFT Marketplace": 2477,
+      "DEX Aggregator": 243497,
+      "AI Agents": 3701
+     }
     }
    },
    "change_30dover30d": 36.4,
@@ -3215,23 +3222,6 @@
    "slug": "BSC",
    "filter": null,
    "days": {
-    "2026-07-12": {
-     "total": 1032094248.95,
-     "headline": 1032094248.95,
-     "by_category": {
-      "Dexs": 999211523.22,
-      "Yield": 212575,
-      "Payments": 108602.04,
-      "DEX Aggregator": 262681,
-      "Launchpad": 1730400,
-      "Prediction Market": 29200183.69,
-      "Bridge": 440730,
-      "RWA": 848486,
-      "Luck Games": 3361,
-      "Crypto Card Issuer": 14182,
-      "Physical TCG": 61525
-     }
-    },
     "2026-07-13": {
      "total": 879278710.81,
      "headline": 879278710.81,
@@ -4260,6 +4250,23 @@
       "Crypto Card Issuer": 618907,
       "Physical TCG": 157687
      }
+    },
+    "2026-09-11": {
+     "total": 1243214237.8,
+     "headline": 1243214237.8,
+     "by_category": {
+      "Dexs": 1179876546.6799998,
+      "Yield": 27867,
+      "Payments": 132066.12,
+      "DEX Aggregator": 4791814,
+      "Launchpad": 21614992,
+      "Prediction Market": 20217717,
+      "Bridge": 1172921,
+      "Luck Games": 6329,
+      "Crypto Card Issuer": 552164,
+      "Physical TCG": 69815,
+      "RWA": 14752006
+     }
     }
    },
    "change_30dover30d": 29.67,
@@ -4270,20 +4277,6 @@
    "slug": "Arbitrum",
    "filter": null,
    "days": {
-    "2026-07-12": {
-     "total": 92163540.34,
-     "headline": 92163540.34,
-     "by_category": {
-      "Dexs": 91508675.15,
-      "Yield": 9963,
-      "Prediction Market": 28442,
-      "Payments": 7264.19,
-      "Lending": 2767,
-      "Derivatives": 9366,
-      "Crypto Card Issuer": 596999,
-      "Launchpad": 64
-     }
-    },
     "2026-07-13": {
      "total": 205603381.07,
      "headline": 205603381.07,
@@ -5062,6 +5055,20 @@
       "Lending": 1.56,
       "Crypto Card Issuer": 147475
      }
+    },
+    "2026-09-11": {
+     "total": 298082987.34000003,
+     "headline": 298082987.34000003,
+     "by_category": {
+      "Dexs": 296716662.34000003,
+      "Yield": 437658,
+      "Prediction Market": 125380,
+      "Payments": 9520,
+      "RWA": 276311,
+      "Lending": 3554,
+      "Crypto Card Issuer": 467983,
+      "DEX Aggregator": 45919
+     }
     }
    },
    "change_30dover30d": 26.67,
@@ -5079,19 +5086,6 @@
     ]
    },
    "days": {
-    "2026-07-12": {
-     "total": 64062294.75,
-     "headline": 139074196.75,
-     "by_category": {
-      "Dexs": 116856240.74999999,
-      "Yield": 110297,
-      "Bridge": 22105524,
-      "Launchpad": 2135
-     },
-     "extra": {
-      "hypercore_spot_orderbook": 52793946
-     }
-    },
     "2026-07-13": {
      "total": 95095918.31,
      "headline": 257625305.30999997,
@@ -5920,10 +5914,10 @@
      }
     },
     "2026-09-10": {
-     "total": 130564260.15999998,
-     "headline": 368344584.98999995,
+     "total": 130720872.15999998,
+     "headline": 368501196.98999995,
      "by_category": {
-      "Dexs": 310442375.15999997,
+      "Dexs": 310598987.15999997,
       "Yield": 406668,
       "Payments": 376,
       "Bridge": 57464897,
@@ -5933,34 +5927,37 @@
      "extra": {
       "hypercore_spot_orderbook": 179878115
      }
+    },
+    "2026-09-11": {
+     "total": 143546240.65,
+     "headline": 381406368.47999996,
+     "by_category": {
+      "Dexs": 323424355.65,
+      "Yield": 505046,
+      "Launchpad": 11685,
+      "Payments": 376,
+      "Bridge": 57464897,
+      "Luck Games": 8.83
+     },
+     "extra": {
+      "hypercore_spot_orderbook": 179878115
+     }
     }
    },
    "change_30dover30d": 116.48,
-   "total30d": 11428758420.539993,
-   "total24h": 368344584.98999995
+   "total30d": 11428915032.539993,
+   "total24h": 368501196.98999995
   },
   "robinhood": {
    "slug": "Robinhood Chain",
    "filter": null,
    "days": {
-    "2026-07-12": {
-     "total": 811706394.55,
-     "headline": 811706394.55,
-     "by_category": {
-      "DEX Aggregator": 84684,
-      "Dexs": 809225767.77,
-      "Launchpad": 2290327.78,
-      "Prediction Market": 6645,
-      "SoFi": 63256,
-      "Gamified Mining": 35714
-     }
-    },
     "2026-07-13": {
-     "total": 820448247.62,
-     "headline": 820448247.62,
+     "total": 820247348.62,
+     "headline": 820247348.62,
      "by_category": {
       "DEX Aggregator": 90732,
-      "Dexs": 816221343.62,
+      "Dexs": 816020444.62,
       "Launchpad": 4002348,
       "Prediction Market": 4348,
       "SoFi": 89665,
@@ -5968,10 +5965,10 @@
      }
     },
     "2026-07-14": {
-     "total": 821400213.77,
-     "headline": 821400213.77,
+     "total": 820906129.77,
+     "headline": 820906129.77,
      "by_category": {
-      "Dexs": 811924036.77,
+      "Dexs": 811429952.77,
       "DEX Aggregator": 564673,
       "Launchpad": 8863036,
       "Prediction Market": 10801,
@@ -5980,10 +5977,10 @@
      }
     },
     "2026-07-15": {
-     "total": 806062574.29,
-     "headline": 806062574.29,
+     "total": 804582838.29,
+     "headline": 804582838.29,
      "by_category": {
-      "Dexs": 790300934.51,
+      "Dexs": 788821198.51,
       "DEX Aggregator": 488840,
       "Launchpad": 7144863,
       "AI Agents": 7308669,
@@ -5993,10 +5990,10 @@
      }
     },
     "2026-07-16": {
-     "total": 610480495.14,
-     "headline": 610480495.14,
+     "total": 609734903.14,
+     "headline": 609734903.14,
      "by_category": {
-      "Dexs": 599263478.14,
+      "Dexs": 598517886.14,
       "DEX Aggregator": 103485,
       "Launchpad": 3161757,
       "AI Agents": 6619425,
@@ -6006,10 +6003,10 @@
      }
     },
     "2026-07-17": {
-     "total": 569756846.13,
-     "headline": 569756846.13,
+     "total": 568408072.13,
+     "headline": 568408072.13,
      "by_category": {
-      "Dexs": 558162335.13,
+      "Dexs": 556813561.13,
       "DEX Aggregator": 392412,
       "Launchpad": 4014282,
       "AI Agents": 5207115,
@@ -6019,10 +6016,10 @@
      }
     },
     "2026-07-18": {
-     "total": 536376613.15,
-     "headline": 536376613.15,
+     "total": 535884597.15,
+     "headline": 535884597.15,
      "by_category": {
-      "Dexs": 525710303.15,
+      "Dexs": 525218287.15,
       "DEX Aggregator": 353885,
       "Launchpad": 3116756,
       "AI Agents": 3391600,
@@ -6032,10 +6029,10 @@
      }
     },
     "2026-07-19": {
-     "total": 480577519.55,
-     "headline": 480577519.55,
+     "total": 480360385.55,
+     "headline": 480360385.55,
      "by_category": {
-      "Dexs": 469994640.54,
+      "Dexs": 469777506.54,
       "DEX Aggregator": 610086,
       "Launchpad": 1561734.01,
       "AI Agents": 2160807,
@@ -6045,10 +6042,10 @@
      }
     },
     "2026-07-20": {
-     "total": 563608012.8399999,
-     "headline": 563608012.8399999,
+     "total": 562551843.8399999,
+     "headline": 562551843.8399999,
      "by_category": {
-      "Dexs": 551867769.65,
+      "Dexs": 550811600.65,
       "DEX Aggregator": 1673546,
       "Launchpad": 1908853.1900000002,
       "AI Agents": 4383659,
@@ -6058,10 +6055,10 @@
      }
     },
     "2026-07-21": {
-     "total": 640301998.7599999,
-     "headline": 640301998.7599999,
+     "total": 639594424.7599999,
+     "headline": 639594424.7599999,
      "by_category": {
-      "Dexs": 628932129.8599999,
+      "Dexs": 628224555.8599999,
       "DEX Aggregator": 2332219,
       "Launchpad": 2511680,
       "AI Agents": 4302466,
@@ -6072,10 +6069,10 @@
      }
     },
     "2026-07-22": {
-     "total": 732711985.9399999,
-     "headline": 732711985.9399999,
+     "total": 731903672.9399999,
+     "headline": 731903672.9399999,
      "by_category": {
-      "Dexs": 726425096.9399999,
+      "Dexs": 725616783.9399999,
       "DEX Aggregator": 1008069,
       "Launchpad": 1577380,
       "AI Agents": 2870705,
@@ -6085,10 +6082,10 @@
      }
     },
     "2026-07-23": {
-     "total": 681425440.37,
-     "headline": 681425440.37,
+     "total": 680492010.37,
+     "headline": 680492010.37,
      "by_category": {
-      "Dexs": 676519343.98,
+      "Dexs": 675585913.98,
       "DEX Aggregator": 1232120,
       "Launchpad": 1009113.39,
       "AI Agents": 1615991,
@@ -6098,10 +6095,10 @@
      }
     },
     "2026-07-24": {
-     "total": 564141532.15,
-     "headline": 564141532.15,
+     "total": 562528620.15,
+     "headline": 562528620.15,
      "by_category": {
-      "Dexs": 559048184.15,
+      "Dexs": 557435272.15,
       "DEX Aggregator": 883678,
       "Launchpad": 1864385,
       "AI Agents": 1047007,
@@ -6111,10 +6108,10 @@
      }
     },
     "2026-07-25": {
-     "total": 338224584.86,
-     "headline": 338224584.86,
+     "total": 338075357.86,
+     "headline": 338075357.86,
      "by_category": {
-      "Dexs": 335723491.86,
+      "Dexs": 335574264.86,
       "DEX Aggregator": 390267,
       "Launchpad": 620740,
       "AI Agents": 701308,
@@ -6124,10 +6121,10 @@
      }
     },
     "2026-07-26": {
-     "total": 419385749.55,
-     "headline": 419385749.55,
+     "total": 419061292.55,
+     "headline": 419061292.55,
      "by_category": {
-      "Dexs": 417791400.55,
+      "Dexs": 417466943.55,
       "DEX Aggregator": 101139,
       "Launchpad": 291301,
       "AI Agents": 643378,
@@ -6137,10 +6134,10 @@
      }
     },
     "2026-07-27": {
-     "total": 625924322,
-     "headline": 625924322,
+     "total": 625120501,
+     "headline": 625120501,
      "by_category": {
-      "Dexs": 622587439.4,
+      "Dexs": 621783618.4,
       "DEX Aggregator": 1306118,
       "Launchpad": 426281.6,
       "AI Agents": 1128757,
@@ -6150,10 +6147,10 @@
      }
     },
     "2026-07-28": {
-     "total": 497079865.94,
-     "headline": 497079865.94,
+     "total": 495559349.94,
+     "headline": 495559349.94,
      "by_category": {
-      "Dexs": 494394986.14,
+      "Dexs": 492874470.14,
       "DEX Aggregator": 988342,
       "Launchpad": 614335.8,
       "AI Agents": 519898,
@@ -6164,10 +6161,10 @@
      }
     },
     "2026-07-29": {
-     "total": 593531850.29,
-     "headline": 593531850.29,
+     "total": 591476746.29,
+     "headline": 591476746.29,
      "by_category": {
-      "Dexs": 588889968.36,
+      "Dexs": 586834864.36,
       "DEX Aggregator": 1439137,
       "Launchpad": 1059115.63,
       "AI Agents": 1670865,
@@ -6178,10 +6175,10 @@
      }
     },
     "2026-07-30": {
-     "total": 441890812.01,
-     "headline": 441890812.01,
+     "total": 440985944.01,
+     "headline": 440985944.01,
      "by_category": {
-      "Dexs": 438363059.09,
+      "Dexs": 437458191.09,
       "DEX Aggregator": 1507486,
       "Launchpad": 898306.92,
       "AI Agents": 663111,
@@ -6191,10 +6188,10 @@
      }
     },
     "2026-07-31": {
-     "total": 362343408.89000005,
-     "headline": 362343408.89000005,
+     "total": 361589499.89000005,
+     "headline": 361589499.89000005,
      "by_category": {
-      "Dexs": 360640863.77000004,
+      "Dexs": 359886954.77000004,
       "DEX Aggregator": 737103,
       "Launchpad": 290124.12,
       "AI Agents": 397756,
@@ -6205,10 +6202,10 @@
      }
     },
     "2026-08-01": {
-     "total": 241041711.82000002,
-     "headline": 241041711.82000002,
+     "total": 240799616.82000002,
+     "headline": 240799616.82000002,
      "by_category": {
-      "Dexs": 240131117.08,
+      "Dexs": 239889022.08,
       "DEX Aggregator": 448421,
       "Launchpad": 105863.73999999999,
       "AI Agents": 172392,
@@ -6218,10 +6215,10 @@
      }
     },
     "2026-08-02": {
-     "total": 254259946.16,
-     "headline": 254259946.16,
+     "total": 253961481.16,
+     "headline": 253961481.16,
      "by_category": {
-      "Dexs": 253151136.85,
+      "Dexs": 252852671.85,
       "DEX Aggregator": 339758,
       "Launchpad": 376443,
       "AI Agents": 171683,
@@ -6231,10 +6228,10 @@
      }
     },
     "2026-08-03": {
-     "total": 353429214.37,
-     "headline": 353429214.37,
+     "total": 352947018.37,
+     "headline": 352947018.37,
      "by_category": {
-      "Dexs": 351648045.11,
+      "Dexs": 351165849.11,
       "DEX Aggregator": 735785,
       "Launchpad": 438269.26,
       "AI Agents": 443698,
@@ -6245,10 +6242,10 @@
      }
     },
     "2026-08-04": {
-     "total": 322991038.56,
-     "headline": 322991038.56,
+     "total": 322367261.56,
+     "headline": 322367261.56,
      "by_category": {
-      "Dexs": 320410547.77,
+      "Dexs": 319786770.77,
       "DEX Aggregator": 1107114,
       "Launchpad": 585353.7899999999,
       "AI Agents": 712495,
@@ -6259,10 +6256,10 @@
      }
     },
     "2026-08-05": {
-     "total": 520984219.32,
-     "headline": 520984219.32,
+     "total": 520439388.32,
+     "headline": 520439388.32,
      "by_category": {
-      "Dexs": 517682919.24,
+      "Dexs": 517138088.24,
       "DEX Aggregator": 658502,
       "Launchpad": 1479407.61,
       "AI Agents": 909479,
@@ -6273,10 +6270,10 @@
      }
     },
     "2026-08-06": {
-     "total": 583048215.1200001,
-     "headline": 583048215.1200001,
+     "total": 582714544.1200001,
+     "headline": 582714544.1200001,
      "by_category": {
-      "Dexs": 581220045.8000001,
+      "Dexs": 580886374.8000001,
       "DEX Aggregator": 469662,
       "Launchpad": 1020344.66,
       "AI Agents": 133145,
@@ -6287,10 +6284,10 @@
      }
     },
     "2026-08-07": {
-     "total": 408348995.71999997,
-     "headline": 408348995.71999997,
+     "total": 406779143.71999997,
+     "headline": 406779143.71999997,
      "by_category": {
-      "Dexs": 405339089.69,
+      "Dexs": 403769237.69,
       "DEX Aggregator": 755356,
       "Launchpad": 2018423.0299999998,
       "AI Agents": 72870,
@@ -6302,10 +6299,10 @@
      }
     },
     "2026-08-08": {
-     "total": 298430827.37,
-     "headline": 298430827.37,
+     "total": 298259001.37,
+     "headline": 298259001.37,
      "by_category": {
-      "Dexs": 295641704.25,
+      "Dexs": 295469878.25,
       "DEX Aggregator": 503059,
       "Payments": 4277,
       "Launchpad": 2021803.6,
@@ -6318,10 +6315,10 @@
      }
     },
     "2026-08-09": {
-     "total": 468082782.24,
-     "headline": 468082782.24,
+     "total": 467798692.24,
+     "headline": 467798692.24,
      "by_category": {
-      "Dexs": 464808536.64,
+      "Dexs": 464524446.64,
       "DEX Aggregator": 563053,
       "Payments": 441795,
       "Launchpad": 1919513.6,
@@ -6333,10 +6330,10 @@
      }
     },
     "2026-08-10": {
-     "total": 639724964.2,
-     "headline": 639724964.2,
+     "total": 638055614.2,
+     "headline": 638055614.2,
      "by_category": {
-      "Dexs": 635748286.86,
+      "Dexs": 634078936.86,
       "DEX Aggregator": 583087,
       "Payments": 5508,
       "Launchpad": 2636150.13,
@@ -6348,10 +6345,10 @@
      }
     },
     "2026-08-11": {
-     "total": 482690027.59999996,
-     "headline": 482690027.59999996,
+     "total": 481468806.59999996,
+     "headline": 481468806.59999996,
      "by_category": {
-      "Dexs": 479241189.82,
+      "Dexs": 478019968.82,
       "DEX Aggregator": 585618,
       "Payments": 2494,
       "Launchpad": 2524634.82,
@@ -6364,10 +6361,10 @@
      }
     },
     "2026-08-12": {
-     "total": 507722240.03000003,
-     "headline": 507722240.03000003,
+     "total": 507016125.03000003,
+     "headline": 507016125.03000003,
      "by_category": {
-      "Dexs": 503943835.19,
+      "Dexs": 503237720.19,
       "DEX Aggregator": 769109,
       "Payments": 4325,
       "Launchpad": 2556343.84,
@@ -6379,10 +6376,10 @@
      }
     },
     "2026-08-13": {
-     "total": 453694816.48999995,
-     "headline": 453694816.48999995,
+     "total": 452807662.48999995,
+     "headline": 452807662.48999995,
      "by_category": {
-      "Dexs": 447640674.19,
+      "Dexs": 446753520.19,
       "DEX Aggregator": 609763,
       "Payments": 6024,
       "Launchpad": 5079575.73,
@@ -6394,10 +6391,10 @@
      }
     },
     "2026-08-14": {
-     "total": 478612926.34999996,
-     "headline": 478612926.34999996,
+     "total": 477964228.34999996,
+     "headline": 477964228.34999996,
      "by_category": {
-      "Dexs": 469131565.37,
+      "Dexs": 468482867.37,
       "DEX Aggregator": 790298,
       "Payments": 2661,
       "Launchpad": 8171618.77,
@@ -6410,10 +6407,10 @@
      }
     },
     "2026-08-15": {
-     "total": 306629032.9199999,
-     "headline": 306629032.9199999,
+     "total": 306287204.9199999,
+     "headline": 306287204.9199999,
      "by_category": {
-      "Dexs": 301998783.7199999,
+      "Dexs": 301656955.7199999,
       "DEX Aggregator": 488168,
       "Payments": 341,
       "Launchpad": 3894621.2,
@@ -6425,10 +6422,10 @@
      }
     },
     "2026-08-16": {
-     "total": 303274728.84,
-     "headline": 303274728.84,
+     "total": 302983239.84,
+     "headline": 302983239.84,
      "by_category": {
-      "Dexs": 300363761.35,
+      "Dexs": 300072272.35,
       "DEX Aggregator": 149619,
       "Payments": 521,
       "Launchpad": 2544205.41,
@@ -6440,10 +6437,10 @@
      }
     },
     "2026-08-17": {
-     "total": 433770648.86999995,
-     "headline": 433770648.86999995,
+     "total": 433159170.86999995,
+     "headline": 433159170.86999995,
      "by_category": {
-      "Dexs": 427642729.31,
+      "Dexs": 427031251.31,
       "DEX Aggregator": 1344364,
       "Payments": 2362,
       "Launchpad": 4558315.24,
@@ -6455,10 +6452,10 @@
      }
     },
     "2026-08-18": {
-     "total": 404042435.91,
-     "headline": 404042435.91,
+     "total": 403163564.91,
+     "headline": 403163564.91,
      "by_category": {
-      "Dexs": 396247648.52000004,
+      "Dexs": 395368777.52000004,
       "DEX Aggregator": 863093,
       "Payments": 358,
       "Launchpad": 6244005.21,
@@ -6475,10 +6472,10 @@
      "missing_est": 6352200.0200000005
     },
     "2026-08-19": {
-     "total": 510272773.25,
-     "headline": 510272773.25,
+     "total": 509204034.25,
+     "headline": 509204034.25,
      "by_category": {
-      "Dexs": 504871637.07,
+      "Dexs": 503802898.07,
       "DEX Aggregator": 176222,
       "Payments": 2914,
       "Launchpad": 4838892.18,
@@ -6490,10 +6487,10 @@
      }
     },
     "2026-08-20": {
-     "total": 482233999.63000005,
-     "headline": 482233999.63000005,
+     "total": 480589874.63000005,
+     "headline": 480589874.63000005,
      "by_category": {
-      "Dexs": 478086306.69,
+      "Dexs": 476442181.69,
       "DEX Aggregator": 335314,
       "Payments": 6939,
       "Launchpad": 3454296.84,
@@ -6505,10 +6502,10 @@
      }
     },
     "2026-08-21": {
-     "total": 644565373.72,
-     "headline": 644565373.72,
+     "total": 643655807.72,
+     "headline": 643655807.72,
      "by_category": {
-      "Dexs": 639842198.27,
+      "Dexs": 638932632.27,
       "DEX Aggregator": 621111,
       "Payments": 12422,
       "Launchpad": 3805502.99,
@@ -6520,10 +6517,10 @@
      }
     },
     "2026-08-22": {
-     "total": 494167138.00000006,
-     "headline": 494167138.00000006,
+     "total": 493803394.00000006,
+     "headline": 493803394.00000006,
      "by_category": {
-      "Dexs": 490183990.89000005,
+      "Dexs": 489820246.89000005,
       "DEX Aggregator": 470286,
       "Payments": 62777,
       "Launchpad": 3191048.11,
@@ -6535,10 +6532,10 @@
      }
     },
     "2026-08-23": {
-     "total": 495225756.46999997,
-     "headline": 495225756.46999997,
+     "total": 494885640.46999997,
+     "headline": 494885640.46999997,
      "by_category": {
-      "Dexs": 491713799.03,
+      "Dexs": 491373683.03,
       "DEX Aggregator": 609359,
       "Payments": 10860,
       "Launchpad": 2678792.57,
@@ -6550,10 +6547,10 @@
      }
     },
     "2026-08-24": {
-     "total": 644774404.1700001,
-     "headline": 644774404.1700001,
+     "total": 643851525.1700001,
+     "headline": 643851525.1700001,
      "by_category": {
-      "Dexs": 636560755.0500001,
+      "Dexs": 635637876.0500001,
       "DEX Aggregator": 1606104,
       "Payments": 11608,
       "Launchpad": 6338410.12,
@@ -6565,10 +6562,10 @@
      }
     },
     "2026-08-25": {
-     "total": 723047875.14,
-     "headline": 723047875.14,
+     "total": 721491731.14,
+     "headline": 721491731.14,
      "by_category": {
-      "Dexs": 708030535.16,
+      "Dexs": 706474391.16,
       "DEX Aggregator": 1012572,
       "Payments": 5022,
       "Launchpad": 13488302.98,
@@ -6579,10 +6576,10 @@
      }
     },
     "2026-08-26": {
-     "total": 825764962.37,
-     "headline": 825764962.37,
+     "total": 824333478.37,
+     "headline": 824333478.37,
      "by_category": {
-      "Dexs": 798623740.5,
+      "Dexs": 797192256.5,
       "DEX Aggregator": 6346045,
       "Payments": 21195,
       "Launchpad": 20300334.23,
@@ -6594,10 +6591,10 @@
      }
     },
     "2026-08-27": {
-     "total": 850680847.0599998,
-     "headline": 850680847.0599998,
+     "total": 848740333.0599998,
+     "headline": 848740333.0599998,
      "by_category": {
-      "Dexs": 814895898.0599998,
+      "Dexs": 812955384.0599998,
       "DEX Aggregator": 6330425,
       "Payments": 24633,
       "Launchpad": 28989352,
@@ -6608,10 +6605,10 @@
      }
     },
     "2026-08-28": {
-     "total": 922221710.2800001,
-     "headline": 922221710.2800001,
+     "total": 920862628.2800001,
+     "headline": 920862628.2800001,
      "by_category": {
-      "Dexs": 892285864.58,
+      "Dexs": 890926782.58,
       "DEX Aggregator": 4100146,
       "Payments": 23459,
       "Launchpad": 25467476.7,
@@ -6623,10 +6620,10 @@
      }
     },
     "2026-08-29": {
-     "total": 1033801735.89,
-     "headline": 1033801735.89,
+     "total": 1033398062.89,
+     "headline": 1033398062.89,
      "by_category": {
-      "Dexs": 975271667.89,
+      "Dexs": 974867994.89,
       "DEX Aggregator": 1965751,
       "Payments": 27377,
       "Launchpad": 56140340,
@@ -6637,10 +6634,10 @@
      }
     },
     "2026-08-30": {
-     "total": 1402350235.33,
-     "headline": 1402350235.33,
+     "total": 1401646865.33,
+     "headline": 1401646865.33,
      "by_category": {
-      "Dexs": 1314013046.74,
+      "Dexs": 1313309676.74,
       "DEX Aggregator": 1742306,
       "Payments": 15273,
       "Launchpad": 86053888.59,
@@ -6651,10 +6648,10 @@
      }
     },
     "2026-08-31": {
-     "total": 1489744685.02,
-     "headline": 1489744685.02,
+     "total": 1486709453.02,
+     "headline": 1486709453.02,
      "by_category": {
-      "Dexs": 1400171043.77,
+      "Dexs": 1397135811.77,
       "DEX Aggregator": 7296659,
       "Payments": 19893,
       "Launchpad": 81497678.25,
@@ -6665,10 +6662,10 @@
      }
     },
     "2026-09-01": {
-     "total": 1669324944.9499998,
-     "headline": 1669324944.9499998,
+     "total": 1666018678.9499998,
+     "headline": 1666018678.9499998,
      "by_category": {
-      "Dexs": 1563019175.31,
+      "Dexs": 1559712909.31,
       "DEX Aggregator": 10673710,
       "Payments": 3028,
       "Launchpad": 94510904.29,
@@ -6680,10 +6677,10 @@
      }
     },
     "2026-09-02": {
-     "total": 1553219789.19,
-     "headline": 1553219789.19,
+     "total": 1550109328.19,
+     "headline": 1550109328.19,
      "by_category": {
-      "Dexs": 1409700726.8300002,
+      "Dexs": 1406590265.8300002,
       "DEX Aggregator": 20667315,
       "Payments": 120430,
       "Launchpad": 121192179.36,
@@ -6694,10 +6691,10 @@
      }
     },
     "2026-09-03": {
-     "total": 1686156220.8500001,
-     "headline": 1686156220.8500001,
+     "total": 1683517971.8500001,
+     "headline": 1683517971.8500001,
      "by_category": {
-      "Dexs": 1547961815.19,
+      "Dexs": 1545323566.19,
       "DEX Aggregator": 8439610,
       "Payments": 2863,
       "Launchpad": 128718528.49,
@@ -6708,10 +6705,10 @@
      }
     },
     "2026-09-04": {
-     "total": 1889556021.6899998,
-     "headline": 1889556021.6899998,
+     "total": 1888393744.6899998,
+     "headline": 1888393744.6899998,
      "by_category": {
-      "Dexs": 1722908622.57,
+      "Dexs": 1721746345.57,
       "DEX Aggregator": 11725938,
       "Payments": 4167,
       "Launchpad": 154084769.12,
@@ -6727,10 +6724,10 @@
      "missing_est": 367820677.85714287
     },
     "2026-09-05": {
-     "total": 1612628723.98,
-     "headline": 1612628723.98,
+     "total": 1612293306.98,
+     "headline": 1612293306.98,
      "by_category": {
-      "Dexs": 1449614104.1100001,
+      "Dexs": 1449278687.1100001,
       "DEX Aggregator": 987991,
       "Payments": 27266,
       "Launchpad": 161517298.15,
@@ -6741,10 +6738,10 @@
      }
     },
     "2026-09-06": {
-     "total": 1509686422.49,
-     "headline": 1509686422.49,
+     "total": 1509506639.49,
+     "headline": 1509506639.49,
      "by_category": {
-      "Dexs": 1333715123.96,
+      "Dexs": 1333535340.96,
       "DEX Aggregator": 1386193,
       "Payments": 1358,
       "Launchpad": 174038459.45,
@@ -6755,10 +6752,10 @@
      }
     },
     "2026-09-07": {
-     "total": 1511961088.4,
-     "headline": 1511961088.4,
+     "total": 1511682023.4,
+     "headline": 1511682023.4,
      "by_category": {
-      "Dexs": 1363908674.7900002,
+      "Dexs": 1363629609.7900002,
       "Yield": 120788,
       "DEX Aggregator": 2702613,
       "Payments": 7027,
@@ -6770,10 +6767,10 @@
      }
     },
     "2026-09-08": {
-     "total": 2062159568.4600003,
-     "headline": 2062159568.4600003,
+     "total": 2060927269.4600003,
+     "headline": 2060927269.4600003,
      "by_category": {
-      "Dexs": 1919280406.8300002,
+      "Dexs": 1918048107.8300002,
       "Yield": 171224,
       "DEX Aggregator": 14890325,
       "Payments": 1215,
@@ -6785,10 +6782,10 @@
      }
     },
     "2026-09-09": {
-     "total": 1889950214.06,
-     "headline": 1889950214.06,
+     "total": 1889576280.06,
+     "headline": 1889576280.06,
      "by_category": {
-      "Dexs": 1782180303.51,
+      "Dexs": 1781806369.51,
       "Yield": 23505,
       "DEX Aggregator": 9741460,
       "Payments": 35470,
@@ -6800,10 +6797,10 @@
      }
     },
     "2026-09-10": {
-     "total": 1866535057.1499999,
-     "headline": 1866535057.1499999,
+     "total": 1865991417.1499999,
+     "headline": 1865991417.1499999,
      "by_category": {
-      "Dexs": 1767628664.35,
+      "Dexs": 1767085024.35,
       "Yield": 142397,
       "DEX Aggregator": 11545235,
       "Payments": 14288,
@@ -6818,11 +6815,26 @@
       "Uniswap V2"
      ],
      "missing_est": 45917973.85714286
+    },
+    "2026-09-11": {
+     "total": 2750376454.1900005,
+     "headline": 2750376454.1900005,
+     "by_category": {
+      "Dexs": 2637637290.96,
+      "Yield": 94671,
+      "Payments": 5112,
+      "Launchpad": 100575210.94,
+      "Prediction Market": 8879,
+      "Gamified Mining": 496967,
+      "SoFi": 102.29,
+      "DEX Aggregator": 11545235,
+      "AI Agents": 12986
+     }
     }
    },
-   "change_30dover30d": 95.54,
-   "total30d": 30657776376.96002,
-   "total24h": 1917490214.1499999
+   "change_30dover30d": 95.63,
+   "total30d": 30624570684.96002,
+   "total24h": 1916946574.1499999
   }
  }
 }

@@ -1,251 +1,251 @@
 pool,name,dex,base_id,quote_id,subject_id,subject_cap,bucket,reason,h24,vol_30d
-0x5133c2b49051d4095096438b6669fc22c590d73d,"LAPTOP / USDT",pancakeswap_v2,,binance-bridged-usdt-bnb-smart-chain,LAPTOP,0,below,min_cap_of_two:gt_fdv,292826663,248791873
-0x36f0e68ef7a97744389b9b5c859566629ba7c3f3899f0cc630ca68d82b6f488f,"DEBIT / USDT 0.007%",pancakeswap-infinity-clmm,teller,binance-bridged-usdt-bnb-smart-chain,teller,33940274,below,min_cap_of_two:cg_mcap,159368147,2921857659
-0x9485ff32b6b4444c21d5abe4d9a2283d127075a2,"quq / USDT 0.01%",pancakeswap-v3-bsc,,binance-bridged-usdt-bnb-smart-chain,quq,1781933,below,min_cap_of_two:gt_mcap,156626866,5384919351
-0xaa30569675c17a83b34f0e908d3b2a387fd2b1c5a16660e4dfdcb38e5400181d,"QQQB / USDC",uniswap-v4-bsc,invesco-qqq-trust-bstocks-tokenized-stock,binance-bridged-usdc-bnb-smart-chain,invesco-qqq-trust-bstocks-tokenized-stock,1332243,below,min_cap_of_two:cg_mcap,135684894,0
-0xf43fdb854021ddeb41e06ac1d6e5df475197038ba5d3cba147f469a56870cd1b,"KII / USDT 0.007%",pancakeswap-infinity-clmm,kiichain,binance-bridged-usdt-bnb-smart-chain,kiichain,26146114,below,min_cap_of_two:cg_mcap,134817940,1785144107
-0x172fcd41e0913e95784454622d1c3724f546f849,"USDT / WBNB 0.01%",pancakeswap-v3-bsc,binance-bridged-usdt-bnb-smart-chain,wbnb,binance-bridged-usdt-bnb-smart-chain,183405509835,above,single_subject:cg_mcap,133884616,3982776062
-0x9ad24955c91c2c9cabcf007335375f8fd91d0494,"FLYBRAIN / USDT",pancakeswap_v2,,binance-bridged-usdt-bnb-smart-chain,FLYBRAIN,,unknown,gt_fdv_only_above_threshold,85307512,0
-0xf2688fb5b81049dfb7703ada5e770543770612c4,"USDC / WBNB 0.01%",pancakeswap-v3-bsc,binance-bridged-usdc-bnb-smart-chain,wbnb,binance-bridged-usdc-bnb-smart-chain,74202847276,above,single_subject:cg_mcap,49633921,884757223
+0x5133c2b49051d4095096438b6669fc22c590d73d,"LAPTOP / USDT",pancakeswap_v2,,binance-bridged-usdt-bnb-smart-chain,LAPTOP,0,below,min_cap_of_two:gt_fdv,292826663,294428200
+0x36f0e68ef7a97744389b9b5c859566629ba7c3f3899f0cc630ca68d82b6f488f,"DEBIT / USDT 0.007%",pancakeswap-infinity-clmm,teller,binance-bridged-usdt-bnb-smart-chain,teller,34108690,below,min_cap_of_two:cg_mcap,159368147,3037127576
+0x9485ff32b6b4444c21d5abe4d9a2283d127075a2,"quq / USDT 0.01%",pancakeswap-v3-bsc,,binance-bridged-usdt-bnb-smart-chain,quq,1781933,below,min_cap_of_two:gt_mcap,156626866,5355026577
+0xaa30569675c17a83b34f0e908d3b2a387fd2b1c5a16660e4dfdcb38e5400181d,"QQQB / USDC",uniswap-v4-bsc,invesco-qqq-trust-bstocks-tokenized-stock,binance-bridged-usdc-bnb-smart-chain,invesco-qqq-trust-bstocks-tokenized-stock,1331558,below,min_cap_of_two:cg_mcap,135684894,341342567
+0xf43fdb854021ddeb41e06ac1d6e5df475197038ba5d3cba147f469a56870cd1b,"KII / USDT 0.007%",pancakeswap-infinity-clmm,kiichain,binance-bridged-usdt-bnb-smart-chain,kiichain,26080254,below,min_cap_of_two:cg_mcap,134817940,1911255035
+0x172fcd41e0913e95784454622d1c3724f546f849,"USDT / WBNB 0.01%",pancakeswap-v3-bsc,binance-bridged-usdt-bnb-smart-chain,wbnb,binance-bridged-usdt-bnb-smart-chain,183433082994,above,single_subject:cg_mcap,133884616,4027218066
+0x9ad24955c91c2c9cabcf007335375f8fd91d0494,"FLYBRAIN / USDT",pancakeswap_v2,,binance-bridged-usdt-bnb-smart-chain,FLYBRAIN,,unknown,gt_fdv_only_above_threshold,85307512,352977560
+0xf2688fb5b81049dfb7703ada5e770543770612c4,"USDC / WBNB 0.01%",pancakeswap-v3-bsc,binance-bridged-usdc-bnb-smart-chain,wbnb,binance-bridged-usdc-bnb-smart-chain,74329752994,above,single_subject:cg_mcap,49633921,917676504
 0x46dbe63160127054374a5d0f5cd716b075a3e72d,"LAPTOP / USDT",pancakeswap_v2,,binance-bridged-usdt-bnb-smart-chain,LAPTOP,0,below,min_cap_of_two:gt_fdv,31506514,376362747
-0xe5ae318389b8d6d09370a675479c64862152d126,"牛来 / USDT 0.25%",pancakeswap-v3-bsc,niu-lai,binance-bridged-usdt-bnb-smart-chain,niu-lai,138690024,above,min_cap_of_two:cg_mcap,32819616,451568796
-0xc7bb4cf4c51fd655ea0368255929f1a42ba1a67e1e8805c54e81d61dc28f3f74,"CNPY / USDT 0.007%",pancakeswap-infinity-clmm,canopy,binance-bridged-usdt-bnb-smart-chain,canopy,25428141,below,min_cap_of_two:cg_mcap,30590516,91680224
-0x46cf1cf8c69595804ba91dfdd8d6b960c9b0a7c4,"USDT / BTCB 0.05%",pancakeswap-v3-bsc,binance-bridged-usdt-bnb-smart-chain,binance-bitcoin,binance-bridged-usdt-bnb-smart-chain,183405509835,above,single_subject:cg_mcap,26566557,571044261
-0x628ea54a6450645d2bb7b2911c8c6f3d7f3944c2f4703c259a1b85bf5569870b,"USDT / USDC",uniswap-v4-bsc,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,74202847276,above,min_cap_of_two:cg_mcap,26141239,915725357
-0x4d3bf29ba30f8bfe4624e7678709afa195689c5d,"AKE / WBNB 0.01%",pancakeswap-v3-bsc,akedo,wbnb,akedo,323617551,above,single_subject:cg_mcap,24534397,555285597
-0xe531fcb1f5a195de7608b9f4f9518544c2cdb693,"QQQB / USDT 0.01%",pancakeswap-v3-bsc,invesco-qqq-trust-bstocks-tokenized-stock,binance-bridged-usdt-bnb-smart-chain,invesco-qqq-trust-bstocks-tokenized-stock,1332243,below,min_cap_of_two:cg_mcap,24247682,1049655741
-0x36696169c63e42cd08ce11f5deebbcebae652050,"USDT / WBNB 0.05%",pancakeswap-v3-bsc,binance-bridged-usdt-bnb-smart-chain,wbnb,binance-bridged-usdt-bnb-smart-chain,183405509835,above,single_subject:cg_mcap,23287379,458401475
-0xd0e226f674bbf064f54ab47f42473ff80db98cba,"ETH / WBNB 0.05%",pancakeswap-v3-bsc,binance-peg-weth,wbnb,,,above,both_quote,21044060,381293042
-0x32a805e65a3219a79707ab3e75443d75160d798de46613fc960d39cd4a96bb22,"USDT / USDC",pancakeswap-infinity-clmm,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,74202847276,above,min_cap_of_two:cg_mcap,17893223,787447867
-0x8321c1f53959b14ece4b5400e60aeac59e7b6b8bac446f2f0a89b9e84e68a08a,"USDT / USDC",uniswap-v4-bsc,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,74202847276,above,min_cap_of_two:cg_mcap,17206253,350649824
-0x6bbc40579ad1bbd243895ca0acb086bb6300d636,"BTCB / WBNB 0.05%",pancakeswap-v3-bsc,binance-bitcoin,wbnb,,,above,both_quote,16951179,519288126
-0x3dc224624ff16ed597c6e7706379c03c39db8ef8,"M21NT / MNT21 0.01%",pancakeswap-v3-bsc,,,M21NT,,unknown,gt_fdv_only_above_threshold,16843144,813502905
-0x47bc06722295ac316a569eef87ac32faa455f441,"QQQB / WBNB 0.05%",pancakeswap-v3-bsc,invesco-qqq-trust-bstocks-tokenized-stock,wbnb,invesco-qqq-trust-bstocks-tokenized-stock,1332243,below,single_subject:cg_mcap,13110553,51134828
-0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae,"USDT / WBNB",pancakeswap_v2,binance-bridged-usdt-bnb-smart-chain,wbnb,binance-bridged-usdt-bnb-smart-chain,183405509835,above,single_subject:cg_mcap,12220773,733949316
-0xab5ec7b18d3b184ed85bef7f4277f59c673da1f5,"USDC / USDT",topaz,binance-bridged-usdc-bnb-smart-chain,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,74202847276,above,min_cap_of_two:cg_mcap,12199569,347956703
-0xdc61496bbbc80864fc9983566115e2db62d150c3,"BREWFLORK / USDT",pancakeswap_v2,,binance-bridged-usdt-bnb-smart-chain,BREWFLORK,2129,below,min_cap_of_two:gt_fdv,11838583,8791529
-0x92b7807bf19b7dddf89b706143896d05228f3121,"USDT / USDC 0.01%",pancakeswap-v3-bsc,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,74202847276,above,min_cap_of_two:cg_mcap,11297600,271337291
-0xdb4c4d91f12ce76f5c9ac0eae193cf3b4d6684cd5f09bf35d03dd9ae6d8a43b1,"CTM / BNB",uniswap-v4-bsc,c8ntinuum,binancecoin,c8ntinuum,2103077503,above,single_subject:cg_fdv,11119274,319371918
-0x2fe13112be502026671a6e76af45d14ec394022d,"4Stock / USDT 0.25%",pancakeswap-v3-bsc,4stock,binance-bridged-usdt-bnb-smart-chain,4stock,31591319,below,min_cap_of_two:cg_mcap,11074040,61341279
-0x62609d8964b2fb5ce0322c4e0b659466e7297df903633c0e3fdb2c7fed0c84c9,"QQQB / USDT 0.003%",uniswap-v4-bsc,invesco-qqq-trust-bstocks-tokenized-stock,binance-bridged-usdt-bnb-smart-chain,invesco-qqq-trust-bstocks-tokenized-stock,1332243,below,min_cap_of_two:cg_mcap,11015707,74095765
-0x3ea3f9a7b7edbfe0ba3568bfc0f30ba870b7553d,"BREW / WBNB 1%",pancakeswap-v3-bsc,brew,wbnb,brew,30025604,below,single_subject:cg_mcap,10485094,83670274
-0x57cf8c65fd1e2b44ea9e8f8ea0784ac6d0b60624,"UP / WBNB 0.01%",pancakeswap-v3-bsc,unitas,wbnb,unitas,85738124,below,single_subject:cg_mcap,9878660,623953450
-0x8e5d9a6b24c33702182b65a7c2dcad53dd4f3c2f,"BNC4 / USDC 0.3%",uniswap-bsc,,binance-bridged-usdc-bnb-smart-chain,BNC4,6651488,below,min_cap_of_two:gt_fdv,9299441,10196001
-0xd9434e63fe78a6e77dafe2abc504121bf8500822f6d3a59eccba577cf0a070f2,"LAB / USDT 0.007%",pancakeswap-infinity-clmm,lab,binance-bridged-usdt-bnb-smart-chain,lab,49002056,below,min_cap_of_two:cg_mcap,9248225,77761696
-0x3a28db48fab95e3a021c7edd02b588fd4202967f30e9bfe2dfb0b0698e95bafc,"BNC4 / USDC",uniswap-v4-bsc,,binance-bridged-usdc-bnb-smart-chain,BNC4,6651488,below,min_cap_of_two:gt_fdv,8894592,0
-0x1e40450f8e21bb68490d7d91ab422888fb3d60f1,"USDT / USDC",nomiswap_stable,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,74202847276,above,min_cap_of_two:cg_mcap,8831096,385000033
-0xbec6906a984f4695aca0f15bafa7de5eb45b54ab,"BNC4 / USDT 0.25%",pancakeswap-v3-bsc,,binance-bridged-usdt-bnb-smart-chain,BNC4,6651488,below,min_cap_of_two:gt_fdv,8631079,289919415
-0x0e6e1f47c64f517fc9dc35698718c7dfc708d534,"DGAI / USDT 0.01%",pancakeswap-v3-bsc,dgrid-ai,binance-bridged-usdt-bnb-smart-chain,dgrid-ai,113095551,above,min_cap_of_two:cg_mcap,8492680,167491748
-0xbe141893e4c6ad9272e8c04bab7e6a10604501a5,"ETH / USDT 0.05%",pancakeswap-v3-bsc,binance-peg-weth,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdt-bnb-smart-chain,183405509835,above,single_subject:cg_mcap,8356062,92216735
-0x14ca9d552ed2cf0d5dfd1f89bc6793a464e2ed16,"MarsCoin / USDT 0.25%",pancakeswap-v3-bsc,marscoin-4,binance-bridged-usdt-bnb-smart-chain,marscoin-4,126321360,above,min_cap_of_two:cg_mcap,8019485,273785282
-0x017bcd5ce750c39cf81f24f57fd86134e226e623,"GLCS / USDT",pancakeswap_v2,,binance-bridged-usdt-bnb-smart-chain,GLCS,10342225,below,min_cap_of_two:gt_fdv,7993292,438498526
-0x9f599f3d64a9d99ea21e68127bb6ce99f893da61,"ETH / USDT 0.01%",pancakeswap-v3-bsc,binance-peg-weth,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdt-bnb-smart-chain,183405509835,above,single_subject:cg_mcap,7815780,177398748
-0x6fe9e9de56356f7edbfcbb29fab7cd69471a4869,"USDT / WBNB 0.05%",uniswap-bsc,binance-bridged-usdt-bnb-smart-chain,wbnb,binance-bridged-usdt-bnb-smart-chain,183405509835,above,single_subject:cg_mcap,7682266,334264881
-0xc33bacff9141da689875e6381c1932348ab4c5cb,"哈基米 / WBNB",pancakeswap_v2,hakimi,wbnb,hakimi,37828941,below,single_subject:cg_mcap,6893031,98844349
-0x62edaf2a56c9fb55be5f9b1399ac067f6a37013b,"BTCB / WBNB 0.01%",pancakeswap-v3-bsc,binance-bitcoin,wbnb,,,above,both_quote,6672673,174541473
-0x247f51881d1e3ae0f759afb801413a6c948ef442,"USDT / BTCB 0.01%",pancakeswap-v3-bsc,binance-bridged-usdt-bnb-smart-chain,binance-bitcoin,binance-bridged-usdt-bnb-smart-chain,183405509835,above,single_subject:cg_mcap,6118177,165697588
-0xb4e18c7bf3adb2bfa3b921f9f424f9e59f7a150e,"LAPTOP / USDT",pancakeswap_v2,,binance-bridged-usdt-bnb-smart-chain,LAPTOP,6968,below,min_cap_of_two:gt_fdv,6002684,39126124
-0x574ff14d2e342ea41e3eefcc0eb2b924a8ef5f61,"BNC4 / USDT 0.05%",pancakeswap-v3-bsc,,binance-bridged-usdt-bnb-smart-chain,BNC4,6651488,below,min_cap_of_two:gt_fdv,5342556,2825540
-0x4682c6bf5ac02d8ea553aa9d289bcecdc023fd07,"BNC4 / 4Stock",pancakeswap_v2,,4stock,BNC4,6651488,below,min_cap_of_two:gt_fdv,5322642,88776939
-0x90c3c770087eb9e63ad47e99a66e260aa10c31ae,"4Stock / USDT 1%",pancakeswap-v3-bsc,4stock,binance-bridged-usdt-bnb-smart-chain,4stock,31591319,below,min_cap_of_two:cg_mcap,5291736,122852372
-0x0f338ec12d3f7c3d77a4b9fcc1f95f3fb6ad0ea6,"ETH / WBNB 0.05%",uniswap-bsc,binance-peg-weth,wbnb,,,above,both_quote,5196354,110746791
-0x4bba1018b967e59220b22ca03f68821a3276c9a6,"ETH / BTCB 0.05%",pancakeswap-v3-bsc,binance-peg-weth,binance-bitcoin,,,above,both_quote,5180201,103857803
-0x62fcb3c1794fb95bd8b1a97f6ad5d8a7e4943a1e,"ETH / WBNB 0.01%",pancakeswap-v3-bsc,binance-peg-weth,wbnb,,,above,both_quote,5040111,88540377
-0x1a1def8c55238986c7067a57726a058d3497b608,"BinanceTown / QQQB",pancakeswap_v2,,invesco-qqq-trust-bstocks-tokenized-stock,BinanceTown,196329,below,min_cap_of_two:gt_fdv,4933662,0
-0x595d70977dff3c841df0bc0138ce89f80c7c9423,"QQQB / 牛来",pancakeswap_v2,invesco-qqq-trust-bstocks-tokenized-stock,niu-lai,invesco-qqq-trust-bstocks-tokenized-stock,1332243,below,min_cap_of_two:cg_mcap,4922152,182460020
-0xf0e72f2d5197ce10d07bfeb67cd2367d5bbfcf2a7f93a0dfa944c85939f20665,"PIEVERSE / USDT 0.007%",pancakeswap-infinity-clmm,pieverse,binance-bridged-usdt-bnb-smart-chain,pieverse,334896889,above,min_cap_of_two:cg_mcap,4905595,107019738
-0xe9b9998b2ec5430d2246c7f1f8d9f298c97d7365,"AAPLB / USDT 0.25%",pancakeswap-v3-bsc,apple-bstocks-tokenized-stock,binance-bridged-usdt-bnb-smart-chain,apple-bstocks-tokenized-stock,7774763,below,min_cap_of_two:cg_mcap,4770642,19982870
-0xcb721503c6a730f12990a2bfca31497327042206,"FLYBRAIN / WBNB",pancakeswap_v2,,wbnb,FLYBRAIN,0,below,single_subject:gt_fdv,4747696,0
-0x854124f203d52518bb4b696ca93b3997e4aa5db2,"Binance Town / USDT",pancakeswap_v2,,binance-bridged-usdt-bnb-smart-chain,Binance Town,351414,below,min_cap_of_two:gt_fdv,4721018,0
-0x767f1f4bf9e5e40f3d865c172c9bd0ae216e65b4,"WBNB / USDT 0.01%",topaz,wbnb,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdt-bnb-smart-chain,183405509835,above,single_subject:cg_mcap,4708533,117042718
-0x9cfea9ef82f26857c3426487774c088330555da6113c61ac7fb8b30d0ae434b3,"CYS / USDC 0.007%",pancakeswap-infinity-clmm,cysic,binance-bridged-usdc-bnb-smart-chain,cysic,21005760,below,min_cap_of_two:cg_mcap,4643442,477233886
-0x0c2e58fab72adad8a58db68e592b8f6922f8dafaaf0d2b394605241a7ab777ae,"EDGE / USDT 0.007%",pancakeswap-infinity-clmm,,binance-bridged-usdt-bnb-smart-chain,EDGE,4191405,below,min_cap_of_two:gt_fdv,4388470,130031029
-0x47a90a2d92a8367a91efa1906bfc8c1e05bf10c4,"USDT / WBNB 0.01%",uniswap-bsc,binance-bridged-usdt-bnb-smart-chain,wbnb,binance-bridged-usdt-bnb-smart-chain,183405509835,above,single_subject:cg_mcap,4287792,158064386
-0xff02b30ee2d7e13d73bdeb27cc8a267d588b8bce,"BNC4 / USDT 0.05%",uniswap-bsc,,binance-bridged-usdt-bnb-smart-chain,BNC4,6651488,below,min_cap_of_two:gt_fdv,4271042,2802175
-0x9e90ce97c9856ef190bf68f62efa69c7a200a65cde77bd54801b8a0ae87814e1,"TFUSD / CSER 0.008%",uniswap-v4-bsc,,,TFUSD,,unknown,gt_fdv_only_above_threshold,4101992,38034827
-0x66faad27cf481f82d0089ec8156b3aa3636010c7,"SPCXB / WBNB 0.25%",pancakeswap-v3-bsc,spacex-bstocks-tokenized-stock,wbnb,spacex-bstocks-tokenized-stock,69940900,below,single_subject:cg_mcap,3986777,166818948
-0xe580e984f67c333eb8c9ce40ae9e4c321224d0d6,"猫姐 / WBNB",pancakeswap_v2,,wbnb,猫姐,522455,below,single_subject:gt_fdv,3870182,2042930
-0x950d458e1b420f6134cfce1db9a1855d37bfe3f8,"ANTS / AAPLB",pancakeswap_v2,,apple-bstocks-tokenized-stock,ANTS,3606150,below,min_cap_of_two:gt_fdv,3638794,2430438
-0x28df0835942396b7a1b7ae1cd068728e6ddbbafd,"BTCB / WBNB 0.05%",uniswap-bsc,binance-bitcoin,wbnb,,,above,both_quote,3573566,129514171
-0x1b451880bd8ed2db08f707d18bee6a874e068d1879cab60dc7262b65d1e1ca2f,"ASTER / BNB 0.007%",pancakeswap-infinity-clmm,aster-2,binancecoin,aster-2,1862929607,above,single_subject:cg_mcap,3443453,93054298
-0xcea54a75202c1f38d9961e4c4c18cfcbc129d2c8,"BinanceTown / BNC4",pancakeswap_v2,,,BinanceTown,135749,below,min_cap_of_two:gt_fdv,3391344,0
-0xf28610198241f35458f923c863f98d4798640424d003b5ecf7845cd4e5ee9e52,"U / USDC 0.003%",uniswap-v4-bsc,united-stables,binance-bridged-usdc-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,74202847276,above,single_subject:cg_mcap,3389371,7017730
-0x8fb4243b553ac29ba088acf00b9b7da24bd6690c,"NVDAB / USDT 0.25%",pancakeswap-v3-bsc,nvidia-bstocks,binance-bridged-usdt-bnb-smart-chain,nvidia-bstocks,18008409,below,min_cap_of_two:cg_mcap,3374606,130754316
-0xba2eab70102e8e1ca982dce825328cadf1cd33ca4e0d1bb4e7408fe9bcdecec4,"DBT / USDT 0.007%",pancakeswap-infinity-clmm,,binance-bridged-usdt-bnb-smart-chain,DBT,17501729,below,min_cap_of_two:gt_fdv,3353184,131798457
-0x258907d03806aad208f23147bf05d4e5f69eaba5c6ded94f02d98445add62c31,"USDT / USDC",pancakeswap-infinity-clmm,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,74202847276,above,min_cap_of_two:cg_mcap,3336110,73085866
-0x6d7d33ab0d492acc7122e0918df54e2dcf35fb28,"SLC / USDT",pancakeswap_v2,,binance-bridged-usdt-bnb-smart-chain,SLC,90082874,below,min_cap_of_two:gt_fdv,3308011,73325395
-0x83a0a8a723262651ae9c54bbba929f167443bc59,"XAUt / USDT 0.05%",pancakeswap-v3-bsc,tether-gold-tokens,binance-bridged-usdt-bnb-smart-chain,tether-gold-tokens,119943804,above,min_cap_of_two:cg_mcap,3199662,87165067
-0x22af7297243c4eef12e2d5a4f888b92e56bf127c,"龙虾 / WBNB",pancakeswap_v2,lobster-2,wbnb,lobster-2,55238193,below,single_subject:cg_mcap,3196177,82251131
-0x24993d0e8ef738b3bac36a753c00b39793e416e05db87c2bafbb25c4351b34fd,"NES / USDT 0.007%",pancakeswap-infinity-clmm,,binance-bridged-usdt-bnb-smart-chain,NES,2585700,below,min_cap_of_two:gt_fdv,3179252,5251278
-0x6429ac911f216a24ddf0ba84555ba5a971ed8368ca53ff7b04c6a86647252e05,"QQQB / USDC",uniswap-v4-bsc,invesco-qqq-trust-bstocks-tokenized-stock,binance-bridged-usdc-bnb-smart-chain,invesco-qqq-trust-bstocks-tokenized-stock,1332243,below,min_cap_of_two:cg_mcap,3178450,15213764
-0x813c0decbb1097fff46d0ed6a39fb5f6a83043f4,"USDT / BTCB 0.05%",uniswap-bsc,binance-bridged-usdt-bnb-smart-chain,binance-bitcoin,binance-bridged-usdt-bnb-smart-chain,183405509835,above,single_subject:cg_mcap,3158993,68631381
-0xef470f9ae8512d2762e4f1cd91ae58caea17143afa61b8d56e9b20c8f87688c4,"COLLECT / BNB 0.007%",pancakeswap-infinity-clmm,collect-on-fanable,binancecoin,collect-on-fanable,10476812,below,single_subject:cg_mcap,3134273,180397623
-0x87b0c878102c1c5db8f848deb2b58cd4de2b4ba71ba880f01f6887a2d2810e0a,"TAC / USDT 0.007%",pancakeswap-infinity-clmm,tac,binance-bridged-usdt-bnb-smart-chain,tac,10350000,below,min_cap_of_two:cg_mcap,3076094,23305077
-0xd3f22fd2755edb23b765b74ff4d0bf056bc244d9,"POFD / USDT",pancakeswap_v2,,binance-bridged-usdt-bnb-smart-chain,POFD,1031397,below,min_cap_of_two:gt_fdv,3075854,1228338
-0xcec13213c390d51121f82ba2ecafb8e11e0af7a3,"BinanceTown / USDT",pancakeswap_v2,,binance-bridged-usdt-bnb-smart-chain,BinanceTown,230008,below,min_cap_of_two:gt_fdv,2994822,0
-0x787abd73593bed588852163402d191c302c7f8b6,"BTR / USDT 0.01%",pancakeswap-v3-bsc,bitlayer-bitvm,binance-bridged-usdt-bnb-smart-chain,bitlayer-bitvm,13273104,below,min_cap_of_two:cg_mcap,2953232,321708811
-0xd37aa0f0d66ad670279f6b89325c88bdff17d0265144762fb01f54fca9779944,"BNB / USDT 0.007%",pancakeswap-infinity-clmm,binancecoin,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdt-bnb-smart-chain,183405509835,above,single_subject:cg_mcap,2939718,134720945
-0xb4db9fcda97fd7b02eaf1e8317e6ddb04bacc1af,"STAR / USDT 0.01%",pancakeswap-v3-bsc,starpower,binance-bridged-usdt-bnb-smart-chain,starpower,22142234,below,min_cap_of_two:gt_mcap,2937249,147074627
-0x8fdce67030884a5905333fadb8dacbfa477a40d2,"うさぎ / WBNB",pancakeswap_v2,,wbnb,うさぎ,,unknown,gt_fdv_only_above_threshold,2930914,3714679
-0x87a540c36ebe0c5adb39c58148d71e0846cfc65b,"PTKR / WBNB",pancakeswap_v2,,wbnb,PTKR,61705,below,single_subject:gt_fdv,2793766,0
-0xafb2da14056725e3ba3a30dd846b6bbbd7886c56,"Cake / WBNB 0.05%",pancakeswap-v3-bsc,pancakeswap-token,wbnb,pancakeswap-token,702951366,above,single_subject:cg_mcap,2764058,81806467
-0x1f12111deb29e8ae246aa53f17839fe778a217ba,"UPONLY / BNC4",pancakeswap_v2,,,UPONLY,460024,below,min_cap_of_two:gt_fdv,2734405,17426453
-0xdf9d18bb55ce89849b8f01be8913d86af585667cc5c76748f8585366f8ccc83e,"SENTIS / USDT 0.007%",pancakeswap-infinity-clmm,sentismai,binance-bridged-usdt-bnb-smart-chain,sentismai,43219603,below,min_cap_of_two:cg_mcap,2666640,49421805
-0x882e23dba77bfe0e514cf5bcdad7a58aceb01522,"U / WBNB 0.05%",pancakeswap-v3-bsc,united-stables,wbnb,,,above,both_quote,2642849,58388036
-0x4d1b90273d5b0ea98101154d73a6c7d7a19884db,"ZEC / USDT 0.3%",uniswap-bsc,binance-peg-zcash-token,binance-bridged-usdt-bnb-smart-chain,binance-peg-zcash-token,255862883,above,min_cap_of_two:cg_mcap,2624449,38283525
-0x63844bd4bfad910b1643713302a1cc1ed20d50c3,"Pro / USDT",pancakeswap_v2,,binance-bridged-usdt-bnb-smart-chain,Pro,,unknown,gt_fdv_only_above_threshold,2569736,213030757
-0xcaaf3c41a40103a23eeaa4bba468af3cf5b0e0d8,"ARK / USDT",pancakeswap_v2,ark-3,binance-bridged-usdt-bnb-smart-chain,ark-3,135812545,above,min_cap_of_two:cg_fdv,2566373,155156269
-0x2f62969a74159bfc9365d8cd29ae8f6d15582204,"LAB / USDT 0.01%",pancakeswap-v3-bsc,lab,binance-bridged-usdt-bnb-smart-chain,lab,49002056,below,min_cap_of_two:cg_mcap,2476746,22428030
-0xb39978347f071b74076be26d1445e2eccafe3557d2cdbc17e6c74d3ea883a4e0,"ZAMA / USDT 0.007%",pancakeswap-infinity-clmm,zama,binance-bridged-usdt-bnb-smart-chain,zama,118209663,above,min_cap_of_two:cg_mcap,2470392,58274596
-0xf126c8e4f74ace95628ec14a496e3a8bbb5f16ef9ee908359e0c4b9018d0356f,"USD1 / USDC",pancakeswap-infinity-clmm,usd1-wlfi,binance-bridged-usdc-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,74202847276,above,single_subject:cg_mcap,2464577,77762311
-0xe85bc115847d7106b6335d067c6d2cf9b837ce50626a1df3f01d0012681a5db4,"BASED / USDT 0.007%",pancakeswap-infinity-clmm,based-one,binance-bridged-usdt-bnb-smart-chain,based-one,15559531,below,min_cap_of_two:cg_mcap,2459400,67673338
-0x73ee72b8cc2c7ea032d8051e1cfa740a2db84331,"AGX / USD1",pancakeswap_v2,,usd1-wlfi,AGX,78243522,below,single_subject:gt_fdv,2453372,19358015
-0xeaa6c7292ed954ca9dd72e769568d057b0525c9a,"STABLE / USDT 0.01%",pancakeswap-v3-bsc,stable-2,binance-bridged-usdt-bnb-smart-chain,stable-2,734518948,above,min_cap_of_two:cg_mcap,2381672,51650661
-0xaf9ad1650bb6b7456292fdc73f137936d74c24d5,"MONKI / NVDAB",pancakeswap_v2,,nvidia-bstocks,MONKI,93623,below,min_cap_of_two:gt_fdv,2374693,3655600
-0xc0904939bd7d8fd3c3a1b591dd0fa1da0c7c028a,"ABCD / WBNB 1%",pancakeswap-v3-bsc,,wbnb,ABCD,636481,below,single_subject:gt_fdv,2337404,190018
-0x4a3218606af9b4728a9f187e1c1a8c07fbc172a9,"USD1 / WBNB 0.05%",pancakeswap-v3-bsc,usd1-wlfi,wbnb,,,above,both_quote,2305079,63847138
-0x7955874b0ad6efbb5ffe6e93e50b8aef4cd9be53,"ETH / WBNB 0.019%",topaz,binance-peg-weth,wbnb,,,above,both_quote,2294991,49563848
-0xda7630a141dbb6382ddb6409aea7331da543b0bb,"PUFFER / WBNB 0.01%",pancakeswap-v3-bsc,puffer-finance,wbnb,puffer-finance,10291799,below,single_subject:cg_mcap,2256713,6342643
-0x951081457a31e888fe149ef225aa612388e439a5,"OMME / WBNB 1%",pancakeswap-v3-bsc,,wbnb,OMME,92411,below,single_subject:gt_fdv,2206181,0
-0x916f992df86795f24de6c268cfb9031fbb1155da,"UB / USDC 0.01%",pancakeswap-v3-bsc,unibase,binance-bridged-usdc-bnb-smart-chain,unibase,314349444,above,min_cap_of_two:cg_mcap,2198669,90798549
-0x11c5c2d1d3dc0371965296330aa1236feb78ba9b3a27c5da9d835b5d2d46c8aa,"GMEB / USDT 0.038%",uniswap-v4-bsc,gamestop-bstocks-tokenized-stock,binance-bridged-usdt-bnb-smart-chain,gamestop-bstocks-tokenized-stock,6201020,below,min_cap_of_two:cg_mcap,2167304,67575645
-0x3122a3fa830e4918d6a9c09bd4769d0d95bf291548e7c7960cd7ccd9e3ac3627,"BTW / USDT 0.007%",pancakeswap-infinity-clmm,bitway,binance-bridged-usdt-bnb-smart-chain,bitway,1360451914,above,min_cap_of_two:cg_mcap,2143573,171301168
-0xa651c8deb3ff9f8d56a26e72042b7a8a1f433480,"我踏马来了 / WBNB",pancakeswap_v2,wo-ta-ma-laile,wbnb,wo-ta-ma-laile,11777245,below,single_subject:cg_mcap,2125336,14699258
-0x26a8e4591b7a0efcd45a577ad0d54aa64a99efaf2546ad4d5b0454c99eb70eab,"BSB / USDT 0.007%",pancakeswap-infinity-clmm,block-street,binance-bridged-usdt-bnb-smart-chain,block-street,21973943,below,min_cap_of_two:cg_mcap,2125320,104609700
-0xfc4e77248b76fefc27c4cac7151a2ee5b5cc590e,"QQQB / USDC 0.3%",uniswap-bsc,invesco-qqq-trust-bstocks-tokenized-stock,binance-bridged-usdc-bnb-smart-chain,invesco-qqq-trust-bstocks-tokenized-stock,1332243,below,min_cap_of_two:cg_mcap,2110870,32255629
-0x96c9c6e323b82e193950a06e2e62411d0a149439,"BNC4 / BOB",pancakeswap_v2,,,BOB,149712,below,min_cap_of_two:gt_fdv,2105906,166860
-0xf9878a5dd55edc120fde01893ea713a4f032229c,"ETH / USDT 0.05%",uniswap-bsc,binance-peg-weth,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdt-bnb-smart-chain,183405509835,above,single_subject:cg_mcap,2070954,6691429
-0xae02717e94c9b5bae817601a49b4584f58324015,"LIGHT / USDT 0.01%",pancakeswap-v3-bsc,bitlight,binance-bridged-usdt-bnb-smart-chain,bitlight,6515679,below,min_cap_of_two:cg_mcap,2015209,45927325
-0xd01aa7653567b3c0e4d93d37ef6984c160035839,"Hello / WBNB",pancakeswap_v2,,wbnb,Hello,,unknown,not_on_coingecko,2011632,938081
-0x94f3ed36706c746ad59fadcaf271b7431ab1d8f1,"SPCXB / MarsCoin",pancakeswap_v2,spacex-bstocks-tokenized-stock,marscoin-4,spacex-bstocks-tokenized-stock,69940900,below,min_cap_of_two:cg_mcap,2010438,116571521
+0xe5ae318389b8d6d09370a675479c64862152d126,"牛来 / USDT 0.25%",pancakeswap-v3-bsc,niu-lai,binance-bridged-usdt-bnb-smart-chain,niu-lai,127871771,above,min_cap_of_two:cg_mcap,32819616,473649586
+0xc7bb4cf4c51fd655ea0368255929f1a42ba1a67e1e8805c54e81d61dc28f3f74,"CNPY / USDT 0.007%",pancakeswap-infinity-clmm,canopy,binance-bridged-usdt-bnb-smart-chain,canopy,25875122,below,min_cap_of_two:cg_mcap,30590516,119920744
+0x46cf1cf8c69595804ba91dfdd8d6b960c9b0a7c4,"USDT / BTCB 0.05%",pancakeswap-v3-bsc,binance-bridged-usdt-bnb-smart-chain,binance-bitcoin,binance-bridged-usdt-bnb-smart-chain,183433082994,above,single_subject:cg_mcap,26566557,591318393
+0x628ea54a6450645d2bb7b2911c8c6f3d7f3944c2f4703c259a1b85bf5569870b,"USDT / USDC",uniswap-v4-bsc,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,74329752994,above,min_cap_of_two:cg_mcap,26141239,928078730
+0x4d3bf29ba30f8bfe4624e7678709afa195689c5d,"AKE / WBNB 0.01%",pancakeswap-v3-bsc,akedo,wbnb,akedo,319615567,above,single_subject:cg_mcap,24534397,581932382
+0xe531fcb1f5a195de7608b9f4f9518544c2cdb693,"QQQB / USDT 0.01%",pancakeswap-v3-bsc,invesco-qqq-trust-bstocks-tokenized-stock,binance-bridged-usdt-bnb-smart-chain,invesco-qqq-trust-bstocks-tokenized-stock,1331558,below,min_cap_of_two:cg_mcap,24247682,1065419975
+0x36696169c63e42cd08ce11f5deebbcebae652050,"USDT / WBNB 0.05%",pancakeswap-v3-bsc,binance-bridged-usdt-bnb-smart-chain,wbnb,binance-bridged-usdt-bnb-smart-chain,183433082994,above,single_subject:cg_mcap,23287379,481621123
+0xd0e226f674bbf064f54ab47f42473ff80db98cba,"ETH / WBNB 0.05%",pancakeswap-v3-bsc,binance-peg-weth,wbnb,,,above,both_quote,21044060,396460476
+0x32a805e65a3219a79707ab3e75443d75160d798de46613fc960d39cd4a96bb22,"USDT / USDC",pancakeswap-infinity-clmm,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,74329752994,above,min_cap_of_two:cg_mcap,17893223,787250316
+0x8321c1f53959b14ece4b5400e60aeac59e7b6b8bac446f2f0a89b9e84e68a08a,"USDT / USDC",uniswap-v4-bsc,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,74329752994,above,min_cap_of_two:cg_mcap,17206253,356339527
+0x6bbc40579ad1bbd243895ca0acb086bb6300d636,"BTCB / WBNB 0.05%",pancakeswap-v3-bsc,binance-bitcoin,wbnb,,,above,both_quote,16951179,529460782
+0x3dc224624ff16ed597c6e7706379c03c39db8ef8,"M21NT / MNT21 0.01%",pancakeswap-v3-bsc,,,M21NT,,unknown,gt_fdv_only_above_threshold,16843144,830346050
+0x47bc06722295ac316a569eef87ac32faa455f441,"QQQB / WBNB 0.05%",pancakeswap-v3-bsc,invesco-qqq-trust-bstocks-tokenized-stock,wbnb,invesco-qqq-trust-bstocks-tokenized-stock,1331558,below,single_subject:cg_mcap,13110553,65094049
+0x16b9a82891338f9ba80e2d6970fdda79d1eb0dae,"USDT / WBNB",pancakeswap_v2,binance-bridged-usdt-bnb-smart-chain,wbnb,binance-bridged-usdt-bnb-smart-chain,183433082994,above,single_subject:cg_mcap,12220773,733179868
+0xab5ec7b18d3b184ed85bef7f4277f59c673da1f5,"USDC / USDT",topaz,binance-bridged-usdc-bnb-smart-chain,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,74329752994,above,min_cap_of_two:cg_mcap,12199569,353074798
+0xdc61496bbbc80864fc9983566115e2db62d150c3,"BREWFLORK / USDT",pancakeswap_v2,,binance-bridged-usdt-bnb-smart-chain,BREWFLORK,2129,below,min_cap_of_two:gt_fdv,11838583,14270872
+0x92b7807bf19b7dddf89b706143896d05228f3121,"USDT / USDC 0.01%",pancakeswap-v3-bsc,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,74329752994,above,min_cap_of_two:cg_mcap,11297600,278074526
+0xdb4c4d91f12ce76f5c9ac0eae193cf3b4d6684cd5f09bf35d03dd9ae6d8a43b1,"CTM / BNB",uniswap-v4-bsc,c8ntinuum,binancecoin,c8ntinuum,2102625465,above,single_subject:cg_fdv,11119274,321383397
+0x2fe13112be502026671a6e76af45d14ec394022d,"4Stock / USDT 0.25%",pancakeswap-v3-bsc,4stock,binance-bridged-usdt-bnb-smart-chain,4stock,27872058,below,min_cap_of_two:cg_mcap,11074040,71496592
+0x62609d8964b2fb5ce0322c4e0b659466e7297df903633c0e3fdb2c7fed0c84c9,"QQQB / USDT 0.003%",uniswap-v4-bsc,invesco-qqq-trust-bstocks-tokenized-stock,binance-bridged-usdt-bnb-smart-chain,invesco-qqq-trust-bstocks-tokenized-stock,1331558,below,min_cap_of_two:cg_mcap,11015707,84072094
+0x3ea3f9a7b7edbfe0ba3568bfc0f30ba870b7553d,"BREW / WBNB 1%",pancakeswap-v3-bsc,brew,wbnb,brew,23682630,below,single_subject:cg_mcap,10485094,94501657
+0x57cf8c65fd1e2b44ea9e8f8ea0784ac6d0b60624,"UP / WBNB 0.01%",pancakeswap-v3-bsc,unitas,wbnb,unitas,85214547,below,single_subject:cg_mcap,9878660,614738187
+0x8e5d9a6b24c33702182b65a7c2dcad53dd4f3c2f,"BNC4 / USDC 0.3%",uniswap-bsc,,binance-bridged-usdc-bnb-smart-chain,BNC4,6651488,below,min_cap_of_two:gt_fdv,9299441,19450490
+0xd9434e63fe78a6e77dafe2abc504121bf8500822f6d3a59eccba577cf0a070f2,"LAB / USDT 0.007%",pancakeswap-infinity-clmm,lab,binance-bridged-usdt-bnb-smart-chain,lab,60056801,below,min_cap_of_two:cg_mcap,9248225,95574401
+0x3a28db48fab95e3a021c7edd02b588fd4202967f30e9bfe2dfb0b0698e95bafc,"BNC4 / USDC",uniswap-v4-bsc,,binance-bridged-usdc-bnb-smart-chain,BNC4,6651488,below,min_cap_of_two:gt_fdv,8894592,9003571
+0x1e40450f8e21bb68490d7d91ab422888fb3d60f1,"USDT / USDC",nomiswap_stable,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,74329752994,above,min_cap_of_two:cg_mcap,8831096,392114265
+0xbec6906a984f4695aca0f15bafa7de5eb45b54ab,"BNC4 / USDT 0.25%",pancakeswap-v3-bsc,,binance-bridged-usdt-bnb-smart-chain,BNC4,6651488,below,min_cap_of_two:gt_fdv,8631079,298265440
+0x0e6e1f47c64f517fc9dc35698718c7dfc708d534,"DGAI / USDT 0.01%",pancakeswap-v3-bsc,dgrid-ai,binance-bridged-usdt-bnb-smart-chain,dgrid-ai,111791310,above,min_cap_of_two:cg_mcap,8492680,175729024
+0xbe141893e4c6ad9272e8c04bab7e6a10604501a5,"ETH / USDT 0.05%",pancakeswap-v3-bsc,binance-peg-weth,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdt-bnb-smart-chain,183433082994,above,single_subject:cg_mcap,8356062,99362414
+0x14ca9d552ed2cf0d5dfd1f89bc6793a464e2ed16,"MarsCoin / USDT 0.25%",pancakeswap-v3-bsc,marscoin-4,binance-bridged-usdt-bnb-smart-chain,marscoin-4,114835194,above,min_cap_of_two:cg_mcap,8019485,276766140
+0x017bcd5ce750c39cf81f24f57fd86134e226e623,"GLCS / USDT",pancakeswap_v2,,binance-bridged-usdt-bnb-smart-chain,GLCS,10342225,below,min_cap_of_two:gt_fdv,7993292,436513827
+0x9f599f3d64a9d99ea21e68127bb6ce99f893da61,"ETH / USDT 0.01%",pancakeswap-v3-bsc,binance-peg-weth,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdt-bnb-smart-chain,183433082994,above,single_subject:cg_mcap,7815780,183558278
+0x6fe9e9de56356f7edbfcbb29fab7cd69471a4869,"USDT / WBNB 0.05%",uniswap-bsc,binance-bridged-usdt-bnb-smart-chain,wbnb,binance-bridged-usdt-bnb-smart-chain,183433082994,above,single_subject:cg_mcap,7682266,334780920
+0xc33bacff9141da689875e6381c1932348ab4c5cb,"哈基米 / WBNB",pancakeswap_v2,hakimi,wbnb,hakimi,35117897,below,single_subject:cg_mcap,6893031,103993717
+0x62edaf2a56c9fb55be5f9b1399ac067f6a37013b,"BTCB / WBNB 0.01%",pancakeswap-v3-bsc,binance-bitcoin,wbnb,,,above,both_quote,6672673,178971504
+0x247f51881d1e3ae0f759afb801413a6c948ef442,"USDT / BTCB 0.01%",pancakeswap-v3-bsc,binance-bridged-usdt-bnb-smart-chain,binance-bitcoin,binance-bridged-usdt-bnb-smart-chain,183433082994,above,single_subject:cg_mcap,6118177,167909576
+0xb4e18c7bf3adb2bfa3b921f9f424f9e59f7a150e,"LAPTOP / USDT",pancakeswap_v2,,binance-bridged-usdt-bnb-smart-chain,LAPTOP,6968,below,min_cap_of_two:gt_fdv,6002684,39215023
+0x574ff14d2e342ea41e3eefcc0eb2b924a8ef5f61,"BNC4 / USDT 0.05%",pancakeswap-v3-bsc,,binance-bridged-usdt-bnb-smart-chain,BNC4,6651488,below,min_cap_of_two:gt_fdv,5342556,7724544
+0x4682c6bf5ac02d8ea553aa9d289bcecdc023fd07,"BNC4 / 4Stock",pancakeswap_v2,,4stock,BNC4,6651488,below,min_cap_of_two:gt_fdv,5322642,93926695
+0x90c3c770087eb9e63ad47e99a66e260aa10c31ae,"4Stock / USDT 1%",pancakeswap-v3-bsc,4stock,binance-bridged-usdt-bnb-smart-chain,4stock,27872058,below,min_cap_of_two:cg_mcap,5291736,128116639
+0x0f338ec12d3f7c3d77a4b9fcc1f95f3fb6ad0ea6,"ETH / WBNB 0.05%",uniswap-bsc,binance-peg-weth,wbnb,,,above,both_quote,5196354,113847127
+0x4bba1018b967e59220b22ca03f68821a3276c9a6,"ETH / BTCB 0.05%",pancakeswap-v3-bsc,binance-peg-weth,binance-bitcoin,,,above,both_quote,5180201,107497614
+0x62fcb3c1794fb95bd8b1a97f6ad5d8a7e4943a1e,"ETH / WBNB 0.01%",pancakeswap-v3-bsc,binance-peg-weth,wbnb,,,above,both_quote,5040111,92327031
+0x1a1def8c55238986c7067a57726a058d3497b608,"BinanceTown / QQQB",pancakeswap_v2,,invesco-qqq-trust-bstocks-tokenized-stock,BinanceTown,196329,below,min_cap_of_two:gt_fdv,4933662,5580240
+0x595d70977dff3c841df0bc0138ce89f80c7c9423,"QQQB / 牛来",pancakeswap_v2,invesco-qqq-trust-bstocks-tokenized-stock,niu-lai,invesco-qqq-trust-bstocks-tokenized-stock,1331558,below,min_cap_of_two:cg_mcap,4922152,185764049
+0xf0e72f2d5197ce10d07bfeb67cd2367d5bbfcf2a7f93a0dfa944c85939f20665,"PIEVERSE / USDT 0.007%",pancakeswap-infinity-clmm,pieverse,binance-bridged-usdt-bnb-smart-chain,pieverse,341502071,above,min_cap_of_two:cg_mcap,4905595,110485100
+0xe9b9998b2ec5430d2246c7f1f8d9f298c97d7365,"AAPLB / USDT 0.25%",pancakeswap-v3-bsc,apple-bstocks-tokenized-stock,binance-bridged-usdt-bnb-smart-chain,apple-bstocks-tokenized-stock,7781357,below,min_cap_of_two:cg_mcap,4770642,24331777
+0xcb721503c6a730f12990a2bfca31497327042206,"FLYBRAIN / WBNB",pancakeswap_v2,,wbnb,FLYBRAIN,0,below,single_subject:gt_fdv,4747696,14770210
+0x854124f203d52518bb4b696ca93b3997e4aa5db2,"Binance Town / USDT",pancakeswap_v2,,binance-bridged-usdt-bnb-smart-chain,Binance Town,351414,below,min_cap_of_two:gt_fdv,4721018,8888847
+0x767f1f4bf9e5e40f3d865c172c9bd0ae216e65b4,"WBNB / USDT 0.01%",topaz,wbnb,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdt-bnb-smart-chain,183433082994,above,single_subject:cg_mcap,4708533,120011157
+0x9cfea9ef82f26857c3426487774c088330555da6113c61ac7fb8b30d0ae434b3,"CYS / USDC 0.007%",pancakeswap-infinity-clmm,cysic,binance-bridged-usdc-bnb-smart-chain,cysic,24525943,below,min_cap_of_two:cg_mcap,4643442,438867482
+0x0c2e58fab72adad8a58db68e592b8f6922f8dafaaf0d2b394605241a7ab777ae,"EDGE / USDT 0.007%",pancakeswap-infinity-clmm,,binance-bridged-usdt-bnb-smart-chain,EDGE,4191405,below,min_cap_of_two:gt_fdv,4388470,133980080
+0x47a90a2d92a8367a91efa1906bfc8c1e05bf10c4,"USDT / WBNB 0.01%",uniswap-bsc,binance-bridged-usdt-bnb-smart-chain,wbnb,binance-bridged-usdt-bnb-smart-chain,183433082994,above,single_subject:cg_mcap,4287792,158944104
+0xff02b30ee2d7e13d73bdeb27cc8a267d588b8bce,"BNC4 / USDT 0.05%",uniswap-bsc,,binance-bridged-usdt-bnb-smart-chain,BNC4,6651488,below,min_cap_of_two:gt_fdv,4271042,6370968
+0x9e90ce97c9856ef190bf68f62efa69c7a200a65cde77bd54801b8a0ae87814e1,"TFUSD / CSER 0.008%",uniswap-v4-bsc,,,TFUSD,,unknown,gt_fdv_only_above_threshold,4101992,42328567
+0x66faad27cf481f82d0089ec8156b3aa3636010c7,"SPCXB / WBNB 0.25%",pancakeswap-v3-bsc,spacex-bstocks-tokenized-stock,wbnb,spacex-bstocks-tokenized-stock,71212388,below,single_subject:cg_mcap,3986777,162347574
+0xe580e984f67c333eb8c9ce40ae9e4c321224d0d6,"猫姐 / WBNB",pancakeswap_v2,,wbnb,猫姐,522455,below,single_subject:gt_fdv,3870182,4782051
+0x950d458e1b420f6134cfce1db9a1855d37bfe3f8,"ANTS / AAPLB",pancakeswap_v2,,apple-bstocks-tokenized-stock,ANTS,3606150,below,min_cap_of_two:gt_fdv,3638794,5933569
+0x28df0835942396b7a1b7ae1cd068728e6ddbbafd,"BTCB / WBNB 0.05%",uniswap-bsc,binance-bitcoin,wbnb,,,above,both_quote,3573566,130248270
+0x1b451880bd8ed2db08f707d18bee6a874e068d1879cab60dc7262b65d1e1ca2f,"ASTER / BNB 0.007%",pancakeswap-infinity-clmm,aster-2,binancecoin,aster-2,1840810617,above,single_subject:cg_mcap,3443453,96519628
+0xcea54a75202c1f38d9961e4c4c18cfcbc129d2c8,"BinanceTown / BNC4",pancakeswap_v2,,,BinanceTown,135749,below,min_cap_of_two:gt_fdv,3391344,3542039
+0xf28610198241f35458f923c863f98d4798640424d003b5ecf7845cd4e5ee9e52,"U / USDC 0.003%",uniswap-v4-bsc,united-stables,binance-bridged-usdc-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,74329752994,above,single_subject:cg_mcap,3389371,10068197
+0x8fb4243b553ac29ba088acf00b9b7da24bd6690c,"NVDAB / USDT 0.25%",pancakeswap-v3-bsc,nvidia-bstocks,binance-bridged-usdt-bnb-smart-chain,nvidia-bstocks,18387814,below,min_cap_of_two:cg_mcap,3374606,131826848
+0xba2eab70102e8e1ca982dce825328cadf1cd33ca4e0d1bb4e7408fe9bcdecec4,"DBT / USDT 0.007%",pancakeswap-infinity-clmm,,binance-bridged-usdt-bnb-smart-chain,DBT,17501729,below,min_cap_of_two:gt_fdv,3353184,130693225
+0x258907d03806aad208f23147bf05d4e5f69eaba5c6ded94f02d98445add62c31,"USDT / USDC",pancakeswap-infinity-clmm,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,74329752994,above,min_cap_of_two:cg_mcap,3336110,73583164
+0x6d7d33ab0d492acc7122e0918df54e2dcf35fb28,"SLC / USDT",pancakeswap_v2,,binance-bridged-usdt-bnb-smart-chain,SLC,90082874,below,min_cap_of_two:gt_fdv,3308011,74376679
+0x83a0a8a723262651ae9c54bbba929f167443bc59,"XAUt / USDT 0.05%",pancakeswap-v3-bsc,tether-gold-tokens,binance-bridged-usdt-bnb-smart-chain,tether-gold-tokens,119748436,above,min_cap_of_two:cg_mcap,3199662,87057279
+0x22af7297243c4eef12e2d5a4f888b92e56bf127c,"龙虾 / WBNB",pancakeswap_v2,lobster-2,wbnb,lobster-2,72738510,below,single_subject:cg_mcap,3196177,84429521
+0x24993d0e8ef738b3bac36a753c00b39793e416e05db87c2bafbb25c4351b34fd,"NES / USDT 0.007%",pancakeswap-infinity-clmm,,binance-bridged-usdt-bnb-smart-chain,NES,2585700,below,min_cap_of_two:gt_fdv,3179252,7567104
+0x6429ac911f216a24ddf0ba84555ba5a971ed8368ca53ff7b04c6a86647252e05,"QQQB / USDC",uniswap-v4-bsc,invesco-qqq-trust-bstocks-tokenized-stock,binance-bridged-usdc-bnb-smart-chain,invesco-qqq-trust-bstocks-tokenized-stock,1331558,below,min_cap_of_two:cg_mcap,3178450,18406780
+0x813c0decbb1097fff46d0ed6a39fb5f6a83043f4,"USDT / BTCB 0.05%",uniswap-bsc,binance-bridged-usdt-bnb-smart-chain,binance-bitcoin,binance-bridged-usdt-bnb-smart-chain,183433082994,above,single_subject:cg_mcap,3158993,70737068
+0xef470f9ae8512d2762e4f1cd91ae58caea17143afa61b8d56e9b20c8f87688c4,"COLLECT / BNB 0.007%",pancakeswap-infinity-clmm,collect-on-fanable,binancecoin,collect-on-fanable,10979200,below,single_subject:cg_mcap,3134273,183133077
+0x87b0c878102c1c5db8f848deb2b58cd4de2b4ba71ba880f01f6887a2d2810e0a,"TAC / USDT 0.007%",pancakeswap-infinity-clmm,tac,binance-bridged-usdt-bnb-smart-chain,tac,10690369,below,min_cap_of_two:cg_mcap,3076094,25376133
+0xd3f22fd2755edb23b765b74ff4d0bf056bc244d9,"POFD / USDT",pancakeswap_v2,,binance-bridged-usdt-bnb-smart-chain,POFD,1031397,below,min_cap_of_two:gt_fdv,3075854,3429562
+0xcec13213c390d51121f82ba2ecafb8e11e0af7a3,"BinanceTown / USDT",pancakeswap_v2,,binance-bridged-usdt-bnb-smart-chain,BinanceTown,230008,below,min_cap_of_two:gt_fdv,2994822,10697669
+0x787abd73593bed588852163402d191c302c7f8b6,"BTR / USDT 0.01%",pancakeswap-v3-bsc,bitlayer-bitvm,binance-bridged-usdt-bnb-smart-chain,bitlayer-bitvm,13617802,below,min_cap_of_two:cg_mcap,2953232,319884817
+0xd37aa0f0d66ad670279f6b89325c88bdff17d0265144762fb01f54fca9779944,"BNB / USDT 0.007%",pancakeswap-infinity-clmm,binancecoin,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdt-bnb-smart-chain,183433082994,above,single_subject:cg_mcap,2939718,136884019
+0xb4db9fcda97fd7b02eaf1e8317e6ddb04bacc1af,"STAR / USDT 0.01%",pancakeswap-v3-bsc,starpower,binance-bridged-usdt-bnb-smart-chain,starpower,22142234,below,min_cap_of_two:gt_mcap,2937249,147331569
+0x8fdce67030884a5905333fadb8dacbfa477a40d2,"うさぎ / WBNB",pancakeswap_v2,,wbnb,うさぎ,,unknown,gt_fdv_only_above_threshold,2930914,5974030
+0x87a540c36ebe0c5adb39c58148d71e0846cfc65b,"PTKR / WBNB",pancakeswap_v2,,wbnb,PTKR,61705,below,single_subject:gt_fdv,2793766,2916045
+0xafb2da14056725e3ba3a30dd846b6bbbd7886c56,"Cake / WBNB 0.05%",pancakeswap-v3-bsc,pancakeswap-token,wbnb,pancakeswap-token,699604783,above,single_subject:cg_mcap,2764058,83683275
+0x1f12111deb29e8ae246aa53f17839fe778a217ba,"UPONLY / BNC4",pancakeswap_v2,,,UPONLY,460024,below,min_cap_of_two:gt_fdv,2734405,19050126
+0xdf9d18bb55ce89849b8f01be8913d86af585667cc5c76748f8585366f8ccc83e,"SENTIS / USDT 0.007%",pancakeswap-infinity-clmm,sentismai,binance-bridged-usdt-bnb-smart-chain,sentismai,43182766,below,min_cap_of_two:cg_mcap,2666640,50233022
+0x882e23dba77bfe0e514cf5bcdad7a58aceb01522,"U / WBNB 0.05%",pancakeswap-v3-bsc,united-stables,wbnb,,,above,both_quote,2642849,60446024
+0x4d1b90273d5b0ea98101154d73a6c7d7a19884db,"ZEC / USDT 0.3%",uniswap-bsc,binance-peg-zcash-token,binance-bridged-usdt-bnb-smart-chain,binance-peg-zcash-token,254967087,above,min_cap_of_two:cg_mcap,2624449,40635013
+0x63844bd4bfad910b1643713302a1cc1ed20d50c3,"Pro / USDT",pancakeswap_v2,,binance-bridged-usdt-bnb-smart-chain,Pro,,unknown,gt_fdv_only_above_threshold,2569736,209017100
+0xcaaf3c41a40103a23eeaa4bba468af3cf5b0e0d8,"ARK / USDT",pancakeswap_v2,ark-3,binance-bridged-usdt-bnb-smart-chain,ark-3,136240644,above,min_cap_of_two:cg_fdv,2566373,153298883
+0x2f62969a74159bfc9365d8cd29ae8f6d15582204,"LAB / USDT 0.01%",pancakeswap-v3-bsc,lab,binance-bridged-usdt-bnb-smart-chain,lab,60056801,below,min_cap_of_two:cg_mcap,2476746,27496132
+0xb39978347f071b74076be26d1445e2eccafe3557d2cdbc17e6c74d3ea883a4e0,"ZAMA / USDT 0.007%",pancakeswap-infinity-clmm,zama,binance-bridged-usdt-bnb-smart-chain,zama,117522726,above,min_cap_of_two:cg_mcap,2470392,59069883
+0xf126c8e4f74ace95628ec14a496e3a8bbb5f16ef9ee908359e0c4b9018d0356f,"USD1 / USDC",pancakeswap-infinity-clmm,usd1-wlfi,binance-bridged-usdc-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,74329752994,above,single_subject:cg_mcap,2464577,75953486
+0xe85bc115847d7106b6335d067c6d2cf9b837ce50626a1df3f01d0012681a5db4,"BASED / USDT 0.007%",pancakeswap-infinity-clmm,based-one,binance-bridged-usdt-bnb-smart-chain,based-one,15036555,below,min_cap_of_two:cg_mcap,2459400,69225712
+0x73ee72b8cc2c7ea032d8051e1cfa740a2db84331,"AGX / USD1",pancakeswap_v2,,usd1-wlfi,AGX,78243522,below,single_subject:gt_fdv,2453372,21834154
+0xeaa6c7292ed954ca9dd72e769568d057b0525c9a,"STABLE / USDT 0.01%",pancakeswap-v3-bsc,stable-2,binance-bridged-usdt-bnb-smart-chain,stable-2,717933354,above,min_cap_of_two:cg_mcap,2381672,53106595
+0xaf9ad1650bb6b7456292fdc73f137936d74c24d5,"MONKI / NVDAB",pancakeswap_v2,,nvidia-bstocks,MONKI,93623,below,min_cap_of_two:gt_fdv,2374693,4234441
+0xc0904939bd7d8fd3c3a1b591dd0fa1da0c7c028a,"ABCD / WBNB 1%",pancakeswap-v3-bsc,,wbnb,ABCD,636481,below,single_subject:gt_fdv,2337404,2630250
+0x4a3218606af9b4728a9f187e1c1a8c07fbc172a9,"USD1 / WBNB 0.05%",pancakeswap-v3-bsc,usd1-wlfi,wbnb,,,above,both_quote,2305079,64910600
+0x7955874b0ad6efbb5ffe6e93e50b8aef4cd9be53,"ETH / WBNB 0.019%",topaz,binance-peg-weth,wbnb,,,above,both_quote,2294991,50756128
+0xda7630a141dbb6382ddb6409aea7331da543b0bb,"PUFFER / WBNB 0.01%",pancakeswap-v3-bsc,puffer-finance,wbnb,puffer-finance,9676281,below,single_subject:cg_mcap,2256713,8341341
+0x951081457a31e888fe149ef225aa612388e439a5,"OMME / WBNB 1%",pancakeswap-v3-bsc,,wbnb,OMME,92411,below,single_subject:gt_fdv,2206181,2467300
+0x916f992df86795f24de6c268cfb9031fbb1155da,"UB / USDC 0.01%",pancakeswap-v3-bsc,unibase,binance-bridged-usdc-bnb-smart-chain,unibase,311460543,above,min_cap_of_two:cg_mcap,2198669,90123234
+0x11c5c2d1d3dc0371965296330aa1236feb78ba9b3a27c5da9d835b5d2d46c8aa,"GMEB / USDT 0.038%",uniswap-v4-bsc,gamestop-bstocks-tokenized-stock,binance-bridged-usdt-bnb-smart-chain,gamestop-bstocks-tokenized-stock,6299739,below,min_cap_of_two:cg_mcap,2167304,65660945
+0x3122a3fa830e4918d6a9c09bd4769d0d95bf291548e7c7960cd7ccd9e3ac3627,"BTW / USDT 0.007%",pancakeswap-infinity-clmm,bitway,binance-bridged-usdt-bnb-smart-chain,bitway,1382167007,above,min_cap_of_two:cg_mcap,2143573,163096361
+0xa651c8deb3ff9f8d56a26e72042b7a8a1f433480,"我踏马来了 / WBNB",pancakeswap_v2,wo-ta-ma-laile,wbnb,wo-ta-ma-laile,12551164,below,single_subject:cg_mcap,2125336,16427037
+0x26a8e4591b7a0efcd45a577ad0d54aa64a99efaf2546ad4d5b0454c99eb70eab,"BSB / USDT 0.007%",pancakeswap-infinity-clmm,block-street,binance-bridged-usdt-bnb-smart-chain,block-street,22586320,below,min_cap_of_two:cg_mcap,2125320,102995969
+0xfc4e77248b76fefc27c4cac7151a2ee5b5cc590e,"QQQB / USDC 0.3%",uniswap-bsc,invesco-qqq-trust-bstocks-tokenized-stock,binance-bridged-usdc-bnb-smart-chain,invesco-qqq-trust-bstocks-tokenized-stock,1331558,below,min_cap_of_two:cg_mcap,2110870,34501392
+0x96c9c6e323b82e193950a06e2e62411d0a149439,"BNC4 / BOB",pancakeswap_v2,,,BOB,149712,below,min_cap_of_two:gt_fdv,2105906,2671126
+0xf9878a5dd55edc120fde01893ea713a4f032229c,"ETH / USDT 0.05%",uniswap-bsc,binance-peg-weth,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdt-bnb-smart-chain,183433082994,above,single_subject:cg_mcap,2070954,8764385
+0xae02717e94c9b5bae817601a49b4584f58324015,"LIGHT / USDT 0.01%",pancakeswap-v3-bsc,bitlight,binance-bridged-usdt-bnb-smart-chain,bitlight,7061396,below,min_cap_of_two:cg_mcap,2015209,45650338
+0xd01aa7653567b3c0e4d93d37ef6984c160035839,"Hello / WBNB",pancakeswap_v2,,wbnb,Hello,,unknown,not_on_coingecko,2011632,2878925
+0x94f3ed36706c746ad59fadcaf271b7431ab1d8f1,"SPCXB / MarsCoin",pancakeswap_v2,spacex-bstocks-tokenized-stock,marscoin-4,spacex-bstocks-tokenized-stock,71212388,below,min_cap_of_two:cg_mcap,2010438,116291614
 0xe64213a8461e1563edd50dca27b016967cd2f498,"NE / USDT",pancakeswap_v2,,binance-bridged-usdt-bnb-smart-chain,NE,115,below,min_cap_of_two:gt_fdv,2004871,18007851
-0xa0657b0794d66eca28cc573fe850cc3cee4e4884d3b403eb6dee6c4541955ff6,"GAIB / USDT 0.007%",pancakeswap-infinity-clmm,gaib,binance-bridged-usdt-bnb-smart-chain,gaib,8079791,below,min_cap_of_two:cg_mcap,1992080,1046858
-0xffba9d0f281193de9ee4e9050a5561ff9e08ae7b,"牛来 / USDT 1%",uniswap-bsc,niu-lai,binance-bridged-usdt-bnb-smart-chain,niu-lai,138690024,above,min_cap_of_two:cg_mcap,1941074,12386580
-0x16ace0bcb190fb62fad68ecc26f428505e413b0b,"CAT / USDT",pancakeswap_v2,,binance-bridged-usdt-bnb-smart-chain,CAT,,unknown,gt_fdv_only_above_threshold,1931884,54261774
-0x9f8f4615ff5143aee365fa34f34196fb85be7650,"FF / USDT 0.01%",pancakeswap-v3-bsc,falcon-finance-ff,binance-bridged-usdt-bnb-smart-chain,falcon-finance-ff,496321155,above,min_cap_of_two:cg_mcap,1927309,89745564
-0x473e34fad874524a146022cfd7c9df2af73988adeea0f21629dbb8c301305a17,"GWEI / USDT 0.007%",pancakeswap-infinity-clmm,ethgas-2,binance-bridged-usdt-bnb-smart-chain,ethgas-2,43920541,below,min_cap_of_two:cg_mcap,1924623,92549526
-0xd7d30f434b12f7ed9b0ae11ff1c754745a10ad52,"SKHYB / USDT 0.25%",pancakeswap-v3-bsc,sk-hynix-bstocks-tokenized-stock,binance-bridged-usdt-bnb-smart-chain,sk-hynix-bstocks-tokenized-stock,21277973,below,min_cap_of_two:cg_mcap,1906336,38697551
-0xf0a949d3d93b833c183a27ee067165b6f2c9625e,"4 / WBNB",pancakeswap_v2,4-2,wbnb,4-2,20829251,below,single_subject:cg_mcap,1896416,50199836
-0xc7768c2cb3152d89b0d21d3f9fdd2f1ac35a60a7,"VC / BNC4",pancakeswap_v2,,,VC,348187,below,min_cap_of_two:gt_fdv,1810142,9996644
-0x6fae7301f1b7c0ab83d69a855447491f2b585876,"ZEC / USDT 0.25%",pancakeswap-v3-bsc,binance-peg-zcash-token,binance-bridged-usdt-bnb-smart-chain,binance-peg-zcash-token,255862883,above,min_cap_of_two:cg_mcap,1791685,22387044
-0x6c3570c2188c202687a2138a5e41cda628d9ae2dc6a47f6fecb3c7ad9a1594d0,"MCAT / USDT 0.168%",pancakeswap-infinity-clmm,,binance-bridged-usdt-bnb-smart-chain,MCAT,,unknown,gt_fdv_only_above_threshold,1771863,15496014
-0x02d50b93e65d4572af5db2eeb6dd3c6ff08fda09,"79AU / USDT",pancakeswap_v2,,binance-bridged-usdt-bnb-smart-chain,79AU,,unknown,gt_fdv_only_above_threshold,1770663,56897110
-0xffca411cfbcd3194503effa80fd394b55387915c,"Sue / WBNB",pancakeswap_v2,shi-gong-mao,wbnb,shi-gong-mao,4615164,below,single_subject:cg_mcap,1767831,52378203
-0xd6fe21107c05a153d419edc3d93072066d52dff9,"うさぎ / WBNB",pancakeswap_v2,,wbnb,うさぎ,1844078,below,single_subject:gt_fdv,1750766,8242313
-0xd3cffc6b02a34dfc72f1350339031043a854599f,"AGT / WBNB 0.01%",pancakeswap-v3-bsc,alaya-ai,wbnb,alaya-ai,76903742,below,single_subject:cg_fdv,1745539,41404240
-0x7cb113b487e025b3a69537fca579559433240cb5,"FORM / USDT 0.25%",pancakeswap-v3-bsc,four,binance-bridged-usdt-bnb-smart-chain,four,95826476,below,min_cap_of_two:cg_mcap,1732128,12076569
-0x25042161f871a34e77a7af1aff74aa1a0dc9b4c661fd53c7504948ad97f8d13f,"AEON / USDT 0.007%",pancakeswap-infinity-clmm,aeon-3,binance-bridged-usdt-bnb-smart-chain,aeon-3,9098221,below,min_cap_of_two:cg_mcap,1707805,447770668
-0xbed17ca05ca914ed977f86c53e8f2607d9f1c9ec,"MOMO / ZEC 1%",pancakeswap-v3-bsc,,binance-peg-zcash-token,MOMO,2732650,below,min_cap_of_two:gt_fdv,1664633,8295997
-0x1e923c7179135a0c9ff76d0d8b1b75decf58f8a1ef5088320d8e743bdc043d6e,"U / USDT 0.002%",pancakeswap-infinity-clmm,united-stables,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdt-bnb-smart-chain,183405509835,above,single_subject:cg_mcap,1645889,6162082
-0x0022f0dcd574a1e646250eebd086781823434504,"AT / USDT 0.01%",pancakeswap-v3-bsc,apro,binance-bridged-usdt-bnb-smart-chain,apro,34376470,below,min_cap_of_two:cg_mcap,1603303,26810936
-0xdeb4d4a16bbfc352ce6a0627ddbcbd63352dfafd3eb192134295081b63bae6b7,"QQQB / USDC",uniswap-v4-bsc,invesco-qqq-trust-bstocks-tokenized-stock,binance-bridged-usdc-bnb-smart-chain,invesco-qqq-trust-bstocks-tokenized-stock,1332243,below,min_cap_of_two:cg_mcap,1593252,846673719
-0x0f0cf38f67ed6fb00881cdb815e25441f7f022e0,"B / USD1 0.01%",pancakeswap-v3-bsc,build-on,usd1-wlfi,build-on,191928918,above,single_subject:cg_mcap,1582888,64987829
-0xab058332a7279f1e64162be08f59ac0cd9601759,"牛来 / USDT 1%",pancakeswap-v3-bsc,niu-lai,binance-bridged-usdt-bnb-smart-chain,niu-lai,138690024,above,min_cap_of_two:cg_mcap,1564395,123280213
-0x492a1d308ee078c4f95072073631dfb05e349ae6,"BREW / USDT 1%",pancakeswap-v3-bsc,brew,binance-bridged-usdt-bnb-smart-chain,brew,30025604,below,min_cap_of_two:cg_mcap,1562043,972112
-0xd4ae7dd719ec71594f13d0e3b17e65e9085f1ca1,"蝴蝶人生 / AAPLB",pancakeswap_v2,hu-die-ren-sheng,apple-bstocks-tokenized-stock,hu-die-ren-sheng,4471112,below,min_cap_of_two:cg_fdv,1560831,12062247
-0xb509c755bd404ef3fa67cd0085c3728047c3d4e2,"STONKS / WBNB",pancakeswap_v2,,wbnb,STONKS,95871,below,single_subject:gt_fdv,1555007,0
-0x277e837a922c1c05211755c1dcdb22e03c54b289,"MANY / WBNB",pancakeswap_v2,,wbnb,MANY,103090,below,single_subject:gt_fdv,1545581,0
-0x78ad542ef8cd5b4215733170df596fbc24b01e28,"共建 / WBNB",pancakeswap_v2,,wbnb,共建,24,below,single_subject:gt_fdv,1540104,0
-0x90166b5795250fe7f0831e844121cc91799787e9,"STBL / USDC 0.01%",pancakeswap-v3-bsc,stbl,binance-bridged-usdc-bnb-smart-chain,stbl,13299031,below,min_cap_of_two:cg_mcap,1526898,36098252
-0xca3f029a70d5d90000e614afd29e5c833f33cea5,"AOP / USDT 0.01%",pancakeswap-v3-bsc,,binance-bridged-usdt-bnb-smart-chain,AOP,7384949,below,min_cap_of_two:gt_mcap,1508343,43986004
-0xbffec96e8f3b5058b1817c14e4380758fada01ef,"SOL / WBNB 0.05%",pancakeswap-v3-bsc,binance-peg-sol,wbnb,binance-peg-sol,111580292,above,single_subject:cg_mcap,1506301,53644483
-0x8d23f1230c18b8a6e2c7fd5f74fb5b11e3c023018438328022278fd8cd015263,"CLO / USDT 0.007%",pancakeswap-infinity-clmm,yei-finance,binance-bridged-usdt-bnb-smart-chain,yei-finance,11304963,below,min_cap_of_two:cg_mcap,1505761,107823137
-0x7f51bbf34156ba802deb0e38b7671dc4fa32041d,"$BANANA / WBNB 0.01%",pancakeswap-v3-bsc,banana-for-scale-2,wbnb,banana-for-scale-2,75484853,below,single_subject:cg_mcap,1498504,59313973
-0x7f51c8aaa6b0599abd16674e2b17fec7a9f674a1,"Cake / USDT 0.25%",pancakeswap-v3-bsc,pancakeswap-token,binance-bridged-usdt-bnb-smart-chain,pancakeswap-token,702951366,above,min_cap_of_two:cg_mcap,1486284,29204220
-0x4695fac601d8ff05efe0512985488489b6384b5bf3b43544087518738312e43a,"USDC / USDT",pancakeswap-infinity-clmm,binance-bridged-usdc-bnb-smart-chain,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,74202847276,above,min_cap_of_two:cg_mcap,1482175,11114312
-0x119a1d49e94cd3cba9cb9b5700c9e2e4939309cc9c97032b6cce0e0d1fe5ac99,"tmx / USDT 0.007%",pancakeswap-infinity-clmm,termmax,binance-bridged-usdt-bnb-smart-chain,termmax,4675276,below,min_cap_of_two:cg_mcap,1474077,175849872
-0x045fd20528aae4c1f31caafd1cb18a164736ec77fa2e7f174380f940a46ea7a8,"U / USDC 0.003%",uniswap-v4-bsc,united-stables,binance-bridged-usdc-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,74202847276,above,single_subject:cg_mcap,1465736,50142738
-0xbb0bd5b6a7fd53393bb92826bd4dde397e0f2fa3,"曙宝 / SKHYB",pancakeswap_v2,,sk-hynix-bstocks-tokenized-stock,曙宝,135347,below,min_cap_of_two:gt_fdv,1446109,0
-0x52c231aa6f12c10ad6298c6ec652175e566bf429,"FLORK / USDT 1%",pancakeswap-v3-bsc,flork-3,binance-bridged-usdt-bnb-smart-chain,flork-3,10896175,below,min_cap_of_two:cg_mcap,1435314,37055156
+0xa0657b0794d66eca28cc573fe850cc3cee4e4884d3b403eb6dee6c4541955ff6,"GAIB / USDT 0.007%",pancakeswap-infinity-clmm,gaib,binance-bridged-usdt-bnb-smart-chain,gaib,7266579,below,min_cap_of_two:cg_mcap,1992080,2507255
+0xffba9d0f281193de9ee4e9050a5561ff9e08ae7b,"牛来 / USDT 1%",uniswap-bsc,niu-lai,binance-bridged-usdt-bnb-smart-chain,niu-lai,127871771,above,min_cap_of_two:cg_mcap,1941074,13566636
+0x16ace0bcb190fb62fad68ecc26f428505e413b0b,"CAT / USDT",pancakeswap_v2,,binance-bridged-usdt-bnb-smart-chain,CAT,,unknown,gt_fdv_only_above_threshold,1931884,55053034
+0x9f8f4615ff5143aee365fa34f34196fb85be7650,"FF / USDT 0.01%",pancakeswap-v3-bsc,falcon-finance-ff,binance-bridged-usdt-bnb-smart-chain,falcon-finance-ff,486666830,above,min_cap_of_two:cg_mcap,1927309,89020898
+0x473e34fad874524a146022cfd7c9df2af73988adeea0f21629dbb8c301305a17,"GWEI / USDT 0.007%",pancakeswap-infinity-clmm,ethgas-2,binance-bridged-usdt-bnb-smart-chain,ethgas-2,44162521,below,min_cap_of_two:cg_mcap,1924623,90601096
+0xd7d30f434b12f7ed9b0ae11ff1c754745a10ad52,"SKHYB / USDT 0.25%",pancakeswap-v3-bsc,sk-hynix-bstocks-tokenized-stock,binance-bridged-usdt-bnb-smart-chain,sk-hynix-bstocks-tokenized-stock,22175445,below,min_cap_of_two:cg_mcap,1906336,39563107
+0xf0a949d3d93b833c183a27ee067165b6f2c9625e,"4 / WBNB",pancakeswap_v2,4-2,wbnb,4-2,21720981,below,single_subject:cg_mcap,1896416,51752189
+0xc7768c2cb3152d89b0d21d3f9fdd2f1ac35a60a7,"VC / BNC4",pancakeswap_v2,,,VC,348187,below,min_cap_of_two:gt_fdv,1810142,11689879
+0x6fae7301f1b7c0ab83d69a855447491f2b585876,"ZEC / USDT 0.25%",pancakeswap-v3-bsc,binance-peg-zcash-token,binance-bridged-usdt-bnb-smart-chain,binance-peg-zcash-token,254967087,above,min_cap_of_two:cg_mcap,1791685,23875313
+0x6c3570c2188c202687a2138a5e41cda628d9ae2dc6a47f6fecb3c7ad9a1594d0,"MCAT / USDT 0.168%",pancakeswap-infinity-clmm,,binance-bridged-usdt-bnb-smart-chain,MCAT,,unknown,gt_fdv_only_above_threshold,1771863,17158805
+0x02d50b93e65d4572af5db2eeb6dd3c6ff08fda09,"79AU / USDT",pancakeswap_v2,,binance-bridged-usdt-bnb-smart-chain,79AU,,unknown,gt_fdv_only_above_threshold,1770663,57275840
+0xffca411cfbcd3194503effa80fd394b55387915c,"Sue / WBNB",pancakeswap_v2,shi-gong-mao,wbnb,shi-gong-mao,4927313,below,single_subject:cg_mcap,1767831,54620854
+0xd6fe21107c05a153d419edc3d93072066d52dff9,"うさぎ / WBNB",pancakeswap_v2,,wbnb,うさぎ,1844078,below,single_subject:gt_fdv,1750766,13296537
+0xd3cffc6b02a34dfc72f1350339031043a854599f,"AGT / WBNB 0.01%",pancakeswap-v3-bsc,alaya-ai,wbnb,alaya-ai,76821954,below,single_subject:cg_fdv,1745539,41262313
+0x7cb113b487e025b3a69537fca579559433240cb5,"FORM / USDT 0.25%",pancakeswap-v3-bsc,four,binance-bridged-usdt-bnb-smart-chain,four,95373276,below,min_cap_of_two:cg_mcap,1732128,13801446
+0x25042161f871a34e77a7af1aff74aa1a0dc9b4c661fd53c7504948ad97f8d13f,"AEON / USDT 0.007%",pancakeswap-infinity-clmm,aeon-3,binance-bridged-usdt-bnb-smart-chain,aeon-3,9309638,below,min_cap_of_two:cg_mcap,1707805,424973760
+0xbed17ca05ca914ed977f86c53e8f2607d9f1c9ec,"MOMO / ZEC 1%",pancakeswap-v3-bsc,,binance-peg-zcash-token,MOMO,2732650,below,min_cap_of_two:gt_fdv,1664633,9772935
+0x1e923c7179135a0c9ff76d0d8b1b75decf58f8a1ef5088320d8e743bdc043d6e,"U / USDT 0.002%",pancakeswap-infinity-clmm,united-stables,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdt-bnb-smart-chain,183433082994,above,single_subject:cg_mcap,1645889,12016128
+0x0022f0dcd574a1e646250eebd086781823434504,"AT / USDT 0.01%",pancakeswap-v3-bsc,apro,binance-bridged-usdt-bnb-smart-chain,apro,35171437,below,min_cap_of_two:cg_mcap,1603303,26114673
+0xdeb4d4a16bbfc352ce6a0627ddbcbd63352dfafd3eb192134295081b63bae6b7,"QQQB / USDC",uniswap-v4-bsc,invesco-qqq-trust-bstocks-tokenized-stock,binance-bridged-usdc-bnb-smart-chain,invesco-qqq-trust-bstocks-tokenized-stock,1331558,below,min_cap_of_two:cg_mcap,1593252,847017280
+0x0f0cf38f67ed6fb00881cdb815e25441f7f022e0,"B / USD1 0.01%",pancakeswap-v3-bsc,build-on,usd1-wlfi,build-on,189185435,above,single_subject:cg_mcap,1582888,65586738
+0xab058332a7279f1e64162be08f59ac0cd9601759,"牛来 / USDT 1%",pancakeswap-v3-bsc,niu-lai,binance-bridged-usdt-bnb-smart-chain,niu-lai,127871771,above,min_cap_of_two:cg_mcap,1564395,124174870
+0x492a1d308ee078c4f95072073631dfb05e349ae6,"BREW / USDT 1%",pancakeswap-v3-bsc,brew,binance-bridged-usdt-bnb-smart-chain,brew,23682630,below,min_cap_of_two:cg_mcap,1562043,2804000
+0xd4ae7dd719ec71594f13d0e3b17e65e9085f1ca1,"蝴蝶人生 / AAPLB",pancakeswap_v2,hu-die-ren-sheng,apple-bstocks-tokenized-stock,hu-die-ren-sheng,4917275,below,min_cap_of_two:cg_fdv,1560831,13708330
+0xb509c755bd404ef3fa67cd0085c3728047c3d4e2,"STONKS / WBNB",pancakeswap_v2,,wbnb,STONKS,95871,below,single_subject:gt_fdv,1555007,1627051
+0x277e837a922c1c05211755c1dcdb22e03c54b289,"MANY / WBNB",pancakeswap_v2,,wbnb,MANY,103090,below,single_subject:gt_fdv,1545581,1614396
+0x78ad542ef8cd5b4215733170df596fbc24b01e28,"共建 / WBNB",pancakeswap_v2,,wbnb,共建,24,below,single_subject:gt_fdv,1540104,1570631
+0x90166b5795250fe7f0831e844121cc91799787e9,"STBL / USDC 0.01%",pancakeswap-v3-bsc,stbl,binance-bridged-usdc-bnb-smart-chain,stbl,13421226,below,min_cap_of_two:cg_mcap,1526898,37270131
+0xca3f029a70d5d90000e614afd29e5c833f33cea5,"AOP / USDT 0.01%",pancakeswap-v3-bsc,,binance-bridged-usdt-bnb-smart-chain,AOP,7384949,below,min_cap_of_two:gt_mcap,1508343,39683736
+0xbffec96e8f3b5058b1817c14e4380758fada01ef,"SOL / WBNB 0.05%",pancakeswap-v3-bsc,binance-peg-sol,wbnb,binance-peg-sol,112431282,above,single_subject:cg_mcap,1506301,54740735
+0x8d23f1230c18b8a6e2c7fd5f74fb5b11e3c023018438328022278fd8cd015263,"CLO / USDT 0.007%",pancakeswap-infinity-clmm,yei-finance,binance-bridged-usdt-bnb-smart-chain,yei-finance,11733028,below,min_cap_of_two:cg_mcap,1505761,107568575
+0x7f51bbf34156ba802deb0e38b7671dc4fa32041d,"$BANANA / WBNB 0.01%",pancakeswap-v3-bsc,banana-for-scale-2,wbnb,banana-for-scale-2,75403555,below,single_subject:cg_mcap,1498504,56382908
+0x7f51c8aaa6b0599abd16674e2b17fec7a9f674a1,"Cake / USDT 0.25%",pancakeswap-v3-bsc,pancakeswap-token,binance-bridged-usdt-bnb-smart-chain,pancakeswap-token,699604783,above,min_cap_of_two:cg_mcap,1486284,30694172
+0x4695fac601d8ff05efe0512985488489b6384b5bf3b43544087518738312e43a,"USDC / USDT",pancakeswap-infinity-clmm,binance-bridged-usdc-bnb-smart-chain,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,74329752994,above,min_cap_of_two:cg_mcap,1482175,12358565
+0x119a1d49e94cd3cba9cb9b5700c9e2e4939309cc9c97032b6cce0e0d1fe5ac99,"tmx / USDT 0.007%",pancakeswap-infinity-clmm,termmax,binance-bridged-usdt-bnb-smart-chain,termmax,4705916,below,min_cap_of_two:cg_mcap,1474077,177306745
+0x045fd20528aae4c1f31caafd1cb18a164736ec77fa2e7f174380f940a46ea7a8,"U / USDC 0.003%",uniswap-v4-bsc,united-stables,binance-bridged-usdc-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,74329752994,above,single_subject:cg_mcap,1465736,49949929
+0xbb0bd5b6a7fd53393bb92826bd4dde397e0f2fa3,"曙宝 / SKHYB",pancakeswap_v2,,sk-hynix-bstocks-tokenized-stock,曙宝,135347,below,min_cap_of_two:gt_fdv,1446109,1609211
+0x52c231aa6f12c10ad6298c6ec652175e566bf429,"FLORK / USDT 1%",pancakeswap-v3-bsc,flork-3,binance-bridged-usdt-bnb-smart-chain,flork-3,8832111,below,min_cap_of_two:cg_mcap,1435314,38074765
 0xfae8ba249717655b326321b7ed3fb1257bf8674b,"MONKI / WBNB",pancakeswap_v2,,wbnb,MONKI,0,below,single_subject:gt_fdv,1426976,1458625
-0xbe549655f038bcafb207901cae79e9a84028e3e7,"ZEC / USDT 0.05%",topaz,binance-peg-zcash-token,binance-bridged-usdt-bnb-smart-chain,binance-peg-zcash-token,255862883,above,min_cap_of_two:cg_mcap,1424300,11264099
-0xfba210b900f7bcf837118eb7db003019fc8f4605,"硬币 / WBNB",pancakeswap_v2,,wbnb,硬币,3981091,below,single_subject:gt_fdv,1404913,1931167
-0xe6e51ea572502dbdf8b40834d0619f9a9144d3a5,"CROSS / USDT 0.01%",pancakeswap-v3-bsc,cross-2,binance-bridged-usdt-bnb-smart-chain,cross-2,59454795,below,min_cap_of_two:cg_mcap,1403947,69030140
-0x977daffc095b33872e2741c19568925015c35b4d,"SPCXB / USDT 0.25%",pancakeswap-v3-bsc,spacex-bstocks-tokenized-stock,binance-bridged-usdt-bnb-smart-chain,spacex-bstocks-tokenized-stock,69940900,below,min_cap_of_two:cg_mcap,1389201,78275735
-0x55f3d3091b8c2c84567f155266569e739a8103b0,"共建 / FORM",pancakeswap_v2,,four,共建,14253,below,min_cap_of_two:gt_fdv,1387896,0
-0x36c0fc3159eb8662a2e1b84a4df518d916bce0e1,"AAPLB / USDT 0.05%",uniswap-bsc,apple-bstocks-tokenized-stock,binance-bridged-usdt-bnb-smart-chain,apple-bstocks-tokenized-stock,7774763,below,min_cap_of_two:cg_mcap,1379376,14985358
-0xe51b74a201552a092b8d4bdd7a8cbe99f712f03a,"牛启 / WBNB",pancakeswap_v2,,wbnb,牛启,4190039,below,single_subject:gt_fdv,1353289,1131085
-0xd734266d1461f317917ff37f63d23415b7fa459581f3f66299d6ccba4df5bcae,"QQQB / USDC",uniswap-v4-bsc,invesco-qqq-trust-bstocks-tokenized-stock,binance-bridged-usdc-bnb-smart-chain,invesco-qqq-trust-bstocks-tokenized-stock,1332243,below,min_cap_of_two:cg_mcap,1348831,2520865
-0xb0bab780d44ca5245a4b6da9ea8fd79e04e7a92850cfc2b52a33c4d82463726b,"PRL / USDT 0.007%",pancakeswap-infinity-clmm,,binance-bridged-usdt-bnb-smart-chain,PRL,10178430,below,min_cap_of_two:gt_fdv,1343848,64180697
-0xe2561a789e8d94f3f9b620aaecc627e1e205fe8b,"SPX / USDT 0.25%",pancakeswap-v3-bsc,shopinx,binance-bridged-usdt-bnb-smart-chain,shopinx,11261848,below,min_cap_of_two:cg_mcap,1342272,39381606
-0xa77d89e40ddd6a57b72ad4a8c55554b2fd6171026c903462a9f9c7be133811a6,"BNB / USDT 0.05%",uniswap-v4-bsc,binancecoin,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdt-bnb-smart-chain,183405509835,above,single_subject:cg_mcap,1332697,30449456
-0xeee6c8b83be11e53388227f161ba9c0962e785df,"MarsCoin / USDT 1%",uniswap-bsc,marscoin-4,binance-bridged-usdt-bnb-smart-chain,marscoin-4,126321360,above,min_cap_of_two:cg_mcap,1331447,21819444
-0x924e62a3689e7b94f397e61ac796dabfea32e93b,"TRADOOR / USDT 0.01%",pancakeswap-v3-bsc,tradoor,binance-bridged-usdt-bnb-smart-chain,tradoor,9016362,below,min_cap_of_two:cg_mcap,1331119,33688038
-0x3bca91b9b847cff6f4b666fa1d966981678975e13fd69d647bd11bed99f5fa14,"CAP / USDT 0.007%",pancakeswap-infinity-clmm,cap-4,binance-bridged-usdt-bnb-smart-chain,cap-4,67538510,below,min_cap_of_two:cg_mcap,1324807,127476289
-0xbcf62119b8581be6a61106f0257a3b04c1ad2533,"中国科技 / WBNB",pancakeswap_v2,,wbnb,中国科技,6943377,below,single_subject:gt_fdv,1275399,2373221
-0x4620f5c127a6055fbebb1f71327d60ff079c9060,"ON / USDT 0.01%",pancakeswap-v3-bsc,orochi-network,binance-bridged-usdt-bnb-smart-chain,orochi-network,22000855,below,min_cap_of_two:cg_mcap,1272583,81913000
-0xcbeaad783ffd2cea125e9d9b2ec21e639d20fa59,"DOS / USDT 0.01%",pancakeswap-v3-bsc,dappos,binance-bridged-usdt-bnb-smart-chain,dappos,41096902,below,min_cap_of_two:cg_mcap,1268266,329184785
-0x8f6814bd5db791fc8b64eea6bbad8bbeb508d6c6,"BEN / QQQB",pancakeswap_v2,,invesco-qqq-trust-bstocks-tokenized-stock,invesco-qqq-trust-bstocks-tokenized-stock,1332243,below,min_cap_of_two:cg_mcap,1248782,56163304
-0xfda4ef2829c5ad5e8434afdbe478841d289b14a5,"BTCB / WBNB 0.017%",topaz,binance-bitcoin,wbnb,,,above,both_quote,1248519,39348953
-0x29bf245240a6223bea4d7d913c23f1bed692c767a2ba436851b370e8328a89b2,"U / USDT 0.001%",pancakeswap-infinity-clmm,united-stables,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdt-bnb-smart-chain,183405509835,above,single_subject:cg_mcap,1247971,1117363
-0x6aa382bff27b6d74d3546ad6419398ad2fe1b236,"我踏马来了 / USDT 0.3%",uniswap-bsc,wo-ta-ma-laile,binance-bridged-usdt-bnb-smart-chain,wo-ta-ma-laile,11777245,below,min_cap_of_two:cg_mcap,1230262,5408711
-0x4a4bea953813c118c260be9a26b2321e57aa62e5,"MarsCoin / USDT 1%",pancakeswap-v3-bsc,marscoin-4,binance-bridged-usdt-bnb-smart-chain,marscoin-4,126321360,above,min_cap_of_two:cg_mcap,1222031,83420337
-0x7aa6d92fc369a8c1edc631a3aac44efb0808ddbf,"spyb / USDT 0.01%",pancakeswap-v3-bsc,spy-bstocks-tokenized-stock,binance-bridged-usdt-bnb-smart-chain,spy-bstocks-tokenized-stock,14187965,below,min_cap_of_two:cg_mcap,1205707,85042092
-0xe3d9f8ef633666771b7f1995aaedeb67d1b3c853,"XRP / BTCB 0.05%",pancakeswap-v3-bsc,binance-peg-xrp,binance-bitcoin,binance-peg-xrp,446345974,above,single_subject:cg_mcap,1188042,46099704
-0x65faaa5f0cbdb98b3b2332725a7b7cb01d81832c8db23bbb736ac115f9c5ceb8,"UUSD / USDC",pancakeswap-infinity-clmm,unity-usd,binance-bridged-usdc-bnb-smart-chain,binance-bridged-usdc-bnb-smart-chain,74202847276,above,single_subject:cg_mcap,1176228,36858446
-0xf99ac6209c0413299383fd836f878372e6398e6d9da52cee18fbccb8d9e810e0,"KITE / USDT 0.007%",pancakeswap-infinity-clmm,kite-2,binance-bridged-usdt-bnb-smart-chain,kite-2,257202773,above,min_cap_of_two:cg_mcap,1163722,40412370
-0x68dd1208a2b3479f80933bec75d45b2715f994d5,"$TRXS / WBNB",pancakeswap_v2,,wbnb,$TRXS,4237913,below,single_subject:gt_fdv,1161961,433125
-0xdf222b266a2d5f05a7c6e911314b94740c36fdf4a5840d2248cd82160d15c3db,"U / USDT 0.002%",uniswap-v4-bsc,united-stables,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdt-bnb-smart-chain,183405509835,above,single_subject:cg_mcap,1146690,17075815
-0xc1a780989734a0e5df875cebe410748562e1c5e6,"B2 / WBNB 0.01%",pancakeswap-v3-bsc,bsquared-network,wbnb,bsquared-network,16960996,below,single_subject:cg_mcap,1144090,38902318
-0x10e8d7a9e36cbf06e5070f61c73bc67132deb2ff,"XAUt / BTCB 0.05%",pancakeswap-v3-bsc,tether-gold-tokens,binance-bitcoin,tether-gold-tokens,119943804,above,single_subject:cg_mcap,1143115,15565400
-0x19940f4de8ba1d8b7c6045f6be6f4053684c8354,"OI / WBNB",pancakeswap_v2,,wbnb,OI,1117493,below,single_subject:gt_fdv,1139040,5051285
-0x660e8eb1afa84ce5556c100e1b7fd933dfb3fcae,"TELEBTC / BTCB 0.01%",pancakeswap-v3-bsc,telebtc-2,binance-bitcoin,telebtc-2,433736,below,single_subject:cg_mcap,1132011,21294874
-0x1b54cd932b6b751803c996cbef36280b53795f81,"HEMI / USDT 0.01%",pancakeswap-v3-bsc,hemi,binance-bridged-usdt-bnb-smart-chain,hemi,6826457,below,min_cap_of_two:cg_mcap,1112573,160852798
-0x308110fdb9f72a6b7e7dde856fb7867def8531d5,"quq / USDC 0.01%",uniswap-bsc,,binance-bridged-usdc-bnb-smart-chain,quq,1781933,below,min_cap_of_two:gt_mcap,1111952,21742181
-0x5a5a549379da0d7fe856c787dafab43c3fadc778,"SOCK / WBNB 1%",pancakeswap-v3-bsc,sock,wbnb,sock,2749903,below,single_subject:cg_mcap,1106792,26721574
-0x908d49048eb3a7bedfd238972403842805eaf2be,"GMEB / USDT 0.25%",pancakeswap-v3-bsc,gamestop-bstocks-tokenized-stock,binance-bridged-usdt-bnb-smart-chain,gamestop-bstocks-tokenized-stock,6201020,below,min_cap_of_two:cg_mcap,1106513,101724554
-0xcd7102295aff1e775c7d4fb8cf73a127c6d391d0,"4Stock / USDT 1%",uniswap-bsc,4stock,binance-bridged-usdt-bnb-smart-chain,4stock,31591319,below,min_cap_of_two:cg_mcap,1095344,20386569
-0xe855345e5c435e81244425e97d3ecaa143a4595c,"BREW / USDT 1%",uniswap-bsc,brew,binance-bridged-usdt-bnb-smart-chain,brew,30025604,below,min_cap_of_two:cg_mcap,1092911,4471326
-0x90a54475d512b8f3852351611c38fad30a513491,"mubarak / WBNB 0.25%",pancakeswap-v3-bsc,mubarak,wbnb,mubarak,28782472,below,single_subject:cg_mcap,1071566,65661937
-0x5fb65a1d25615daf7be42a62392de1afc4982f56,"MARIO / WBNB",pancakeswap_v2,,wbnb,MARIO,0,below,single_subject:gt_fdv,1062751,1300807
-0xa341e8e8ee6bf97fa1d18c2d12f00555dc78207e,"BAS / WBNB 0.01%",pancakeswap-v3-bsc,bas,wbnb,bas,62186430,below,single_subject:cg_mcap,996944,49264332
-0x83fcd80d7973cca1aa821590bbec66d27a2d4ad4,"AKE / USDT 1%",uniswap-bsc,akedo,binance-bridged-usdt-bnb-smart-chain,akedo,323617551,above,min_cap_of_two:cg_mcap,110688,5731515
-0x0587d2584ab25bdfb591bcf395519c1fd57967eac64c8c691268020752261f71,"AKE / USDT 0.433%",uniswap-v4-bsc,akedo,binance-bridged-usdt-bnb-smart-chain,akedo,323617551,above,min_cap_of_two:cg_mcap,83983,2576126
-0x7e58f160b5b77b8b24cd9900c09a3e730215ac47,"ASTER / USDT 0.05%",pancakeswap-v3-bsc,aster-2,binance-bridged-usdt-bnb-smart-chain,aster-2,1862929607,above,min_cap_of_two:cg_mcap,746079,52532489
-0x8bfb0fb037b30562fdb7be3f71440575664ab74e,"ASTER / USDT 0.05%",uniswap-bsc,aster-2,binance-bridged-usdt-bnb-smart-chain,aster-2,1862929607,above,min_cap_of_two:cg_mcap,397796,8178428
-0xb040ea24a4ef35a3ed400b0ff26d8b6f30deecad,"ASTER / WBNB 0.25%",pancakeswap-v3-bsc,aster-2,wbnb,aster-2,1862929607,above,single_subject:cg_mcap,386127,17480128
-0xaead6bd31dd66eb3a6216aaf271d0e661585b0b1,"ASTER / USDT 0.25%",pancakeswap-v3-bsc,aster-2,binance-bridged-usdt-bnb-smart-chain,aster-2,1862929607,above,min_cap_of_two:cg_mcap,324838,10081227
-0xfc185e4bc9d0e12b7835f0e31b7d032c6579f894,"ASTER / WBNB 0.05%",pancakeswap-v3-bsc,aster-2,wbnb,aster-2,1862929607,above,single_subject:cg_mcap,176217,8486332
-0x30db6dfdb8817765797bd62316e41f5f4e431e93,"ASTER / USDT 0.3%",uniswap-bsc,aster-2,binance-bridged-usdt-bnb-smart-chain,aster-2,1862929607,above,min_cap_of_two:cg_mcap,168501,4003675
-0xff8dd24ffd38eca6bbe58c7aca49abc2d9abb574,"ASTER / WBNB 0.05%",uniswap-bsc,aster-2,wbnb,aster-2,1862929607,above,single_subject:cg_mcap,37988,3012970
-0xae0fe241dc697d5740d83b3fc3738b0914862492,"Dust / ASTER 1%",pancakeswap-v3-bsc,,aster-2,Dust,48206,below,min_cap_of_two:gt_fdv,28597,305731
-0x66f289de31eef70d52186729d2637ac978cfc56b,"币安人生 / WBNB",pancakeswap_v2,bianrensheng,wbnb,bianrensheng,474115230,above,single_subject:cg_mcap,940795,30284790
-0xa1ff9406219ffa6bcc3d89c2719dd91d231d4cee,"币安人生 / USDT 1%",pancakeswap-v3-bsc,bianrensheng,binance-bridged-usdt-bnb-smart-chain,bianrensheng,474115230,above,min_cap_of_two:cg_mcap,26683,915155
-0xf7b5a9b7ef764606f900c9c1db39afc682049bc4,"BTW / USDT 0.3%",uniswap-bsc,bitway,binance-bridged-usdt-bnb-smart-chain,bitway,1360451914,above,min_cap_of_two:cg_mcap,142520,6470979
-0x94a177b18c83123e6b6202191dcdd092e5638fcb,"BTW / USDT 1%",uniswap-bsc,bitway,binance-bridged-usdt-bnb-smart-chain,bitway,1360451914,above,min_cap_of_two:cg_mcap,47507,5958057
-0x203d66ecb7263efe424fcba0898761fc9fc9a8c0,"B / WBNB",pancakeswap_v2,build-on,wbnb,build-on,191928918,above,single_subject:cg_mcap,295427,13296149
-0x0e1893beeb4d0913d26b9614b18aea29c56d94b9,"LINK / WBNB 0.25%",pancakeswap-v3-bsc,chainlink,wbnb,chainlink,8773035755,above,single_subject:cg_mcap,269878,9231814
-0x534d3930edba2c0b90a7973549a0287141c987ef,"LINK / WBNB 0.3%",uniswap-bsc,chainlink,wbnb,chainlink,8773035755,above,single_subject:cg_mcap,110919,4173817
-0x74fff26f77f0a7ce071c433c034679cf31c25dc1,"FF / USDT 0.3%",uniswap-bsc,falcon-finance-ff,binance-bridged-usdt-bnb-smart-chain,falcon-finance-ff,496321155,above,min_cap_of_two:cg_mcap,26707,549172
-0x2a45d6e78af8531b026f2d50e2db238c2dbfdfbf5201eb0669b0fd5ac377d545,"GENIUS / USDC 0.007%",pancakeswap-infinity-clmm,genius-3,binance-bridged-usdc-bnb-smart-chain,genius-3,102236853,above,min_cap_of_two:cg_mcap,511361,19356478
-0x4083cccbcc5ad47d161268c04c7b6e1b8a728e85,"MARTIANS / MarsCoin 1%",pancakeswap-v3-bsc,,marscoin-4,MARTIANS,134236,below,min_cap_of_two:gt_fdv,209393,2521048
-0x329789fd40ce008009b76d3a42f107bff4c0c183,"DICKBUTT / MarsCoin 1%",pancakeswap-v3-bsc,,marscoin-4,DICKBUTT,33911,below,min_cap_of_two:gt_fdv,31059,509577
-0x6ac83d80b63a39ad772d876b97f3159ddf6abbfd,"牛来 / 牛二",pancakeswap_v2,niu-lai,,牛二,3116,below,min_cap_of_two:gt_fdv,58274,0
-0xe82cb0d2f9ee7d53cf41a006b5bda912974d0588,"豹拉 / 牛来 1%",pancakeswap-v3-bsc,,niu-lai,豹拉,59315,below,min_cap_of_two:gt_fdv,41639,1132990
-0xbfc26980d8068ae744f5405d3abf6e7df02e11b3,"牛来 / WBNB",pancakeswap_v2,niu-lai,wbnb,niu-lai,138690024,above,single_subject:cg_mcap,36709,499173
-0x948c40eecb43bb0aed66d2e4b3b7e317b75514aa,"企飞 / 牛来",pancakeswap_v2,,niu-lai,企飞,22405,below,min_cap_of_two:gt_fdv,36268,175451
-0xfe4fe5b4575c036ac6d5cccfe13660020270e27a,"Cake / USDT 0.3%",uniswap-bsc,pancakeswap-token,binance-bridged-usdt-bnb-smart-chain,pancakeswap-token,702951366,above,min_cap_of_two:cg_mcap,700951,10634186
-0x47516855520496b84a169f7bb92ace7ffb6e8c535bccb52a308ccff113aeccfb,"Cake / USDT 0.205%",pancakeswap-infinity-clmm,pancakeswap-token,binance-bridged-usdt-bnb-smart-chain,pancakeswap-token,702951366,above,min_cap_of_two:cg_mcap,609083,12686854
-0x0ed7e52944161450477ee417de9cd3a859b14fd0,"Cake / WBNB",pancakeswap_v2,pancakeswap-token,wbnb,pancakeswap-token,702951366,above,single_subject:cg_mcap,470618,19129173
-0x133b3d95bad5405d14d53473671200e9342896bf,"Cake / WBNB 0.25%",pancakeswap-v3-bsc,pancakeswap-token,wbnb,pancakeswap-token,702951366,above,single_subject:cg_mcap,375915,12309860
-0x1e213600fa9317feac4ef4087acdf5d0e25d7187,"Cake / WBNB 0.01%",pancakeswap-v3-bsc,pancakeswap-token,wbnb,pancakeswap-token,702951366,above,single_subject:cg_mcap,286999,8895106
-0xd3a15fb8eaa7ea99d4c0602aeb78a4cf4db97306,"SIRPANCAKE / Cake 1%",pancakeswap-v3-bsc,,pancakeswap-token,SIRPANCAKE,330755,below,min_cap_of_two:gt_fdv,201459,1191789
-0x54c27041dfa246727d9351613eb35da028ddf377225d8db9e68ca3b569b5ba24,"Cake / BNB 0.205%",pancakeswap-infinity-clmm,pancakeswap-token,binancecoin,pancakeswap-token,702951366,above,single_subject:cg_mcap,162464,7662870
-0xa39af17ce4a8eb807e076805da1e2b8ea7d0755b,"Cake / USDT",pancakeswap_v2,pancakeswap-token,binance-bridged-usdt-bnb-smart-chain,pancakeswap-token,702951366,above,min_cap_of_two:cg_mcap,77630,2059900
-0xbba8f85c3ceddf73db4de17d31608d640eaea416,"PEPE / USDT 0.25%",pancakeswap-v3-bsc,pepe,binance-bridged-usdt-bnb-smart-chain,pepe,1414883250,above,min_cap_of_two:cg_mcap,904695,3293435
-0xdd82975ab85e745c84e497fd75ba409ec02d4739,"PEPE / WBNB 1%",pancakeswap-v3-bsc,pepe,wbnb,pepe,1414883250,above,single_subject:cg_mcap,858553,3036773
-0x16f13c02c34423aa9291fb7d8a061837b1377df3,"Peyote / PEPE",pancakeswap_v2,,pepe,Peyote,29792,below,min_cap_of_two:gt_fdv,835228,0
-0x624f806768721747e07dd43f9a9e3525fb948970,"BEPE / PEPE",pancakeswap_v2,,pepe,BEPE,3304,below,min_cap_of_two:gt_fdv,173132,0
-0xf14bb3dfcbd7d24b23f5b4b6e6ec81dc6e751c86,"PEPE / FEPE",pancakeswap_v2,pepe,,FEPE,27008,below,min_cap_of_two:gt_fdv,145362,3483209
-0xc3942e06850dbfb1062a18ccb46688ba50258bb9,"PEPE / WBNB",pancakeswap_v2,pepe,wbnb,pepe,1414883250,above,single_subject:cg_mcap,42286,436301
-0x8bafe0bdd3eb9ae0539f5b32e771c1a72a189b7f,"Q / USDT 0.01%",pancakeswap-v3-bsc,quack-ai,binance-bridged-usdt-bnb-smart-chain,quack-ai,119911722,above,min_cap_of_two:cg_mcap,882539,53442778
-0x8ccb4544b3030dacf3d4d71c658f04e8688e25b1,"TWT / WBNB 0.25%",pancakeswap-v3-bsc,trust-wallet-token,wbnb,trust-wallet-token,234537739,above,single_subject:cg_mcap,88510,4974785
-0x3c01a8cb79f4561606c6dedfeb1f4695f8a174b2,"TWT / USDT 0.25%",pancakeswap-v3-bsc,trust-wallet-token,binance-bridged-usdt-bnb-smart-chain,trust-wallet-token,234537739,above,min_cap_of_two:cg_mcap,67223,2510781
-0x3dcb1787a95d2ea0eb7d00887704eebf0d79bb13,"TWT / WBNB",pancakeswap_v2,trust-wallet-token,wbnb,trust-wallet-token,234537739,above,single_subject:cg_mcap,49174,1678666
-0x610e7a287c27dffcac0f0a94f547cc1b770cf483,"TWT / WBNB",pancakeswap-v1-bsc,trust-wallet-token,wbnb,trust-wallet-token,234537739,above,single_subject:cg_mcap,28100,1446351
-0x12707443906c59178b0dbc0f7ce76f614ca9ea59,"UB / USDT 0.05%",topaz,unibase,binance-bridged-usdt-bnb-smart-chain,unibase,314349444,above,min_cap_of_two:cg_mcap,57421,3196453
-0xb02303818ad432dcc9a4860ae333238b29f6164f,"UNI / WBNB 0.05%",pancakeswap-v3-bsc,uniswap,wbnb,uniswap,3832651681,above,single_subject:cg_mcap,170774,8924116
-0x913a4ed1636c474e6451b5e9249d94046a24bb33,"UNI / WBNB 0.3%",uniswap-bsc,uniswap,wbnb,uniswap,3832651681,above,single_subject:cg_mcap,142828,2801973
-0x014608e87af97a054c9a49f81e1473076d51d9a3,"UNI / WBNB",pancakeswap_v2,uniswap,wbnb,uniswap,3832651681,above,single_subject:cg_mcap,51320,2088340
-0x647d99772863e09f47435782cbb6c96ec4a75f12,"UNI / WBNB 0.25%",pancakeswap-v3-bsc,uniswap,wbnb,uniswap,3832651681,above,single_subject:cg_mcap,33224,1131187
-0x1b87567de134dbe30e29953c477f1cbc3d626b6b,"USELESS / WBNB 1%",pancakeswap-v3-bsc,useless-3,wbnb,useless-3,239581692,above,single_subject:cg_mcap,532120,10965375
+0xbe549655f038bcafb207901cae79e9a84028e3e7,"ZEC / USDT 0.05%",topaz,binance-peg-zcash-token,binance-bridged-usdt-bnb-smart-chain,binance-peg-zcash-token,254967087,above,min_cap_of_two:cg_mcap,1424300,12586485
+0xfba210b900f7bcf837118eb7db003019fc8f4605,"硬币 / WBNB",pancakeswap_v2,,wbnb,硬币,3981091,below,single_subject:gt_fdv,1404913,3369490
+0xe6e51ea572502dbdf8b40834d0619f9a9144d3a5,"CROSS / USDT 0.01%",pancakeswap-v3-bsc,cross-2,binance-bridged-usdt-bnb-smart-chain,cross-2,59196745,below,min_cap_of_two:cg_mcap,1403947,69626736
+0x977daffc095b33872e2741c19568925015c35b4d,"SPCXB / USDT 0.25%",pancakeswap-v3-bsc,spacex-bstocks-tokenized-stock,binance-bridged-usdt-bnb-smart-chain,spacex-bstocks-tokenized-stock,71212388,below,min_cap_of_two:cg_mcap,1389201,72239626
+0x55f3d3091b8c2c84567f155266569e739a8103b0,"共建 / FORM",pancakeswap_v2,,four,共建,14253,below,min_cap_of_two:gt_fdv,1387896,1422281
+0x36c0fc3159eb8662a2e1b84a4df518d916bce0e1,"AAPLB / USDT 0.05%",uniswap-bsc,apple-bstocks-tokenized-stock,binance-bridged-usdt-bnb-smart-chain,apple-bstocks-tokenized-stock,7781357,below,min_cap_of_two:cg_mcap,1379376,16250900
+0xe51b74a201552a092b8d4bdd7a8cbe99f712f03a,"牛启 / WBNB",pancakeswap_v2,,wbnb,牛启,4190039,below,single_subject:gt_fdv,1353289,2501891
+0xd734266d1461f317917ff37f63d23415b7fa459581f3f66299d6ccba4df5bcae,"QQQB / USDC",uniswap-v4-bsc,invesco-qqq-trust-bstocks-tokenized-stock,binance-bridged-usdc-bnb-smart-chain,invesco-qqq-trust-bstocks-tokenized-stock,1331558,below,min_cap_of_two:cg_mcap,1348831,3155620
+0xb0bab780d44ca5245a4b6da9ea8fd79e04e7a92850cfc2b52a33c4d82463726b,"PRL / USDT 0.007%",pancakeswap-infinity-clmm,,binance-bridged-usdt-bnb-smart-chain,PRL,10178430,below,min_cap_of_two:gt_fdv,1343848,64965009
+0xe2561a789e8d94f3f9b620aaecc627e1e205fe8b,"SPX / USDT 0.25%",pancakeswap-v3-bsc,shopinx,binance-bridged-usdt-bnb-smart-chain,shopinx,10140585,below,min_cap_of_two:cg_mcap,1342272,39965762
+0xa77d89e40ddd6a57b72ad4a8c55554b2fd6171026c903462a9f9c7be133811a6,"BNB / USDT 0.05%",uniswap-v4-bsc,binancecoin,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdt-bnb-smart-chain,183433082994,above,single_subject:cg_mcap,1332697,31681310
+0xeee6c8b83be11e53388227f161ba9c0962e785df,"MarsCoin / USDT 1%",uniswap-bsc,marscoin-4,binance-bridged-usdt-bnb-smart-chain,marscoin-4,114835194,above,min_cap_of_two:cg_mcap,1331447,22909884
+0x924e62a3689e7b94f397e61ac796dabfea32e93b,"TRADOOR / USDT 0.01%",pancakeswap-v3-bsc,tradoor,binance-bridged-usdt-bnb-smart-chain,tradoor,9038227,below,min_cap_of_two:cg_mcap,1331119,33843496
+0x3bca91b9b847cff6f4b666fa1d966981678975e13fd69d647bd11bed99f5fa14,"CAP / USDT 0.007%",pancakeswap-infinity-clmm,cap-4,binance-bridged-usdt-bnb-smart-chain,cap-4,69453955,below,min_cap_of_two:cg_mcap,1324807,120104667
+0xbcf62119b8581be6a61106f0257a3b04c1ad2533,"中国科技 / WBNB",pancakeswap_v2,,wbnb,中国科技,6943377,below,single_subject:gt_fdv,1275399,3672814
+0x4620f5c127a6055fbebb1f71327d60ff079c9060,"ON / USDT 0.01%",pancakeswap-v3-bsc,orochi-network,binance-bridged-usdt-bnb-smart-chain,orochi-network,21670904,below,min_cap_of_two:cg_mcap,1272583,78738902
+0xcbeaad783ffd2cea125e9d9b2ec21e639d20fa59,"DOS / USDT 0.01%",pancakeswap-v3-bsc,dappos,binance-bridged-usdt-bnb-smart-chain,dappos,42289722,below,min_cap_of_two:cg_mcap,1268266,317396599
+0x8f6814bd5db791fc8b64eea6bbad8bbeb508d6c6,"BEN / QQQB",pancakeswap_v2,,invesco-qqq-trust-bstocks-tokenized-stock,invesco-qqq-trust-bstocks-tokenized-stock,1331558,below,min_cap_of_two:cg_mcap,1248782,57409795
+0xfda4ef2829c5ad5e8434afdbe478841d289b14a5,"BTCB / WBNB 0.017%",topaz,binance-bitcoin,wbnb,,,above,both_quote,1248519,39308996
+0x29bf245240a6223bea4d7d913c23f1bed692c767a2ba436851b370e8328a89b2,"U / USDT 0.001%",pancakeswap-infinity-clmm,united-stables,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdt-bnb-smart-chain,183433082994,above,single_subject:cg_mcap,1247971,2254442
+0x6aa382bff27b6d74d3546ad6419398ad2fe1b236,"我踏马来了 / USDT 0.3%",uniswap-bsc,wo-ta-ma-laile,binance-bridged-usdt-bnb-smart-chain,wo-ta-ma-laile,12551164,below,min_cap_of_two:cg_mcap,1230262,6455014
+0x4a4bea953813c118c260be9a26b2321e57aa62e5,"MarsCoin / USDT 1%",pancakeswap-v3-bsc,marscoin-4,binance-bridged-usdt-bnb-smart-chain,marscoin-4,114835194,above,min_cap_of_two:cg_mcap,1222031,83985592
+0x7aa6d92fc369a8c1edc631a3aac44efb0808ddbf,"spyb / USDT 0.01%",pancakeswap-v3-bsc,spy-bstocks-tokenized-stock,binance-bridged-usdt-bnb-smart-chain,spy-bstocks-tokenized-stock,14172942,below,min_cap_of_two:cg_mcap,1205707,80821850
+0xe3d9f8ef633666771b7f1995aaedeb67d1b3c853,"XRP / BTCB 0.05%",pancakeswap-v3-bsc,binance-peg-xrp,binance-bitcoin,binance-peg-xrp,440742624,above,single_subject:cg_mcap,1188042,47096617
+0x65faaa5f0cbdb98b3b2332725a7b7cb01d81832c8db23bbb736ac115f9c5ceb8,"UUSD / USDC",pancakeswap-infinity-clmm,unity-usd,binance-bridged-usdc-bnb-smart-chain,unity-usd,99896857,below,min_cap_of_two:cg_mcap,1176228,36649539
+0xf99ac6209c0413299383fd836f878372e6398e6d9da52cee18fbccb8d9e810e0,"KITE / USDT 0.007%",pancakeswap-infinity-clmm,kite-2,binance-bridged-usdt-bnb-smart-chain,kite-2,259075266,above,min_cap_of_two:cg_mcap,1163722,40620656
+0x68dd1208a2b3479f80933bec75d45b2715f994d5,"$TRXS / WBNB",pancakeswap_v2,,wbnb,$TRXS,4237913,below,single_subject:gt_fdv,1161961,1620061
+0xdf222b266a2d5f05a7c6e911314b94740c36fdf4a5840d2248cd82160d15c3db,"U / USDT 0.002%",uniswap-v4-bsc,united-stables,binance-bridged-usdt-bnb-smart-chain,binance-bridged-usdt-bnb-smart-chain,183433082994,above,single_subject:cg_mcap,1146690,18184018
+0xc1a780989734a0e5df875cebe410748562e1c5e6,"B2 / WBNB 0.01%",pancakeswap-v3-bsc,bsquared-network,wbnb,bsquared-network,17314095,below,single_subject:cg_mcap,1144090,39022146
+0x10e8d7a9e36cbf06e5070f61c73bc67132deb2ff,"XAUt / BTCB 0.05%",pancakeswap-v3-bsc,tether-gold-tokens,binance-bitcoin,tether-gold-tokens,119748436,above,single_subject:cg_mcap,1143115,15916871
+0x19940f4de8ba1d8b7c6045f6be6f4053684c8354,"OI / WBNB",pancakeswap_v2,,wbnb,OI,1117493,below,single_subject:gt_fdv,1139040,6032692
+0x660e8eb1afa84ce5556c100e1b7fd933dfb3fcae,"TELEBTC / BTCB 0.01%",pancakeswap-v3-bsc,telebtc-2,binance-bitcoin,telebtc-2,449101,below,single_subject:cg_mcap,1132011,21988680
+0x1b54cd932b6b751803c996cbef36280b53795f81,"HEMI / USDT 0.01%",pancakeswap-v3-bsc,hemi,binance-bridged-usdt-bnb-smart-chain,hemi,6652400,below,min_cap_of_two:cg_mcap,1112573,161500355
+0x308110fdb9f72a6b7e7dde856fb7867def8531d5,"quq / USDC 0.01%",uniswap-bsc,,binance-bridged-usdc-bnb-smart-chain,quq,1781933,below,min_cap_of_two:gt_mcap,1111952,22904167
+0x5a5a549379da0d7fe856c787dafab43c3fadc778,"SOCK / WBNB 1%",pancakeswap-v3-bsc,sock,wbnb,sock,2679510,below,single_subject:cg_mcap,1106792,27915962
+0x908d49048eb3a7bedfd238972403842805eaf2be,"GMEB / USDT 0.25%",pancakeswap-v3-bsc,gamestop-bstocks-tokenized-stock,binance-bridged-usdt-bnb-smart-chain,gamestop-bstocks-tokenized-stock,6299739,below,min_cap_of_two:cg_mcap,1106513,91417363
+0xcd7102295aff1e775c7d4fb8cf73a127c6d391d0,"4Stock / USDT 1%",uniswap-bsc,4stock,binance-bridged-usdt-bnb-smart-chain,4stock,27872058,below,min_cap_of_two:cg_mcap,1095344,21446534
+0xe855345e5c435e81244425e97d3ecaa143a4595c,"BREW / USDT 1%",uniswap-bsc,brew,binance-bridged-usdt-bnb-smart-chain,brew,23682630,below,min_cap_of_two:cg_mcap,1092911,5502915
+0x90a54475d512b8f3852351611c38fad30a513491,"mubarak / WBNB 0.25%",pancakeswap-v3-bsc,mubarak,wbnb,mubarak,28895910,below,single_subject:cg_mcap,1071566,64749067
+0x5fb65a1d25615daf7be42a62392de1afc4982f56,"MARIO / WBNB",pancakeswap_v2,,wbnb,MARIO,0,below,single_subject:gt_fdv,1062751,1300808
+0xa341e8e8ee6bf97fa1d18c2d12f00555dc78207e,"BAS / WBNB 0.01%",pancakeswap-v3-bsc,bas,wbnb,bas,62455589,below,single_subject:cg_mcap,996944,49710373
+0x83fcd80d7973cca1aa821590bbec66d27a2d4ad4,"AKE / USDT 1%",uniswap-bsc,akedo,binance-bridged-usdt-bnb-smart-chain,akedo,319615567,above,min_cap_of_two:cg_mcap,110688,5834052
+0x0587d2584ab25bdfb591bcf395519c1fd57967eac64c8c691268020752261f71,"AKE / USDT 0.433%",uniswap-v4-bsc,akedo,binance-bridged-usdt-bnb-smart-chain,akedo,319615567,above,min_cap_of_two:cg_mcap,83983,2648552
+0x7e58f160b5b77b8b24cd9900c09a3e730215ac47,"ASTER / USDT 0.05%",pancakeswap-v3-bsc,aster-2,binance-bridged-usdt-bnb-smart-chain,aster-2,1840810617,above,min_cap_of_two:cg_mcap,746079,53106269
+0x8bfb0fb037b30562fdb7be3f71440575664ab74e,"ASTER / USDT 0.05%",uniswap-bsc,aster-2,binance-bridged-usdt-bnb-smart-chain,aster-2,1840810617,above,min_cap_of_two:cg_mcap,397796,8581698
+0xb040ea24a4ef35a3ed400b0ff26d8b6f30deecad,"ASTER / WBNB 0.25%",pancakeswap-v3-bsc,aster-2,wbnb,aster-2,1840810617,above,single_subject:cg_mcap,386127,17853802
+0xaead6bd31dd66eb3a6216aaf271d0e661585b0b1,"ASTER / USDT 0.25%",pancakeswap-v3-bsc,aster-2,binance-bridged-usdt-bnb-smart-chain,aster-2,1840810617,above,min_cap_of_two:cg_mcap,324838,10430331
+0xfc185e4bc9d0e12b7835f0e31b7d032c6579f894,"ASTER / WBNB 0.05%",pancakeswap-v3-bsc,aster-2,wbnb,aster-2,1840810617,above,single_subject:cg_mcap,176217,8605762
+0x30db6dfdb8817765797bd62316e41f5f4e431e93,"ASTER / USDT 0.3%",uniswap-bsc,aster-2,binance-bridged-usdt-bnb-smart-chain,aster-2,1840810617,above,min_cap_of_two:cg_mcap,168501,4182756
+0xff8dd24ffd38eca6bbe58c7aca49abc2d9abb574,"ASTER / WBNB 0.05%",uniswap-bsc,aster-2,wbnb,aster-2,1840810617,above,single_subject:cg_mcap,37988,3030742
+0xae0fe241dc697d5740d83b3fc3738b0914862492,"Dust / ASTER 1%",pancakeswap-v3-bsc,,aster-2,Dust,48206,below,min_cap_of_two:gt_fdv,28597,341515
+0x66f289de31eef70d52186729d2637ac978cfc56b,"币安人生 / WBNB",pancakeswap_v2,bianrensheng,wbnb,bianrensheng,469082312,above,single_subject:cg_mcap,940795,30597184
+0xa1ff9406219ffa6bcc3d89c2719dd91d231d4cee,"币安人生 / USDT 1%",pancakeswap-v3-bsc,bianrensheng,binance-bridged-usdt-bnb-smart-chain,bianrensheng,469082312,above,min_cap_of_two:cg_mcap,26683,912313
+0xf7b5a9b7ef764606f900c9c1db39afc682049bc4,"BTW / USDT 0.3%",uniswap-bsc,bitway,binance-bridged-usdt-bnb-smart-chain,bitway,1382167007,above,min_cap_of_two:cg_mcap,142520,6560299
+0x94a177b18c83123e6b6202191dcdd092e5638fcb,"BTW / USDT 1%",uniswap-bsc,bitway,binance-bridged-usdt-bnb-smart-chain,bitway,1382167007,above,min_cap_of_two:cg_mcap,47507,5685959
+0x203d66ecb7263efe424fcba0898761fc9fc9a8c0,"B / WBNB",pancakeswap_v2,build-on,wbnb,build-on,189185435,above,single_subject:cg_mcap,295427,13446112
+0x0e1893beeb4d0913d26b9614b18aea29c56d94b9,"LINK / WBNB 0.25%",pancakeswap-v3-bsc,chainlink,wbnb,chainlink,8629142017,above,single_subject:cg_mcap,269878,9342364
+0x534d3930edba2c0b90a7973549a0287141c987ef,"LINK / WBNB 0.3%",uniswap-bsc,chainlink,wbnb,chainlink,8629142017,above,single_subject:cg_mcap,110919,4223293
+0x74fff26f77f0a7ce071c433c034679cf31c25dc1,"FF / USDT 0.3%",uniswap-bsc,falcon-finance-ff,binance-bridged-usdt-bnb-smart-chain,falcon-finance-ff,486666830,above,min_cap_of_two:cg_mcap,26707,571992
+0x2a45d6e78af8531b026f2d50e2db238c2dbfdfbf5201eb0669b0fd5ac377d545,"GENIUS / USDC 0.007%",pancakeswap-infinity-clmm,genius-3,binance-bridged-usdc-bnb-smart-chain,genius-3,102913438,above,min_cap_of_two:cg_mcap,511361,18940469
+0x4083cccbcc5ad47d161268c04c7b6e1b8a728e85,"MARTIANS / MarsCoin 1%",pancakeswap-v3-bsc,,marscoin-4,MARTIANS,134236,below,min_cap_of_two:gt_fdv,209393,2711668
+0x329789fd40ce008009b76d3a42f107bff4c0c183,"DICKBUTT / MarsCoin 1%",pancakeswap-v3-bsc,,marscoin-4,DICKBUTT,33911,below,min_cap_of_two:gt_fdv,31059,533758
+0x6ac83d80b63a39ad772d876b97f3159ddf6abbfd,"牛来 / 牛二",pancakeswap_v2,niu-lai,,牛二,3116,below,min_cap_of_two:gt_fdv,58274,66382
+0xe82cb0d2f9ee7d53cf41a006b5bda912974d0588,"豹拉 / 牛来 1%",pancakeswap-v3-bsc,,niu-lai,豹拉,59315,below,min_cap_of_two:gt_fdv,41639,1180941
+0xbfc26980d8068ae744f5405d3abf6e7df02e11b3,"牛来 / WBNB",pancakeswap_v2,niu-lai,wbnb,niu-lai,127871771,above,single_subject:cg_mcap,36709,527109
+0x948c40eecb43bb0aed66d2e4b3b7e317b75514aa,"企飞 / 牛来",pancakeswap_v2,,niu-lai,企飞,22405,below,min_cap_of_two:gt_fdv,36268,213760
+0xfe4fe5b4575c036ac6d5cccfe13660020270e27a,"Cake / USDT 0.3%",uniswap-bsc,pancakeswap-token,binance-bridged-usdt-bnb-smart-chain,pancakeswap-token,699604783,above,min_cap_of_two:cg_mcap,700951,11370103
+0x47516855520496b84a169f7bb92ace7ffb6e8c535bccb52a308ccff113aeccfb,"Cake / USDT 0.205%",pancakeswap-infinity-clmm,pancakeswap-token,binance-bridged-usdt-bnb-smart-chain,pancakeswap-token,699604783,above,min_cap_of_two:cg_mcap,609083,13202160
+0x0ed7e52944161450477ee417de9cd3a859b14fd0,"Cake / WBNB",pancakeswap_v2,pancakeswap-token,wbnb,pancakeswap-token,699604783,above,single_subject:cg_mcap,470618,19496247
+0x133b3d95bad5405d14d53473671200e9342896bf,"Cake / WBNB 0.25%",pancakeswap-v3-bsc,pancakeswap-token,wbnb,pancakeswap-token,699604783,above,single_subject:cg_mcap,375915,12634831
+0x1e213600fa9317feac4ef4087acdf5d0e25d7187,"Cake / WBNB 0.01%",pancakeswap-v3-bsc,pancakeswap-token,wbnb,pancakeswap-token,699604783,above,single_subject:cg_mcap,286999,8922487
+0xd3a15fb8eaa7ea99d4c0602aeb78a4cf4db97306,"SIRPANCAKE / Cake 1%",pancakeswap-v3-bsc,,pancakeswap-token,SIRPANCAKE,330755,below,min_cap_of_two:gt_fdv,201459,1367833
+0x54c27041dfa246727d9351613eb35da028ddf377225d8db9e68ca3b569b5ba24,"Cake / BNB 0.205%",pancakeswap-infinity-clmm,pancakeswap-token,binancecoin,pancakeswap-token,699604783,above,single_subject:cg_mcap,162464,7750453
+0xa39af17ce4a8eb807e076805da1e2b8ea7d0755b,"Cake / USDT",pancakeswap_v2,pancakeswap-token,binance-bridged-usdt-bnb-smart-chain,pancakeswap-token,699604783,above,min_cap_of_two:cg_mcap,77630,2132935
+0xbba8f85c3ceddf73db4de17d31608d640eaea416,"PEPE / USDT 0.25%",pancakeswap-v3-bsc,pepe,binance-bridged-usdt-bnb-smart-chain,pepe,1386850339,above,min_cap_of_two:cg_mcap,904695,4259793
+0xdd82975ab85e745c84e497fd75ba409ec02d4739,"PEPE / WBNB 1%",pancakeswap-v3-bsc,pepe,wbnb,pepe,1386850339,above,single_subject:cg_mcap,858553,3861861
+0x16f13c02c34423aa9291fb7d8a061837b1377df3,"Peyote / PEPE",pancakeswap_v2,,pepe,Peyote,29792,below,min_cap_of_two:gt_fdv,835228,890367
+0x624f806768721747e07dd43f9a9e3525fb948970,"BEPE / PEPE",pancakeswap_v2,,pepe,BEPE,3304,below,min_cap_of_two:gt_fdv,173132,178337
+0xf14bb3dfcbd7d24b23f5b4b6e6ec81dc6e751c86,"PEPE / FEPE",pancakeswap_v2,pepe,,FEPE,27008,below,min_cap_of_two:gt_fdv,145362,3577753
+0xc3942e06850dbfb1062a18ccb46688ba50258bb9,"PEPE / WBNB",pancakeswap_v2,pepe,wbnb,pepe,1386850339,above,single_subject:cg_mcap,42286,519013
+0x8bafe0bdd3eb9ae0539f5b32e771c1a72a189b7f,"Q / USDT 0.01%",pancakeswap-v3-bsc,quack-ai,binance-bridged-usdt-bnb-smart-chain,quack-ai,113797827,above,min_cap_of_two:cg_mcap,882539,54199197
+0x8ccb4544b3030dacf3d4d71c658f04e8688e25b1,"TWT / WBNB 0.25%",pancakeswap-v3-bsc,trust-wallet-token,wbnb,trust-wallet-token,231469645,above,single_subject:cg_mcap,88510,4970123
+0x3c01a8cb79f4561606c6dedfeb1f4695f8a174b2,"TWT / USDT 0.25%",pancakeswap-v3-bsc,trust-wallet-token,binance-bridged-usdt-bnb-smart-chain,trust-wallet-token,231469645,above,min_cap_of_two:cg_mcap,67223,2531124
+0x3dcb1787a95d2ea0eb7d00887704eebf0d79bb13,"TWT / WBNB",pancakeswap_v2,trust-wallet-token,wbnb,trust-wallet-token,231469645,above,single_subject:cg_mcap,49174,1705679
+0x610e7a287c27dffcac0f0a94f547cc1b770cf483,"TWT / WBNB",pancakeswap-v1-bsc,trust-wallet-token,wbnb,trust-wallet-token,231469645,above,single_subject:cg_mcap,28100,1449429
+0x12707443906c59178b0dbc0f7ce76f614ca9ea59,"UB / USDT 0.05%",topaz,unibase,binance-bridged-usdt-bnb-smart-chain,unibase,311460543,above,min_cap_of_two:cg_mcap,57421,3213340
+0xb02303818ad432dcc9a4860ae333238b29f6164f,"UNI / WBNB 0.05%",pancakeswap-v3-bsc,uniswap,wbnb,uniswap,3754596716,above,single_subject:cg_mcap,170774,8856622
+0x913a4ed1636c474e6451b5e9249d94046a24bb33,"UNI / WBNB 0.3%",uniswap-bsc,uniswap,wbnb,uniswap,3754596716,above,single_subject:cg_mcap,142828,2920699
+0x014608e87af97a054c9a49f81e1473076d51d9a3,"UNI / WBNB",pancakeswap_v2,uniswap,wbnb,uniswap,3754596716,above,single_subject:cg_mcap,51320,2098698
+0x647d99772863e09f47435782cbb6c96ec4a75f12,"UNI / WBNB 0.25%",pancakeswap-v3-bsc,uniswap,wbnb,uniswap,3754596716,above,single_subject:cg_mcap,33224,1151924
+0x1b87567de134dbe30e29953c477f1cbc3d626b6b,"USELESS / WBNB 1%",pancakeswap-v3-bsc,useless-3,wbnb,useless-3,213266398,above,single_subject:cg_mcap,532120,11658879
